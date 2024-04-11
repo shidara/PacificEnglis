@@ -13,3 +13,20 @@ headerNavButton.addEventListener("click", () => {
     headerNavButton.innerText = "CLOSE";
   }
 });
+
+//メインビジュアルスライダー
+const mainVisualProgress = document.querySelector(".js-progress span");
+console.log("swiper", mainVisualProgress);
+var swiper = new Swiper(".js-homeMainVisualSlider", {
+  slidesPerView: "auto",
+  effect: "fade",
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      mainVisualProgress.style.setProperty("--progress", 1 - progress);
+    },
+  },
+});
