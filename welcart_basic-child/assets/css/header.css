@@ -1,0 +1,40 @@
+.Header {
+  position: relative;
+  margin: 0;
+  border: 0;
+  background-color: green;
+
+  .Header__inner {
+    display: flex;
+    justify-content: space-between;
+
+    .Logo__link {
+      display: block;
+    }
+  }
+
+  .Header__navButton {
+    z-index: 110;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 0 0 0 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-wht);
+    background-color: var(--color-primary);
+  }
+
+  button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    appearance: none;
+    background-color: transparent;
+  }
+}
