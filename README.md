@@ -1,2 +1,0 @@
-# PacificEnglis
-パシフィックイングリッシュ
