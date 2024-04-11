@@ -187,17 +187,31 @@ button {
   </div>
 </div>
 
-<section class="Top__mainMessageSection">
-  <h2 class="Top__mainMessageTitle">世界が広がる<br />英語で話そう!</h2>
-  <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
-</section>
 
 <!-- コンテンツ -->
-<div id="top" class="page">
-  <main class="pageContents">
+<main class="pageContents Top">
+  <!-- メッセージ -->
+  <section class="Top__mainMessageSection">
+    <h2 class="Top__mainMessageTitle">世界が広がる<br />英語で話そう!</h2>
+    <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
+  </section>
+  <!-- News -->
+  <section class="Top__news">
+    <h2 class="Top__newsTitle">News</h2>
+    <div class="Top__newsColumn">
+      <div class="Top__newsColumnItem">
+        <div class="Top__newsThumbnail">
+          <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" loading="lazy" />
+        </div>
+      </div>
+      <div class="Top__newsColumnItem">
+        <time>2024.02.19</time>
+        <p>【幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
+      </div>
+    </div>
+  </section>
+</main>
 
-  </main>
-</div>
 
 
 <!-- フッター -->
