@@ -152,11 +152,45 @@ button {
 
     </div>
   </div>
-
-  <div class="MainImage">
-
-  </div>
 </header>
+
+
+<div class="MainImage">
+  <div class="MainImage__inner">
+    <div class="MainImageSlider swiper js-homeMainVisualSlider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <!-- <source srcset="https://dummyimage.com/350x530/f27d53/fff.png" media="(min-width:600px)" type="image/webp">
+            <source srcset="<?php echo $imgUri; ?>corporate/xl_mainvisual-1.jpg" media="(min-width:600px)">
+            <source srcset="<?php echo $imgUri; ?>corporate/sm_mainvisual-1.webp" type="image/webp"> -->
+            <img src="https://dummyimage.com/350x446/f00/fff.png" alt="">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <!-- <source srcset="<?php echo $imgUri; ?>corporate/xl_mainvisual-2.webp" media="(min-width:600px)" type="image/webp">
+            <source srcset="<?php echo $imgUri; ?>corporate/xl_mainvisual-2.jpg" media="(min-width:600px)">
+            <source srcset="<?php echo $imgUri; ?>corporate/sm_mainvisual-2.webp" type="image/webp"> -->
+            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="">
+          </picture>
+        </div>
+        <div class="progress js-progress"><span></span></div>
+      </div>
+      <div class="MainImage__info">
+        <div>
+          <p class="MainImage__infoTitle">英語の保育園</p>
+        </div>
+        <div><img src="https://dummyimage.com/248x108/00f/fff.png" alt="" width="32" height="32" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="Top__mainMessageSection">
+  <h2 class="Top__mainMessageTitle">世界が広がる<br />英語で話そう!</h2>
+  <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
+</section>
 
 <!-- コンテンツ -->
 <div id="top" class="page">

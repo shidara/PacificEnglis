@@ -16,3 +16,11 @@ Base
 
 /* ナビゲーション */
 @import url("./navigation.css");
+
+/* メインイメージ */
+@import url("./mainImage.css");
+
+/*
+ * ページ特有のstyle
+ */
+@import url("./top.css");

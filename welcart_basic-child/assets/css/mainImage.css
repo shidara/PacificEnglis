@@ -1,0 +1,25 @@
+.MainImage {
+  padding: 10px 20px;
+
+  .MainImage__inner {
+    overflow: hidden;
+    border: 6px solid var(--color-primary);
+    border-radius: 15px;
+  }
+
+  .MainImage__info {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+    padding: 0 23px 0 28px;
+    color: var(--color-wht);
+    background-color: var(--color-primary);
+  }
+
+  .MainImage__infoTitle {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
