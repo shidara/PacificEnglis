@@ -11,6 +11,9 @@ Base
 /* css custom properties */
 @import url("./root.css");
 
+/* Reset */
+@import url("./normalize.css");
+
 /* ヘッダー */
 @import url("./header.css");
 
