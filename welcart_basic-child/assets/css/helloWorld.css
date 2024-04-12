@@ -96,6 +96,7 @@
 
     .HelloWorld__experienceTitle {
       position: relative;
+      margin-bottom: 8px;
       font-size: 20px;
       text-align: center;
       line-height: 0.9;
