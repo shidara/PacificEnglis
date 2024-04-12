@@ -17,6 +17,9 @@ Base
 /* ヘッダー */
 @import url("./header.css");
 
+/* フッター */
+@import url("./footer.css");
+
 /* ナビゲーション */
 @import url("./navigation.css");
 

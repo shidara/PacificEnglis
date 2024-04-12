@@ -215,6 +215,22 @@ button {
 
 
 <!-- フッター -->
-	<?php wp_footer(); ?>
+  <footer class="Footer">
+    <div class="Footer__title">
+      <h2 class="Footer__titleText">For<br/>Instagram</h2>
+      <p class="Footer__subTitle">スクールライフをインスタグラムで投稿中!</p>
+    </div>
+
+    <div class="Footer__imageList"></div>
+
+    <div class="Footer__officialAccount">
+      <a href="#" class="Footer__officialAccountLinks">
+        <img src="https://dummyimage.com/26x26/f27d53/fff.png" width="26" height="26" loading="lazy" class="Footer__officialAccountImage" />
+        <span>公式アカウントはこちら</span>
+      </a>
+    </div>
+    <hr class="Footer__divider" />
+  </footer>
+	<?php // wp_footer(); ?>
 	</body>
 </html>
