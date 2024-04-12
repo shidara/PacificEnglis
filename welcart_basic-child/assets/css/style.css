@@ -29,6 +29,9 @@ Base
 /* Recruit */
 @import url("./recruit.css");
 
+/* HelloWorld */
+@import url("./helloWorld.css");
+
 /*
  * ページ特有のstyle
  */

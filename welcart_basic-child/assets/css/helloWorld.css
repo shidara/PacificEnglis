@@ -1,0 +1,134 @@
+.HelloWorld {
+  width: 100%;
+  padding: 45px 20px;
+  background-image: url("https://dummyimage.com/390x746/f27d53/fff.png");
+  background-repeat: no-repeat;
+
+  .HelloWorld__titleText {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-wht);
+  }
+
+  .HelloWorld__subTitle {
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-wht);
+    line-height: 1.6;
+  }
+
+  .HelloWorld__summary {
+    margin-bottom: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-wht);
+    line-height: 1.8;
+  }
+
+  .HelloWorld__tell,
+  .HelloWorld__experience {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 18px;
+    border-radius: 16px;
+    background-color: var(--color-wht);
+
+    & a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .HelloWorld__tellTitle,
+    .HelloWorld__experienceTitle {
+      margin-bottom: 6px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+      line-height: 1.2;
+    }
+
+    .HelloWorld__tellNumber,
+    .HelloWorld__experienceLine {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .HelloWorld__tellNumberIcon {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+    }
+
+    .HelloWorld__tellNumberText {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1, 4;
+      color: var(--color-primary);
+    }
+
+    .HelloWorld__tellTime {
+      font-size: 18px;
+      font-weight: 500;
+      color: #000;
+    }
+  }
+
+  .HelloWorld__experience {
+    height: 180px;
+    padding-top: 8px;
+    margin-bottom: 0;
+
+    .HelloWorld__experienceTitle {
+      position: relative;
+      font-size: 20px;
+      text-align: center;
+      line-height: 0.9;
+    }
+
+    .HelloWorld__experienceTitleLarge {
+      margin-right: 2px;
+      font-size: 36px;
+      color: var(--color-primary);
+    }
+
+    .HelloWorld__experienceLine {
+      width: calc(100% - 24px * 2);
+      height: 57px;
+      border-radius: 8px;
+      color: var(--color-wht);
+      background-color: #06c755;
+    }
+
+    .HelloWorld__experienceLineIcon {
+      display: inline-block;
+
+      img {
+        vertical-align: sub;
+      }
+    }
+
+    .HelloWorld__experiencePin {
+      position: absolute;
+      top: -18px;
+      left: -30px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
