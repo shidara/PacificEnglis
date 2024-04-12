@@ -35,6 +35,9 @@ Base
 /* Blog */
 @import url("./blog.css");
 
+/* Voice */
+@import url("./voice.css");
+
 /*
  * ページ特有のstyle
  */
