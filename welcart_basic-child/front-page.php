@@ -216,11 +216,55 @@ button {
       <div class="Message__inner">
         <p class="Message__subText">パシフィックイングリッシュだから</p>
         <p class="Message__title">こどもたちに愛と情熱を。<br />グローバル教育で<br />地域に愛され40年。</p>
-        <p class="Message__summary">大分市内で英語教室・インターナショナルスクール（英語の保育園）を運営している当校は、ネイティブの先生主体の授業でプロフェッショナルな言動で国際人育成に愛と情熱を注ごうがモットーです。
-英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。こどもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。
-また、GSE(Global Scale of English)も導入しており、レベルを10から90のスケールで細分化し、学習指標(CAN-DO リスト) と紐づけ標準化した、グローバルで通用する英語習熟度指標です。
-英検や、TOEIC、TOEFL、各学校の中学・高校・大学受験などにも対応しております。だからこそ、1984年から大分市内で40年以上英語教室として、地域の皆様に愛され続けています。</p>
+        <p class="Message__summary">大分市内で英語教室・インターナショナルスクール（英語の保育園）を運営している当校は、ネイティブの先生主体の授業でプロフェッショナルな言動で国際人育成に愛と情熱を注ごうがモットーです。<br/>英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。こどもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。また、GSE(Global Scale of English)も導入しており、レベルを10から90のスケールで細分化し、学習指標(CAN-DO リスト) と紐づけ標準化した、グローバルで通用する英語習熟度指標です。<br/>英検や、TOEIC、TOEFL、各学校の中学・高校・大学受験などにも対応しております。だからこそ、1984年から大分市内で40年以上英語教室として、地域の皆様に愛され続けています。</p>
         <div><img src="https://dummyimage.com/340x249/f27d53/fff.png" width="340" height="249" /></div>
+      </div>
+    </section>
+
+    <!-- Our Features -->
+    <section class="OurFeatures">
+      <div class="OurFeatures__title">
+        <h3 class="OurFeatures__titleText">Our Features</h3>
+        <p class="OurFeatures__subTitle">大分市で選ばれ続ける理由</p>
+      </div>
+      <p class="OurFeatures__summary">インターナショナルスクール・英語教室</p>
+      <div class="OurFeatures__stamp"><img src="https://dummyimage.com/175x90/f27d53/fff.png" width="175" height="90" alt="" loading="lazy" /></div>
+
+      <div class="OurFeatures__contents">
+        <div class="OurFeatures__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <h4 class="OurFeatures__itemTitle">大分県１校目の英語教室を創立</h4>
+          <p class="OurFeatures__itemSummary">創業者の原パトリシアはイリノイ州立大学教育学部英語学科卒業後にイリノイ州での高校英語教師の経験を経て１９８４年にパシフィックイングリッシュの先駆けとなるパトリシアイングリッシュスクールを大分県杵築市でスタートしました。教員免許をもった本物の英語講師の学校として直ぐに噂が広まり多くの方が英語を学びに来られました。</p>
+        </div>
+
+         <div class="OurFeatures__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <h4 class="OurFeatures__itemTitle">豊富な講師による国際人育成プログラム</h4>
+          <p class="OurFeatures__itemSummary">英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。子どもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。</p>
+        </div>
+
+         <div class="OurFeatures__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <h4 class="OurFeatures__itemTitle">総生徒数3万人越え</h4>
+          <p class="OurFeatures__itemSummary">有難いことに40年間の間に、総生徒数が1万人を超えました。地域の皆様に愛され続け、多くの方に英語を教えてきました。</p>
+        </div>
+
+        <div class="OurFeatures__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <h4 class="OurFeatures__itemTitle">英語教室なのに<br/>バス送迎</h4>
+          <p class="OurFeatures__itemSummary">大分市の英語教室では珍しい、バスでの送迎サービスをご用意しております。保育所や小学校よりピックアップ、帰りはご自宅まで安全に送り届けますので、安心してお子様を預けていただけます。</p>
+        </div>
+
+        <div class="OurFeatures__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <h4 class="OurFeatures__itemTitle">総生徒数1万人越え</h4>
+          <p class="OurFeatures__itemSummary">お受験英語ではなく、実際に外国に行った際に活用できる、リアルイングリッシュを学習していただき、諸外国でご活躍いただける、グローバル人材になっていただきます。</p>
+        </div>
       </div>
     </section>
 

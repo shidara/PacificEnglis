@@ -41,6 +41,9 @@ Base
 /* Message */
 @import url("./message.css");
 
+/* Our Features */
+@import url("./ourFeatures.css");
+
 /*
  * ページ特有のstyle
  */
