@@ -215,6 +215,121 @@ button {
 
 
 <!-- フッター -->
-	<?php wp_footer(); ?>
+  <footer class="Footer">
+    <div class="Footer__title">
+      <h2 class="Footer__titleText">For<br/>Instagram</h2>
+      <p class="Footer__subTitle">スクールライフをインスタグラムで投稿中!</p>
+    </div>
+
+    <div class="Footer__imageList">
+      <div class="Footer__imageItem">
+        <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+      </div>
+      <div class="Footer__imageItem">
+        <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+      </div>
+      <div class="Footer__imageItem">
+        <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+      </div>
+      <div class="Footer__imageItem">
+        <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+      </div>
+      <div class="Footer__imageItem">
+        <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+      </div>
+      <div class="Footer__imageItem">
+        <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+      </div>
+    </div>
+
+    <div class="Footer__officialAccount">
+      <a href="#" class="Footer__officialAccountLinks">
+        <img src="https://dummyimage.com/26x26/f27d53/fff.png" width="26" height="26" loading="lazy" class="Footer__officialAccountImage" />
+        <span>公式アカウントはこちら</span>
+      </a>
+    </div>
+
+    <hr class="Footer__divider" />
+
+    <div class="Footer__navigation">
+      <ul>
+        <li class="Footer__navigationItem">
+          <a href="" class="Footer__navigationLink">
+            <div class="Footer__navigationInfo">
+              <p class="Footer__navigationInfoTitle">インターナショナル</p>
+              <p class="Footer__navigationInfoText">スクール</p>
+            </div>
+            <div class="Footer__navigationArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" /></div>
+          </a>
+        </li>
+
+         <li class="Footer__navigationItem">
+          <a href="" class="Footer__navigationLink">
+            <div class="Footer__navigationInfo">
+              <p class="Footer__navigationInfoTitle">放課後</p>
+              <p class="Footer__navigationInfoText">スクール</p>
+            </div>
+            <div class="Footer__navigationArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" /></div>
+          </a>
+        </li>
+
+         <li class="Footer__navigationItem">
+          <a href="" class="Footer__navigationLink">
+            <div class="Footer__navigationInfo">
+              <p class="Footer__navigationInfoTitle">オンライン</p>
+              <p class="Footer__navigationInfoText">スクール</p>
+            </div>
+            <div class="Footer__navigationArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" /></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <hr class="Footer__divider" />
+
+    <!-- 学校の種類 -->
+    <div class="Footer__school">
+      <ul class="Footer__schoolList">
+        <li class="Footer__schoolItem">
+          <h4 class="Footer__schoolItemTitle">王子校</h4>
+          <p class="Footer__schoolItemAddress">〒870-0009</p>
+          <p class="Footer__schoolItemAddress">大分県大分市王子町４−４</p>
+          <div class="Footer__schoolItemMap"></div>
+        </li>
+
+        <li class="Footer__schoolItem">
+          <h4 class="Footer__schoolItemTitle">大在校</h4>
+          <p class="Footer__schoolItemAddress">〒870-0251</p>
+          <p class="Footer__schoolItemAddress">大分県大分市大在中央１丁目８−８</p>
+          <div class="Footer__schoolItemMap"></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- リンクス -->
+    <div class="Footer__links">
+      <ul>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+        <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+      </ul>
+    </div>
+
+    <!-- instagram -->
+    <div class="Footer__instagram">
+      <a href="#"><img src="https://dummyimage.com/36x36/f27d53/fff.png" loading="lazy"/></a>
+    </div>
+
+    <small class="Footer__small">©Pacific English</small>
+  </footer>
+	<?php // wp_footer(); ?>
 	</body>
 </html>
