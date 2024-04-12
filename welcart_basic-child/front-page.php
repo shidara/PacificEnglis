@@ -211,6 +211,46 @@ button {
       </div>
     </section>
 
+    <!-- Blog -->
+    <section class="Blog">
+      <div class="Blog__title">
+        <h3 class="Blog__titleText">Blog</h3>
+        <p class="Blog__subTitle">パシフィックブログ</p>
+      </div>
+      <p class="Blog__summary">インターナショナルスクール・英会話教室</p>
+
+      <div class="Blog__contents">
+        <div class="Blog__column">
+          <div class="Blog__columnItem">
+            <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" alt="" loading="lazy" class="Blog__columnItemImage" />
+          </div>
+
+          <div class="Blog__columnItem">
+            <time>2024/02/29</time>
+            <p>幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
+          </div>
+        </div>
+
+         <div class="Blog__column">
+          <div class="Blog__columnItem">
+            <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" alt="" loading="lazy" class="Blog__columnItemImage" />
+          </div>
+
+          <div class="Blog__columnItem">
+            <time>2024/02/29</time>
+            <p>幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="Blog__more">
+        <a href="#">
+          過去のブログはこちら
+          <img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" alt="" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
     <!-- Hello World -->
     <section class="HelloWorld">
       <div class="HelloWorld__title">
