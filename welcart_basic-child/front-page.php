@@ -188,36 +188,82 @@ button {
 </div>
 
 
-<!-- コンテンツ -->
-<main class="pageContents Top">
-  <!-- メッセージ -->
-  <section class="Top__mainMessageSection">
-    <h2 class="Top__mainMessageTitle">世界が広がる<br />英語で話そう!</h2>
-    <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
-  </section>
-  <!-- News -->
-  <section class="Top__news">
-    <h2 class="Top__newsTitle">News</h2>
-    <div class="Top__newsColumn">
-      <div class="Top__newsColumnItem">
-        <div class="Top__newsThumbnail">
-          <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" loading="lazy" />
+  <!-- コンテンツ -->
+  <main class="pageContents Top">
+    <!-- メッセージ -->
+    <section class="Top__mainMessageSection">
+      <h2 class="Top__mainMessageTitle">世界が広がる<br />英語で話そう!</h2>
+      <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
+    </section>
+    <!-- News -->
+    <section class="Top__news">
+      <h2 class="Top__newsTitle">News</h2>
+      <div class="Top__newsColumn">
+        <div class="Top__newsColumnItem">
+          <div class="Top__newsThumbnail">
+            <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" loading="lazy" />
+          </div>
+        </div>
+        <div class="Top__newsColumnItem">
+          <time>2024.02.19</time>
+          <p>【幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
         </div>
       </div>
-      <div class="Top__newsColumnItem">
-        <time>2024.02.19</time>
-        <p>【幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
+    </section>
+
+    <!-- Recruit -->
+    <section class="Recruit">
+      <div class="Recruit__title">
+        <h3 class="Recruit__titleText">Recruit</h3>
+        <p class="Recruit__subTitle ">採用情報</p>
       </div>
-    </div>
-  </section>
-</main>
 
+      <div class="Recruit__links">
+        <ul>
+          <li class="Recruit__linksItem">
+            <a href="#">
+              <div><img src="https://dummyimage.com/167x190/f27d53/fff.png" loadding="lazy" /></div>
+              <div class="Recruit__linksItemInfoWrapper">
+                <div class="Recruit__linksItemInfo">
+                  <p class="Recruit__linksItemInfoTitle">日本人保育士</p>
+                </div>
+                <div class="Recruit__linksItemArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="6" height="6" /></div>
+              </div>
+            </a>
+          </li>
 
+           <li class="Recruit__linksItem">
+            <a href="#">
+              <div><img src="https://dummyimage.com/167x190/f27d53/fff.png" loadding="lazy" /></div>
+              <div class="Recruit__linksItemInfoWrapper">
+                <div class="Recruit__linksItemInfo">
+                  <p class="Recruit__linksItemInfoTitle Recruit__linksItemInfoTitleMedium">Childminder/ENG</p>
+                </div>
+                <div class="Recruit__linksItemArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="6" height="6" /></div>
+              </div>
+            </a>
+          </li>
 
-<!-- フッター -->
+           <li class="Recruit__linksItem">
+            <a href="#">
+              <div><img src="https://dummyimage.com/167x190/f27d53/fff.png" loadding="lazy" /></div>
+              <div class="Recruit__linksItemInfoWrapper">
+                <div class="Recruit__linksItemInfo">
+                  <p class="Recruit__linksItemInfoTitle">運転手&nbsp;<span class="Recruit__linksItemInfoTitleSmall">普通免許ok</span></p>
+                </div>
+                <div class="Recruit__linksItemArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="6" height="6" /></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
   <footer class="Footer">
     <div class="Footer__title">
-      <h2 class="Footer__titleText">For<br/>Instagram</h2>
+      <h3 class="Footer__titleText">For<br/>Instagram</h3>
       <p class="Footer__subTitle">スクールライフをインスタグラムで投稿中!</p>
     </div>
 

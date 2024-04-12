@@ -26,6 +26,9 @@ Base
 /* メインイメージ */
 @import url("./mainImage.css");
 
+/* Recruit */
+@import url("./recruit.css");
+
 /*
  * ページ特有のstyle
  */

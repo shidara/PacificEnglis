@@ -1,0 +1,77 @@
+.Recruit {
+  padding: 52px 20px 37px;
+  background-color: var(--color-pacific-orange-a);
+
+  .Recruit__title {
+    margin-bottom: 40px;
+
+    .Recruit__titleText {
+      margin-bottom: 12px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+    }
+
+    .Recruit__subTitle {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+    }
+  }
+
+  .Recruit__links {
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .Recruit__linksItem {
+      overflow: hidden;
+      width: calc(50% - 5px);
+      border-radius: 16px;
+      background-color: var(--color-wht);
+
+      & a {
+        display: block;
+      }
+    }
+
+    .Recruit__linksItemInfoWrapper {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 44px;
+      padding: 8px 12px;
+    }
+
+    .Recruit__linksItemInfoTitle {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-primary);
+
+      &.Recruit__linksItemInfoTitleMedium {
+        font-size: 12px;
+      }
+
+      .Recruit__linksItemInfoTitleSmall {
+        font-size: 12px;
+      }
+    }
+
+    .Recruit__linksItemArrow {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+    }
+  }
+}
