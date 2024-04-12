@@ -32,6 +32,9 @@ Base
 /* HelloWorld */
 @import url("./helloWorld.css");
 
+/* Blog */
+@import url("./blog.css");
+
 /*
  * ページ特有のstyle
  */
