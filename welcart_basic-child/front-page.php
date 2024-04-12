@@ -211,6 +211,19 @@ button {
       </div>
     </section>
 
+    <!-- Message -->
+    <section class="Message">
+      <div class="Message__inner">
+        <p class="Message__subText">パシフィックイングリッシュだから</p>
+        <p class="Message__title">こどもたちに愛と情熱を。<br />グローバル教育で<br />地域に愛され40年。</p>
+        <p class="Message__summary">大分市内で英語教室・インターナショナルスクール（英語の保育園）を運営している当校は、ネイティブの先生主体の授業でプロフェッショナルな言動で国際人育成に愛と情熱を注ごうがモットーです。
+英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。こどもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。
+また、GSE(Global Scale of English)も導入しており、レベルを10から90のスケールで細分化し、学習指標(CAN-DO リスト) と紐づけ標準化した、グローバルで通用する英語習熟度指標です。
+英検や、TOEIC、TOEFL、各学校の中学・高校・大学受験などにも対応しております。だからこそ、1984年から大分市内で40年以上英語教室として、地域の皆様に愛され続けています。</p>
+        <div><img src="https://dummyimage.com/340x249/f27d53/fff.png" width="340" height="249" /></div>
+      </div>
+    </section>
+
     <!-- Voice -->
     <section class="Voice">
       <div class="Voice__title">

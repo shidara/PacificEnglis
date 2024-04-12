@@ -38,6 +38,9 @@ Base
 /* Voice */
 @import url("./voice.css");
 
+/* Message */
+@import url("./message.css");
+
 /*
  * ページ特有のstyle
  */

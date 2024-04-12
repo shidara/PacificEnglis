@@ -1,0 +1,33 @@
+.Message {
+  padding-top: 91px;
+
+  .Message__inner {
+    padding: 72px 20px 16px;
+    background-color: var(--color-primary);
+  }
+
+  .Message__subText,
+  .Message__title,
+  .Message__summary {
+    font-weight: 700;
+    color: var(--color-wht);
+  }
+
+  .Message__subText {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .Message__title {
+    margin-bottom: 32px;
+    font-size: 27px;
+    line-height: 1.6;
+  }
+
+  .Message__summary {
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+}
