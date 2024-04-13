@@ -25,6 +25,23 @@ function create_post_type_blog() {
 
 add_action( 'init', 'create_post_type_blog' );
 
+function create_post_type_news() {
+  register_post_type(
+    'news', // URL
+    array(
+      'labels' => array(
+        'name' => 'News'
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title','editor','thumbnail','author'),
+      'show_in_rest' => true,
+    )
+  );
+}
+
+add_action( 'init', 'create_post_type_news' );
+
 /*【表示カスタマイズ】アイキャッチ画像の有効化 */
 add_theme_support( 'post-thumbnails' );
 

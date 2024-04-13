@@ -195,20 +195,40 @@ button {
       <h2 class="Top__mainMessageTitle">世界が広がる<br />英語で話そう!</h2>
       <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
     </section>
+
     <!-- News -->
     <section class="News">
       <h2 class="News__title">News</h2>
-      <div class="News__column">
+
+      <?php
+        $args = array(
+            'post_type' => 'news',// 投稿タイプのスラッグを指定
+            'posts_per_page' => 1, // 投稿件数の指定
+          );
+        $news_query = new WP_Query($args); if($news_query->have_posts()):
+
+        while ($news_query->have_posts()):
+        $news_query->the_post();
+        $image_id = get_post_thumbnail_id();
+        // メディアで設定したalt（代替テキスト）属性を取得
+        $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+      ?>
+      <a href="<?php the_permalink(); ?>" class="News__column">
         <div class="News__columnItem">
           <div class="News__thumbnail">
-            <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" loading="lazy" />
+            <img src="<?php the_post_thumbnail_url();?>" alt="<?php echo $image_alt; ?>" width="119" height="88" loading="lazy" />
           </div>
         </div>
         <div class="News__columnItem">
-          <time>2024.02.19</time>
-          <p>【幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
+          <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+          <p><?php echo get_the_title(); ?></p>
         </div>
-      </div>
+      </a>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php else: ?>
+        <p>まだ投稿がありません。</p>
+      <?php endif; ?>
     </section>
 
     <!-- Message -->
@@ -418,11 +438,16 @@ button {
             'posts_per_page' => 2, // 投稿件数の指定 TODO: SMP: 2 PC: 4
           );
           $blog_query = new WP_Query($args); if($blog_query->have_posts()):
-        ?>
-        <?php while ($blog_query->have_posts()): $blog_query->the_post(); ?>
+
+          while ($blog_query->have_posts()):
+          $blog_query->the_post();
+          $image_id = get_post_thumbnail_id();
+          // メディアで設定したalt（代替テキスト）属性を取得
+          $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+          ?>
           <a href="<?php the_permalink(); ?>" class="Blog__column">
             <div class="Blog__columnItem">
-              <img src="<?php the_post_thumbnail_url();?>" width="119" height="88" alt="" loading="lazy" class="Blog__columnItemImage" />
+              <img src="<?php the_post_thumbnail_url();?>" width="119" height="88" alt="<?php echo $image_alt; ?>" loading="lazy" class="Blog__columnItemImage" />
             </div>
 
             <div class="Blog__columnItem">
