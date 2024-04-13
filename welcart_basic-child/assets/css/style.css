@@ -54,3 +54,7 @@ Base
  * ページ特有のstyle
  */
 @import url("./top.css");
+
+html {
+  scroll-behavior: smooth;
+}
