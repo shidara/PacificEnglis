@@ -196,15 +196,15 @@ button {
       <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
     </section>
     <!-- News -->
-    <section class="Top__news">
-      <h2 class="Top__newsTitle">News</h2>
-      <div class="Top__newsColumn">
-        <div class="Top__newsColumnItem">
-          <div class="Top__newsThumbnail">
+    <section class="News">
+      <h2 class="News__title">News</h2>
+      <div class="News__column">
+        <div class="News__columnItem">
+          <div class="News__thumbnail">
             <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" loading="lazy" />
           </div>
         </div>
-        <div class="Top__newsColumnItem">
+        <div class="News__columnItem">
           <time>2024.02.19</time>
           <p>【幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
         </div>
