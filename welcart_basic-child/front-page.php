@@ -268,6 +268,75 @@ button {
       </div>
     </section>
 
+    <!-- Class -->
+    <section class="Class">
+      <div class="Class__title">
+        <h3 class="Class__titleText">Class</h3>
+        <p class="Class__subTitle">クラス紹介</p>
+      </div>
+      <p class="Class__summary">インターナショナルスクール・英会話教室</p>
+      <div class="Class__stamp"><img src="https://dummyimage.com/175x90/f27d53/fff.png" width="175" height="90" alt="" loading="lazy" /></div>
+
+      <div class="Class__navigation">
+        <nav class="Class__navigationList">
+          <ul>
+            <li class="Class__navigationItem">
+              <a href="#Class-2">
+                <p class="Class__navigationItemTitle">英語の保育園</p>
+                <p class="Class__navigationItemSubText">International School</p>
+                <span class="Class__navigationItemIcon">↓</span>
+              </a>
+            </li>
+
+            <li class="Class__navigationItem">
+              <a href="#Class-1">
+                <p class="Class__navigationItemTitle">英語教室</p>
+                <p class="Class__navigationItemSubText">After School</p>
+                <span class="Class__navigationItemIcon">↓</span>
+              </a>
+            </li>
+
+            <li class="Class__navigationItem">
+              <a href="#Class-3">
+                <p class="Class__navigationItemTitle">オンライン英会話</p>
+                <p class="Class__navigationItemSubText">Online School</p>
+                <span class="Class__navigationItemIcon">↓</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="Class__contents">
+        <div id="Class-1" class="Class__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="Class__itemImage" />
+          <p class="Class__itemTag">2歳児〜OK</p>
+          <h4 class="Class__itemTitle">英会話教室</h4>
+          <p class="Class__itemSubText">英語脳が身に付く！インターナショナスクール</p>
+          <p class="Class__itemSummary">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
+          <p class="Class__itemMore"><a href="#"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
+        </div>
+
+         <div id="Class-2" class="Class__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="Class__itemImage" />
+          <p class="Class__itemTag">2歳児〜OK</p>
+          <h4 class="Class__itemTitle">英語の保育園</h4>
+          <p class="Class__itemSubText">受験・試験対策にも！アフタースクール</p>
+          <p class="Class__itemSummary">パシフィックイングリッシュで、読み・書き・発音の各スキルを効果的に身につけることが可能なフォニックスを基盤に英語力を飛躍的に伸ばしましょう。</p>
+          <p class="Class__itemMore"><a href="#"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
+        </div>
+
+         <div id="Class-3" class="Class__item">
+          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="Class__itemImage" />
+          <p class="Class__itemTag">小学生〜OK</p>
+          <h4 class="Class__itemTitle">オンライン英会話</h4>
+          <p class="Class__itemSubText">自分のペースでお家で英会話！</p>
+          <p class="Class__itemSummary">自宅で楽しむ1対1のオンライン英会話。小学生からの会話力向上に最適です。</p>
+          <p class="Class__itemMore"><a href="#"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
+        </div>
+      </div>
+    </section>
+
     <!-- Voice -->
     <section class="Voice">
       <div class="Voice__title">

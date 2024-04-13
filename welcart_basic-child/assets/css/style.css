@@ -44,6 +44,9 @@ Base
 /* Our Features */
 @import url("./ourFeatures.css");
 
+/* Class */
+@import url("./class.css");
+
 /*
  * ページ特有のstyle
  */
