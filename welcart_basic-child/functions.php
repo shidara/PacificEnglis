@@ -7,6 +7,28 @@ function theme_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
+/* ---------- カスタム投稿タイプを追加 ---------- */
+function create_post_type_blog() {
+  register_post_type(
+    'blog', // URL
+    array(
+      'labels' => array(
+        'name' => 'Blog'
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title','editor','thumbnail','author'),
+      'show_in_rest' => true,
+    )
+  );
+}
+
+add_action( 'init', 'create_post_type_blog' );
+
+/*【表示カスタマイズ】アイキャッチ画像の有効化 */
+add_theme_support( 'post-thumbnails' );
+
+
 // CSS読み込み
 function add_styles() {
   $date = date("Y-m-d-h-i");

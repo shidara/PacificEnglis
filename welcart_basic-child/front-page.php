@@ -412,27 +412,30 @@ button {
       <p class="Blog__summary">インターナショナルスクール・英会話教室</p>
 
       <div class="Blog__contents">
-        <div class="Blog__column">
-          <div class="Blog__columnItem">
-            <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" alt="" loading="lazy" class="Blog__columnItemImage" />
-          </div>
+        <?php
+          $args = array(
+            'post_type' => 'blog',// 投稿タイプのスラッグを指定
+            'posts_per_page' => 2, // 投稿件数の指定 TODO: SMP: 2 PC: 4
+          );
+          $blog_query = new WP_Query($args); if($blog_query->have_posts()):
+        ?>
+        <?php while ($blog_query->have_posts()): $blog_query->the_post(); ?>
+          <a href="<?php the_permalink(); ?>" class="Blog__column">
+            <div class="Blog__columnItem">
+              <img src="<?php the_post_thumbnail_url();?>" width="119" height="88" alt="" loading="lazy" class="Blog__columnItemImage" />
+            </div>
 
-          <div class="Blog__columnItem">
-            <time>2024/02/29</time>
-            <p>幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
-          </div>
-        </div>
+            <div class="Blog__columnItem">
+              <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+              <p><?php echo get_the_title(); ?></p>
+            </div>
+          </a>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
 
-         <div class="Blog__column">
-          <div class="Blog__columnItem">
-            <img src="https://dummyimage.com/119x88/f27d53/fff.png" width="119" height="88" alt="" loading="lazy" class="Blog__columnItemImage" />
-          </div>
-
-          <div class="Blog__columnItem">
-            <time>2024/02/29</time>
-            <p>幼児・小学生】無料体験レッスンの募集をはじめまあああああ</p>
-          </div>
-        </div>
+        <?php else: ?>
+          <p>まだ投稿がありません。</p>
+        <?php endif; ?>
       </div>
 
       <div class="Blog__more">
