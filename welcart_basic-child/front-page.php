@@ -16,69 +16,6 @@
 	<meta name="format-detection" content="telephone=no"/>
   <link rel="stylesheet" href=<?php echo get_template_directory_uri().'-child/assets/css/style.css?ver='.date("YmdHi");?>>
 	<?php wp_head(); ?>
-  <style>
-    @charset "UTF-8";
-/*
- * 個別に作成したcssファイルを読み込む用
-*/
-/*================================
-Base
-================================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Kaku+Gothic+New&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-:root {
-  --color-wht: #fff;
-  --color-blk: #252525;
-  --color-primary: #f93c00;
-  --color-pacific-gray-a: #e9e9e9;
-  --color-pacific-gray-b: #f9f9f9;
-  --color-pacific-orange-a: #cf371c;
-  --color-pacific-orange-b: #ff8739;
-  --color-pacific-orange-c: #ffcdc4;
-}
-
-/*================================
-Reset CSS
-================================*/
-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  appearance: none;
-  background-color: transparent;
-}
-
-.Header {
-  position: relative;
-  background-color: green;
-}
-.Header .Header__inner {
-  display: flex;
-  justify-content: space-between;
-}
-.Header .Header__inner a {
-  display: block;
-}
-.Header .Header__navButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 0 0 0 8px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--color-wht);
-  background-color: var(--color-primary);
-}
-.Header button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  appearance: none;
-  background-color: transparent;
-}
-  </style>
 </head>
 
 <body <?php body_class(); ?>>
