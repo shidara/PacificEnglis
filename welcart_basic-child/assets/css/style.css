@@ -50,6 +50,9 @@ Base
 /* Class */
 @import url("./class.css");
 
+/* FixedNavigation */
+@import url("./fixedNavigation.css");
+
 /*
  * ページ特有のstyle
  */
@@ -72,4 +75,11 @@ Original CSS
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  @media screen and (min-width: 600px) {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }

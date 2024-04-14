@@ -2,6 +2,14 @@
   padding: 55px 20px 50px;
   background-color: var(--color-pacific-gray-b);
 
+  .Blog__inner {
+    @media screen and (min-width: 600px) {
+      width: 1020px;
+      margin: 0 auto;
+      padding-left: 89px;
+    }
+  }
+
   .Blog__title {
     .Blog__titleText {
       margin-bottom: 12px;
@@ -9,6 +17,10 @@
       font-weight: 700;
       line-height: 1.4;
       color: var(--color-primary);
+
+      @media screen and (min-width: 600px) {
+        font-size: 64px;
+      }
     }
 
     .Blog__subTitle {
@@ -17,6 +29,10 @@
       font-weight: 700;
       line-height: 1;
       color: var(--color-blk);
+
+      @media screen and (min-width: 600px) {
+        font-size: 36px;
+      }
     }
   }
 
@@ -26,6 +42,10 @@
     font-weight: 700;
     line-height: 1.6;
     color: var(--color-blk);
+
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+    }
   }
 
   .Blog__contents {

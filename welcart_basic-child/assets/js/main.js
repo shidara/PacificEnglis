@@ -1,3 +1,4 @@
+console.log("読み込み成功 😸");
 // ドロワーメニュー
 const headerNavButton = document.getElementsByClassName("Header__navButton")[0];
 const navigation = document.getElementsByClassName("Navigation")[0];

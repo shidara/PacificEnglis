@@ -3,6 +3,13 @@
   margin-bottom: 36px;
   padding: 0 20px;
 
+  @media screen and (min-width: 600px) {
+    width: 1032px;
+    margin: 0 auto;
+    margin-top: 14px;
+    padding: 0 0 0 48px;
+  }
+
   .Top__mainMessageTitle {
     margin: 0;
     margin-bottom: 8px;
@@ -10,6 +17,11 @@
     font-weight: 700;
     line-height: 1.4;
     color: var(--color-primary);
+
+    @media screen and (min-width: 600px) {
+      font-size: 72px;
+      margin-bottom: 20px;
+    }
   }
 
   .Top__mainMessage {
@@ -17,5 +29,24 @@
     font-weight: 700;
     line-height: 1.8;
     color: var(--color-primary);
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 36px;
+      font-size: 24px;
+    }
+  }
+
+  .Top__mainMessageTitle--pc {
+    display: none;
+  }
+
+  @media screen and (min-width: 600px) {
+    .Top__mainMessageTitle--smp {
+      display: none;
+    }
+
+    .Top__mainMessageTitle--pc {
+      display: block;
+    }
   }
 }

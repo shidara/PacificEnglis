@@ -50,7 +50,6 @@ add_theme_support( 'post-thumbnails' );
 function add_styles() {
   $date = date("Y-m-d-h-i");
   $css_directory = get_template_directory_uri().'-child/assets/css/';
-  // $css_page_directory = $css_directory . 'page/';
   $css_version = $date; //'1.0.1';//ここの数値を変更すればバージョンが更新できる
   wp_enqueue_style( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
   wp_enqueue_style( 'main_style', $css_directory.'style.css', "", $css_version);
@@ -59,7 +58,7 @@ add_action('wp_enqueue_scripts', 'add_styles', 11);
 
 // JS読み込み
 function add_scripts() {
-  $date = date("Y-m-d-h-1");
+  $date = date("Y-m-d-h-i");
     // 閉じBODYタグ前に出力
    $js_directory = get_template_directory_uri().'-child/assets/js/';
    $js_version = $date; // '1.0.0';//ここの数値を変更すればバージョンが更新できる
@@ -68,7 +67,4 @@ function add_scripts() {
    wp_enqueue_script( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', true);
    wp_enqueue_script('main', $js_directory.'main.js', array('jquery'), $js_version, true);
 }
-add_action('wp_print_scripts', 'add_scripts', 11);
-
-?>
-
+add_action('wp_enqueue_scripts', 'add_scripts', 11);

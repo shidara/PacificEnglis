@@ -1,8 +1,15 @@
 .MainImage {
+  position: relative;
   padding: 10px 20px;
 
+  @media screen and (min-width: 600px) {
+    width: 1032px;
+    margin: 0 auto;
+    padding: 0 0 0 48px;
+  }
+
   .MainImage__inner {
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 6px solid var(--color-primary);
     border-radius: 15px;
   }
@@ -16,10 +23,30 @@
     padding: 0 23px 0 28px;
     color: var(--color-wht);
     background-color: var(--color-primary);
+
+    @media screen and (min-width: 600px) {
+      z-index: 1000;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 420px;
+      border-radius: 16px 0 0 0;
+    }
   }
 
   .MainImage__infoTitle {
     font-size: 18px;
     font-weight: 700;
+  }
+
+  .MainImage__progress {
+    display: none;
+
+    @media screen and (min-width: 600px) {
+      position: absolute;
+      bottom: 0;
+      right: -10px;
+      display: block;
+    }
   }
 }

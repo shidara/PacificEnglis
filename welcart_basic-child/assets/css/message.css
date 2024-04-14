@@ -1,9 +1,44 @@
 .Message {
   padding-top: 91px;
 
+  @media screen and (min-width: 600px) {
+    padding-top: 108px;
+  }
+
   .Message__inner {
     padding: 72px 20px 16px;
     background-color: var(--color-primary);
+
+    @media screen and (min-width: 600px) {
+      padding-top: 113px;
+      padding-bottom: 164px;
+    }
+  }
+
+  .Message__contents {
+    @media screen and (min-width: 600px) {
+      width: 1020px;
+      margin: 0 auto;
+      padding-left: 90px;
+    }
+  }
+
+  .Message__column {
+    @media screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 55px;
+    }
+  }
+
+  .Message__columnItem {
+    &:last-child {
+      display: none;
+
+      @media screen and (min-width: 600px) {
+        display: block;
+      }
+    }
   }
 
   .Message__subText,
@@ -16,12 +51,21 @@
   .Message__subText {
     margin-bottom: 20px;
     font-size: 18px;
+
+    @media screen and (min-width: 600px) {
+      font-size: 24px;
+    }
   }
 
   .Message__title {
     margin-bottom: 32px;
     font-size: 27px;
     line-height: 1.6;
+
+    @media screen and (min-width: 600px) {
+      font-size: 46px;
+      letter-spacing: -2px;
+    }
   }
 
   .Message__summary {
@@ -29,5 +73,11 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
+  }
+
+  .Message__thumbnail {
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
   }
 }

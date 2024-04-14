@@ -2,11 +2,16 @@
   position: relative;
   margin: 0 0 10px 0;
   border: 0;
-  background-color: green;
 
   .Header__inner {
     display: flex;
     justify-content: space-between;
+
+    .Logo {
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+    }
 
     .Logo__link {
       display: block;
@@ -28,13 +33,11 @@
     font-weight: 700;
     color: var(--color-wht);
     background-color: var(--color-primary);
-  }
 
-  button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    appearance: none;
-    background-color: transparent;
+    @media screen and (min-width: 950px) {
+      width: 90px;
+      height: 90px;
+      font-size: 18px;
+    }
   }
 }
