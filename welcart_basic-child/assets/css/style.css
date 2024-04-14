@@ -55,6 +55,21 @@ Base
  */
 @import url("./top.css");
 
+/*================================
+Reset CSS
+================================*/
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  appearance: none;
+  background-color: transparent;
+}
+
+/*================================
+Original CSS
+================================*/
+
 html {
   scroll-behavior: smooth;
 }
