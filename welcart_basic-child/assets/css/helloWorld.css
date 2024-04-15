@@ -3,6 +3,32 @@
   padding: 45px 20px;
   background-image: url("https://dummyimage.com/390x746/f27d53/fff.png");
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 0 0 220px;
+    background-image: none;
+  }
+
+  .HelloWorld__inner {
+    @media screen and (min-width: 600px) {
+      width: 1180px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      padding-left: 58px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://dummyimage.com/1180x740/f27d53/fff.png");
+    }
+  }
+
+  .HelloWorld__title {
+    @media screen and (min-width: 600px) {
+      max-width: 566px;
+    }
+  }
 
   .HelloWorld__titleText {
     display: inline-block;
@@ -11,6 +37,11 @@
     font-weight: 700;
     line-height: 1;
     color: var(--color-wht);
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 16px;
+      font-size: 80px;
+    }
   }
 
   .HelloWorld__subTitle {
@@ -19,6 +50,11 @@
     font-weight: 700;
     color: var(--color-wht);
     line-height: 1.6;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
   }
 
   .HelloWorld__summary {
@@ -27,6 +63,18 @@
     font-weight: 500;
     color: var(--color-wht);
     line-height: 1.8;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 36px;
+      max-width: 566px;
+    }
+  }
+
+  .HelloWorld__info {
+    @media screen and (min-width: 600px) {
+      display: flex;
+      gap: 20px;
+    }
   }
 
   .HelloWorld__tell,
@@ -36,6 +84,12 @@
     margin-bottom: 18px;
     border-radius: 16px;
     background-color: var(--color-wht);
+
+    @media screen and (min-width: 600px) {
+      width: calc(50% - 10px - 44px);
+      min-height: 230px;
+      margin-bottom: 0;
+    }
 
     & a {
       display: flex;
@@ -53,6 +107,11 @@
       font-weight: 700;
       color: #000;
       line-height: 1.2;
+
+      @media screen and (min-width: 600px) {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
     }
 
     .HelloWorld__tellNumber,
@@ -73,13 +132,22 @@
       height: 29px;
       border-radius: 50%;
       background-color: var(--color-primary);
+
+      @media screen and (min-width: 600px) {
+        width: 42px;
+        height: 42px;
+      }
     }
 
     .HelloWorld__tellNumberText {
       font-size: 32px;
       font-weight: 700;
-      line-height: 1, 4;
+      line-height: 1;
       color: var(--color-primary);
+
+      @media screen and (min-width: 600px) {
+        font-size: 42px;
+      }
     }
 
     .HelloWorld__tellTime {
@@ -94,12 +162,20 @@
     padding-top: 8px;
     margin-bottom: 0;
 
+    @media screen and (min-width: 600px) {
+      height: 230px;
+    }
+
     .HelloWorld__experienceTitle {
       position: relative;
       margin-bottom: 8px;
       font-size: 20px;
       text-align: center;
       line-height: 0.9;
+
+      @media screen and (min-width: 600px) {
+        margin-bottom: 20px;
+      }
     }
 
     .HelloWorld__experienceTitleLarge {
@@ -114,6 +190,12 @@
       border-radius: 8px;
       color: var(--color-wht);
       background-color: #06c755;
+
+      @media screen and (min-width: 600px) {
+        width: calc(100% - 56px * 2);
+        height: 80px;
+        border-radius: 16px;
+      }
     }
 
     .HelloWorld__experienceLineIcon {
@@ -121,6 +203,18 @@
 
       img {
         vertical-align: sub;
+
+        @media screen and (min-width: 600px) {
+          width: 40px;
+          height: 42px;
+        }
+      }
+    }
+
+    .HelloWorld__experienceLineText {
+      @media screen and (min-width: 600px) {
+        font-size: 24px;
+        font-weight: 700;
       }
     }
 
@@ -130,6 +224,12 @@
       left: -30px;
       width: 38px;
       height: 38px;
+
+      @media screen and (min-width: 600px) {
+        left: -41px;
+        width: 56px;
+        height: 56px;
+      }
     }
   }
 }
