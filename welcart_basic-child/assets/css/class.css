@@ -2,6 +2,13 @@
   position: relative;
   padding: 126px 20px 15px;
 
+  @media screen and (min-width: 600px) {
+    width: 1020px;
+    margin: 0 auto;
+    padding-left: 89px;
+    /* padding-bottom: 100px; */
+  }
+
   .Class__title {
     .Class__titleText {
       margin-bottom: 12px;
@@ -9,6 +16,11 @@
       font-weight: 700;
       line-height: 1.4;
       color: var(--color-primary);
+
+      @media screen and (min-width: 600px) {
+        margin-bottom: 10px;
+        font-size: 64px;
+      }
     }
 
     .Class__subTitle {
@@ -17,6 +29,11 @@
       font-weight: 700;
       line-height: 1;
       color: var(--color-blk);
+
+      @media screen and (min-width: 600px) {
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
     }
   }
 
@@ -26,6 +43,11 @@
     font-weight: 700;
     line-height: 1.6;
     color: var(--color-blk);
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 64px;
+      font-size: 20px;
+    }
   }
 
   .Class__stamp {
@@ -34,13 +56,40 @@
     right: 23px;
     width: 175px;
     height: 90px;
+
+    img {
+      object-fit: cover;
+    }
+
+    @media screen and (min-width: 600px) {
+      width: 422px;
+      height: 185px;
+
+      img {
+        width: 422px;
+        height: 185px;
+      }
+    }
   }
 
   .Class__navigation {
     margin-bottom: 36px;
 
+    .Class__navigationList {
+      ul {
+        @media screen and (min-width: 600px) {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+
     .Class__navigationItem {
       margin-bottom: 12px;
+
+      @media screen and (min-width: 600px) {
+        width: 33%;
+      }
 
       & a {
         position: relative;
@@ -60,6 +109,10 @@
         font-weight: 700;
         color: var(--color-primary);
         line-height: 1.4;
+
+        @media screen and (min-width: 600px) {
+          font-size: 24px;
+        }
       }
 
       .Class__navigationItemSubText {
