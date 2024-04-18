@@ -1,0 +1,94 @@
+.Lesson {
+  position: relative;
+  padding: 75px 20px 44px;
+
+  .Lesson__title {
+    .Lesson__titleText {
+      margin-bottom: 12px;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-primary);
+    }
+
+    .Lesson__subTitle {
+      margin-bottom: 50px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-blk);
+
+      .Lesson__subTitleOrange {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .Lesson__summary {
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: var(--color-blk);
+    line-height: 1.8;
+  }
+
+  .Lesson__item {
+    margin-bottom: 12px;
+    .Lesson__itemColumn {
+      display: flex;
+      gap: 12px 16px;
+      align-items: center;
+      margin-bottom: 12px;
+
+      .Lesson__itemColumnItem {
+        &:first-child {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-grow: 0;
+          flex-shrink: 0;
+          width: 100px;
+          height: 100px;
+          border-radius: 6px;
+          background-color: #f9f9f9;
+        }
+
+        &:last-child {
+          flex-grow: 1;
+        }
+
+        .Lesson__itemAge {
+          font-size: 56px;
+          font-weight: 700;
+          color: var(--color-primary);
+          line-height: 1;
+        }
+
+        .Lesson__itemClass {
+          font-size: 14px;
+          font-weight: 700;
+          color: var(--color-blk);
+          line-height: 0.8;
+        }
+
+        .Lesson__itemOverview {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.4;
+          color: var(--color-blk);
+
+          .Lesson__itemOverviewOrange {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    .Lesson__itemSummary {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-blk);
+      line-height: 1.8;
+    }
+  }
+}
