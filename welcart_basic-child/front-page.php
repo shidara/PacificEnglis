@@ -685,6 +685,6 @@
 
     <small class="Footer__small">©Pacific English</small>
   </footer>
-	<?php // wp_footer(); ?>
-	</body>
+  <?php // wp_footer(); ?>
+  </body>
 </html>
