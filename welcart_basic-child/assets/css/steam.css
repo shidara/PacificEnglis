@@ -1,0 +1,50 @@
+.Steam {
+  position: relative;
+  padding: 75px 20px 32px;
+
+  .Steam__title {
+    .Steam__titleText {
+      margin-bottom: 26px;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-primary);
+    }
+
+    .Steam__subTitle {
+      margin-bottom: 16px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+
+      .Steam__subTitleOrange {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .Steam__summary,
+  .Steam__Subject {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: var(--color-blk);
+    line-height: 1.8;
+  }
+
+  .Steam__image {
+    margin: 0 -20px 12px;
+  }
+
+  .Steam__Subject {
+    margin-bottom: 2px;
+
+    & span {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 2px;
+      }
+    }
+  }
+}
