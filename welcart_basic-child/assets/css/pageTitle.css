@@ -1,0 +1,38 @@
+/*
+ * ページ共通かつ一括りにモジュール化しにくい要素
+*/
+.PageTitleSection {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  padding: 0 20px;
+
+  .PageTitleSection__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--color-primary);
+
+    &.PageTitleSection__title--small {
+      font-size: 36px;
+    }
+  }
+
+  .PageTitleSection__summary {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    color: var(--color-primary);
+
+    &.PageTitleSection__summary--black {
+      color: var(--color-blk);
+    }
+  }
+
+  .PageTitleSection__subText {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
