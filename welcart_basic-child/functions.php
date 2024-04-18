@@ -70,5 +70,16 @@ function add_scripts() {
 }
 add_action('wp_print_scripts', 'add_scripts', 11);
 
+
+/*
+/* PHPの読み込み
+ */
+function my_php_Include($params = array()) {
+extract(shortcode_atts(array('file' => 'default'), $params));
+ob_start();
+include(STYLESHEETPATH . "/$file.php");
+return ob_get_clean();
+}
+add_shortcode('call_php', 'my_php_Include');
 ?>
 
