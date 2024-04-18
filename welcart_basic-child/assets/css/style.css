@@ -53,6 +53,9 @@ Base
 /* ページ */
 @import url("./pageTitle.css");
 
+/* Lesson */
+@import url("./lesson.css");
+
 /*================================
 Reset CSS
 ================================*/
