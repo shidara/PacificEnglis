@@ -183,70 +183,7 @@
     </section>
 
     <!-- Voice -->
-    <section class="Voice">
-      <div class="Voice__title">
-        <h3 class="Voice__titleText">Voice</h3>
-        <p class="Voice__subTitle">親御様の声</p>
-      </div>
-      <p class="Voice__summary">インターナショナルスクール・英会話教室</p>
-      <div class="Voice__stamp"><img src="https://dummyimage.com/175x90/f27d53/fff.png" width="175" height="90" alt="" loading="lazy" /></div>
-
-      <div class="Voice__contents">
-        <div class="Voice__column">
-          <div class="Voice__columnItem">
-            <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
-          </div>
-
-          <div class="Voice__columnItem">
-            <p>忙しい中でも英語学習を続けられています！</p>
-          </div>
-        </div>
-        <p class="Voice__contentsSummary">自宅で学べるオンラインレッスンのおかげで、忙しい中でも英語学習を続けられています。息子も自然に英会話ができるようになり、発音も格段に良くなりました。</p>
-        <p class="Voice__contentsTag">小学2年生｜クラスオンライン</p>
-      </div>
-
-       <div class="Voice__contents">
-        <div class="Voice__column">
-          <div class="Voice__columnItem">
-            <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
-          </div>
-
-          <div class="Voice__columnItem">
-            <p>自然な形で英語に触れられているんだなと実感</p>
-          </div>
-        </div>
-        <p class="Voice__contentsSummary">インターナショナルスクールに通わせて本当に良かったと思います。息子が毎日英語で歌を歌って帰ってくるのを聞くと、自然な形で英語に触れられているんだなと実感します。保育園での経験が、息子の将来に大きな影響を与えてくれるんだなと思って見守っています。</p>
-        <p class="Voice__contentsTag">4歳児｜クラスインターナショナルスクール</p>
-      </div>
-
-      <div class="Voice__contents">
-        <div class="Voice__column">
-          <div class="Voice__columnItem">
-            <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
-          </div>
-
-          <div class="Voice__columnItem">
-            <p>ニーズに合わせて指導してくれる</p>
-          </div>
-        </div>
-        <p class="Voice__contentsSummary">オンラインレッスンは、我が家にとって最高の選択でした。娘がレッスンを楽しみにしており、英語での会話に自信を持ち始めているのを見ると、本当に感謝しています。1対1のレッスンで、彼女のニーズに合わせて指導してくれるのが大きなポイントです。</p>
-        <p class="Voice__contentsTag">小学5年生｜クラスオンライン</p>
-      </div>
-
-         <div class="Voice__contents">
-        <div class="Voice__column">
-          <div class="Voice__columnItem">
-            <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
-          </div>
-
-          <div class="Voice__columnItem">
-            <p>アットホームな雰囲気と実践的なレッスン</p>
-          </div>
-        </div>
-        <p class="Voice__contentsSummary">うちの子が英会話をこんなに楽しんでいるとは思いませんでした。授業参観日に見学した教室のアットホームな雰囲気と、実践的なレッスンが彼女の成長につながっているのだと思います。いつもありがとうございます。</p>
-        <p class="Voice__contentsTag">2歳児｜クラスインターナショナルスクール</p>
-      </div>
-    </section>
+    <?php get_template_part('voice'); ?>
 
     <!-- Blog -->
     <section class="Blog">
@@ -297,83 +234,10 @@
     </section>
 
     <!-- Hello World -->
-    <section class="HelloWorld">
-      <div class="HelloWorld__title">
-        <h3 class="HelloWorld__titleText">HelloWorld</h3>
-        <p class="HelloWorld__subTitle">一生モノの英語脳を身につけて、広い世界を体験しよう。</p>
-      </div>
-      <p class="HelloWorld__summary">お気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せください</p>
-
-      <div class="HelloWorld__tell">
-        <a href="tel:0975387350">
-          <p class="HelloWorld__tellTitle">日本人スタッフが対応します</p>
-          <div class="HelloWorld__tellNumber">
-            <span class="HelloWorld__tellNumberIcon"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="10" height="17" alt="" /></span>
-            <span class="HelloWorld__tellNumberText">097-538-7350</span>
-          </div>
-          <p class="HelloWorld__tellTime">受付時間 10:00-19:00</p>
-        </a>
-      </div>
-
-      <div class="HelloWorld__experience">
-        <a href="#">
-          <p class="HelloWorld__experienceTitle">&nbsp;&nbsp;&nbsp;最短翌日から可能！<br /><span class="HelloWorld__experienceTitleLarge">4</span>ステップで予約完了<span class="HelloWorld__experiencePin"><img src="https://dummyimage.com/38x38/f27d53/fff.png" width="38" height="38" alt="" /></span></p>
-          <div class="HelloWorld__experienceLine">
-            <span class="HelloWorld__experienceLineIcon"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="10" height="17" alt="" /></span>
-            <span class="HelloWorld__experienceLineText">無料体験入学</span>
-          </div>
-
-        </a>
-      </div>
-    </section>
+    <?php get_template_part('helloWorld'); ?>
 
     <!-- Recruit -->
-    <section class="Recruit">
-      <div class="Recruit__title">
-        <h3 class="Recruit__titleText">Recruit</h3>
-        <p class="Recruit__subTitle ">採用情報</p>
-      </div>
-
-      <div class="Recruit__links">
-        <ul>
-          <li class="Recruit__linksItem">
-            <a href="#">
-              <div><img src="https://dummyimage.com/167x190/f27d53/fff.png" loadding="lazy" /></div>
-              <div class="Recruit__linksItemInfoWrapper">
-                <div class="Recruit__linksItemInfo">
-                  <p class="Recruit__linksItemInfoTitle">日本人保育士</p>
-                </div>
-                <div class="Recruit__linksItemArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="6" height="6" /></div>
-              </div>
-            </a>
-          </li>
-
-           <li class="Recruit__linksItem">
-            <a href="#">
-              <div><img src="https://dummyimage.com/167x190/f27d53/fff.png" loadding="lazy" /></div>
-              <div class="Recruit__linksItemInfoWrapper">
-                <div class="Recruit__linksItemInfo">
-                  <p class="Recruit__linksItemInfoTitle Recruit__linksItemInfoTitleMedium">Childminder/ENG</p>
-                </div>
-                <div class="Recruit__linksItemArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="6" height="6" /></div>
-              </div>
-            </a>
-          </li>
-
-           <li class="Recruit__linksItem">
-            <a href="#">
-              <div><img src="https://dummyimage.com/167x190/f27d53/fff.png" loadding="lazy" /></div>
-              <div class="Recruit__linksItemInfoWrapper">
-                <div class="Recruit__linksItemInfo">
-                  <p class="Recruit__linksItemInfoTitle">運転手&nbsp;<span class="Recruit__linksItemInfoTitleSmall">普通免許ok</span></p>
-                </div>
-                <div class="Recruit__linksItemArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="6" height="6" /></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <?php get_template_part('recruit'); ?>
   </main>
 
 <?php get_footer();?>
