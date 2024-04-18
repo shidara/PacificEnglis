@@ -1,0 +1,33 @@
+.LifeSkills {
+  position: relative;
+  padding: 0 20px 48px;
+
+  .LifeSkills__title {
+    .LifeSkills__titleText {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-primary);
+    }
+
+    .LifeSkills__subTitle {
+      margin-bottom: 16px;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-blk);
+    }
+  }
+
+  .LifeSkills__summary {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-blk);
+    line-height: 1.8;
+
+    &.LifeSkills__summary--black {
+      color: #000;
+    }
+  }
+}
