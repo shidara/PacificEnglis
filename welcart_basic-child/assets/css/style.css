@@ -50,10 +50,8 @@ Base
 /* Class */
 @import url("./class.css");
 
-/*
- * ページ特有のstyle
- */
-@import url("./top.css");
+/* ページ */
+@import url("./pageTitle.css");
 
 /*================================
 Reset CSS

@@ -15,10 +15,10 @@
 
   <!-- コンテンツ -->
   <main class="pageContents Top">
-    <!-- メッセージ -->
-    <section class="Top__mainMessageSection">
-      <h2 class="Top__mainMessageTitle">世界が広がる<br />英語で話そう!</h2>
-      <p class="Top__mainMessage">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
+    <!-- ページタイトル -->
+    <section class="PageTitleSection">
+      <h2 class="PageTitleSection__title">世界が広がる<br />英語で話そう!</h2>
+      <p class="PageTitleSection__summary">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
     </section>
 
     <!-- News -->
