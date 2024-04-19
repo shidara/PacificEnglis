@@ -100,7 +100,69 @@
       <p class="Steam__summary">この5つの要素を重要視した教育である「STEAM教育」は科学的な知識だけでなく、教養や考え方、デザイン性など、子どもの自由な発想で創造性を膨らませ、問題解決を図る力を身に付けるための学びの領域として、IT社会とグローバル社会に適応した人材を多く生み出そうとする世界的にも注目されている21世紀型の学びの手法です。小学校の授業でもタブレットの導入やプログラミングの授業が必須となりました。テクノロジーを活用しながら自分で学び、自分で理解し、自発性や創造性、判断力、問題解決力といった能力を高めるため、さまざまなカリキュラムを準備しています。当スクールでのたくさんの学びを通じて、独自の創造性（クリエイティビティ）につなげていきます。</p>
     </section>
 
+    <!-- Programing Curriculum -->
+    <section class="ProgramingCurriculum">
+      <div class="ProgramingCurriculum__title">
+        <h3 class="ProgramingCurriculum__titleText">Programing <span class="ProgramingCurriculum__titleTextBlack">Curriculum</span></h3>
+      </div>
 
+      <p class="ProgramingCurriculum__labelWrapper"><span class="ProgramingCurriculum__label">算数カリキュラム</span></p>
+
+      <div class="ProgramingCurriculum__contents">
+        <div class="ProgramingCurriculum__item">
+          <div class="ProgramingCurriculum__itemTitle">
+            <h4 class="ProgramingCurriculum__itemTitleText">キュベット</h4>
+            <p class="ProgramingCurriculum__itemSubTitle">3歳・4歳児クラス</p>
+          </div>
+          <p class="ProgramingCurriculum__itemSummary">STEAM教育へのアプローチとしてNクラス及びK1クラスでは、プログラミング玩具の「キュベット」を用いたコーディング練習を取り入れています。「キュベット」は、手を使って学ぶコーディングが特長で、子どもの自発的な発見と学びを尊重するモンテッソーリ教育に着想を得た“思考力・判断力・表現力”を育むことに適した教材です。</p>
+        </div>
+
+        <div class="ProgramingCurriculum__item">
+          <div class="ProgramingCurriculum__itemTitle">
+            <h4 class="ProgramingCurriculum__itemTitleText">スクラッチJr</h4>
+            <p class="ProgramingCurriculum__itemSubTitle">５歳児クラス</p>
+          </div>
+          <p class="ProgramingCurriculum__itemSummary">K2クラスではタブレットを使い、スクラッチJr ※を用いたビジュアルプログラミングを学びます。</p>
+          <p class="ProgramingCurriculum__itemNote">※スクラッチJr…マサチューセッツ工科大学（MIT）メディアラボのライフロングキンダーガーデングループにより開発されたアプリケーション</p>
+        </div>
+      </div>
+
+      <div class="ProgramingCurriculum__thumbnail">
+        <img src="https://dummyimage.com/350x232/0f0/fff.png" alt="" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Sports -->
+    <section class="Sports">
+      <div class="Sports__title">
+        <h3 class="Sports__titleText">Sports</h3>
+        <p class="Sports__subTitle">体育 / 昔の遊び</p>
+      </div>
+
+      <p class="Sports__summary">子供の運動神経が著しく発達する時期をゴールデンエイジといいます。この時期のすごし方が、子供の運動神経、能力に大きな影響を与えます。</p>
+
+      <div class="Sports__contents">
+        <div class="Sports__item">
+          <div class="Sports__itemTitle">
+            <h4 class="Sports__itemTitleText">体育</h4>
+            <p class="Sports__itemSubTitle">Physical Education</p>
+          </div>
+          <p class="Sports__itemSummary">体幹とバランス感覚を鍛えることを目的に、学年に合わせて鉄棒や跳び箱、マット運動を中心としたトレーニングを取り入れています。<br />体幹を鍛えることには、運動能力の向上や体力づくり、けがの予防だけでなく、良い姿勢を保つことから学習意欲の向上や自己抑制といった心理面にもプラスの効果をもたらします。</p>
+        </div>
+
+        <div class="Sports__item">
+          <div class="Sports__itemTitle">
+            <h4 class="Sports__itemTitleText">昔の遊び</h4>
+            <p class="Sports__itemSubTitle">Funfit</p>
+          </div>
+          <p class="Sports__itemSummary">「おにごっこ」や「はないちもんめ」、「だるまさんがころんだ」など、昔ながらの遊びは今の子どもたちも夢中に楽しめる要素が多く含まれています。真剣に遊ぶことで、無意識のうちに子どもの運動量を増やし、丈夫な体づくりや運動神経の発達も促し、基礎体力を培うことができます。</p>
+        </div>
+      </div>
+
+      <div class="Sports__thumbnail">
+        <img src="https://dummyimage.com/350x232/0f0/fff.png" alt="" loading="lazy" />
+      </div>
+    </section>
 
     <!-- Life Skills -->
     <section class="LifeSkills">
