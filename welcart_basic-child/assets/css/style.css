@@ -62,6 +62,9 @@ Base
 /* Life Skills */
 @import url("./lifeSkills.css");
 
+/* Programing Curriculum */
+@import url("./programingCurriculum.css");
+
 /*================================
 Reset CSS
 ================================*/

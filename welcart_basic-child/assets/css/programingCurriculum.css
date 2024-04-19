@@ -1,0 +1,133 @@
+/*
+ * Programing CurriculumとSports兼用
+*/
+.ProgramingCurriculum,
+.Sports {
+  position: relative;
+  padding: 0 20px 24px;
+
+  .ProgramingCurriculum__title,
+  .Sports__title {
+    margin-bottom: 10px;
+
+    .ProgramingCurriculum__titleText,
+    .Sports__titleText {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-primary);
+
+      .ProgramingCurriculum__titleTextBlack {
+        color: var(--color-blk);
+      }
+    }
+
+    .Sports__subTitle {
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+    }
+  }
+
+  .Sports__summary {
+    margin-bottom: 49px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--color-blk);
+  }
+
+  .ProgramingCurriculum__labelWrapper,
+  .Sports__labelWrapper {
+    margin-bottom: 36px;
+  }
+
+  .ProgramingCurriculum__label,
+  .Sports__label {
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--color-wht);
+    background-color: var(--color-primary);
+  }
+
+  .ProgramingCurriculum__item,
+  .Sports__item {
+    margin-bottom: 36px;
+
+    &:last-child {
+      margin-bottom: 56px;
+    }
+
+    .ProgramingCurriculum__itemTitle,
+    .Sports__itemTitle {
+      position: relative;
+      margin-bottom: 16px;
+      padding-left: 16px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 4px;
+        height: 100%;
+        border-radius: 100px;
+        background-color: var(--color-primary);
+      }
+    }
+
+    .ProgramingCurriculum__itemTitleText,
+    .Sports__itemTitleText {
+      margin-bottom: 4px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-primary);
+    }
+
+    .ProgramingCurriculum__itemSubTitle,
+    .Sports__itemSubTitle {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.8;
+      color: var(--color-blk);
+    }
+
+    .Sports__itemSubTitle {
+      font-weight: 500;
+    }
+
+    .ProgramingCurriculum__itemSummary,
+    .Sports__itemSummary {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.8;
+      color: var(--color-blk);
+    }
+
+    .ProgramingCurriculum__itemNote,
+    .Sports__itemNote {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: var(--color-blk);
+    }
+  }
+
+  .ProgramingCurriculum__thumbnail,
+  .Sports__thumbnail {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 232px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+  }
+}
