@@ -164,6 +164,150 @@
       </div>
     </section>
 
+    <!-- Weekly Schedule -->
+    <section class="WeeklySchedule">
+      <div class="WeeklySchedule__title">
+        <h3 class="WeeklySchedule__titleText">Weekly Schedule</h3>
+        <p class="WeeklySchedule__subTitle">週間スケジュール</p>
+      </div>
+      <p class="WeeklySchedule__summary">大まかな時間割は共通ですが、Tクラスはレッスン内容が異なります。</p>
+
+      <div class="WeeklySchedule__contents">
+        <div class="WeeklySchedule__tabLabel">
+          <div class="WeeklySchedule__tabLabelButton">
+            <label for="tab_1">
+              <span class="WeeklySchedule__tabLabelTitle"><span class="WeeklySchedule__tabLabelTitleText">N・K1・K2クラス</span><span class="WeeklySchedule__tabLabelSubTitle">3-5歳児</span></span>
+            </label>
+            <input type="radio" name="tab" id="tab_1" checked />
+          </div>
+
+          <div class="WeeklySchedule__tabLabelButton">
+            <label for="tab_2">
+              <span class="WeeklySchedule__tabLabelTitle"><span class="WeeklySchedule__tabLabelTitleText">Tクラス</span><span class="WeeklySchedule__tabLabelSubTitle">2歳児</span></span>
+            </label>
+            <input type="radio" name="tab" id="tab_2" />
+          </div>
+        </div>
+
+        <div class="WeeklySchedule__tabContents">
+          <div id="tab_contents_1" class="WeeklySchedule__tabContentsPanel">
+            <div class="WeeklySchedule__tabContentsPanelTitle">
+              <p class="WeeklySchedule__tabContentsPanelTitleText">N・K1・K2クラス</p>
+              <p class="WeeklySchedule__tabContentsPanelSubText">3-5歳児</p>
+              <p class="WeeklySchedule__tabContentsPanelSummary">大まかな時間割は共通ですが、Tクラスはレッスン内容が異なります。</p>
+            </div>
+
+            <div class="WeeklySchedule__schedule">
+              <table>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed WeeklySchedule__scheduleTop"></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Monday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Tuesday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Wednesday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Thursday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Friday</span></th>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>09:00</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div>
+                        <p class="WeeklySchedule__scheduleTableDataTitle">【登園・プレイタイム】</p>
+                        <p class="WeeklySchedule__scheduleTableDataText">登園したら荷物を片付けてお友達と英語で遊びましょう</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>09:30</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>10:10</span></th>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>11:00</span></th>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>11:45</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>12:20</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>13:00</span></th>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>13:45</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>14:00</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div class="WeeklySchedule__scheduleTableDataTitle">【下校】</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="tab_contents_2" class="WeeklySchedule__tabContentsPanel"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- Life Skills -->
     <section class="LifeSkills">
       <div class="LifeSkills__title">

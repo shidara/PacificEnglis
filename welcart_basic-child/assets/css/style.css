@@ -65,6 +65,9 @@ Base
 /* Programing Curriculum */
 @import url("./programingCurriculum.css");
 
+/* Weekly Schedule */
+@import url("./weeklySchedule.css");
+
 /*================================
 Reset CSS
 ================================*/

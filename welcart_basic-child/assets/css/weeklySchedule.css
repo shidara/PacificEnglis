@@ -1,0 +1,205 @@
+.WeeklySchedule {
+  position: relative;
+  padding: 0 20px 24px;
+
+  .WeeklySchedule__title {
+    .WeeklySchedule__titleText {
+      margin-bottom: 12px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--color-primary);
+    }
+
+    .WeeklySchedule__subTitle {
+      margin-bottom: 12px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+    }
+  }
+
+  .WeeklySchedule__summary {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-blk);
+  }
+
+  .WeeklySchedule__contents {
+    &:has(#tab_1:checked) #tab_contents_1 {
+      display: block;
+    }
+
+    &:has(#tab_2:checked) #tab_contents_2 {
+      display: block;
+    }
+  }
+
+  .WeeklySchedule__tabLabel {
+    display: flex;
+    gap: 4px;
+    width: calc(100% + 20px * 2);
+    margin: 0 -20px;
+    padding: 0 5px;
+    border-bottom: 2px solid var(--color-primary);
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .WeeklySchedule__tabLabelButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      box-sizing: border-box;
+      height: 48px;
+      border: 2px solid var(--color-primary);
+      border-bottom: 0;
+      border-radius: 12px 12px 0 0;
+      color: var(--color-primary);
+      background-color: var(--color-wht);
+
+      &:has(input:checked) {
+        color: var(--color-wht);
+        background-color: var(--color-primary);
+      }
+
+      .WeeklySchedule__tabLabelTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .WeeklySchedule__tabLabelTitleText {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .WeeklySchedule__tabLabelSubTitle {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .WeeklySchedule__tabContentsPanel {
+    display: none;
+    padding-top: 35px;
+  }
+
+  .WeeklySchedule__tabContentsPanelTitle {
+    margin-bottom: 25px;
+
+    .WeeklySchedule__tabContentsPanelTitleText {
+      margin-bottom: 8px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-primary);
+    }
+
+    .WeeklySchedule__tabContentsPanelSubText {
+      margin-bottom: 8px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-blk);
+      line-height: 1.4;
+    }
+
+    .WeeklySchedule__tabContentsPanelSummary {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+
+  .WeeklySchedule__schedule {
+    overflow-x: scroll;
+
+    table {
+      min-width: 100%;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      vertical-align: middle;
+
+      &:not(:first-child) {
+        width: 162px;
+      }
+    }
+
+    .WeeklySchedule__scheduleFixed {
+      position: sticky;
+      left: 0;
+      box-sizing: border-box;
+      width: 80px;
+      border-bottom: 3px solid var(--color-wht);
+      background-color: var(--color-primary);
+
+      > span {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 10px;
+        color: var(--color-wht);
+      }
+
+      &.WeeklySchedule__scheduleTop {
+        border-right: 1px solid #ffd7bd;
+        border-bottom: 0;
+      }
+    }
+
+    .WeeklySchedule__scheduleTop {
+      background-color: var(--color-pacific-orange-b);
+      height: 50px;
+
+      > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 0 24px;
+        border: 1px solid #ffd7bd;
+        border-width: 0 1px;
+        color: var(--color-wht);
+      }
+    }
+
+    .WeeklySchedule__scheduleTableData {
+      box-sizing: border-box;
+      padding: 11px 18px;
+      border-bottom: 3px solid var(--color-primary);
+
+      &.WeeklySchedule__scheduleTableData--single {
+        background-color: #ffebe7;
+      }
+    }
+
+    .WeeklySchedule__scheduleTableDataTitle {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-blk);
+      line-height: 1.6;
+    }
+
+    .WeeklySchedule__scheduleTableDataText {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.3;
+      color: var(--color-blk);
+    }
+  }
+}
