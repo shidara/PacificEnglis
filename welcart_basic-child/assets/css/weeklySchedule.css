@@ -121,11 +121,20 @@
   }
 
   .WeeklySchedule__schedule {
+    margin: 0 -20px;
     overflow-x: scroll;
 
     table {
       min-width: 100%;
       table-layout: fixed;
+      border-collapse: separate;
+    }
+
+    tr:last-child {
+      th,
+      td {
+        border-bottom: 0 !important;
+      }
     }
 
     th,
@@ -138,10 +147,11 @@
     }
 
     .WeeklySchedule__scheduleFixed {
+      z-index: 10;
       position: sticky;
       left: 0;
       box-sizing: border-box;
-      width: 80px;
+      width: 82px;
       border-bottom: 3px solid var(--color-wht);
       background-color: var(--color-primary);
 
@@ -156,14 +166,16 @@
       }
 
       &.WeeklySchedule__scheduleTop {
+        min-width: auto;
         border-right: 1px solid #ffd7bd;
         border-bottom: 0;
       }
     }
 
     .WeeklySchedule__scheduleTop {
-      background-color: var(--color-pacific-orange-b);
+      min-width: 162px;
       height: 50px;
+      background-color: var(--color-pacific-orange-b);
 
       > span {
         display: flex;
@@ -186,6 +198,15 @@
       &.WeeklySchedule__scheduleTableData--single {
         background-color: #ffebe7;
       }
+
+      &.WeeklySchedule__scheduleTableData--multi {
+        background-color: #ffd7bd;
+        border-right: 3px solid var(--color-primary);
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
     }
 
     .WeeklySchedule__scheduleTableDataTitle {
@@ -200,6 +221,24 @@
       font-weight: 500;
       line-height: 1.3;
       color: var(--color-blk);
+    }
+  }
+
+  .WeeklySchedule__scheduleDownLoadButton {
+    height: 62px;
+    margin-top: 40px;
+
+    .WeeklySchedule__scheduleDownLoadButtonLink {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--color-primary);
+      border-radius: 16px;
+      padding: 0 24px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-primary);
     }
   }
 }

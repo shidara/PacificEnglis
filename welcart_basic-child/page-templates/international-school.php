@@ -227,20 +227,35 @@
                 </tr>
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>10:10</span></th>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">算数</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">プログラミング</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">自然とボランティア</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">昔の遊び</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">算数</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -314,8 +329,9 @@
                 </tr>
               </table>
             </div>
-            <div>
-              <a href="#">ダウンロードする</a>
+
+            <div class="WeeklySchedule__scheduleDownLoadButton">
+              <a href="#" class="WeeklySchedule__scheduleDownLoadButtonLink">ダウンロードする</a>
             </div>
           </div>
           <div id="tab_contents_2" class="WeeklySchedule__tabContentsPanel"></div>
