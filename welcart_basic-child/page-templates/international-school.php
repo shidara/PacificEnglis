@@ -219,7 +219,10 @@
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>09:30</span></th>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
-                    <div></div>
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【モーニングミーティング】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">朝の体操の後は毎月違うテーマに沿った歌やボキャブラリーを学びます。<br />曜日や天気もみんなで確認します。</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -261,13 +264,19 @@
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>11:45</span></th>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
-                    <div></div>
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【ランチタイム】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">食べ終わったら、後片付けをして歯ブラシタイムです。</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>12:20</span></th>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
-                    <div></div>
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【プレイタイム】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">お友達や先生と英語でお喋りしながら、いっぱい遊びましょう。</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -291,7 +300,10 @@
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>13:45</span></th>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
-                    <div></div>
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【グッバイミーティング】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">その日の出来事を振り返った後でグッバイソングを歌います。<br/>時間がある日は英語の絵本の読み聞かせがあります。</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -302,10 +314,14 @@
                 </tr>
               </table>
             </div>
+            <div>
+              <a href="#">ダウンロードする</a>
+            </div>
           </div>
           <div id="tab_contents_2" class="WeeklySchedule__tabContentsPanel"></div>
         </div>
       </div>
+
     </section>
 
     <!-- Life Skills -->
