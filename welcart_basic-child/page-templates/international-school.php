@@ -5,8 +5,6 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
-
-
 ?>
 <?php get_header();?>
 
