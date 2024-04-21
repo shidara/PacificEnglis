@@ -98,34 +98,34 @@
       <p class="Steam__summary">この5つの要素を重要視した教育である「STEAM教育」は科学的な知識だけでなく、教養や考え方、デザイン性など、子どもの自由な発想で創造性を膨らませ、問題解決を図る力を身に付けるための学びの領域として、IT社会とグローバル社会に適応した人材を多く生み出そうとする世界的にも注目されている21世紀型の学びの手法です。小学校の授業でもタブレットの導入やプログラミングの授業が必須となりました。テクノロジーを活用しながら自分で学び、自分で理解し、自発性や創造性、判断力、問題解決力といった能力を高めるため、さまざまなカリキュラムを準備しています。当スクールでのたくさんの学びを通じて、独自の創造性（クリエイティビティ）につなげていきます。</p>
     </section>
 
-    <!-- Programing Curriculum -->
-    <section class="ProgramingCurriculum">
-      <div class="ProgramingCurriculum__title">
-        <h3 class="ProgramingCurriculum__titleText">Programing <span class="ProgramingCurriculum__titleTextBlack">Curriculum</span></h3>
+    <!-- Programming Curriculum -->
+    <section class="ProgrammingCurriculum">
+      <div class="ProgrammingCurriculum__title">
+        <h3 class="ProgrammingCurriculum__titleText">Programming <span class="ProgrammingCurriculum__titleTextBlack">Curriculum</span></h3>
       </div>
 
-      <p class="ProgramingCurriculum__labelWrapper"><span class="ProgramingCurriculum__label">算数カリキュラム</span></p>
+      <p class="ProgrammingCurriculum__labelWrapper"><span class="ProgrammingCurriculum__label">算数カリキュラム</span></p>
 
-      <div class="ProgramingCurriculum__contents">
-        <div class="ProgramingCurriculum__item">
-          <div class="ProgramingCurriculum__itemTitle">
-            <h4 class="ProgramingCurriculum__itemTitleText">キュベット</h4>
-            <p class="ProgramingCurriculum__itemSubTitle">3歳・4歳児クラス</p>
+      <div class="ProgrammingCurriculum__contents">
+        <div class="ProgrammingCurriculum__item">
+          <div class="ProgrammingCurriculum__itemTitle">
+            <h4 class="ProgrammingCurriculum__itemTitleText">キュベット</h4>
+            <p class="ProgrammingCurriculum__itemSubTitle">3歳・4歳児クラス</p>
           </div>
-          <p class="ProgramingCurriculum__itemSummary">STEAM教育へのアプローチとしてNクラス及びK1クラスでは、プログラミング玩具の「キュベット」を用いたコーディング練習を取り入れています。「キュベット」は、手を使って学ぶコーディングが特長で、子どもの自発的な発見と学びを尊重するモンテッソーリ教育に着想を得た“思考力・判断力・表現力”を育むことに適した教材です。</p>
+          <p class="ProgrammingCurriculum__itemSummary">STEAM教育へのアプローチとしてNクラス及びK1クラスでは、プログラミング玩具の「キュベット」を用いたコーディング練習を取り入れています。「キュベット」は、手を使って学ぶコーディングが特長で、子どもの自発的な発見と学びを尊重するモンテッソーリ教育に着想を得た“思考力・判断力・表現力”を育むことに適した教材です。</p>
         </div>
 
-        <div class="ProgramingCurriculum__item">
-          <div class="ProgramingCurriculum__itemTitle">
-            <h4 class="ProgramingCurriculum__itemTitleText">スクラッチJr</h4>
-            <p class="ProgramingCurriculum__itemSubTitle">５歳児クラス</p>
+        <div class="ProgrammingCurriculum__item">
+          <div class="ProgrammingCurriculum__itemTitle">
+            <h4 class="ProgrammingCurriculum__itemTitleText">スクラッチJr</h4>
+            <p class="ProgrammingCurriculum__itemSubTitle">５歳児クラス</p>
           </div>
-          <p class="ProgramingCurriculum__itemSummary">K2クラスではタブレットを使い、スクラッチJr ※を用いたビジュアルプログラミングを学びます。</p>
-          <p class="ProgramingCurriculum__itemNote">※スクラッチJr…マサチューセッツ工科大学（MIT）メディアラボのライフロングキンダーガーデングループにより開発されたアプリケーション</p>
+          <p class="ProgrammingCurriculum__itemSummary">K2クラスではタブレットを使い、スクラッチJr ※を用いたビジュアルプログラミングを学びます。</p>
+          <p class="ProgrammingCurriculum__itemNote">※スクラッチJr…マサチューセッツ工科大学（MIT）メディアラボのライフロングキンダーガーデングループにより開発されたアプリケーション</p>
         </div>
       </div>
 
-      <div class="ProgramingCurriculum__thumbnail">
+      <div class="ProgrammingCurriculum__thumbnail">
         <img src="https://dummyimage.com/350x232/0f0/fff.png" alt="" loading="lazy" />
       </div>
     </section>
@@ -173,7 +173,7 @@
       <p class="LifeSkills__summary LifeSkills__summary--black">生活スキルは、日々の積み重ねで身に付いていくものです。子どもの気分によってできる日もあれば、なかなかうまくいかない日もあります。そんなときに家庭と一緒に当スクールの大人たちが寄り添ってサポートしていきたいと考えています。<br />朝の登園後、まず自分の荷物を整理整頓し、ボランティアの時間では教室や近くの公園の清掃をします。外から帰ったあとや食事の前には必ず手洗いをし、食後に歯を磨きます。Ｎクラスからは宿題を毎日こつこつと取り組む習慣を身に付け、小学校入学後も自主的に取り組むことができるようになります。<br />このように、当スクールでの集団行動の中で、お友だちと一緒にやるということに楽しみを見いだすことができ、毎日の生活を当たり前に過ごすことで生活習慣が自然と身に付いていきます。<br />脳の発達の仕組みにより、６歳までの生活習慣で人間の基礎能力が固まると言われています。当スクールでは、その大切な時期の生活スキルをサポートをし、子どもたちの小学校までの準備のお手伝いをしていきます。</p>
     </section>
 
-     <!-- Weekly Schedule -->
+    <!-- Weekly Schedule -->
     <section class="WeeklySchedule">
       <div class="WeeklySchedule__title">
         <h3 class="WeeklySchedule__titleText">Weekly Schedule</h3>

@@ -1,23 +1,23 @@
 /*
- * Programing CurriculumとSports兼用
+ * Programming CurriculumとSports兼用
 */
-.ProgramingCurriculum,
+.ProgrammingCurriculum,
 .Sports {
   position: relative;
   padding: 0 20px 24px;
 
-  .ProgramingCurriculum__title,
+  .ProgrammingCurriculum__title,
   .Sports__title {
     margin-bottom: 10px;
 
-    .ProgramingCurriculum__titleText,
+    .ProgrammingCurriculum__titleText,
     .Sports__titleText {
       font-size: 48px;
       font-weight: 700;
       line-height: 1.2;
       color: var(--color-primary);
 
-      .ProgramingCurriculum__titleTextBlack {
+      .ProgrammingCurriculum__titleTextBlack {
         color: var(--color-blk);
       }
     }
@@ -39,12 +39,12 @@
     color: var(--color-blk);
   }
 
-  .ProgramingCurriculum__labelWrapper,
+  .ProgrammingCurriculum__labelWrapper,
   .Sports__labelWrapper {
     margin-bottom: 36px;
   }
 
-  .ProgramingCurriculum__label,
+  .ProgrammingCurriculum__label,
   .Sports__label {
     padding: 6px 16px;
     font-size: 16px;
@@ -54,7 +54,7 @@
     background-color: var(--color-primary);
   }
 
-  .ProgramingCurriculum__item,
+  .ProgrammingCurriculum__item,
   .Sports__item {
     margin-bottom: 36px;
 
@@ -62,7 +62,7 @@
       margin-bottom: 56px;
     }
 
-    .ProgramingCurriculum__itemTitle,
+    .ProgrammingCurriculum__itemTitle,
     .Sports__itemTitle {
       position: relative;
       margin-bottom: 16px;
@@ -81,7 +81,7 @@
       }
     }
 
-    .ProgramingCurriculum__itemTitleText,
+    .ProgrammingCurriculum__itemTitleText,
     .Sports__itemTitleText {
       margin-bottom: 4px;
       font-size: 28px;
@@ -90,7 +90,7 @@
       color: var(--color-primary);
     }
 
-    .ProgramingCurriculum__itemSubTitle,
+    .ProgrammingCurriculum__itemSubTitle,
     .Sports__itemSubTitle {
       font-size: 16px;
       font-weight: 700;
@@ -102,7 +102,7 @@
       font-weight: 500;
     }
 
-    .ProgramingCurriculum__itemSummary,
+    .ProgrammingCurriculum__itemSummary,
     .Sports__itemSummary {
       font-size: 16px;
       font-weight: 500;
@@ -110,7 +110,7 @@
       color: var(--color-blk);
     }
 
-    .ProgramingCurriculum__itemNote,
+    .ProgrammingCurriculum__itemNote,
     .Sports__itemNote {
       font-size: 14px;
       font-weight: 400;
@@ -119,7 +119,7 @@
     }
   }
 
-  .ProgramingCurriculum__thumbnail,
+  .ProgrammingCurriculum__thumbnail,
   .Sports__thumbnail {
     overflow: hidden;
 
