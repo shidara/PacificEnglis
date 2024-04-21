@@ -1,0 +1,77 @@
+.InstructorList {
+  position: relative;
+  padding: 0 20px 60px;
+
+  .InstructorList__title {
+    margin-bottom: 41px;
+
+    .InstructorList__titleText {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--color-primary);
+    }
+
+    .InstructorList__subTitle {
+      margin-bottom: 12px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+    }
+  }
+
+  .InstructorList__contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .InstructorList__item {
+      width: calc(50% - 10px);
+    }
+
+    .InstructorList__itemThumbnail {
+      margin-bottom: 8px;
+      text-align: center;
+
+      img {
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .InstructorList__itemName {
+      margin-bottom: 8px;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--color-blk);
+    }
+
+    .InstructorList__itemOneWord {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    .InstructorList__itemFreeList {
+      .InstructorList__itemFreeTitle {
+        margin-bottom: 4px;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        background-color: var(--color-primary);
+      }
+
+      .InstructorList__itemFreeText {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-blk);
+      }
+    }
+  }
+}
