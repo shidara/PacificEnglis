@@ -68,6 +68,12 @@ Base
 /* Weekly Schedule */
 @import url("./weeklySchedule.css");
 
+/* LessonMain */
+@import url("./lessonMain.css");
+
+/* School */
+@import url("./schoolMain.css");
+
 /*================================
 Reset CSS
 ================================*/
