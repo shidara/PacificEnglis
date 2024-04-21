@@ -97,6 +97,12 @@
         </ul>
       </div>
     </section>
+
+    <!-- Hello World -->
+    <?php get_template_part('helloWorld'); ?>
+
+    <!-- Recruit -->
+    <?php get_template_part('recruit'); ?>
   </main>
 
 <?php get_footer();?>
