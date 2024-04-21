@@ -1,0 +1,123 @@
+.LessonMain {
+  position: relative;
+  padding: 0 20px 24px;
+
+  .LessonMain__title {
+    .LessonMain__titleText {
+      margin-bottom: 12px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--color-primary);
+    }
+
+    .LessonMain__subTitle {
+      margin-bottom: 12px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+    }
+  }
+
+  .LessonMain__summary {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-blk);
+  }
+
+  .LessonMain__item {
+    margin-bottom: 36px;
+
+    .LessonMain__itemThumbnail {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 16px;
+
+      img {
+        width: 100%;
+        height: 232px;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+
+      .LessonMain__itemThumbnailLabel {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 8px 16px 6px;
+        border-radius: 0 6px 0 6px;
+        color: var(--color-wht);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        background-color: var(--color-primary);
+      }
+    }
+
+    .LessonMain__itemTitle {
+      .LessonMain__itemTitleText {
+        margin-bottom: 3px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--color-blk);
+
+        > span {
+          color: var(--color-primary);
+        }
+      }
+
+      .LessonMain__itemTitleAge {
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.8;
+        color: var(--color-blk);
+
+        > span {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .LessonMain__itemSummary {
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.8;
+      color: var(--color-blk);
+    }
+
+    .LessonMain__itemNote {
+      margin-bottom: 16px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.8;
+      color: var(--color-blk);
+    }
+
+    .LessonMain__itemCombined {
+      padding: 20px 13px 23px;
+      border-radius: 6px;
+      background-color: var(--color-pacific-gray-b);
+
+      .LessonMain__itemCombinedTitle {
+        margin-bottom: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.8;
+        color: var(--color-blk);
+      }
+
+      li {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.8;
+        color: var(--color-blk);
+      }
+    }
+  }
+}
