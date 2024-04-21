@@ -37,7 +37,7 @@
         <nav>
           <ul class="Navigation__menu">
             <li class="Navigation__item">
-              <a href="#" class="Navigation__itemInner">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>international-school/" class="Navigation__itemInner">
                 <div>
                   <p class="Navigation__menuTitle">International  School</p>
                   <p class="Navigation__menuSubText">インターナショナルスクール</p>
