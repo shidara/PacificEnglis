@@ -27,4 +27,33 @@
     line-height: 1.6;
     color: var(--color-blk);
   }
+
+  .SchoolMain__item {
+    width: 100%;
+    margin-bottom: 50px;
+
+    .SchoolMain__itemTitle {
+      margin-bottom: 12px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-blk);
+    }
+
+    .SchoolMain__itemAddress {
+      margin-bottom: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--color-blk);
+    }
+
+    .SchoolMain__itemMap {
+      overflow: hidden;
+      width: 100%;
+      height: 189px;
+      border-radius: 16px;
+      background-color: var(--color-wht);
+    }
+  }
 }
