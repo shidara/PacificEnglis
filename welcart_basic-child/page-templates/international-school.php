@@ -164,7 +164,18 @@
       </div>
     </section>
 
-    <!-- Weekly Schedule -->
+    <!-- Life Skills -->
+    <section class="LifeSkills">
+      <div class="LifeSkills__title">
+        <h3 class="LifeSkills__titleText">Life Skills</h3>
+        <p class="LifeSkills__subTitle">生活スキル</p>
+      </div>
+      <p class="LifeSkills__summary">自分のことは自分で。英語だけではない、生きる力を磨く</p>
+
+      <p class="LifeSkills__summary LifeSkills__summary--black">生活スキルは、日々の積み重ねで身に付いていくものです。子どもの気分によってできる日もあれば、なかなかうまくいかない日もあります。そんなときに家庭と一緒に当スクールの大人たちが寄り添ってサポートしていきたいと考えています。<br />朝の登園後、まず自分の荷物を整理整頓し、ボランティアの時間では教室や近くの公園の清掃をします。外から帰ったあとや食事の前には必ず手洗いをし、食後に歯を磨きます。Ｎクラスからは宿題を毎日こつこつと取り組む習慣を身に付け、小学校入学後も自主的に取り組むことができるようになります。<br />このように、当スクールでの集団行動の中で、お友だちと一緒にやるということに楽しみを見いだすことができ、毎日の生活を当たり前に過ごすことで生活習慣が自然と身に付いていきます。<br />脳の発達の仕組みにより、６歳までの生活習慣で人間の基礎能力が固まると言われています。当スクールでは、その大切な時期の生活スキルをサポートをし、子どもたちの小学校までの準備のお手伝いをしていきます。</p>
+    </section>
+
+     <!-- Weekly Schedule -->
     <section class="WeeklySchedule">
       <div class="WeeklySchedule__title">
         <h3 class="WeeklySchedule__titleText">Weekly Schedule</h3>
@@ -190,6 +201,7 @@
         </div>
 
         <div class="WeeklySchedule__tabContents">
+          <!-- Panel 1 -->
           <div id="tab_contents_1" class="WeeklySchedule__tabContentsPanel">
             <div class="WeeklySchedule__tabContentsPanelTitle">
               <p class="WeeklySchedule__tabContentsPanelTitleText">N・K1・K2クラス</p>
@@ -219,9 +231,10 @@
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>09:30</span></th>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
-                    <div>
+                    <div class="WeeklySchedule__scheduleTableDataInner">
                       <p class="WeeklySchedule__scheduleTableDataTitle">【モーニングミーティング】</p>
                       <p class="WeeklySchedule__scheduleTableDataText">朝の体操の後は毎月違うテーマに沿った歌やボキャブラリーを学びます。<br />曜日や天気もみんなで確認します。</p>
+                      <div class="WeeklySchedule__scheduleTableDataStamp"><img src="https://dummyimage.com/210x90/0f0/fff.png" alt="" loading="lazy" /></div>
                     </div>
                   </td>
                 </tr>
@@ -260,20 +273,35 @@
                 </tr>
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>11:00</span></th>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">昔の遊び</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">音楽</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -296,28 +324,44 @@
                 </tr>
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>13:00</span></th>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン3】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">体育</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン3】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン3】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">アート</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン3】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
                   </td>
-                  <td>
-                    <div></div>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン3】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">体育</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>13:45</span></th>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
-                    <div>
+                    <div class="WeeklySchedule__scheduleTableDataInner">
                       <p class="WeeklySchedule__scheduleTableDataTitle">【グッバイミーティング】</p>
                       <p class="WeeklySchedule__scheduleTableDataText">その日の出来事を振り返った後でグッバイソングを歌います。<br/>時間がある日は英語の絵本の読み聞かせがあります。</p>
+                      <div class="WeeklySchedule__scheduleTableDataStamp"><img src="https://dummyimage.com/210x90/0f0/fff.png" alt="" loading="lazy" /></div>
                     </div>
                   </td>
                 </tr>
@@ -334,21 +378,160 @@
               <a href="#" class="WeeklySchedule__scheduleDownLoadButtonLink">ダウンロードする</a>
             </div>
           </div>
-          <div id="tab_contents_2" class="WeeklySchedule__tabContentsPanel"></div>
+
+          <!-- Panel 2 -->
+          <div id="tab_contents_2" class="WeeklySchedule__tabContentsPanel">
+            <div class="WeeklySchedule__tabContentsPanelTitle">
+              <p class="WeeklySchedule__tabContentsPanelTitleText">Tクラス</p>
+              <p class="WeeklySchedule__tabContentsPanelSubText">2歳児</p>
+              <p class="WeeklySchedule__tabContentsPanelSummary">大まかな時間割は共通ですが、Tクラスはレッスン内容が異なります。</p>
+            </div>
+
+            <div class="WeeklySchedule__schedule">
+              <table>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed WeeklySchedule__scheduleTop"></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Monday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Tuesday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Wednesday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Thursday</span></th>
+                  <th class="WeeklySchedule__scheduleTop"><span>Friday</span></th>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>09:00</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div>
+                        <p class="WeeklySchedule__scheduleTableDataTitle">【登園・プレイタイム】</p>
+                        <p class="WeeklySchedule__scheduleTableDataText">登園したら荷物を片付けてお友達と英語で遊びましょう</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>09:30</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div class="WeeklySchedule__scheduleTableDataInner">
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【モーニングミーティング】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">朝の体操の後は毎月違うテーマに沿った歌やボキャブラリーを学びます。<br />曜日や天気もみんなで確認します。</p>
+                      <div class="WeeklySchedule__scheduleTableDataStamp"><img src="https://dummyimage.com/210x90/0f0/fff.png" alt="" loading="lazy" /></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>10:10</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi" colspan="5">
+                    <div>
+                        <p class="WeeklySchedule__scheduleTableDataTitle">【プレイタイム】</p>
+                        <p class="WeeklySchedule__scheduleTableDataText">指先を使った遊びを中心に集中力を養っていきます。</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>11:00</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">音楽</p>
+                    </div>
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>11:45</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【ランチタイム】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">食べ終わったら、後片付けをして歯ブラシタイムです。</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>12:20</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【プレイタイム】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">お友達や先生と英語でお喋りしながら、いっぱい遊びましょう。</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>13:00</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">アート</p>
+                    </div>
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">体育</p>
+                    </div>
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">英語</p>
+                    </div>
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">自然とボランティア</p>
+                    </div>
+                  </td>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
+                    <div>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン2】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">体育</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>13:45</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div class="WeeklySchedule__scheduleTableDataInner">
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【グッバイミーティング】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">その日の出来事を振り返った後でグッバイソングを歌います。<br/>時間がある日は英語の絵本の読み聞かせがあります。</p>
+                      <div class="WeeklySchedule__scheduleTableDataStamp"><img src="https://dummyimage.com/210x90/0f0/fff.png" alt="" loading="lazy" /></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="WeeklySchedule__scheduleFixed"><span>14:00</span></th>
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--single" colspan="5">
+                    <div class="WeeklySchedule__scheduleTableDataTitle">【下校】</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="WeeklySchedule__scheduleDownLoadButton">
+              <a href="#" class="WeeklySchedule__scheduleDownLoadButtonLink">ダウンロードする</a>
+            </div>
+          </div>
         </div>
       </div>
 
-    </section>
-
-    <!-- Life Skills -->
-    <section class="LifeSkills">
-      <div class="LifeSkills__title">
-        <h3 class="LifeSkills__titleText">Life Skills</h3>
-        <p class="LifeSkills__subTitle">生活スキル</p>
-      </div>
-      <p class="LifeSkills__summary">自分のことは自分で。英語だけではない、生きる力を磨く</p>
-
-      <p class="LifeSkills__summary LifeSkills__summary--black">生活スキルは、日々の積み重ねで身に付いていくものです。子どもの気分によってできる日もあれば、なかなかうまくいかない日もあります。そんなときに家庭と一緒に当スクールの大人たちが寄り添ってサポートしていきたいと考えています。<br />朝の登園後、まず自分の荷物を整理整頓し、ボランティアの時間では教室や近くの公園の清掃をします。外から帰ったあとや食事の前には必ず手洗いをし、食後に歯を磨きます。Ｎクラスからは宿題を毎日こつこつと取り組む習慣を身に付け、小学校入学後も自主的に取り組むことができるようになります。<br />このように、当スクールでの集団行動の中で、お友だちと一緒にやるということに楽しみを見いだすことができ、毎日の生活を当たり前に過ごすことで生活習慣が自然と身に付いていきます。<br />脳の発達の仕組みにより、６歳までの生活習慣で人間の基礎能力が固まると言われています。当スクールでは、その大切な時期の生活スキルをサポートをし、子どもたちの小学校までの準備のお手伝いをしていきます。</p>
     </section>
 
     <!-- Voice -->

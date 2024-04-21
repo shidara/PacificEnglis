@@ -209,6 +209,21 @@
       }
     }
 
+    .WeeklySchedule__scheduleTableDataInner {
+      position: relative;
+    }
+
+    .WeeklySchedule__scheduleTableDataStamp {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      img {
+        width: 168px;
+        height: 72px;
+      }
+    }
+
     .WeeklySchedule__scheduleTableDataTitle {
       font-size: 20px;
       font-weight: 700;
@@ -217,6 +232,7 @@
     }
 
     .WeeklySchedule__scheduleTableDataText {
+      white-space: nowrap;
       font-size: 16px;
       font-weight: 500;
       line-height: 1.3;
