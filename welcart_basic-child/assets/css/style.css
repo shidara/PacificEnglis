@@ -74,6 +74,9 @@ Base
 /* School */
 @import url("./schoolMain.css");
 
+/* Instructor List */
+@import url("./instructorList.css");
+
 /*================================
 Reset CSS
 ================================*/
