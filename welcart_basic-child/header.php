@@ -48,7 +48,7 @@
               </a>
             </li>
             <li class="Navigation__item">
-              <a href="#" class="Navigation__itemInner">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/" class="Navigation__itemInner">
                 <div>
                   <p class="Navigation__menuTitle">After  School</p>
                   <p class="Navigation__menuSubText">英語の教室</p>
@@ -81,7 +81,7 @@
         <div class="Navigation__footerLinks">
           <ul class="Navigation__footerLinksList">
             <li class="Navigation__footerLinksItem"><a href="#">On the job</a></li>
-            <li class="Navigation__footerLinksItem"><a href="#">講師紹介</a></li>
+            <li class="Navigation__footerLinksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>instructor-list/">講師紹介</a></li>
             <li class="Navigation__footerLinksItem"><a href="#">ブログ</a></li>
             <li class="Navigation__footerLinksItem"><a href="#">求人</a></li>
           </ul>
