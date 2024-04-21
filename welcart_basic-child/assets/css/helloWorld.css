@@ -3,6 +3,7 @@
   padding: 45px 20px;
   background-image: url("https://dummyimage.com/390x746/f27d53/fff.png");
   background-repeat: no-repeat;
+  background-size: cover;
 
   .HelloWorld__titleText {
     display: inline-block;
