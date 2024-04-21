@@ -1,2 +1,22 @@
 .RecruitMain {
+  position: relative;
+  padding: 41px 20px 24px;
+
+  .RecruitMain__title {
+    .RecruitMain__titleText {
+      margin-bottom: 12px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--color-primary);
+    }
+
+    .RecruitMain__subTitle {
+      margin-bottom: 24px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+  }
 }
