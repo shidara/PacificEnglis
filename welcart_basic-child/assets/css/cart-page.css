@@ -1,0 +1,40 @@
+.cart-page {
+  &#content {
+    position: relative;
+    padding: 75px 20px 15px;
+  }
+
+  .cart_navi {
+    border: 1px solid #e9e9e9;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      flex: 1 1 auto;
+
+      &:not(.current) {
+        background-color: #f9f9f9;
+
+        &::before,
+        &::after {
+          border-width: 1px;
+          border-color: #e9e9e9;
+          background-color: #f9f9f9;
+        }
+      }
+    }
+
+    .current {
+      color: var(--color-wht);
+      background-color: var(--color-pacific-orange-b);
+
+      &::before,
+      &::after {
+        border-right: 0;
+        background-color: var(--color-pacific-orange-b);
+      }
+    }
+  }
+}

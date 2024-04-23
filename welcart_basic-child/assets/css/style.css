@@ -80,6 +80,9 @@ Base
 /* RecruitMain */
 @import url("./recruitMain.css");
 
+/* cart-page */
+@import url("./cart-page.css");
+
 /*================================
 Reset CSS
 ================================*/
