@@ -6,6 +6,8 @@
  * @subpackage Welcart_Basic
  */
 
+  $imgUri = get_theme_file_uri() . "/assets/images/footer/";
+
 ?>
 
 <section class="HelloWorld">
@@ -19,7 +21,7 @@
     <a href="tel:0975387350">
       <p class="HelloWorld__tellTitle">日本人スタッフが対応します</p>
       <div class="HelloWorld__tellNumber">
-        <span class="HelloWorld__tellNumberIcon"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="10" height="17" alt="" /></span>
+        <span class="HelloWorld__tellNumberIcon"><img src="<?php echo $imgUri;?>611.webp" height="29" alt="" /></span>
         <span class="HelloWorld__tellNumberText">097-538-7350</span>
       </div>
       <p class="HelloWorld__tellTime">受付時間 10:00-19:00</p>
@@ -28,9 +30,13 @@
 
   <div class="HelloWorld__experience">
     <a href="#">
-      <p class="HelloWorld__experienceTitle">&nbsp;&nbsp;&nbsp;最短翌日から可能！<br /><span class="HelloWorld__experienceTitleLarge">4</span>ステップで予約完了<span class="HelloWorld__experiencePin"><img src="https://dummyimage.com/38x38/f27d53/fff.png" width="38" height="38" alt="" /></span></p>
+      <p class="HelloWorld__experienceTitle">&nbsp;&nbsp;&nbsp;最短翌日から可能！<br />
+        <span class="HelloWorld__experienceTitleLarge">4</span>
+        ステップで予約完了
+        <span class="HelloWorld__experiencePin"><img src="<?php echo $imgUri;?>610.webp" height="38" alt="" /></span>
+      </p>
       <div class="HelloWorld__experienceLine">
-        <span class="HelloWorld__experienceLineIcon"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="10" height="17" alt="" /></span>
+        <span class="HelloWorld__experienceLineIcon"><img src="<?php echo $imgUri;?>line_logo.webp"  height="29" alt="" /></span>
         <span class="HelloWorld__experienceLineText">無料体験入学</span>
       </div>
 

@@ -30,4 +30,17 @@
     font-weight: 500;
     line-height: 1.8;
   }
+
+  .Message__thumbnail {
+    text-align: center;
+
+    img {
+      margin-bottom: 1px;
+    }
+  }
+
+  .Message__thumbnailCaption {
+    font-size: 13px;
+    color: var(--color-wht);
+  }
 }

@@ -6,6 +6,7 @@
  * @subpackage Welcart_Basic
  */
 
+  $imgUri = get_theme_file_uri() . "/assets/images/footer/";
 ?>
 
   <!-- フッター -->
@@ -38,7 +39,7 @@
 
     <div class="Footer__officialAccount">
       <a href="#" class="Footer__officialAccountLinks">
-        <img src="https://dummyimage.com/26x26/f27d53/fff.png" width="26" height="26" loading="lazy" class="Footer__officialAccountImage" />
+        <img src="<?php echo $imgUri;?>instagram-logo-bold.webp" width="26" height="26" loading="lazy" class="Footer__officialAccountImage" />
         <span>公式アカウントはこちら</span>
       </a>
     </div>
@@ -48,32 +49,32 @@
     <div class="Footer__navigation">
       <ul>
         <li class="Footer__navigationItem">
-          <a href="" class="Footer__navigationLink">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>international-school/" class="Footer__navigationLink">
             <div class="Footer__navigationInfo">
               <p class="Footer__navigationInfoTitle">インターナショナル</p>
               <p class="Footer__navigationInfoText">スクール</p>
             </div>
-            <div class="Footer__navigationArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" /></div>
+            <div class="Footer__navigationArrow"><img src="<?php echo $imgUri;?>98.webp" height="32" /></div>
           </a>
         </li>
 
-         <li class="Footer__navigationItem">
-          <a href="" class="Footer__navigationLink">
+        <li class="Footer__navigationItem">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/" class="Footer__navigationLink">
             <div class="Footer__navigationInfo">
               <p class="Footer__navigationInfoTitle">放課後</p>
               <p class="Footer__navigationInfoText">スクール</p>
             </div>
-            <div class="Footer__navigationArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" /></div>
+            <div class="Footer__navigationArrow"><img src="<?php echo $imgUri;?>98.webp" height="32" /></div>
           </a>
         </li>
 
-         <li class="Footer__navigationItem">
-          <a href="" class="Footer__navigationLink">
+        <li class="Footer__navigationItem">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/" class="Footer__navigationLink">
             <div class="Footer__navigationInfo">
               <p class="Footer__navigationInfoTitle">オンライン</p>
               <p class="Footer__navigationInfoText">スクール</p>
             </div>
-            <div class="Footer__navigationArrow"><img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" /></div>
+            <div class="Footer__navigationArrow"><img src="<?php echo $imgUri;?>98.webp" height="32" /></div>
           </a>
         </li>
       </ul>
@@ -123,7 +124,7 @@
 
     <!-- instagram -->
     <div class="Footer__instagram">
-      <a href="#"><img src="https://dummyimage.com/36x36/f27d53/fff.png" loading="lazy"/></a>
+      <a href="#"><img src="<?php echo $imgUri;?>instagram-logo-bold-white.webp" height="36" loading="lazy"/></a>
     </div>
 
     <small class="Footer__small">©Pacific English</small>

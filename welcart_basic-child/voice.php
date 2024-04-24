@@ -6,6 +6,7 @@
  * @subpackage Welcart_Basic
  */
 
+  $imgUri = get_theme_file_uri() . "/assets/images/top/";
 ?>
 
 <section class="Voice">
@@ -14,12 +15,12 @@
     <p class="Voice__subTitle">親御様の声</p>
   </div>
   <p class="Voice__summary">インターナショナルスクール・英会話教室</p>
-  <div class="Voice__stamp"><img src="https://dummyimage.com/175x90/f27d53/fff.png" width="175" height="90" alt="" loading="lazy" /></div>
+  <div class="Voice__stamp"><img src="<?php echo $imgUri;?>/32.webp" width="175" height="90" alt="" loading="lazy" /></div>
 
   <div class="Voice__contents">
     <div class="Voice__column">
       <div class="Voice__columnItem">
-        <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
+        <img src="<?php echo $imgUri;?>/33.webp" width="80" height="80" alt="" loading="lazy"/>
       </div>
 
       <div class="Voice__columnItem">
@@ -33,7 +34,7 @@
     <div class="Voice__contents">
     <div class="Voice__column">
       <div class="Voice__columnItem">
-        <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
+        <img src="<?php echo $imgUri;?>/34.webp" width="80" height="80" alt="" loading="lazy"/>
       </div>
 
       <div class="Voice__columnItem">
@@ -47,7 +48,7 @@
   <div class="Voice__contents">
     <div class="Voice__column">
       <div class="Voice__columnItem">
-        <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
+        <img src="<?php echo $imgUri;?>/34.webp" width="80" height="80" alt="" loading="lazy"/>
       </div>
 
       <div class="Voice__columnItem">
@@ -61,7 +62,7 @@
       <div class="Voice__contents">
     <div class="Voice__column">
       <div class="Voice__columnItem">
-        <img src="https://dummyimage.com/80x80/f27d53/fff.png" width="80" height="80" alt="" loading="lazy" class="Voice__columnItemImage" />
+        <img src="<?php echo $imgUri;?>/33.webp" width="80" height="80" alt="" loading="lazy"/>
       </div>
 
       <div class="Voice__columnItem">

@@ -106,6 +106,7 @@
     .HelloWorld__experienceTitleLarge {
       margin-right: 2px;
       font-size: 36px;
+      font-weight: bold;
       color: var(--color-primary);
     }
 
@@ -114,6 +115,7 @@
       height: 57px;
       border-radius: 8px;
       color: var(--color-wht);
+      font-weight: bold;
       background-color: #06c755;
     }
 

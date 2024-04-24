@@ -1,6 +1,6 @@
 .Class {
   position: relative;
-  padding: 126px 20px 15px;
+  padding: 108px 20px 15px;
 
   .Class__title {
     .Class__titleText {
@@ -30,10 +30,15 @@
 
   .Class__stamp {
     position: absolute;
-    top: 40px;
+    top: 32px;
     right: 23px;
     width: 175px;
     height: 90px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
   }
 
   .Class__navigation {

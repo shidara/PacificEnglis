@@ -6,7 +6,7 @@
  * @subpackage Welcart_Basic
  */
 
-
+  $imgUri = get_theme_file_uri() . "/assets/images/top/";
 ?>
 <?php get_header();?>
 
@@ -62,7 +62,10 @@
         <p class="Message__subText">パシフィックイングリッシュだから</p>
         <p class="Message__title">こどもたちに愛と情熱を。<br />グローバル教育で<br />地域に愛され40年。</p>
         <p class="Message__summary">大分市内で英語教室・インターナショナルスクール（英語の保育園）を運営している当校は、ネイティブの先生主体の授業でプロフェッショナルな言動で国際人育成に愛と情熱を注ごうがモットーです。<br/>英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。こどもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。また、GSE(Global Scale of English)も導入しており、レベルを10から90のスケールで細分化し、学習指標(CAN-DO リスト) と紐づけ標準化した、グローバルで通用する英語習熟度指標です。<br/>英検や、TOEIC、TOEFL、各学校の中学・高校・大学受験などにも対応しております。だからこそ、1984年から大分市内で40年以上英語教室として、地域の皆様に愛され続けています。</p>
-        <div><img src="https://dummyimage.com/340x249/f27d53/fff.png" width="340" height="249" /></div>
+        <div class="Message__thumbnail">
+          <img src="<?php echo $imgUri;?>/1.webp" width="340" height="249" />
+          <p class="Message__thumbnailCaption">開校当時のこどもたちと、創業者 原パトリシア</p>
+        </div>
       </div>
     </section>
 
@@ -73,40 +76,40 @@
         <p class="OurFeatures__subTitle">大分市で選ばれ続ける理由</p>
       </div>
       <p class="OurFeatures__summary">インターナショナルスクール・英語教室</p>
-      <div class="OurFeatures__stamp"><img src="https://dummyimage.com/175x90/f27d53/fff.png" width="175" height="90" alt="" loading="lazy" /></div>
+      <div class="OurFeatures__stamp"><img src="<?php echo $imgUri;?>/32.webp" width="175" height="90" alt="" loading="lazy" /></div>
 
       <div class="OurFeatures__contents">
         <div class="OurFeatures__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
-          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <img src="<?php echo $imgUri;?>/16.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><span>01</span>選ばれてます</p>
           <h4 class="OurFeatures__itemTitle">大分県１校目の英語教室を創立</h4>
           <p class="OurFeatures__itemSummary">創業者の原パトリシアはイリノイ州立大学教育学部英語学科卒業後にイリノイ州での高校英語教師の経験を経て１９８４年にパシフィックイングリッシュの先駆けとなるパトリシアイングリッシュスクールを大分県杵築市でスタートしました。教員免許をもった本物の英語講師の学校として直ぐに噂が広まり多くの方が英語を学びに来られました。</p>
         </div>
 
-         <div class="OurFeatures__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
-          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+        <div class="OurFeatures__item">
+          <img src="<?php echo $imgUri;?>/21.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><span>02</span>選ばれてます</p>
           <h4 class="OurFeatures__itemTitle">豊富な講師による国際人育成プログラム</h4>
           <p class="OurFeatures__itemSummary">英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。子どもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。</p>
         </div>
 
-         <div class="OurFeatures__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
-          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+        <div class="OurFeatures__item">
+          <img src="<?php echo $imgUri;?>/20.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><span>03</span>選ばれてます</p>
           <h4 class="OurFeatures__itemTitle">総生徒数3万人越え</h4>
           <p class="OurFeatures__itemSummary">有難いことに40年間の間に、総生徒数が1万人を超えました。地域の皆様に愛され続け、多くの方に英語を教えてきました。</p>
         </div>
 
         <div class="OurFeatures__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
-          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <img src="<?php echo $imgUri;?>/2.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><span>04</span>選ばれてます</p>
           <h4 class="OurFeatures__itemTitle">英語教室なのに<br/>バス送迎</h4>
           <p class="OurFeatures__itemSummary">大分市の英語教室では珍しい、バスでの送迎サービスをご用意しております。保育所や小学校よりピックアップ、帰りはご自宅まで安全に送り届けますので、安心してお子様を預けていただけます。</p>
         </div>
 
         <div class="OurFeatures__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
-          <p class="OurFeatures__itemSubTitle"><img src="https://dummyimage.com/32x29/f27d53/fff.png" width="32" height="29" alt="" loading="lazy" class="" />選ばれてます</p>
+          <img src="<?php echo $imgUri;?>/15.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+          <p class="OurFeatures__itemSubTitle"><span>05</span>選ばれてます</p>
           <h4 class="OurFeatures__itemTitle">総生徒数1万人越え</h4>
           <p class="OurFeatures__itemSummary">お受験英語ではなく、実際に外国に行った際に活用できる、リアルイングリッシュを学習していただき、諸外国でご活躍いただける、グローバル人材になっていただきます。</p>
         </div>
@@ -120,7 +123,7 @@
         <p class="Class__subTitle">クラス紹介</p>
       </div>
       <p class="Class__summary">インターナショナルスクール・英会話教室</p>
-      <div class="Class__stamp"><img src="https://dummyimage.com/175x90/f27d53/fff.png" width="175" height="90" alt="" loading="lazy" /></div>
+      <div class="Class__stamp"><img src="<?php echo $imgUri;?>/31.webp" width="175" height="90" alt="" loading="lazy" /></div>
 
       <div class="Class__navigation">
         <nav class="Class__navigationList">
@@ -154,30 +157,30 @@
 
       <div class="Class__contents">
         <div id="Class-1" class="Class__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="Class__itemImage" />
+          <img src="<?php echo $imgUri;?>/17.webp" height="234" alt="" loading="lazy" class="Class__itemImage" />
           <p class="Class__itemTag">2歳児〜OK</p>
           <h4 class="Class__itemTitle">英会話教室</h4>
           <p class="Class__itemSubText">英語脳が身に付く！インターナショナスクール</p>
           <p class="Class__itemSummary">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
-          <p class="Class__itemMore"><a href="#"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
+          <p class="Class__itemMore"><a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
         </div>
 
-         <div id="Class-2" class="Class__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="Class__itemImage" />
+        <div id="Class-2" class="Class__item">
+          <img src="<?php echo $imgUri;?>/18.webp" height="234" alt="" loading="lazy" class="Class__itemImage" />
           <p class="Class__itemTag">2歳児〜OK</p>
           <h4 class="Class__itemTitle">英語の保育園</h4>
           <p class="Class__itemSubText">受験・試験対策にも！アフタースクール</p>
           <p class="Class__itemSummary">パシフィックイングリッシュで、読み・書き・発音の各スキルを効果的に身につけることが可能なフォニックスを基盤に英語力を飛躍的に伸ばしましょう。</p>
-          <p class="Class__itemMore"><a href="#"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
+          <p class="Class__itemMore"><a href="<?php echo esc_url( home_url( '/' ) ); ?>international-school/"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
         </div>
 
-         <div id="Class-3" class="Class__item">
-          <img src="https://dummyimage.com/350x234/f27d53/fff.png" height="234" alt="" loading="lazy" class="Class__itemImage" />
+        <div id="Class-3" class="Class__item">
+          <img src="<?php echo $imgUri;?>/19.webp" height="234" alt="" loading="lazy" class="Class__itemImage" />
           <p class="Class__itemTag">小学生〜OK</p>
           <h4 class="Class__itemTitle">オンライン英会話</h4>
           <p class="Class__itemSubText">自分のペースでお家で英会話！</p>
           <p class="Class__itemSummary">自宅で楽しむ1対1のオンライン英会話。小学生からの会話力向上に最適です。</p>
-          <p class="Class__itemMore"><a href="#"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
+          <p class="Class__itemMore"><a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/"><span>くわしく見る</span><span class="Class__itemMoreIcon">→</span></a></p>
         </div>
       </div>
     </section>
