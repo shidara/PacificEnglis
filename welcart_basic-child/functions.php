@@ -61,12 +61,12 @@ add_action('wp_enqueue_scripts', 'add_styles', 11);
 function add_scripts() {
   $date = date("Y-m-d-h-1");
     // 閉じBODYタグ前に出力
-   $js_directory = get_template_directory_uri().'-child/assets/js/';
-   $js_version = $date; // '1.0.0';//ここの数値を変更すればバージョンが更新できる
-   wp_enqueue_script('jquery', true);
+  $js_directory = get_template_directory_uri().'-child/assets/js/';
+  $js_version = $date; // '1.0.0';//ここの数値を変更すればバージョンが更新できる
+  wp_enqueue_script('jquery', true);
   //  wp_enqueue_script( 'micromodal', 'https://unpkg.com/micromodal/dist/micromodal.min.js', true);
-   wp_enqueue_script( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', true);
-   wp_enqueue_script('main', $js_directory.'main.js', array('jquery'), $js_version, true);
+  wp_enqueue_script( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', true);
+  wp_enqueue_script('main', $js_directory.'main.js', array('jquery'), $js_version, true);
 }
 add_action('wp_print_scripts', 'add_scripts', 11);
 
@@ -81,5 +81,7 @@ include(STYLESHEETPATH . "/$file.php");
 return ob_get_clean();
 }
 add_shortcode('call_php', 'my_php_Include');
+
+
 ?>
 
