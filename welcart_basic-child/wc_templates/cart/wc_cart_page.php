@@ -6,12 +6,11 @@
  * @subpackage Welcart_Basic
  */
 
-
-
-get_header();
+get_template_part('header-cart');
 ?>
+
 <div class="p_shopCart">
-  <?php get_template_part( 'parts/subpageHeader' ); ?>
+  <?php // get_template_part( 'parts/subpageHeader' ); ?>
   <div class="l_container">
     <div class="l_inner">
       <div class="cart-page" role="main">
