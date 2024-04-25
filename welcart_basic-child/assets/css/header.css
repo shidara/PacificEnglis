@@ -36,4 +36,20 @@
     appearance: none;
     background-color: transparent;
   }
+
+  .Header__cartNavigation {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+
+    a {
+      display: block;
+    }
+  }
+
+  .Header__cartNavigationIcon {
+    width: 100%;
+    height: 28px;
+    object-fit: contain;
+  }
 }

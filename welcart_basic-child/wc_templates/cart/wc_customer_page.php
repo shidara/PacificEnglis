@@ -6,12 +6,12 @@
  * @subpackage Welcart_Basic
  */
 
-get_header();
+get_template_part('header-cart');
 ?>
 
   <div id="primary" class="site-content">
     <div id="content" class="cart-page" role="main">
-<p>😸</p>
+
     <?php
     if ( have_posts() ) :
       usces_remove_filter();
