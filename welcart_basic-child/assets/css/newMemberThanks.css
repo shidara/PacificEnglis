@@ -1,0 +1,66 @@
+.NewMemberThanksPage {
+  margin: 0 auto;
+  background-color: #fbfbf9;
+}
+
+.NewMemberThanks {
+  height: 50vh;
+  padding: 41px 20px 76px;
+
+  .NewMemberThanks__inner {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(60 * (100vw / var(--width-pc-origin)));
+    }
+
+    p {
+      margin-bottom: 60px;
+      font-size: 14px;
+      line-height: 1.8;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(60 * (100vw / var(--width-pc-origin)));
+        font-size: calc(16 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .NewMemberThanks__title {
+    margin-bottom: 40px;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1.1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(40 * (100vw / var(--width-pc-origin)));
+      font-size: calc(27 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .NewMemberThanks__submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  .NewMemberThanks__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    margin-bottom: 0;
+    padding: 13px;
+    color: var(--color-wht);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--color-pacific-orange-b);
+
+    @media screen and (min-width: 768px) {
+      height: calc(60 * (100vw / var(--width-pc-origin)));
+      padding: calc(13 * (100vw / var(--width-pc-origin)));
+      font-size: calc(18 * (100vw / var(--width-pc-origin)));
+    }
+  }
+}

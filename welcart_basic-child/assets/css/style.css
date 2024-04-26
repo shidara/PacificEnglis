@@ -99,6 +99,9 @@ Base
 /* 新規会員登録 */
 @import url("./newMember.css");
 
+/* 新規会員登録 Thanks */
+@import url("./newMemberThanks.css");
+
 /*================================
 Reset CSS
 ================================*/
