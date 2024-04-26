@@ -30,7 +30,7 @@
         </div>
 
         <div class="Header__cartNavigation">
-          <a href="#">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>/usces-member/">
             <img src="<?php echo $imgUri; ?>/person.webp" alt="マイページ" class="Header__cartNavigationIcon" />
           </a>
 

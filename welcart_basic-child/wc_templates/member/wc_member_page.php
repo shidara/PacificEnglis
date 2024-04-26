@@ -6,21 +6,31 @@
  * @subpackage Welcart_Basic
  */
 
-get_header();
+get_template_part('header-cart');
 ?>
-<div class="p_shopMember">
-  <?php get_template_part( 'parts/subpageHeader' ); ?>
-  <div class="l_container">
-    <div class="l_inner">
-      <div class="member-page" role="main">
+
+<div class="MemberPage">
+  <section class="Breadcrumbs">
+    <ul>
+      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">TOP</a></li>
+      <li>マイページ</li>
+    </ul>
+  </section>
+
+  <section class="MemberContents">
+    <div class="MemberContents__title">
+      <h3 class="MemberContents__titleText">MY PAGE</h3>
+      <p class="MemberContents__subTitle MemberContents__subTitle--beforeIcon">マイページ</p>
+    </div>
+
+    <div class="MemberContents__inner" role="main">
       <?php if ( have_posts() ) : usces_remove_filter(); ?>
         <article class="post" id="wc_<?php usces_page_name(); ?>">
-
-          <h1 class="member_page_title"><?php esc_html_e( 'My page', 'welcart_basic' ); ?></h1>
-
           <div id="memberpages">
             <div class="whitebox">
               <div id="memberinfo">
+
+                <h4 class="MemberContents__itemTitle">会員情報</h4>
 
                 <table>
                   <tr>
@@ -48,24 +58,15 @@ get_header();
                   </tr>
                 </table>
 
-                <ul class="member_submenu">
-                  <li class="member-edit"><a href="#edit"><?php esc_html_e( 'To member information editing', 'usces' ); ?></a></li>
-                  <?php do_action( 'usces_action_member_submenu_list' ); ?>
-                  <li class="member-logout"><?php usces_loginout(); ?></li>
-                </ul>
-
                 <div class="header_explanation">
                   <?php do_action( 'usces_action_memberinfo_page_header' ); ?>
                 </div><!-- .header_explanation -->
 
-                <h3><?php esc_html_e( 'Purchase history', 'usces' ); ?></h3>
-                <div class="currency_code"><?php esc_html_e( 'Currency', 'usces' ); ?> : <?php usces_crcode(); ?></div>
+                <h4 class="MemberContents__itemTitle">購入履歴</h4>
 
                 <?php usces_member_history(); ?>
 
-                <h3><a name="edit"></a><?php esc_html_e( 'Member information editing', 'usces' ); ?></h3>
-                <div class="error_message"><?php usces_error_message(); ?></div>
-
+                <h4 class="MemberContents__itemTitle">会員情報編集</h4>
                 <form action="<?php usces_url( 'member' ); ?>#edit" method="post" onKeyDown="if(event.keyCode == 13){return false;}">
                   <table class="customer_form">
                     <?php uesces_addressform( 'member', usces_memberinfo( null ), 'echo' ); ?>
@@ -86,11 +87,12 @@ get_header();
                   </table>
 
                   <input name="member_regmode" type="hidden" value="editmemberform" />
+
                   <div class="send">
-                    <input name="top" class="top" type="button" value="<?php esc_attr_e( 'Back to the top page.', 'usces' ); ?>" onclick="location.href='<?php echo esc_url( home_url() ); ?>'" />
-                    <input name="editmember" class="editmember" type="submit" value="<?php esc_attr_e( 'update it', 'usces' ); ?>" />
+                    <input name="editmember" class="editmember" type="submit" value="会員情報を保存する" />
                     <input name="deletemember" class="deletemember" type="submit" value="<?php esc_attr_e( 'delete it', 'usces' ); ?>" onclick="return confirm('<?php esc_attr_e( 'All information about the member is deleted. Are you all right?', 'usces' ); ?>');" />
                   </div>
+
                   <?php do_action( 'usces_action_memberinfo_page_inform' ); ?>
                 </form>
 
@@ -109,11 +111,9 @@ get_header();
         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'usces' ); ?></p>
 
       <?php endif; ?>
-
-      </div><!-- #content -->
     </div>
-  </div>
-</div>
+  </section>
 
+</div>
 <?php
 get_footer();
