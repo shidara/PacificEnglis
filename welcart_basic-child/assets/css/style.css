@@ -87,6 +87,9 @@ Base
 /* Breadcrumbs */
 @import url("./breadcrumbs.css");
 
+/* 利用規約 */
+@import url("./terms.css");
+
 /*================================
 Reset CSS
 ================================*/
