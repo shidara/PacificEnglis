@@ -102,6 +102,9 @@ Base
 /* 新規会員登録 Thanks */
 @import url("./newMemberThanks.css");
 
+/* マイページ */
+@import url("./member.css");
+
 /*================================
 Reset CSS
 ================================*/
