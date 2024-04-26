@@ -1,0 +1,28 @@
+.Breadcrumbs {
+  padding: 41px 20px 0;
+
+  @media screen and (min-width: 600px) {
+    width: var(--width-pc-origin-px);
+    margin: 0 auto;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    color: #000;
+
+    &:not(:first-child) {
+      position: relative;
+      padding-left: 28px;
+
+      &::before {
+        content: "＞";
+        position: absolute;
+        top: 0;
+        left: 8px;
+      }
+    }
+  }
+}
