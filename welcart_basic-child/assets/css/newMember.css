@@ -1,0 +1,320 @@
+.NewMemberPage {
+  margin: 0 auto;
+  background-color: #fbfbf9;
+}
+
+.NewMember {
+  position: relative;
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: 1083px;
+    margin: 0 auto;
+  }
+
+  .NewMember__title {
+    .NewMember__titleText {
+      margin-bottom: 12px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .NewMember__subTitle {
+      margin-bottom: 24px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
+
+      &.NewMember__subTitle--beforeIcon {
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 0;
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: var(--color-primary);
+        }
+
+        @media screen and (min-width: 768px) {
+          padding-left: calc(20 * (100vw / var(--width-pc-origin)));
+
+          &::before {
+            top: calc(7 * (100vw / var(--width-pc-origin)));
+            width: calc(10 * (100vw / var(--width-pc-origin)));
+            height: calc(10 * (100vw / var(--width-pc-origin)));
+          }
+        }
+      }
+    }
+  }
+
+  .NewMember__summary {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: var(--color-blk);
+    line-height: 1.8;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(5 * (100vw / var(--width-pc-origin)));
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .NewMember__note {
+    margin-bottom: 23px;
+    font-size: 16px;
+    color: var(--color-blk);
+    line-height: 1.8;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(23 * (100vw / var(--width-pc-origin)));
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .NewMember__item {
+    margin-bottom: 27px;
+
+    .c_form_name {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+        font-size: calc(15 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .required {
+      display: inline-block;
+      margin-right: 6px;
+      padding: 4px 6px;
+      border-radius: 3px;
+      color: var(--color-wht);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1;
+      background-color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-right: calc(6 * (100vw / var(--width-pc-origin)));
+        padding: calc(4 * (100vw / var(--width-pc-origin)))
+          calc(6 * (100vw / var(--width-pc-origin)));
+        font-size: calc(13 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .c_form_input {
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 52px;
+        padding: 0 20px;
+        border: 1px solid var(--color-pacific-gray-a);
+        font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+          height: calc(52 * (100vw / var(--width-pc-origin)));
+          padding: 0 calc(20 * (100vw / var(--width-pc-origin)));
+          font-size: calc(14 * (100vw / var(--width-pc-origin)));
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+
+      &._zip {
+        display: flex;
+        gap: 10px;
+
+        @media screen and (min-width: 768px) {
+          gap: calc(10 * (100vw / var(--width-pc-origin)));
+        }
+
+        input {
+          width: 100%;
+        }
+
+        button {
+          flex-grow: 0;
+          flex-shrink: 0;
+          box-sizing: border-box;
+          width: 134px;
+          height: 50px;
+          border-radius: 6px;
+          background-color: var(--color-pacific-orange-b);
+          color: var(--color-wht);
+          font-size: 12px;
+          cursor: pointer;
+
+          @media screen and (min-width: 768px) {
+            width: calc(134 * (100vw / var(--width-pc-origin)));
+            height: calc(50 * (100vw / var(--width-pc-origin)));
+            font-size: calc(12 * (100vw / var(--width-pc-origin)));
+          }
+        }
+      }
+
+      &._select {
+        position: relative;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          width: 10px;
+          height: 10px;
+          border: 3px solid #707070;
+          border-width: 0 1px 1px 0;
+          cursor: pointer;
+          pointer-events: none;
+          rotate: 45deg;
+          translate: 0 -50%;
+        }
+
+        select {
+          box-sizing: border-box;
+          width: 100%;
+          height: 52px;
+          padding: 0 20px;
+          border: solid1px #707070;
+          background-color: #ffffff;
+          background-image: none;
+          color: #292929;
+          font-size: 14px;
+          cursor: pointer;
+          border-radius: 0;
+          appearance: none;
+
+          @media screen and (min-width: 768px) {
+            height: calc(52 * (100vw / var(--width-pc-origin)));
+            padding: 0 calc(20 * (100vw / var(--width-pc-origin)));
+            font-size: calc(14 * (100vw / var(--width-pc-origin)));
+          }
+        }
+      }
+    }
+  }
+
+  .c_form_agree {
+    position: relative;
+    margin-top: 18px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: calc(18 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(40 * (100vw / var(--width-pc-origin)));
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      input[type="checkbox"] {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #707070;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        appearance: none;
+
+        @media screen and (min-width: 768px) {
+          width: calc(20 * (100vw / var(--width-pc-origin)));
+          height: calc(20 * (100vw / var(--width-pc-origin)));
+        }
+
+        &:checked::after {
+          opacity: 1;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          transform: rotate(-45deg);
+          width: 10px;
+          height: 5px;
+          border-bottom: 2px solid var(--color-primary);
+          border-left: 2px solid var(--color-primary);
+          opacity: 0;
+
+          @media screen and (min-width: 768px) {
+            top: calc(4 * (100vw / var(--width-pc-origin)));
+            left: calc(4 * (100vw / var(--width-pc-origin)));
+            width: calc(10 * (100vw / var(--width-pc-origin)));
+            height: calc(5 * (100vw / var(--width-pc-origin)));
+            border-bottom: calc(2 * (100vw / var(--width-pc-origin)));
+            border-left: calc(2 * (100vw / var(--width-pc-origin)));
+          }
+        }
+      }
+
+      .mwform-checkbox-field-text {
+        margin-left: 14px;
+        font-size: 14px;
+
+        a {
+          padding-bottom: 4px;
+          font-weight: bold;
+          color: var(--color-primary);
+          border-bottom: 2px solid var(--color-primary);
+        }
+      }
+    }
+  }
+
+  .c_form_submit {
+    text-align: center;
+
+    .c_form_submit_button {
+      width: 100%;
+      height: 52px;
+      border-radius: 60px;
+      margin-bottom: 0;
+      padding: 13px;
+      color: var(--color-wht);
+      font-size: 18px;
+      font-weight: bold;
+      background-color: var(--color-pacific-orange-b);
+
+      @media screen and (min-width: 768px) {
+        height: calc(52 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+}

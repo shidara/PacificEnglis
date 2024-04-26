@@ -19,7 +19,7 @@
 
     <section class="Contact">
       <div class="Contact__title">
-        <h3 class="Contact__titleText">CONTACT</h3>
+        <h3 class="Contact__titleText">PRIVACY POLICY</h3>
         <p class="Contact__subTitle Contact__subTitle--beforeIcon">個人情報保護方針</p>
       </div>
 
