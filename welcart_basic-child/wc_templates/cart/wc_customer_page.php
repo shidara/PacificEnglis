@@ -242,5 +242,16 @@ get_template_part('header-cart');
     </div><!-- #content -->
   </div><!-- #primary -->
 
-<?php
-get_footer();
+<?php get_footer(); ?>
+<script type='text/javascript' src='https://ajaxzip3.github.io/ajaxzip3.js?'></script>
+<script type="text/javascript">
+(function($) {
+	jQuery("#search_zipcode").click(function () {
+    var str = jQuery("#zipcode").val();
+    if( !str.match(/^\d{7}$|^\d{3}-\d{4}$/) ){
+        alert("郵便番号を正しくご入力ください。");
+        $("#zipcode").focus();
+    }
+	});
+})(jQuery);
+</script>

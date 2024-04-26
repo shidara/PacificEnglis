@@ -9,59 +9,24 @@
 get_template_part('header-cart');
 ?>
 
-  <div id="primary" class="site-content CompletionPage">
-    <div id="content" class="cart-page" role="main">
-    <?php
-    if ( have_posts() ) :
-      usces_remove_filter();
-      ?>
+<div class="p_thanks CompletionPage">
+  <?php // get_template_part( 'parts/subpageHeader' ); ?>
+  <div class="l_container">
+    <div class="cart-page" role="main">
+      <?php if ( have_posts() ) : usces_remove_filter(); ?>
+      <div class="p_thanks_inner">
+        <h3>ご注文ありがとうございました。</h3>
+        <p>自動送信メールにて、注文完了メールを送信しております。<br/>万が一メールが届かない場合は、大変お手数をおかけいたしますが、<br />0565-41-7825までお電話にてお問い合わせください。</p>
 
-      <article class="post" id="wc_<?php usces_page_name(); ?>">
-        <h1 class="cart_page_title"><?php esc_html_e( 'Completion', 'usces' ); ?>aaaa</h1>
-
-        <div id="cart_completion">
-
-          <h3><?php esc_html_e( 'It has been sent succesfully.', 'usces' ); ?></h3>
-
-          <div class="header_explanation">
-            <p>
-              <?php esc_html_e( 'Thank you for shopping.', 'usces' ); ?><br />
-              <?php esc_html_e( "If you have any questions, please contact us by 'Contact'.", 'usces' ); ?>
-            </p>
-            <?php do_action( 'usces_action_cartcompletion_page_header', $usces_entries, $usces_carts ); ?>
-          </div><!-- .header_explanation -->
-
-          <?php if ( defined( 'WCEX_DLSELLER' ) ) : ?>
-            <?php dlseller_completion_info( $usces_carts ); ?>
-          <?php endif; ?>
-
-          <?php usces_completion_settlement(); ?>
-
-          <?php do_action( 'usces_action_cartcompletion_page_body', $usces_entries, $usces_carts ); ?>
-
-          <div class="footer_explanation">
-            <?php do_action( 'usces_action_cartcompletion_page_footer', $usces_entries, $usces_carts ); ?>
-          </div><!-- .footer_explanation -->
-
-          <div class="send">
-            <a href="<?php echo esc_url_raw( home_url() ); ?>" class="back_to_top_button">
-              <?php esc_html_e( 'Back to the top page.', 'usces' ); ?>
-            </a>
-          </div><!-- .send -->
-          <?php echo apply_filters( 'usces_filter_conversion_tracking', null, $usces_entries, $usces_carts ); ?>
-
-        </div><!-- #cart_completion -->
-
-      </article><!-- .post -->
-
-    <?php else : ?>
-
-      <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'usces' ); ?></p>
-
-    <?php endif; ?>
-
-    </div><!-- #content -->
-  </div><!-- #primary -->
-
-<?php
-get_footer();
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="CompletionPage__next">
+          <span>他の商品を見る</span>
+        </a>
+      </div>
+      <?php else : ?>
+        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'usces' ); ?></p>
+      <?php endif; ?>
+    </div>
+  </div>
+  <?php get_template_part( 'parts/contactArea' ); ?>
+</div>
+<?php get_footer();?>
