@@ -63,7 +63,7 @@ get_template_part('header-cart');
                 <?php endif; ?>
               </div><!-- #cart -->
               <div class="send _flex">
-                <input name="customerinfo" type="submit" class="to_customerinfo_button" value="次　へ" onclick="return uscesCart.cartNext();">
+                <input name="customerinfo" type="submit" class="to_customerinfo_button" value="ご注文手続きへ" onclick="return uscesCart.cartNext();">
                 <input name="previous" type="button" id="previouscart" class="continue_shopping_button" value="買い物を続ける" onclick="uscesCart.previousCart();">
               </div>
             <?php else : ?>

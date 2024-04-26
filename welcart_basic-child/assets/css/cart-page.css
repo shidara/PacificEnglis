@@ -1,6 +1,8 @@
-.p_shopCart {
+.p_shopCart,
+.CustomerPage {
   position: relative;
   padding: 55px 20px 15px;
+  background-color: #fbfbf9;
 
   /* フロー図 */
   .cart_navi {
@@ -182,20 +184,14 @@
       padding-right: 16px;
     }
   }
+}
 
+/* カート専用 */
+.p_shopCart {
   /* 買い物を続ける */
   .send {
     position: relative;
-
-    &::before {
-      position: absolute;
-      top: 20px;
-      left: 18px;
-      content: "←";
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--color-blk);
-    }
+    padding-top: 60px;
 
     input {
       width: 100%;
@@ -205,6 +201,213 @@
       font-weight: 700;
       color: var(--color-blk);
       background-color: var(--color-pacific-gray-a);
+
+      /* ご注文を続ける */
+      &.to_customerinfo_button {
+        color: var(--color-wht);
+        background-color: var(--color-pacific-orange-b);
+      }
+    }
+  }
+}
+
+/* お客様情報専用 */
+.CustomerPage {
+  #customer-info h5 {
+    margin-bottom: 18px;
+    padding: 0;
+    border: 0;
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  .cart_page_title_sub {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .customer_form {
+    tr {
+      margin-bottom: 12px;
+      border: 0;
+    }
+
+    input,
+    input#loginmail {
+      width: 100%;
+      border: 1px solid var(--color-pacific-gray-a);
+    }
+  }
+
+  .c_form_item {
+    margin-bottom: 36px;
+
+    .c_form_name {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .required {
+      display: inline-block;
+      margin-right: 6px;
+      padding: 4px 6px;
+      color: var(--color-wht);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1;
+      background-color: #e71218;
+    }
+
+    .c_form_input {
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 52px;
+        padding: 0 20px;
+        border: 1px solid #707070;
+        font-size: 14px;
+      }
+
+      &._sm-row input {
+        margin-bottom: 15px;
+      }
+
+      &._zip {
+        display: flex;
+        gap: 10px;
+
+        input {
+          width: 100%;
+        }
+
+        button {
+          flex-grow: 0;
+          width: 180px;
+          height: auto;
+          border: 1px solid var(--color-pacific-orange-a);
+          background-color: transparent;
+          color: var(--color-pacific-orange-b);
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
+
+      &._select {
+        position: relative;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          width: 10px;
+          height: 10px;
+          border: 3px solid #707070;
+          border-width: 0 1px 1px 0;
+          cursor: pointer;
+          pointer-events: none;
+          rotate: 45deg;
+          translate: 0 -50%;
+        }
+
+        select {
+          box-sizing: border-box;
+          width: 100%;
+          height: 52px;
+          padding: 0 20px;
+          border: solid1px #707070;
+          background-color: #ffffff;
+          background-image: none;
+          color: #292929;
+          font-size: 14px;
+          cursor: pointer;
+          border-radius: 0;
+          appearance: none;
+        }
+      }
+    }
+  }
+
+  .c_form_agree {
+    position: relative;
+    margin-top: 18px;
+    margin-bottom: 40px;
+
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      input[type="checkbox"] {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #707070;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        appearance: none;
+
+        &:checked::after {
+          opacity: 1;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          transform: rotate(-45deg);
+          width: 10px;
+          height: 5px;
+          border-bottom: 2px solid var(--color-primary);
+          border-left: 2px solid var(--color-primary);
+          opacity: 0;
+        }
+      }
+
+      .mwform-checkbox-field-text {
+        margin-left: 14px;
+        font-size: 14px;
+
+        a {
+          padding-bottom: 4px;
+          font-weight: bold;
+          color: var(--color-primary);
+          border-bottom: 2px solid var(--color-primary);
+        }
+      }
+    }
+  }
+
+  .send {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+
+    .back_cart_button,
+    .to_deliveryinfo_button,
+    .to_reganddeliveryinfo_button,
+    .to_memberlogin_button {
+      width: 100%;
+      height: 52px;
+      border-radius: 60px;
+      margin-bottom: 0;
+      padding: 13px;
+    }
+
+    .to_memberlogin_button {
+      color: var(--color-wht);
+      background-color: var(--color-pacific-orange-b);
     }
   }
 }
