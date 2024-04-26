@@ -9,7 +9,7 @@
 get_template_part('header-cart');
 ?>
 
-  <div id="primary" class="site-content">
+  <div id="primary" class="site-content CompletionPage">
     <div id="content" class="cart-page" role="main">
     <?php
     if ( have_posts() ) :
