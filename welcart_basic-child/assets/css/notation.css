@@ -1,0 +1,115 @@
+.NotationPage {
+  margin: 0 auto;
+  background-color: #fbfbf9;
+}
+
+.Notation {
+  position: relative;
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: 1083px;
+    margin: 0 auto;
+  }
+
+  .Notation__title {
+    .Notation__titleText {
+      margin-bottom: 12px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .Notation__subTitle {
+      margin-bottom: 24px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
+
+      &.Notation__subTitle--beforeIcon {
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 0;
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: var(--color-primary);
+        }
+
+        @media screen and (min-width: 768px) {
+          padding-left: calc(20 * (100vw / var(--width-pc-origin)));
+
+          &::before {
+            top: calc(7 * (100vw / var(--width-pc-origin)));
+            width: calc(10 * (100vw / var(--width-pc-origin)));
+            height: calc(10 * (100vw / var(--width-pc-origin)));
+          }
+        }
+      }
+    }
+  }
+
+  .Notation__table {
+    table {
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      border: 1px solid var(--color-pacific-gray-a);
+    }
+
+    tr {
+      border-bottom: 1px solid var(--color-pacific-gray-a);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    th,
+    td {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      vertical-align: bottom;
+    }
+
+    th {
+      max-width: 30%;
+      border-right: 1px solid var(--color-pacific-gray-a);
+
+      text-align: center;
+      background-color: var(--color-pacific-gray-b);
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 18px 21px;
+      }
+    }
+
+    td {
+      padding: 18px 21px;
+    }
+  }
+}

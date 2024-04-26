@@ -81,6 +81,12 @@ Base
 /* cart-page */
 @import url("./cart-page.css");
 
+/* 特定商取引法に基づく表記 */
+@import url("./notation.css");
+
+/* Breadcrumbs */
+@import url("./breadcrumbs.css");
+
 /*================================
 Reset CSS
 ================================*/

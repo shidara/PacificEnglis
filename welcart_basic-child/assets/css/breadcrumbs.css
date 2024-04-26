@@ -1,0 +1,41 @@
+.Breadcrumbs {
+  padding: 41px 20px 0;
+
+  @media screen and (min-width: 768px) {
+    width: var(--width-pc-origin-px);
+    margin: 0 auto;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    color: #000;
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(12 * (100vw / var(--width-pc-origin)));
+    }
+
+    &:not(:first-child) {
+      position: relative;
+      padding-left: 28px;
+
+      @media screen and (min-width: 768px) {
+        padding-left: calc(28 * (100vw / var(--width-pc-origin)));
+
+        &::before {
+          left: calc(8 * (100vw / var(--width-pc-origin)));
+        }
+      }
+
+      &::before {
+        content: "＞";
+        position: absolute;
+        top: 0;
+        left: 8px;
+      }
+    }
+  }
+}
