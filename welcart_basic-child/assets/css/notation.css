@@ -7,7 +7,7 @@
   position: relative;
   padding: 41px 20px 76px;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     width: 1083px;
     margin: 0 auto;
   }
@@ -19,6 +19,11 @@
       font-weight: 700;
       line-height: 1.3;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Notation__subTitle {
@@ -27,6 +32,11 @@
       font-weight: 700;
       line-height: 1.6;
       color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
 
       &.Notation__subTitle--beforeIcon {
         position: relative;
@@ -42,6 +52,16 @@
           height: 10px;
           border-radius: 50%;
           background-color: var(--color-primary);
+        }
+
+        @media screen and (min-width: 768px) {
+          padding-left: calc(20 * (100vw / var(--width-pc-origin)));
+
+          &::before {
+            top: calc(7 * (100vw / var(--width-pc-origin)));
+            width: calc(10 * (100vw / var(--width-pc-origin)));
+            height: calc(10 * (100vw / var(--width-pc-origin)));
+          }
         }
       }
     }
