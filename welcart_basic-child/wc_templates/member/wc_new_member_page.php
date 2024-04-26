@@ -48,14 +48,14 @@ get_template_part('header-cart');
           <div class="NewMember__item">
             <p class="c_form_name"><span class="required">必須</span>メールアドレス</p>
             <div class="c_form_input">
-            <input name="member[mailaddress1]" id="mailaddress1" type="text" value="<?php usces_memberinfo( 'mailaddress1' ); ?>" autocomplete="off" placeholder="xxx@example.jp" />
+            <input name="member[mailaddress1]" id="mailaddress1" type="email" value="<?php usces_memberinfo( 'mailaddress1' ); ?>" autocomplete="email" placeholder="xxx@example.jp" />
             </div>
           </div>
 
           <div class="NewMember__item">
             <p class="c_form_name"><span class="required">必須</span>メールアドレス（確認用）</p>
             <div class="c_form_input">
-            <input name="member[mailaddress2]" id="mailaddress2" type="text" value="<?php usces_memberinfo( 'mailaddress2' ); ?>" autocomplete="off" placeholder="xxx@example.jp" />
+            <input name="member[mailaddress2]" id="mailaddress2" type="email" value="<?php usces_memberinfo( 'mailaddress2' ); ?>" autocomplete="email" placeholder="xxx@example.jp" />
             </div>
           </div>
 
