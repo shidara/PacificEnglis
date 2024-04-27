@@ -6,8 +6,42 @@
   background-size: auto 120px;
   background-repeat: no-repeat;
 
+  @media screen and (min-width: 768px) {
+    padding: calc(59 * (100vw / var(--width-pc-origin)))
+      calc(22 * (100vw / var(--width-pc-origin)))
+      calc(170 * (100vw / var(--width-pc-origin)));
+  }
+
+  .Footer__inner {
+    @media screen and (min-width: 768px) {
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+    }
+  }
+
+  .Footer__innerColumn {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      gap: calc(140 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(35 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .Footer__title {
     margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    .Footer__officialAccount {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
   }
 
   .Footer__titleText {
@@ -16,6 +50,11 @@
     font-weight: 700;
     line-height: 1;
     color: #fff;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(28 * (100vw / var(--width-pc-origin)));
+      font-size: calc(60 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Footer__subTitle {
@@ -24,6 +63,19 @@
     font-weight: 700;
     line-height: 1.2;
     color: #fff;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+      font-size: calc(28 * (100vw / var(--width-pc-origin)));
+    }
+
+    br {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
   }
 
   .Footer__imageList {
@@ -32,20 +84,39 @@
     gap: 20px;
     margin-bottom: 20px;
 
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+      gap: calc(20 * (100vw / var(--width-pc-origin)));
+      margin-bottom: 0;
+    }
+
     .Footer__imageItem {
       overflow: hidden;
       width: calc(50% - 10px);
       border-radius: 12px;
 
+      @media screen and (min-width: 768px) {
+        width: calc(160 * (100vw / var(--width-pc-origin)));
+        height: calc(160 * (100vw / var(--width-pc-origin)));
+      }
+
       /* SMPは4件まで表示する */
       &:nth-child(n + 5) {
         display: none;
+
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
       }
 
       img {
         width: 100%;
         height: 160px;
         object-fit: cover;
+
+        @media screen and (min-width: 768px) {
+          height: calc(160 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
   }
@@ -57,6 +128,12 @@
     background-color: #fff;
     margin-bottom: 36px;
 
+    @media screen and (min-width: 768px) {
+      display: none;
+      height: calc(80 * (100vw / var(--width-pc-origin)));
+      margin-bottom: 0;
+    }
+
     .Footer__officialAccountLinks {
       display: flex;
       justify-content: center;
@@ -66,10 +143,26 @@
       font-size: 18px;
       font-weight: 700;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        font-weight: bold;
+      }
+
+      img {
+        @media screen and (min-width: 768px) {
+          width: calc(32 * (100vw / var(--width-pc-origin)));
+          height: calc(32 * (100vw / var(--width-pc-origin)));
+        }
+      }
     }
 
     .Footer__officialAccountImage {
       margin-right: 4px;
+
+      @media screen and (min-width: 768px) {
+        margin-right: calc(6 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
@@ -78,6 +171,11 @@
     height: 1px;
     margin: 24px 0;
     background-color: var(--color-wht);
+
+    @media screen and (min-width: 768px) {
+      height: calc(1 * (100vw / var(--width-pc-origin)));
+      margin: calc(48 * (100vw / var(--width-pc-origin))) 0;
+    }
   }
 
   .Footer__navigation {
@@ -85,6 +183,11 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: calc(15 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Footer__navigationItem {
@@ -94,6 +197,10 @@
       border-radius: 16px;
       background-color: var(--color-wht);
 
+      @media screen and (min-width: 768px) {
+        height: calc(110 * (100vw / var(--width-pc-origin)));
+      }
+
       .Footer__navigationLink {
         display: flex;
         align-items: center;
@@ -101,6 +208,11 @@
         width: 100%;
         height: 100%;
         padding: 20px 30px;
+
+        @media screen and (min-width: 768px) {
+          padding: calc(25 * (100vw / var(--width-pc-origin)))
+            calc(28 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       .Footer__navigationInfoTitle {
@@ -108,6 +220,10 @@
         font-weight: 700;
         line-height: 1.4;
         color: var(--color-primary);
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(22 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       .Footer__navigationInfoText {
@@ -115,6 +231,10 @@
         font-weight: 700;
         line-height: 1.4;
         color: var(--color-blk);
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(22 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       .Footer__navigationArrow {
@@ -125,6 +245,11 @@
         height: 32px;
         border-radius: 50%;
         background-color: var(--color-primary);
+
+        @media screen and (min-width: 768px) {
+          width: calc(32 * (100vw / var(--width-pc-origin)));
+          height: calc(32 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
   }
@@ -132,14 +257,27 @@
   .Footer__school {
     padding-top: 42px;
 
+    @media screen and (min-width: 768px) {
+      margin-top: calc(16 * (100vw / var(--width-pc-origin)));
+    }
+
     .Footer__schoolList {
       display: flex;
       flex-direction: column;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: calc(60 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Footer__schoolItem {
       width: 100%;
       margin-bottom: 50px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(42 * (100vw / var(--width-pc-origin)));
+      }
 
       .Footer__schoolItemTitle {
         margin-bottom: 8px;
@@ -147,6 +285,11 @@
         font-weight: 700;
         line-height: 1.2;
         color: #fff;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+          font-size: calc(28 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       .Footer__schoolItemAddress {
@@ -154,6 +297,10 @@
         font-weight: 500;
         line-height: 1.6;
         color: #fff;
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(16 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       .Footer__schoolItemMap {
@@ -163,6 +310,18 @@
         margin-top: 12px;
         border-radius: 16px;
         background-color: var(--color-wht);
+
+        @media screen and (min-width: 768px) {
+          height: calc(260 * (100vw / var(--width-pc-origin)));
+          margin-top: calc(20 * (100vw / var(--width-pc-origin)));
+        }
+
+        iframe {
+          @media screen and (min-width: 768px) {
+            width: 100%;
+            height: calc(260 * (100vw / var(--width-pc-origin)));
+          }
+        }
       }
     }
   }
@@ -170,10 +329,18 @@
   .Footer__links {
     margin-bottom: 18px;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(60 * (100vw / var(--width-pc-origin)));
+    }
+
     & ul {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+
+      @media screen and (min-width: 768px) {
+        gap: calc(20 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Footer__linksItem {
@@ -197,11 +364,39 @@
         border-width: 2px 2px 0 0;
         rotate: 45deg;
       }
+
+      @media screen and (min-width: 768px) {
+        width: auto;
+        padding-left: calc(16 * (100vw / var(--width-pc-origin)));
+        font-size: calc(16 * (100vw / var(--width-pc-origin)));
+
+        &::before {
+          top: calc(11 * (100vw / var(--width-pc-origin)));
+          left: calc(-2 * (100vw / var(--width-pc-origin)));
+          width: calc(6 * (100vw / var(--width-pc-origin)));
+          height: calc(6 * (100vw / var(--width-pc-origin)));
+          border-width: calc(2 * (100vw / var(--width-pc-origin)))
+            calc(2 * (100vw / var(--width-pc-origin))) 0 0;
+        }
+      }
+    }
+  }
+
+  .Footer__instagramWrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-end;
     }
   }
 
   .Footer__instagram {
     margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   .Footer__small {
