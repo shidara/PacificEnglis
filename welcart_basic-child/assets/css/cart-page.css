@@ -7,6 +7,7 @@
 .p_shopCart,
 .CartPage,
 .DeliveryPage,
+.ConfirmPage,
 .CustomerPage,
 .CompletionPage {
   position: relative;
@@ -423,16 +424,40 @@
 }
 
 /* 内容確認 */
-.ConfirmPage {
+.ConfirmModule {
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(1080 * (100vw / var(--width-pc-origin)));
+    margin: 0 auto;
+  }
+
   .cart_page_title {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
     line-height: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .confiem_notice {
+    margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .currency_code {
     font-size: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   #cart_table {
@@ -474,31 +499,76 @@
     }
   }
 
-  .cart-page .send {
+  .send {
     display: flex;
     flex-direction: column-reverse;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: calc(40 * (100vw / var(--width-pc-origin)));
+      padding-top: calc(60 * (100vw / var(--width-pc-origin)));
+    }
+
+    input {
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+        border-radius: 60px;
+      }
+    }
   }
 }
 
 /* Completion Page */
-.CompletionPage {
+.CompletionModule {
   min-height: 50vh;
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(1080 * (100vw / var(--width-pc-origin)));
+    margin: 0 auto;
+  }
 
   .p_thanks_inner {
     margin: 0 auto;
     color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
 
     h3 {
       margin-bottom: 40px;
       font-size: 24px;
       font-weight: bold;
       line-height: 1.3;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(40 * (100vw / var(--width-pc-origin)));
+        font-size: calc(24 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     p {
       margin-bottom: 60px;
       font-size: 13px;
       line-height: 1.8;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(60 * (100vw / var(--width-pc-origin)));
+        font-size: calc(13 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .CompletionPage__nextWrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -513,6 +583,13 @@
     padding: 13px;
     color: var(--color-wht);
     background-color: var(--color-pacific-orange-b);
+
+    @media screen and (min-width: 768px) {
+      width: calc(300 * (100vw / var(--width-pc-origin)));
+      height: calc(60 * (100vw / var(--width-pc-origin)));
+      font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      padding: calc(13 * (100vw / var(--width-pc-origin)));
+    }
   }
 }
 
