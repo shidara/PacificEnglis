@@ -5,6 +5,9 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
+
+  $imgUri = get_theme_file_uri() . "/assets/images/english-class/";
+
 ?>
 <?php get_header();?>
 
@@ -30,7 +33,7 @@
       <div class="LessonMain__contents">
         <div class="LessonMain__item">
           <div class="LessonMain__itemThumbnail">
-            <img src="https://dummyimage.com/350x232/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/22.webp" alt="" loading="lazy" />
             <span class="LessonMain__itemThumbnailLabel">1番人気!!</span>
           </div>
 
@@ -54,7 +57,7 @@
 
         <div class="LessonMain__item">
           <div class="LessonMain__itemThumbnail">
-            <img src="https://dummyimage.com/350x232/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/21.webp" alt="" loading="lazy" />
             <span class="LessonMain__itemThumbnailLabel">経験者におすすめ</span>
           </div>
 
