@@ -9,22 +9,23 @@
 get_template_part('header-cart');
 usces_delivery_info_script();
 ?>
-<div class="p_shopCart DeliveryPage">
-  <div class="l_container">
-    <div class="l_inner">
-      <div class="cart-page" role="main">
+<div class="DeliveryPage">
+  <section class="Breadcrumbs">
+    <ul>
+      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">TOP</a></li>
+      <li>発送・支払方法</li>
+    </ul>
+  </section>
 
-      <?php
+  <section class="DeliveryModule cart-page" role="main">
+    <?php
       if ( have_posts() ) :
         usces_remove_filter();
         ?>
 
         <article class="post" id="wc_<?php usces_page_name(); ?>">
-
           <h1 class="cart_page_title">発送・支払方法</h1>
-
           <div id="delivery-info">
-
             <div class="cart_navi">
               <ul>
                 <li><span>カート</span></li>
@@ -170,14 +171,9 @@ usces_delivery_info_script();
         </article><!-- .post -->
 
       <?php else : ?>
-
         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'usces' ); ?></p>
-
       <?php endif; ?>
-      </div><!-- #content -->
-    </div>
-  </div>
-  <?php get_template_part( 'parts/contactArea' ); ?>
+  </section>
 </div>
 <?php
 get_footer();

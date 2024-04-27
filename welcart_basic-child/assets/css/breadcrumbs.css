@@ -2,7 +2,10 @@
   padding: 41px 20px 0;
 
   @media screen and (min-width: 768px) {
-    width: var(--width-pc-origin-px);
+    width: max(
+      calc(1020 * (100vw / var(--width-pc-origin)), var(--width-pc-origin-px))
+    );
+
     margin: 0 auto;
   }
 
