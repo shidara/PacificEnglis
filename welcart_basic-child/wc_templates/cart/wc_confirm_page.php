@@ -8,13 +8,17 @@
 
 get_template_part('header-cart');
 ?>
-<div class="p_shopCart ConfirmPage">
-  <?php // get_template_part( 'parts/subpageHeader' ); ?>
-  <div class="l_container">
-    <div class="l_inner">
-      <div class="cart-page" role="main">
 
-      <?php
+<div class="ConfirmPage">
+  <section class="Breadcrumbs">
+    <ul>
+      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">TOP</a></li>
+      <li>内容確認</li>
+    </ul>
+  </section>
+
+  <section class="ConfirmModule cart-page" role="main">
+    <?php
       if ( have_posts() ) :
         usces_remove_filter();
         ?>
@@ -222,15 +226,9 @@ get_template_part('header-cart');
         </article><!-- .post -->
 
       <?php else : ?>
-
         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'usces' ); ?></p>
-
       <?php endif; ?>
-
-      </div><!-- #content -->
-    </div>
-  </div>
-  <?php get_template_part( 'parts/contactArea' ); ?>
+  </section>
 </div>
 
 <?php
