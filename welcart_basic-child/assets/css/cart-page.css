@@ -6,6 +6,7 @@
 
 .p_shopCart,
 .CartPage,
+.DeliveryPage,
 .CustomerPage,
 .CompletionPage {
   position: relative;
@@ -421,50 +422,6 @@
   }
 }
 
-/* 発送・支払方法 */
-.DeliveryPage {
-  .cart_page_title {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1;
-  }
-
-  .customer_form {
-    tr {
-      margin-bottom: 18px;
-      padding-bottom: 18px;
-      font-size: 16px;
-    }
-
-    th {
-      margin-bottom: 10px;
-    }
-  }
-
-  /* 次へ系 */
-  .send {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 15px;
-
-    .back_to_customer_button,
-    .to_confirm_button {
-      width: 100%;
-      height: 52px;
-      border-radius: 60px;
-      margin-bottom: 0;
-      padding: 13px;
-    }
-
-    .to_confirm_button {
-      color: var(--color-wht);
-      background-color: var(--color-pacific-orange-b);
-    }
-  }
-}
-
 /* 内容確認 */
 .ConfirmPage {
   .cart_page_title {
@@ -727,6 +684,77 @@
         border-radius: 60px;
         font-size: calc(18 * (100vw / var(--width-pc-origin)));
       }
+    }
+  }
+}
+
+/* 発送・支払方法 */
+.DeliveryModule {
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(1080 * (100vw / var(--width-pc-origin)));
+    margin: 0 auto;
+  }
+
+  .cart_page_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .customer_form {
+    tr {
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+      font-size: 16px;
+    }
+
+    th {
+      margin-bottom: 10px;
+    }
+  }
+
+  /* 次へ系 */
+  .send {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: calc(40 * (100vw / var(--width-pc-origin)));
+      padding-top: calc(60 * (100vw / var(--width-pc-origin)));
+    }
+
+    .back_to_customer_button,
+    .to_confirm_button {
+      width: 100%;
+      height: 52px;
+      border-radius: 60px;
+      margin-bottom: 0;
+      padding: 13px;
+
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .to_confirm_button {
+      color: var(--color-wht);
+      background-color: var(--color-pacific-orange-b);
     }
   }
 }
