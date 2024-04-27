@@ -1,8 +1,14 @@
 .p_shopCart,
 .CustomerPage,
 .CompletionPage {
-  position: relative;
   padding: 55px 20px 15px;
+}
+
+.p_shopCart,
+.CartPage,
+.CustomerPage,
+.CompletionPage {
+  position: relative;
   background-color: #fbfbf9;
 
   /* フロー図 */
@@ -91,6 +97,40 @@
       border: 0;
       text-align: left;
     }
+
+    .unitprice {
+      grid-column: 2 / 3;
+
+      &::before {
+        content: attr(data-label) "：";
+      }
+    }
+
+    .quantity {
+      grid-column: 2 / 3;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      &::before {
+        content: attr(data-label) "：";
+      }
+
+      > input {
+        width: 42px;
+        height: 10px;
+        padding: 10px;
+      }
+    }
+
+    .subtotal {
+      grid-column: 2 / 3;
+      white-space: nowrap;
+
+      &::before {
+        content: attr(data-label) "：";
+      }
+    }
   }
 
   tfoot {
@@ -144,40 +184,6 @@
     padding-right: 16px;
     font-weight: bold;
     font-size: 16px;
-  }
-
-  .unitprice {
-    grid-column: 2 / 3;
-
-    &::before {
-      content: attr(data-label) "：";
-    }
-  }
-
-  .quantity {
-    grid-column: 2 / 3;
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    &::before {
-      content: attr(data-label) "：";
-    }
-
-    > input {
-      width: 42px;
-      height: 10px;
-      padding: 10px;
-    }
-  }
-
-  .subtotal {
-    grid-column: 2 / 3;
-    white-space: nowrap;
-
-    &::before {
-      content: attr(data-label) "：";
-    }
   }
 
   .action {
@@ -550,5 +556,177 @@
     padding: 13px;
     color: var(--color-wht);
     background-color: var(--color-pacific-orange-b);
+  }
+}
+
+.CartModule {
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(1080 * (100vw / var(--width-pc-origin)));
+    margin: 0 auto;
+  }
+
+  .CartModule__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  #wc_cart #cart .upbutton {
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    br {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  #cart_table {
+    @media screen and (min-width: 768px) {
+      border: 1px solid var(--color-pacific-gray-a);
+    }
+
+    thead {
+      background-color: var(--color-pacific-gray-a);
+
+      @media screen and (min-width: 768px) {
+        display: table-header-group;
+      }
+
+      th {
+        border: 0;
+        padding: 7px 10px;
+
+        @media screen and (min-width: 768px) {
+          padding: calc(7 * (100vw / var(--width-pc-origin)))
+            calc(10 * (100vw / var(--width-pc-origin)));
+          font-size: calc(16 * (100vw / var(--width-pc-origin)));
+        }
+      }
+
+      .num {
+        text-align: left;
+      }
+    }
+
+    tbody {
+      tr {
+        @media screen and (min-width: 768px) {
+          display: table-row;
+        }
+      }
+
+      td {
+        @media screen and (min-width: 768px) {
+          padding: calc(13 * (100vw / var(--width-pc-origin)));
+        }
+
+        &:not(:last-child) {
+          @media screen and (min-width: 768px) {
+            border-right: 1px solid var(--color-pacific-gray-a);
+          }
+        }
+      }
+
+      .num {
+        text-align: center;
+      }
+
+      .thumbnail img {
+        @media screen and (min-width: 768px) {
+          width: 100%;
+          height: calc(106 * (100vw / var(--width-pc-origin)));
+        }
+      }
+
+      .unitprice {
+        @media screen and (min-width: 768px) {
+          &::before {
+            content: "";
+          }
+        }
+      }
+
+      .quantity {
+        @media screen and (min-width: 768px) {
+          display: table-cell;
+          width: auto;
+
+          &::before {
+            content: "";
+          }
+        }
+
+        input {
+          @media screen and (min-width: 768px) {
+            width: calc(79 * (100vw / var(--width-pc-origin)));
+            border: 1px solid var(--color-pacific-gray-a);
+          }
+        }
+      }
+
+      .subtotal {
+        @media screen and (min-width: 768px) {
+          &::before {
+            content: "";
+          }
+        }
+      }
+
+      .stock {
+        @media screen and (min-width: 768px) {
+          display: table-cell;
+          text-align: center;
+        }
+      }
+    }
+
+    tfoot {
+      @media screen and (min-width: 768px) {
+        border: 1px solid var(--color-pacific-gray-a);
+        background-color: var(--color-pacific-gray-a);
+      }
+
+      tr {
+        @media screen and (min-width: 768px) {
+          display: table-row;
+        }
+
+        th {
+          @media screen and (min-width: 768px) {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  .send {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      gap: calc(40 * (100vw / var(--width-pc-origin)));
+      padding-top: calc(60 * (100vw / var(--width-pc-origin)));
+    }
+
+    input {
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        border-radius: 60px;
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
+    }
   }
 }
