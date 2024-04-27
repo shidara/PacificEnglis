@@ -5,6 +5,8 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
+
+  $imgUri = get_theme_file_uri() . "/assets/images/international-school/";
 ?>
 <?php get_header();?>
 
