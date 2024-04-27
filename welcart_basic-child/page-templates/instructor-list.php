@@ -5,6 +5,9 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
+
+  $imgUri = get_theme_file_uri() . "/assets/images/instructor/";
+
 ?>
 <?php get_header();?>
 
@@ -20,7 +23,7 @@
       <div class="InstructorList__contents">
         <div class="InstructorList__item">
           <div class="InstructorList__itemThumbnail">
-            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
           </div>
 
           <p class="InstructorList__itemName">Eric ClarkEric Clark</p>
@@ -42,7 +45,7 @@
 
         <div class="InstructorList__item">
           <div class="InstructorList__itemThumbnail">
-            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
           </div>
 
           <p class="InstructorList__itemName">Eric ClarkEric Clark</p>
@@ -64,7 +67,7 @@
 
         <div class="InstructorList__item">
           <div class="InstructorList__itemThumbnail">
-            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
           </div>
 
           <p class="InstructorList__itemName">Eric ClarkEric Clark</p>
@@ -86,7 +89,7 @@
 
         <div class="InstructorList__item">
           <div class="InstructorList__itemThumbnail">
-            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
           </div>
 
           <p class="InstructorList__itemName">Eric ClarkEric Clark</p>
@@ -108,7 +111,7 @@
 
         <div class="InstructorList__item">
           <div class="InstructorList__itemThumbnail">
-            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
           </div>
 
           <p class="InstructorList__itemName">Eric ClarkEric Clark</p>
@@ -130,7 +133,7 @@
 
         <div class="InstructorList__item">
           <div class="InstructorList__itemThumbnail">
-            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
           </div>
 
           <p class="InstructorList__itemName">Eric ClarkEric Clark</p>
@@ -152,7 +155,7 @@
 
         <div class="InstructorList__item">
           <div class="InstructorList__itemThumbnail">
-            <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+            <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
           </div>
 
           <p class="InstructorList__itemName">Eric ClarkEric Clark</p>

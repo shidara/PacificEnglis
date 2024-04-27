@@ -5,6 +5,8 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
+
+  $imgUri = get_theme_file_uri() . "/assets/images/recruit/";
 ?>
 <?php get_header();?>
 
@@ -36,7 +38,7 @@
       </nav>
 
       <div class="RecruitMain__thumbnail">
-        <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+        <img src="<?php echo $imgUri;?>/23.webp" alt="" loading="lazy" />
       </div>
 
       <div class="RecruitMain__titleList">
@@ -175,7 +177,7 @@
       </div>
 
       <div class="RecruitMain__thumbnail">
-        <img src="https://dummyimage.com/350x446/0f0/fff.png" alt="" loading="lazy" />
+        <img src="<?php echo $imgUri;?>/23.webp" alt="" loading="lazy" />
       </div>
 
       <div class="RecruitMain__titleList">
