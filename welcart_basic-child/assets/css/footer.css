@@ -1,6 +1,10 @@
 .Footer {
   padding: 59px 22px 276px;
   background-color: var(--color-primary);
+  background-image: url("../images/footer/606.webp");
+  background-position: center 98%;
+  background-size: auto 120px;
+  background-repeat: no-repeat;
 
   .Footer__title {
     margin-bottom: 12px;
