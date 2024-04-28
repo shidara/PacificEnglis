@@ -192,49 +192,51 @@
 
     <!-- Blog -->
     <section class="Blog">
-      <div class="Blog__title">
-        <h3 class="Blog__titleText">Blog</h3>
-        <p class="Blog__subTitle">パシフィックブログ</p>
-      </div>
-      <p class="Blog__summary">インターナショナルスクール・英会話教室</p>
+      <div class="Blog__inner">
+        <div class="Blog__title">
+          <h3 class="Blog__titleText">Blog</h3>
+          <p class="Blog__subTitle">パシフィックブログ</p>
+        </div>
+        <p class="Blog__summary">インターナショナルスクール・英会話教室</p>
 
-      <div class="Blog__contents">
-        <?php
-          $args = array(
-            'post_type' => 'blog',// 投稿タイプのスラッグを指定
-            'posts_per_page' => 2, // 投稿件数の指定 TODO: SMP: 2 PC: 4
-          );
-          $blog_query = new WP_Query($args); if($blog_query->have_posts()):
+        <div class="Blog__contents">
+          <?php
+            $args = array(
+              'post_type' => 'blog',// 投稿タイプのスラッグを指定
+              'posts_per_page' => 4, // 投稿件数の指定 TODO: SMP: 2 PC: 4
+            );
+            $blog_query = new WP_Query($args); if($blog_query->have_posts()):
 
-          while ($blog_query->have_posts()):
-          $blog_query->the_post();
-          $image_id = get_post_thumbnail_id();
-          // メディアで設定したalt（代替テキスト）属性を取得
-          $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-          ?>
-          <a href="<?php the_permalink(); ?>" class="Blog__column">
-            <div class="Blog__columnItem">
-              <img src="<?php the_post_thumbnail_url();?>" width="119" height="88" alt="<?php echo $image_alt; ?>" loading="lazy" class="Blog__columnItemImage" />
-            </div>
+            while ($blog_query->have_posts()):
+            $blog_query->the_post();
+            $image_id = get_post_thumbnail_id();
+            // メディアで設定したalt（代替テキスト）属性を取得
+            $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+            ?>
+            <a href="<?php the_permalink(); ?>" class="Blog__column">
+              <div class="Blog__columnItem">
+                <img src="<?php the_post_thumbnail_url();?>" width="119" height="88" alt="<?php echo $image_alt; ?>" loading="lazy" class="Blog__columnItemImage" />
+              </div>
 
-            <div class="Blog__columnItem">
-              <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
-              <p><?php echo get_the_title(); ?></p>
-            </div>
+              <div class="Blog__columnItem">
+                <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                <p><?php echo get_the_title(); ?></p>
+              </div>
+            </a>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
+
+          <?php else: ?>
+            <p>まだ投稿がありません。</p>
+          <?php endif; ?>
+        </div>
+
+        <div class="Blog__more">
+          <a href="#">
+            過去のブログはこちら
+            <img src="<?php echo $imgUri;?>/blog1.webp" width="12" height="12" alt="" loading="lazy" />
           </a>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-
-        <?php else: ?>
-          <p>まだ投稿がありません。</p>
-        <?php endif; ?>
-      </div>
-
-      <div class="Blog__more">
-        <a href="#">
-          過去のブログはこちら
-          <img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" alt="" loading="lazy" />
-        </a>
+        </div>
       </div>
     </section>
 
