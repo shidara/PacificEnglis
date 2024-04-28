@@ -105,6 +105,9 @@ Base
 /* マイページ */
 @import url("./member.css");
 
+/* FixedNavigation */
+@import url("./fixedNavigation.css");
+
 /*================================
 Reset CSS
 ================================*/

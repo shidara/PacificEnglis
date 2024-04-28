@@ -11,49 +11,51 @@
 <?php get_header();?>
 
 <?php get_template_part('mainImage'); ?>
-
+<?php get_template_part('FixedNavigation'); ?>
 
   <!-- コンテンツ -->
   <main class="pageContents Top">
     <!-- ページタイトル -->
     <section class="PageTitleSection">
-      <h2 class="PageTitleSection__title">世界が広がる<br />英語で話そう!</h2>
+      <h2 class="PageTitleSection__title"><span class="PageTitleSection__titlePC">英語で世界が広がる</span><span class="PageTitleSection__titleSMP">世界が広がる</span><span class="PageTitleSection__titlePC">楽しい英語学習の第一歩</span><span class="PageTitleSection__titleSMP">英語で話そう!</span></h2>
       <p class="PageTitleSection__summary">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
     </section>
 
     <!-- News -->
     <section class="News">
-      <h2 class="News__title">News</h2>
+      <div class="News__inner">
+        <h2 class="News__title">News</h2>
 
-      <?php
-        $args = array(
-            'post_type' => 'news',// 投稿タイプのスラッグを指定
-            'posts_per_page' => 1, // 投稿件数の指定
-          );
-        $news_query = new WP_Query($args); if($news_query->have_posts()):
+        <?php
+          $args = array(
+              'post_type' => 'news',// 投稿タイプのスラッグを指定
+              'posts_per_page' => 1, // 投稿件数の指定
+            );
+          $news_query = new WP_Query($args); if($news_query->have_posts()):
 
-        while ($news_query->have_posts()):
-        $news_query->the_post();
-        $image_id = get_post_thumbnail_id();
-        // メディアで設定したalt（代替テキスト）属性を取得
-        $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-      ?>
-      <a href="<?php the_permalink(); ?>" class="News__column">
-        <div class="News__columnItem">
-          <div class="News__thumbnail">
-            <img src="<?php the_post_thumbnail_url();?>" alt="<?php echo $image_alt; ?>" width="119" height="88" loading="lazy" />
+          while ($news_query->have_posts()):
+          $news_query->the_post();
+          $image_id = get_post_thumbnail_id();
+          // メディアで設定したalt（代替テキスト）属性を取得
+          $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+        ?>
+        <a href="<?php the_permalink(); ?>" class="News__column">
+          <div class="News__columnItem">
+            <div class="News__thumbnail">
+              <img src="<?php the_post_thumbnail_url();?>" alt="<?php echo $image_alt; ?>" width="119" height="88" loading="lazy" />
+            </div>
           </div>
-        </div>
-        <div class="News__columnItem">
-          <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
-          <p><?php echo get_the_title(); ?></p>
-        </div>
-      </a>
-      <?php endwhile; ?>
-      <?php wp_reset_postdata(); ?>
-      <?php else: ?>
-        <p>まだ投稿がありません。</p>
-      <?php endif; ?>
+          <div class="News__columnItem">
+            <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+            <p><?php echo get_the_title(); ?></p>
+          </div>
+        </a>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+        <?php else: ?>
+          <p>まだ投稿がありません。</p>
+        <?php endif; ?>
+      </div>
     </section>
 
     <!-- Message -->
