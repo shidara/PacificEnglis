@@ -2,6 +2,19 @@
   position: relative;
   padding: 75px 20px 15px;
 
+  @media screen and (min-width: 768px) {
+    position: static;
+    padding-bottom: calc(100 * (100vw / var(--width-pc-origin)));
+  }
+
+  .Voice__inner {
+    @media screen and (min-width: 768px) {
+      position: relative;
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+    }
+  }
+
   .Voice__title {
     .Voice__titleText {
       margin-bottom: 12px;
@@ -9,6 +22,11 @@
       font-weight: 700;
       line-height: 1.4;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+        font-size: calc(64 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Voice__subTitle {
@@ -17,6 +35,11 @@
       font-weight: 700;
       line-height: 1;
       color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+        font-size: calc(28 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
@@ -26,6 +49,11 @@
     font-weight: 700;
     line-height: 1.6;
     color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(64 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Voice__stamp {
@@ -34,10 +62,38 @@
     right: 23px;
     width: 175px;
     height: 90px;
+
+    @media screen and (min-width: 768px) {
+      right: calc(23 * (100vw / var(--width-pc-origin)));
+      width: auto;
+      height: calc(200 * (100vw / var(--width-pc-origin)));
+    }
+
+    img {
+      @media screen and (min-width: 768px) {
+        width: 100%;
+        height: calc(200 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .Voice__contentsWrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(48 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Voice__contents {
     margin-bottom: 52px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      width: calc(50% - calc(48 * (100vw / var(--width-pc-origin))));
+      margin-bottom: 0;
+    }
   }
 
   .Voice__column {
@@ -45,12 +101,31 @@
     color: var(--color-blk);
     margin-bottom: 8px;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+
     .Voice__columnItem {
+      &:first-child {
+        flex-shrink: 0;
+      }
+
       &:last-child {
         display: flex;
         align-items: center;
         flex-grow: 1;
         margin-left: 20px;
+
+        @media screen and (min-width: 768px) {
+          margin-left: calc(21 * (100vw / var(--width-pc-origin)));
+        }
+      }
+
+      img {
+        @media screen and (min-width: 768px) {
+          width: 100%;
+          height: calc(123 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       & p {
@@ -58,6 +133,10 @@
         font-weight: 700;
         line-height: 1.2;
         color: var(--color-primary);
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(24 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
   }
@@ -68,11 +147,23 @@
     font-weight: 500;
     line-height: 1.8;
     color: #000;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Voice__contentsTag {
     font-size: 14px;
     font-weight: 700;
     color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
   }
 }
