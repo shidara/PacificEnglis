@@ -108,7 +108,8 @@
         object-fit: cover;
 
         @media screen and (min-width: 768px) {
-          width: calc(235 * (100vw / var(--width-pc-origin)));
+          width: 100%;
+          height: calc(279 * (100vw / var(--width-pc-origin)));
         }
       }
     }
@@ -123,6 +124,8 @@
 
       @media screen and (min-width: 768px) {
         height: calc(66 * (100vw / var(--width-pc-origin)));
+        padding: 0 calc(12 * (100vw / var(--width-pc-origin)))
+          calc(8 * (100vw / var(--width-pc-origin)));
       }
     }
 
@@ -161,6 +164,11 @@
       height: 21px;
       border-radius: 50%;
       background-color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        width: calc(32 * (100vw / var(--width-pc-origin)));
+        height: calc(32 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 }
