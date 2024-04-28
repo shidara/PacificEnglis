@@ -2,8 +2,34 @@
   padding: 52px 20px 37px;
   background-color: var(--color-pacific-orange-a);
 
+  @media screen and (min-width: 768px) {
+    padding: calc(80 * (100vw / var(--width-pc-origin)))
+      calc(89 * (100vw / var(--width-pc-origin)))
+      calc(80 * (100vw / var(--width-pc-origin)));
+  }
+
+  .Recruit__inner {
+    @media screen and (min-width: 768px) {
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+    }
+  }
+
+  .Recruit__innerTitle {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: calc(36 * (100vw / var(--width-pc-origin)));
+      align-items: baseline;
+      margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .Recruit__title {
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
 
     .Recruit__titleText {
       margin-bottom: 12px;
@@ -11,6 +37,11 @@
       font-weight: 700;
       line-height: 1;
       color: #fff;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(15 * (100vw / var(--width-pc-origin)));
+        font-size: calc(60 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Recruit__subTitle {
@@ -19,6 +50,28 @@
       font-weight: 700;
       line-height: 1.2;
       color: #fff;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        font-size: calc(28 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .Recruit__info {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      font-size: calc(15 * (100vw / var(--width-pc-origin)));
+    }
+
+    p {
+      color: var(--color-wht);
+
+      &:not(:last-child) {
+        margin-bottom: calc(9 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
@@ -27,6 +80,10 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+
+      @media screen and (min-width: 768px) {
+        gap: calc(12 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Recruit__linksItem {
@@ -34,6 +91,10 @@
       width: calc(50% - 5px);
       border-radius: 16px;
       background-color: var(--color-wht);
+
+      @media screen and (min-width: 768px) {
+        width: calc(246 * (100vw / var(--width-pc-origin)));
+      }
 
       & a {
         display: block;
@@ -45,6 +106,10 @@
         width: 100%;
         height: 190px;
         object-fit: cover;
+
+        @media screen and (min-width: 768px) {
+          width: calc(235 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
 
@@ -55,6 +120,10 @@
       justify-content: space-between;
       height: 36px;
       padding: 0 12px 8px;
+
+      @media screen and (min-width: 768px) {
+        height: calc(66 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Recruit__linksItemInfoTitle {
@@ -62,12 +131,24 @@
       font-weight: 700;
       color: var(--color-primary);
 
+      @media screen and (min-width: 768px) {
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
+
       &.Recruit__linksItemInfoTitleMedium {
-        font-size: 12px;
+        font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       .Recruit__linksItemInfoTitleSmall {
         font-size: 12px;
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
 
