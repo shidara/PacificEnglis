@@ -1,9 +1,31 @@
 .HelloWorld {
+  position: relative;
   width: 100%;
   padding: 45px 20px;
-  background-image: url("https://dummyimage.com/390x746/f27d53/fff.png");
+  background-image: url("../images/top/01.webp");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff4e2e;
+    mix-blend-mode: color;
+  }
+
+  .HelloWorld__inner {
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+    }
+  }
 
   .HelloWorld__titleText {
     display: inline-block;
@@ -12,6 +34,11 @@
     font-weight: 700;
     line-height: 1;
     color: var(--color-wht);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(16 * (100vw / var(--width-pc-origin)));
+      font-size: calc(80 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .HelloWorld__subTitle {
@@ -20,6 +47,19 @@
     font-weight: 700;
     color: var(--color-wht);
     line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+      font-size: calc(24 * (100vw / var(--width-pc-origin)));
+    }
+
+    br {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
   }
 
   .HelloWorld__summary {
@@ -30,6 +70,13 @@
     line-height: 1.8;
   }
 
+  .HelloWorld__info {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .HelloWorld__tell,
   .HelloWorld__experience {
     width: 100%;
@@ -37,6 +84,11 @@
     margin-bottom: 18px;
     border-radius: 16px;
     background-color: var(--color-wht);
+
+    @media screen and (min-width: 768px) {
+      height: calc(230 * (100vw / var(--width-pc-origin)));
+      margin-bottom: 0;
+    }
 
     & a {
       display: flex;
@@ -51,9 +103,14 @@
     .HelloWorld__experienceTitle {
       margin-bottom: 6px;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: bold;
       color: #000;
       line-height: 1.2;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .HelloWorld__tellNumber,
@@ -74,19 +131,38 @@
       height: 29px;
       border-radius: 50%;
       background-color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        width: calc(40 * (100vw / var(--width-pc-origin)));
+        height: calc(42 * (100vw / var(--width-pc-origin)));
+      }
+
+      img {
+        @media screen and (min-width: 768px) {
+          height: calc(42 * (100vw / var(--width-pc-origin)));
+        }
+      }
     }
 
     .HelloWorld__tellNumberText {
       font-size: 32px;
       font-weight: 700;
-      line-height: 1, 4;
+      line-height: 1.4;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .HelloWorld__tellTime {
       font-size: 18px;
       font-weight: 500;
       color: #000;
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
@@ -95,12 +171,22 @@
     padding-top: 8px;
     margin-bottom: 0;
 
+    @media screen and (min-width: 768px) {
+      height: calc(230 * (100vw / var(--width-pc-origin)));
+      padding-top: calc(17 * (100vw / var(--width-pc-origin)));
+    }
+
     .HelloWorld__experienceTitle {
       position: relative;
       margin-bottom: 8px;
       font-size: 20px;
       text-align: center;
       line-height: 0.9;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .HelloWorld__experienceTitleLarge {
@@ -108,6 +194,11 @@
       font-size: 36px;
       font-weight: bold;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(36 * (100vw / var(--width-pc-origin)));
+        margin-right: calc(2 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .HelloWorld__experienceLine {
@@ -117,6 +208,12 @@
       color: var(--color-wht);
       font-weight: bold;
       background-color: #06c755;
+
+      @media screen and (min-width: 768px) {
+        width: calc(100% - calc(76 * (100vw / var(--width-pc-origin))) * 2);
+        height: calc(80 * (100vw / var(--width-pc-origin)));
+        border-radius: 16px;
+      }
     }
 
     .HelloWorld__experienceLineIcon {
@@ -124,6 +221,16 @@
 
       img {
         vertical-align: sub;
+
+        @media screen and (min-width: 768px) {
+          height: calc(42 * (100vw / var(--width-pc-origin)));
+        }
+      }
+    }
+
+    .HelloWorld__experienceLineText {
+      @media screen and (min-width: 768px) {
+        font-size: calc(24 * (100vw / var(--width-pc-origin)));
       }
     }
 
