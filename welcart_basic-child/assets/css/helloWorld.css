@@ -17,6 +17,10 @@
     mix-blend-mode: color;
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+
   .HelloWorld__inner {
     position: relative;
     z-index: 1;
@@ -24,6 +28,10 @@
     @media screen and (min-width: 768px) {
       width: calc(1020 * (100vw / var(--width-pc-origin)));
       margin: 0 auto;
+      padding: calc(80 * (100vw / var(--width-pc-origin)))
+        calc(70 * (100vw / var(--width-pc-origin)))
+        calc(89 * (100vw / var(--width-pc-origin)))
+        calc(78 * (100vw / var(--width-pc-origin)));
     }
   }
 

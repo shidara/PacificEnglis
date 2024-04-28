@@ -61,11 +61,23 @@
     <!-- Message -->
     <section class="Message">
       <div class="Message__inner">
-        <p class="Message__subText">パシフィックイングリッシュだから</p>
-        <p class="Message__title">こどもたちに愛と情熱を。<br />グローバル教育で<br />地域に愛され40年。</p>
+        <div class="Message__stamp">
+          <img src="<?php echo get_theme_file_uri();?>/assets/images/footer/606.webp" />
+        </div>
+
+          <div class="Message__titleWrapper">
+            <p class="Message__subText">パシフィックイングリッシュだから</p>
+            <p class="Message__title">こどもたちに愛と情熱を。<br />グローバル教育で<br />地域に愛され40年。</p>
+
+            <div class="Message__thumbnail Message__thumbnail--pc">
+              <img src="<?php echo $imgUri;?>/1.webp" width="450" height="300" loading="lazy" />
+              <p class="Message__thumbnailCaption">開校当時のこどもたちと、創業者 原パトリシア</p>
+            </div>
+          </div>
+
         <p class="Message__summary">大分市内で英語教室・インターナショナルスクール（英語の保育園）を運営している当校は、ネイティブの先生主体の授業でプロフェッショナルな言動で国際人育成に愛と情熱を注ごうがモットーです。<br/>英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。こどもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。また、GSE(Global Scale of English)も導入しており、レベルを10から90のスケールで細分化し、学習指標(CAN-DO リスト) と紐づけ標準化した、グローバルで通用する英語習熟度指標です。<br/>英検や、TOEIC、TOEFL、各学校の中学・高校・大学受験などにも対応しております。だからこそ、1984年から大分市内で40年以上英語教室として、地域の皆様に愛され続けています。</p>
-        <div class="Message__thumbnail">
-          <img src="<?php echo $imgUri;?>/1.webp" width="340" height="249" />
+        <div class="Message__thumbnail Message__thumbnail--smp">
+          <img src="<?php echo $imgUri;?>/1.webp" width="340" height="249" loading="lazy" />
           <p class="Message__thumbnailCaption">開校当時のこどもたちと、創業者 原パトリシア</p>
         </div>
       </div>
@@ -192,49 +204,51 @@
 
     <!-- Blog -->
     <section class="Blog">
-      <div class="Blog__title">
-        <h3 class="Blog__titleText">Blog</h3>
-        <p class="Blog__subTitle">パシフィックブログ</p>
-      </div>
-      <p class="Blog__summary">インターナショナルスクール・英会話教室</p>
+      <div class="Blog__inner">
+        <div class="Blog__title">
+          <h3 class="Blog__titleText">Blog</h3>
+          <p class="Blog__subTitle">パシフィックブログ</p>
+        </div>
+        <p class="Blog__summary">インターナショナルスクール・英会話教室</p>
 
-      <div class="Blog__contents">
-        <?php
-          $args = array(
-            'post_type' => 'blog',// 投稿タイプのスラッグを指定
-            'posts_per_page' => 2, // 投稿件数の指定 TODO: SMP: 2 PC: 4
-          );
-          $blog_query = new WP_Query($args); if($blog_query->have_posts()):
+        <div class="Blog__contents">
+          <?php
+            $args = array(
+              'post_type' => 'blog',// 投稿タイプのスラッグを指定
+              'posts_per_page' => 4, // 投稿件数の指定 TODO: SMP: 2 PC: 4
+            );
+            $blog_query = new WP_Query($args); if($blog_query->have_posts()):
 
-          while ($blog_query->have_posts()):
-          $blog_query->the_post();
-          $image_id = get_post_thumbnail_id();
-          // メディアで設定したalt（代替テキスト）属性を取得
-          $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-          ?>
-          <a href="<?php the_permalink(); ?>" class="Blog__column">
-            <div class="Blog__columnItem">
-              <img src="<?php the_post_thumbnail_url();?>" width="119" height="88" alt="<?php echo $image_alt; ?>" loading="lazy" class="Blog__columnItemImage" />
-            </div>
+            while ($blog_query->have_posts()):
+            $blog_query->the_post();
+            $image_id = get_post_thumbnail_id();
+            // メディアで設定したalt（代替テキスト）属性を取得
+            $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+            ?>
+            <a href="<?php the_permalink(); ?>" class="Blog__column">
+              <div class="Blog__columnItem">
+                <img src="<?php the_post_thumbnail_url();?>" width="119" height="88" alt="<?php echo $image_alt; ?>" loading="lazy" class="Blog__columnItemImage" />
+              </div>
 
-            <div class="Blog__columnItem">
-              <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
-              <p><?php echo get_the_title(); ?></p>
-            </div>
+              <div class="Blog__columnItem">
+                <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                <p><?php echo get_the_title(); ?></p>
+              </div>
+            </a>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
+
+          <?php else: ?>
+            <p>まだ投稿がありません。</p>
+          <?php endif; ?>
+        </div>
+
+        <div class="Blog__more">
+          <a href="#">
+            過去のブログはこちら
+            <img src="<?php echo $imgUri;?>/blog1.webp" width="12" height="12" alt="" loading="lazy" />
           </a>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-
-        <?php else: ?>
-          <p>まだ投稿がありません。</p>
-        <?php endif; ?>
-      </div>
-
-      <div class="Blog__more">
-        <a href="#">
-          過去のブログはこちら
-          <img src="https://dummyimage.com/26x26/f27d53/fff.png" width="12" height="12" alt="" loading="lazy" />
-        </a>
+        </div>
       </div>
     </section>
 

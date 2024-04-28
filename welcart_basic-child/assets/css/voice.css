@@ -4,7 +4,7 @@
 
   @media screen and (min-width: 768px) {
     position: static;
-    padding-bottom: calc(100 * (100vw / var(--width-pc-origin)));
+    padding: 0;
   }
 
   .Voice__inner {
@@ -12,6 +12,10 @@
       position: relative;
       width: calc(1020 * (100vw / var(--width-pc-origin)));
       margin: 0 auto;
+      padding: calc(14 * (100vw / var(--width-pc-origin)))
+        calc(20 * (100vw / var(--width-pc-origin)))
+        calc(100 * (100vw / var(--width-pc-origin)))
+        calc(78 * (100vw / var(--width-pc-origin)));
     }
   }
 
