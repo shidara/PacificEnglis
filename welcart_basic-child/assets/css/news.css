@@ -1,6 +1,23 @@
 .News {
-  padding: 12px 20px;
-  background-color: var(--color-pacific-gray-b);
+  @media screen and (min-width: 768px) {
+    width: calc(1020 * (100vw / var(--width-pc-origin)));
+    margin: 0 auto;
+    padding-top: calc(36 * (100vw / var(--width-pc-origin)));
+    padding-left: calc(78 * (100vw / var(--width-pc-origin)));
+  }
+
+  .News__inner {
+    padding: 12px 20px;
+    background-color: var(--color-pacific-gray-b);
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      padding: calc(29 * (100vw / var(--width-pc-origin)))
+        calc(56 * (100vw / var(--width-pc-origin)));
+      border-radius: 16px;
+    }
+  }
 
   .News__title {
     margin-bottom: 14px;
@@ -8,12 +25,24 @@
     font-weight: 700;
     line-height: 1.4;
     color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      flex-shrink: 0;
+      margin-bottom: 0;
+      margin-right: calc(56 * (100vw / var(--width-pc-origin)));
+      font-size: calc(36 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .News__column {
     display: flex;
     align-items: center;
     margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
   }
 
   .News__columnItem {
@@ -22,6 +51,12 @@
     &:last-child {
       flex-grow: 1;
       margin-left: 10px;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        gap: calc(16 * (100vw / var(--width-pc-origin)));
+        margin-left: calc(16 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
@@ -32,11 +67,20 @@
 
     img {
       object-fit: cover;
+
+      @media screen and (min-width: 768px) {
+        width: calc(84 * (100vw / var(--width-pc-origin)));
+        height: calc(63 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
   time {
     font-size: 13px;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(15 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   p {
@@ -45,5 +89,9 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
   }
 }

@@ -23,37 +23,39 @@
 
     <!-- News -->
     <section class="News">
-      <h2 class="News__title">News</h2>
+      <div class="News__inner">
+        <h2 class="News__title">News</h2>
 
-      <?php
-        $args = array(
-            'post_type' => 'news',// 投稿タイプのスラッグを指定
-            'posts_per_page' => 1, // 投稿件数の指定
-          );
-        $news_query = new WP_Query($args); if($news_query->have_posts()):
+        <?php
+          $args = array(
+              'post_type' => 'news',// 投稿タイプのスラッグを指定
+              'posts_per_page' => 1, // 投稿件数の指定
+            );
+          $news_query = new WP_Query($args); if($news_query->have_posts()):
 
-        while ($news_query->have_posts()):
-        $news_query->the_post();
-        $image_id = get_post_thumbnail_id();
-        // メディアで設定したalt（代替テキスト）属性を取得
-        $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-      ?>
-      <a href="<?php the_permalink(); ?>" class="News__column">
-        <div class="News__columnItem">
-          <div class="News__thumbnail">
-            <img src="<?php the_post_thumbnail_url();?>" alt="<?php echo $image_alt; ?>" width="119" height="88" loading="lazy" />
+          while ($news_query->have_posts()):
+          $news_query->the_post();
+          $image_id = get_post_thumbnail_id();
+          // メディアで設定したalt（代替テキスト）属性を取得
+          $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+        ?>
+        <a href="<?php the_permalink(); ?>" class="News__column">
+          <div class="News__columnItem">
+            <div class="News__thumbnail">
+              <img src="<?php the_post_thumbnail_url();?>" alt="<?php echo $image_alt; ?>" width="119" height="88" loading="lazy" />
+            </div>
           </div>
-        </div>
-        <div class="News__columnItem">
-          <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
-          <p><?php echo get_the_title(); ?></p>
-        </div>
-      </a>
-      <?php endwhile; ?>
-      <?php wp_reset_postdata(); ?>
-      <?php else: ?>
-        <p>まだ投稿がありません。</p>
-      <?php endif; ?>
+          <div class="News__columnItem">
+            <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+            <p><?php echo get_the_title(); ?></p>
+          </div>
+        </a>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+        <?php else: ?>
+          <p>まだ投稿がありません。</p>
+        <?php endif; ?>
+      </div>
     </section>
 
     <!-- Message -->
