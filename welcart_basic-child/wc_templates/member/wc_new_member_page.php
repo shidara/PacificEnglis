@@ -169,7 +169,7 @@ get_template_part('header-cart');
             <span class="mwform-checkbox-field horizontal-item">
               <label>
                 <input type="checkbox" name="agree[data][]" value="個人情報の取り扱いに同意する。">
-                <span class="mwform-checkbox-field-text"><a href="https://anotherwave.jp/another-wave/privacy-policy/" target="_blank" rel="noopener noreferrer">個人情報の取り扱い</a>に同意する。</span>
+                <span class="mwform-checkbox-field-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>privacy-policy/" target="_blank" rel="noopener noreferrer">個人情報の取り扱い</a>に同意する。</span>
               </label>
             </span>
           </div>
