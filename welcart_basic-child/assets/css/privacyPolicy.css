@@ -1,9 +1,9 @@
-.ContactPage {
+.PrivacyPolicyPage {
   margin: 0 auto;
   background-color: #fbfbf9;
 }
 
-.Contact {
+.PrivacyPolicy {
   position: relative;
   padding: 41px 20px 76px;
 
@@ -12,8 +12,8 @@
     margin: 0 auto;
   }
 
-  .Contact__title {
-    .Contact__titleText {
+  .PrivacyPolicy__title {
+    .PrivacyPolicy__titleText {
       margin-bottom: 12px;
       font-size: 42px;
       font-weight: 700;
@@ -26,7 +26,7 @@
       }
     }
 
-    .Contact__subTitle {
+    .PrivacyPolicy__subTitle {
       margin-bottom: 24px;
       font-size: 14px;
       font-weight: 700;
@@ -38,7 +38,7 @@
         font-size: calc(14 * (100vw / var(--width-pc-origin)));
       }
 
-      &.Contact__subTitle--beforeIcon {
+      &.PrivacyPolicy__subTitle--beforeIcon {
         position: relative;
         padding-left: 20px;
 
@@ -67,7 +67,7 @@
     }
   }
 
-  .Contact__summary {
+  .PrivacyPolicy__summary {
     margin-bottom: 60px;
     font-size: 16px;
     color: var(--color-blk);
@@ -79,7 +79,7 @@
     }
   }
 
-  .Contact__item {
+  .PrivacyPolicy__item {
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
@@ -87,7 +87,7 @@
     }
   }
 
-  .Contact__itemTitle {
+  .PrivacyPolicy__itemTitle {
     position: relative;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -122,7 +122,7 @@
     }
   }
 
-  .Contact__itemInner {
+  .PrivacyPolicy__itemInner {
     margin-top: 20px;
     font-size: 16px;
     line-height: 1.8;

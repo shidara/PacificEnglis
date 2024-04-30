@@ -91,7 +91,7 @@ Base
 @import url("./terms.css");
 
 /* 個人情報保護 */
-@import url("./contact.css");
+@import url("./privacyPolicy.css");
 
 /* ログイン */
 @import url("./login.css");
