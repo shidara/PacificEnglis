@@ -497,6 +497,10 @@
     }
   }
 
+  table {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+  }
+
   .currency_code {
     font-size: 16px;
 

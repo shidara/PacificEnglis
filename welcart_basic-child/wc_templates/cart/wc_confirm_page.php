@@ -147,8 +147,9 @@ get_template_part('header-cart');
 
               <?php do_action( 'usces_action_confirm_table_after' ); ?>
 
-              <?php if ( usces_is_member_system() && usces_is_member_system_point() && usces_is_login() && wel_is_available_point() ) : ?>
-                <form action="<?php usces_url( 'cart' ); ?>" method="post" onKeyDown="if(event.keyCode == 13){return false;}">
+              <!-- ポイントについて -->
+              <?php // if ( usces_is_member_system() && usces_is_member_system_point() && usces_is_login() && wel_is_available_point() ) : ?>
+                <!-- <form action="<?php usces_url( 'cart' ); ?>" method="post" onKeyDown="if(event.keyCode == 13){return false;}">
                   <div class="error_message"><?php usces_error_message(); ?></div>
                   <table cellspacing="0" id="point_table">
                     <tr>
@@ -163,9 +164,9 @@ get_template_part('header-cart');
                       <td colspan="2" class="point-btn"><input name="use_point" type="submit" class="use_point_button" value="<?php esc_attr_e( 'Use the points', 'usces' ); ?>" /></td>
                     </tr>
                   </table>
-                  <?php do_action( 'usces_action_confirm_page_point_inform' ); ?>
-                </form>
-              <?php endif; ?>
+                  <?php // do_action( 'usces_action_confirm_page_point_inform' ); ?>
+                </form> -->
+              <?php // endif; ?>
               <?php do_action( 'usces_action_confirm_after_form' ); ?>
 
             </div><!-- #cart -->
