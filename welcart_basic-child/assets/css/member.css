@@ -1,6 +1,10 @@
 .MemberPage {
   margin: 0 auto;
   background-color: #fbfbf9;
+
+  @media screen and (min-width: 768px) {
+    min-width: 1083px;
+  }
 }
 
 .MemberContents {
@@ -104,13 +108,17 @@
     }
   }
 
+  table {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+  }
+
   .send {
     display: flex;
     flex-direction: column;
     gap: 12px;
 
     @media screen and (min-width: 768px) {
-      flex-direction: row-reverse;
+      flex-direction: row;
       gap: calc(12 * (100vw / var(--width-pc-origin)));
     }
 
