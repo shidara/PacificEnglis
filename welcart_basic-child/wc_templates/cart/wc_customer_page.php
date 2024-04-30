@@ -9,18 +9,21 @@
 get_template_part('header-cart');
 ?>
 
-  <div id="primary" class="site-content CustomerPage">
-    <div id="content" class="cart-page" role="main">
+<div class="CustomerPage">
+  <section class="Breadcrumbs">
+    <ul>
+      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">TOP</a></li>
+      <li>お客様情報</li>
+    </ul>
+  </section>
 
+  <section class="CustomerModule cart-page" role="main">
     <?php
     if ( have_posts() ) :
       usces_remove_filter();
       ?>
-
       <article class="post" id="wc_<?php usces_page_name(); ?>">
-
-        <h1 class="cart_page_title"><?php esc_html_e( 'Customer Information', 'usces' ); ?></h1>
-
+        <h1 class="cart_page_title">お客様情報</h1>
         <div id="customer-info">
 
           <div class="cart_navi">
@@ -42,7 +45,7 @@ get_template_part('header-cart');
 
           <?php if ( ! wel_have_ex_order() ) : ?>
           <h5>会員の方はこちら</h5>
-          <P class="cart_page_title_sub">会員の方は、登録時に入力されたE-mailとパスワードでログインしてください。</P>
+          <p class="cart_page_title_sub">会員の方は、登録時に入力されたE-mailとパスワードでログインしてください。</p>
           <?php endif; ?>
 
           <form action="<?php usces_url( 'cart' ); ?>" method="post" name="customer_loginform" onKeyDown="if(event.keyCode == 13){return false;}">
@@ -207,7 +210,7 @@ get_template_part('header-cart');
               <span class="mwform-checkbox-field horizontal-item">
                 <label>
                   <input type="checkbox" name="agree[data][]" value="個人情報の取り扱いに同意する。">
-                  <span class="mwform-checkbox-field-text"><a href="https://test.wittydesign11.com/another-wave/privacy-policy/" target="_blank" rel="noopener noreferrer">個人情報の取り扱い</a>に同意する。</span>
+                  <span class="mwform-checkbox-field-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>privacy-policy/" target="_blank" rel="noopener noreferrer">個人情報の取り扱い</a>に同意する。</span>
                 </label>
               </span>
             </div>
@@ -234,13 +237,10 @@ get_template_part('header-cart');
       </article><!-- .post -->
 
     <?php else : ?>
-
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'usces' ); ?></p>
-
     <?php endif; ?>
-
-    </div><!-- #content -->
-  </div><!-- #primary -->
+  </section>
+</div>
 
 <?php get_footer(); ?>
 <script type='text/javascript' src='https://ajaxzip3.github.io/ajaxzip3.js?'></script>
