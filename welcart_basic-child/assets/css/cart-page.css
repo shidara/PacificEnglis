@@ -1,5 +1,4 @@
 .p_shopCart,
-.CustomerPage,
 .CompletionPage {
   padding: 55px 20px 15px;
 }
@@ -221,18 +220,47 @@
 }
 
 /* お客様情報専用 */
-.CustomerPage {
+.CustomerModule {
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(1080 * (100vw / var(--width-pc-origin)));
+    margin: 0 auto;
+  }
+
+  .cart_page_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   #customer-info h5 {
     margin-bottom: 18px;
     padding: 0;
     border: 0;
     font-size: 27px;
     font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(15 * (100vw / var(--width-pc-origin)));
+      font-size: calc(27 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .cart_page_title_sub {
     margin-bottom: 30px;
     font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(30 * (100vw / var(--width-pc-origin)));
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .customer_form {
@@ -404,6 +432,14 @@
     gap: 12px;
     padding-top: 15px;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: calc(40 * (100vw / var(--width-pc-origin)));
+      padding-top: calc(60 * (100vw / var(--width-pc-origin)));
+    }
+
     .back_cart_button,
     .to_deliveryinfo_button,
     .to_reganddeliveryinfo_button,
@@ -413,12 +449,21 @@
       border-radius: 60px;
       margin-bottom: 0;
       padding: 13px;
+
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+      }
     }
 
+    .to_deliveryinfo_button,
     .to_memberlogin_button,
+    .to_reganddeliveryinfo_button,
     .to_confirm_button {
       color: var(--color-wht);
-      background-color: var(--color-pacific-orange-b);
+      background-color: var(--color-pacific-orange-b) !important;
     }
   }
 }
