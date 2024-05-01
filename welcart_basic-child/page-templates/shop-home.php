@@ -1,82 +1,84 @@
-<?php get_header();
+<?php
 /**
 * Template Name: Shop_ホーム
 *
 * @package Welcart
 * @subpackage Welcart_Basic
 */
+
+get_template_part('header-cart');
+
+$imgUri = get_theme_file_uri() . "/assets/image/";
 ?>
-<div class="p_shopHome">
-  <?php $imgUri = get_theme_file_uri() . "/assets/image/"; ?>
-  <?php // get_template_part( 'parts/subpageHeader' ); ?>
-  <div class="l_container">
-    <div class="l_inner _shop">
-      <div class="c_archiveSearch">
-        <span class="arrow"></span>
+<div class="ShopListPage">
+  <section class="Breadcrumbs">
+    <ul>
+      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">TOP</a></li>
+      <li>商品一覧</li>
+    </ul>
+  </section>
+
+  <section class="ShopListModule">
+    <div class="ShopListModule__title">
+      <h3 class="ShopListModule__titleText">
+        <span>Online Shop</span>
+        <span class="ShopListModule__titleSubText">オンラインショップ</span>
+      </h3>
+    </div>
+
+    <?php
+      $paged = get_query_var('paged') ? get_query_var('paged') : 1; //pagedの設定
+      // if (is_mobile()) {
+        $posts_per_page = 8;
+      // } else {
+        // $posts_per_page = 9;
+      // }
+      $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => $posts_per_page,
+          'paged' => $paged,
+          'post_status' => 'publish',
+          'category_name' => 'item',
+        );
+      $the_query = new WP_Query($args);
+    ?>
+    <?php if($the_query->have_posts()): ?>
+
+      <div class="ShopListModule__list">
         <?php
-        $categories = get_categories();
-        if( $categories && !is_wp_error($categories) ){ // タームがあれば表示
-          echo '<select name="select" onChange="location.href=value;">'; // option の value 値を URL とする
-          echo '<option value="' . esc_url( home_url( '/shop/' ) ) . '">' .'すべて</option>';
-          foreach ($categories as $category) { // 配列の繰り返し
-            if ($category->slug === 'item'|| $category->slug === 'uncategorized') {
-              continue;
-          }
-            echo '<option value="'.get_category_link($category->term_id).'">'.esc_html($category->name).'</option>'; // タームのURLとタイトルを表示
-          }
-          echo '</select>';
-        }
-      ?>
-      </div>
-      <?php
-        $paged = get_query_var('paged') ? get_query_var('paged') : 1; //pagedの設定
-        // if (is_mobile()) {
-          $posts_per_page = 8;
-        // } else {
-          // $posts_per_page = 9;
-        // }
-        $args = array(
-            'post_type' => 'post',
-            'posts_per_page' => $posts_per_page,
-            'paged' => $paged,
-            'post_status' => 'publish',
-            'category_name' => 'item',
-          );
-        $the_query = new WP_Query($args);
-      ?>
-      <?php if($the_query->have_posts()): ?>
-      <div class="c_productList _grid">
-        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
-        <div class="c_productList_item">
+          while($the_query->have_posts()):
+            $the_query->the_post();
+            $image_id = get_post_thumbnail_id();
+            // メディアで設定したalt（代替テキスト）属性を取得
+            $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+        ?>
+        <div class="ShopListModule__item">
           <a href="<?php echo get_permalink(); ?>">
-            <div class="c_productList_thumbnail">
-              <?php usces_the_itemImage( 0, 660, 660 ); ?>
+            <div class="ShopListModule__itemThumbnail">
+              <?php usces_the_itemImage(); ?>
             </div>
-            <div class="c_productList_detail">
+
+            <div class="ShopListModule__itemInfo">
               <?php
                 $categories = get_the_category();
                 if( $categories ){
-                  echo '<span class="e_category">' . $categories[0]->name . '</span>';
+                  echo '<span class="ShopListModule__itemCategory">' . $categories[0]->name . '</span>';
                 }
               ?>
-              <p class="c_productList_title"><?php usces_the_itemName(); ?></p>
-              <span class="c_productList_price"><?php usces_the_firstPriceCr(); ?><span class="tax">（税込）</span>
+              <div class="ShopListModule__itemTitle"><?php usces_the_itemName(); ?></div>
+              <div class="ShopListModule__itemPrice"><?php usces_the_firstPriceCr(); ?></div>
             </div>
           </a>
         </div>
         <?php endwhile; ?>
       </div>
-      <div class="c_pageNavi">
-        <?php
-        if(function_exists('wp_pagenavi')) {
-          wp_pagenavi(array('query' => $the_query));
-        }
-        ?>
-        <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-      </div>
-      <?php endif; wp_reset_postdata(); ?>
-    </div>
-  </div>
-  <?php // get_template_part( 'parts/contactArea' ); ?>
+
+    <?php endif; wp_reset_postdata(); ?>
+  </section>
+
 </div>
-<?php get_footer();?>
+<?php
+  get_template_part('helloWorld');
+  get_template_part('recruit');
+  get_footer();
+?>

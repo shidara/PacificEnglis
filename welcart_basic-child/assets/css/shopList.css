@@ -1,0 +1,131 @@
+.ShopListPage {
+  margin: 0 auto;
+  background-color: #fbfbf9;
+}
+
+.ShopListModule {
+  position: relative;
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: 1083px;
+    margin: 0 auto;
+  }
+
+  .ShopListModule__title {
+    margin-bottom: 24px;
+    color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(62 * (100vw / var(--width-pc-origin)));
+    }
+
+    .ShopListModule__titleText {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.3;
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .ShopListModule__titleSubText {
+      margin-left: 8px;
+      font-size: 18px;
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  /* 商品リスト */
+  .ShopListModule__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 63px 22px;
+
+    @media screen and (min-width: 768px) {
+      gap: calc(90 * (100vw / var(--width-pc-origin)))
+        calc(101 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ShopListModule__item {
+    box-sizing: border-box;
+    width: calc(50% - 11px);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+
+    @media screen and (min-width: 768px) {
+      width: calc(33% - calc(65 * (100vw / var(--width-pc-origin))));
+    }
+  }
+
+  .ShopListModule__itemThumbnail {
+    margin-bottom: 20px;
+    background-color: var(--color-pacific-gray-a);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(24 * (100vw / var(--width-pc-origin)));
+    }
+
+    img {
+      width: 100%;
+      height: 194px;
+      object-fit: contain;
+
+      @media screen and (min-width: 768px) {
+        height: calc(313 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .ShopListModule__itemCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 38px;
+    margin-bottom: 14px;
+    padding: 3px 28px 4px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      width: calc(180 * (100vw / var(--width-pc-origin)));
+      min-height: calc(31 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+      padding: calc(3 * (100vw / var(--width-pc-origin)))
+        calc(12 * (100vw / var(--width-pc-origin)));
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ShopListModule__itemTitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--color-blk);
+    font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ShopListModule__itemPrice {
+    font-size: 16px;
+    color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+}

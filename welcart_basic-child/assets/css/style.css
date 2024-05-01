@@ -108,6 +108,9 @@ Base
 /* FixedNavigation */
 @import url("./fixedNavigation.css");
 
+/* ショップ一覧 */
+@import url("./shopList.css");
+
 /*================================
 Reset CSS
 ================================*/
