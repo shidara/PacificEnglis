@@ -1,0 +1,14 @@
+.ShopItemPage {
+  margin: 0 auto;
+  background-color: #fbfbf9;
+}
+
+.ShopItemModule {
+  position: relative;
+  padding: 41px 20px 76px;
+
+  @media screen and (min-width: 768px) {
+    width: 1083px;
+    margin: 0 auto;
+  }
+}
