@@ -1,15 +1,24 @@
 .ShopListPage {
   margin: 0 auto;
   background-color: #fbfbf9;
+
+  @media screen and (min-width: 768px) {
+    width: max(
+      calc(1020 * (100vw / var(--width-pc-origin)), var(--width-pc-origin-px))
+    );
+  }
 }
 
+/* 商品モジュール */
 .ShopListModule {
   position: relative;
   padding: 41px 20px 76px;
 
   @media screen and (min-width: 768px) {
-    width: 1083px;
+    width: calc(1020 * (100vw / var(--width-pc-origin)));
     margin: 0 auto;
+    padding: calc(1 * (100vw / var(--width-pc-origin))) 0
+      calc(89 * (100vw / var(--width-pc-origin)));
   }
 
   .ShopListModule__title {
@@ -99,7 +108,8 @@
     color: var(--color-primary);
 
     @media screen and (min-width: 768px) {
-      width: calc(180 * (100vw / var(--width-pc-origin)));
+      display: inline-flex;
+      width: auto;
       min-height: calc(31 * (100vw / var(--width-pc-origin)));
       margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
       padding: calc(3 * (100vw / var(--width-pc-origin)))
@@ -113,6 +123,7 @@
     font-size: 16px;
     color: var(--color-blk);
     font-weight: bold;
+    line-height: 1.2;
 
     @media screen and (min-width: 768px) {
       margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
