@@ -79,15 +79,15 @@ get_template_part('header-cart');
             <div class="c_form_item">
               <p class="c_form_name"><span class="required">必須</span>お名前</p>
               <div class="c_form_input _sm-row _lg-col2">
-                <input name="customer[name1]" id="name1" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active">
-                <input name="customer[name2]" id="name2" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active">
+                <input name="customer[name1]" id="name1" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active" placeholder="姓">
+                <input name="customer[name2]" id="name2" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active" placeholder="名">
               </div>
             </div>
             <div class="c_form_item">
               <p class="c_form_name"><span class="required">必須</span>フリガナ</p>
               <div class="c_form_input _sm-row _lg-col2">
-                <input name="customer[name3]" id="name3" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active">
-                <input name="customer[name4]" id="name4" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active">
+                <input name="customer[name3]" id="name3" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active" placeholder="セイ">
+                <input name="customer[name4]" id="name4" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: active" placeholder="メイ">
               </div>
             </div>
             <div class="c_form_item">
@@ -105,13 +105,13 @@ get_template_part('header-cart');
             <div class="c_form_item">
                 <p class="c_form_name"><span class="required">必須</span>電話番号</p>
                 <div class="c_form_input">
-                <input name="customer[tel]" id="tel" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: inactive">
+                <input name="customer[tel]" id="tel" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: inactive" placeholder="0000000000">
                 </div>
             </div>
             <div class="c_form_item">
                 <p class="c_form_name">FAX番号</p>
                 <div class="c_form_input">
-                  <input name="customer[fax]" id="fax" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: inactive">
+                  <input name="customer[fax]" id="fax" type="text" value="" onkeydown="if (event.keyCode == 13) {return false;}" style="ime-mode: inactive" placeholder="0000000000">
                 </div>
             </div>
             <div class="c_form_item">

@@ -675,6 +675,10 @@
     }
   }
 
+  table {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+  }
+
   #cart_table {
     @media screen and (min-width: 768px) {
       border: 1px solid var(--color-pacific-gray-a);
