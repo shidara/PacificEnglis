@@ -13,6 +13,9 @@
   @media screen and (min-width: 768px) {
     width: 1083px;
     margin: 0 auto;
+    padding: calc(42 * (100vw / var(--width-pc-origin)))
+      calc(20 * (100vw / var(--width-pc-origin)))
+      calc(80 * (100vw / var(--width-pc-origin)));
   }
 
   .ShopItemModule__title {
@@ -43,8 +46,25 @@
     }
   }
 
+  .ShopItemModule__body {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: calc(57 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .ShopItemModule__mainImageWrapper {
+    position: relative;
     margin-bottom: 18px;
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 0;
+      flex-shrink: 0;
+      /* display: flex;
+      flex-direction: row-reverse; */
+      width: calc(337 * (100vw / var(--width-pc-origin)));
+      padding-left: calc(72 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   /* メイン画像 */
@@ -56,27 +76,53 @@
     .swiper-slide img {
       width: calc(100vw - 20px * 2);
       height: auto;
+
+      @media screen and (min-width: 768px) {
+        width: calc(265 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
   /* 複数サブ画像 */
   .ShopItemModule__subImage {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
     .swiper-wrapper {
       align-items: center;
       flex-wrap: wrap;
       gap: 15px 8px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: column;
+        gap: calc(6 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .swiper-slide {
       width: 63px !important;
       height: 63px !important;
       margin: 0 !important;
+      cursor: pointer;
+
+      @media screen and (min-width: 768px) {
+        width: calc(47 * (100vw / var(--width-pc-origin))) !important;
+        height: calc(47 * (100vw / var(--width-pc-origin))) !important;
+      }
 
       img {
         width: 63px;
         height: 63px;
         object-fit: cover;
         border-radius: 4px;
+
+        @media screen and (min-width: 768px) {
+          width: calc(47 * (100vw / var(--width-pc-origin)));
+          height: calc(47 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
   }
@@ -100,11 +146,10 @@
     color: var(--color-primary);
 
     @media screen and (min-width: 768px) {
-      width: calc(180 * (100vw / var(--width-pc-origin)));
-      min-height: calc(31 * (100vw / var(--width-pc-origin)));
+      min-height: calc(27 * (100vw / var(--width-pc-origin)));
       margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
       padding: calc(3 * (100vw / var(--width-pc-origin)))
-        calc(12 * (100vw / var(--width-pc-origin)));
+        calc(20 * (100vw / var(--width-pc-origin)));
       font-size: calc(14 * (100vw / var(--width-pc-origin)));
     }
   }
@@ -118,8 +163,8 @@
     line-height: 1.3;
 
     @media screen and (min-width: 768px) {
-      margin-bottom: calc(15 * (100vw / var(--width-pc-origin)));
-      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+      font-size: calc(24 * (100vw / var(--width-pc-origin)));
     }
   }
 
@@ -131,7 +176,7 @@
     font-family: "Zen Kaku Gothic New", sans-serif;
 
     @media screen and (min-width: 768px) {
-      margin-bottom: calc(15 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(24 * (100vw / var(--width-pc-origin)));
       font-size: calc(24 * (100vw / var(--width-pc-origin)));
     }
   }
@@ -146,11 +191,23 @@
     }
   }
 
+  .ShopItemModule__infoSendForm {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: calc(38 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .ShopItemModule__infoNumber {
     display: flex;
     align-items: center;
     gap: 22px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      gap: calc(22 * (100vw / var(--width-pc-origin)));
+      margin-bottom: 0;
+    }
 
     .ShopItemModule__infoNumberTitle {
       flex-grow: 0;
@@ -158,6 +215,10 @@
       font-size: 20px;
       font-weight: bold;
       color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .ShopItemModule__infoNumberInput {
@@ -173,6 +234,13 @@
         font-size: 20px;
         font-weight: bold;
         appearance: none;
+
+        @media screen and (min-width: 768px) {
+          width: calc(135 * (100vw / var(--width-pc-origin)));
+          height: calc(48 * (100vw / var(--width-pc-origin)));
+          border-radius: 3px;
+          font-size: calc(20 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
 
@@ -184,6 +252,17 @@
       transform: translateY(-50%);
       width: 42px;
       height: 42px;
+
+      @media screen and (min-width: 768px) {
+        width: calc(42 * (100vw / var(--width-pc-origin)));
+        height: calc(42 * (100vw / var(--width-pc-origin)));
+
+        &::before {
+          width: calc(13 * (100vw / var(--width-pc-origin)));
+          height: calc(2 * (100vw / var(--width-pc-origin)));
+          border-radius: calc(3 * (100vw / var(--width-pc-origin)));
+        }
+      }
 
       &::before {
         content: "";
@@ -209,24 +288,36 @@
       &::after {
         background-color: var(--color-primary);
       }
-    }
 
-    .ShopItemModule__infoNumberInputPlus::after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) rotate(90deg);
-      width: 13px;
-      height: 2px;
-      border-radius: 26px;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+        width: 13px;
+        height: 2px;
+        border-radius: 26px;
+      }
+
+      @media screen and (min-width: 768px) {
+        &::after {
+          width: calc(13 * (100vw / var(--width-pc-origin)));
+          height: calc(2 * (100vw / var(--width-pc-origin)));
+          border-radius: calc(3 * (100vw / var(--width-pc-origin)));
+        }
+      }
     }
   }
 
   /* カートに追加 */
   .ShopItemModule__infoSendButton {
     margin-bottom: 39px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
 
     input {
       width: 100%;
@@ -239,10 +330,11 @@
       background-color: var(--color-pacific-orange-b);
 
       @media screen and (min-width: 768px) {
-        width: calc(300 * (100vw / var(--width-pc-origin)));
-        height: calc(60 * (100vw / var(--width-pc-origin)));
-        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        width: calc(283 * (100vw / var(--width-pc-origin)));
+        height: calc(68 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
         padding: calc(13 * (100vw / var(--width-pc-origin)));
+        border-radius: calc(50 * (100vw / var(--width-pc-origin)));
       }
     }
   }
@@ -255,7 +347,8 @@
 
     @media screen and (min-width: 768px) {
       height: calc(1 * (100vw / var(--width-pc-origin)));
-      margin: calc(48 * (100vw / var(--width-pc-origin))) 0;
+      margin: calc(36 * (100vw / var(--width-pc-origin))) 0
+        calc(26 * (100vw / var(--width-pc-origin)));
     }
   }
 
@@ -264,22 +357,40 @@
     font-size: 20px;
     font-weight: bold;
     color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .ShopItemModule__infoSummaryDescription {
     font-size: 15px;
     color: var(--color-blk);
     line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+      line-height: 1.8;
+    }
   }
 }
 
 /* 関連アイテム */
 .ShopRecommendModule {
-  background-color: #fbfbf9;
+  background-color: var(--color-pacific-gray-b);
 
   .ShopRecommendModule__inner {
     position: relative;
     padding: 55px 20px 100px;
+
+    @media screen and (min-width: 768px) {
+      width: 1083px;
+      margin: 0 auto;
+      padding: calc(53 * (100vw / var(--width-pc-origin)))
+        calc(20 * (100vw / var(--width-pc-origin)))
+        calc(120 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .ShopRecommendModule__contents {
@@ -290,6 +401,10 @@
     margin-bottom: 32px;
     text-align: center;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(60 * (100vw / var(--width-pc-origin)));
+    }
+
     .ShopRecommendModule__titleText {
       font-size: 48px;
       font-weight: bold;
@@ -297,7 +412,9 @@
       color: var(--color-primary);
 
       @media screen and (min-width: 768px) {
-        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+        margin-bottom: calc(8 * (100vw / var(--width-pc-origin)));
+        font-size: calc(62 * (100vw / var(--width-pc-origin)));
+        letter-spacing: 6px;
       }
     }
 
@@ -306,7 +423,7 @@
       color: var(--color-blk);
 
       @media screen and (min-width: 768px) {
-        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+        font-size: calc(24 * (100vw / var(--width-pc-origin)));
       }
     }
   }
@@ -317,11 +434,24 @@
     gap: 22px;
     overflow: scroll;
     padding-bottom: 62px;
+
+    @media screen and (min-width: 768px) {
+      gap: calc(93 * (100vw / var(--width-pc-origin)));
+      padding-bottom: calc(120 * (100vw / var(--width-pc-origin)));
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   .ShopRecommendModule__item {
     flex-shrink: 0;
     width: 164px;
+
+    @media screen and (min-width: 768px) {
+      width: calc(240 * (100vw / var(--width-pc-origin)));
+    }
 
     > a {
       display: flex;
@@ -347,11 +477,19 @@
     .ShopRecommendModule__itemThumbnail {
       margin-bottom: 20px;
 
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(32 * (100vw / var(--width-pc-origin)));
+      }
+
       img {
         width: 100%;
         height: auto;
         max-height: 194px;
         object-fit: contain;
+
+        @media screen and (min-width: 768px) {
+          max-height: calc(304 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
 
@@ -373,11 +511,10 @@
       color: var(--color-primary);
 
       @media screen and (min-width: 768px) {
-        width: calc(180 * (100vw / var(--width-pc-origin)));
         min-height: calc(31 * (100vw / var(--width-pc-origin)));
         margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
         padding: calc(3 * (100vw / var(--width-pc-origin)))
-          calc(12 * (100vw / var(--width-pc-origin)));
+          calc(20 * (100vw / var(--width-pc-origin)));
         font-size: calc(14 * (100vw / var(--width-pc-origin)));
       }
     }
@@ -387,6 +524,11 @@
       font-size: 16px;
       font-weight: bold;
       color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .ShopRecommendModule__itemPrice {
@@ -394,7 +536,7 @@
       color: var(--color-blk);
 
       @media screen and (min-width: 768px) {
-        font-size: calc(24 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
       }
     }
   }
@@ -419,10 +561,10 @@
       background-color: var(--color-pacific-orange-b);
 
       @media screen and (min-width: 768px) {
-        width: calc(300 * (100vw / var(--width-pc-origin)));
-        height: calc(60 * (100vw / var(--width-pc-origin)));
-        font-size: calc(18 * (100vw / var(--width-pc-origin)));
-        padding: calc(13 * (100vw / var(--width-pc-origin)));
+        width: calc(372 * (100vw / var(--width-pc-origin)));
+        height: calc(68 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+        padding: calc(22 * (100vw / var(--width-pc-origin)));
       }
     }
   }

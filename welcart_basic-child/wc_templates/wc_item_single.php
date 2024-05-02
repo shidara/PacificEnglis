@@ -110,21 +110,23 @@ get_template_part('header-cart');
                     </div>
                   <?php endif; ?>
 
-                  <!-- 数量調整 -->
-                  <div class="ShopItemModule__infoNumber">
-                    <span class="ShopItemModule__infoNumberTitle"><?php esc_html_e( 'Quantity', 'usces' ); ?></span>
-                    <div class="ShopItemModule__infoNumberInput js-hopSingleDetailQuantity">
-                      <span class="ShopItemModule__infoNumberInputMinus js-minus"></span>
-                      <?php
-                      // 表示されるinput typeがtextになってしまうため強引に number に書き換えている
-                      echo str_replace( 'type="text"', 'type="number" min="1"', usces_the_itemQuant( 'return' ) );
-                      ?>
-                      <span class="ShopItemModule__infoNumberInputPlus js-plus"></span>
+                  <div class="ShopItemModule__infoSendForm">
+                    <!-- 数量調整 -->
+                    <div class="ShopItemModule__infoNumber">
+                      <span class="ShopItemModule__infoNumberTitle"><?php esc_html_e( 'Quantity', 'usces' ); ?></span>
+                      <div class="ShopItemModule__infoNumberInput js-hopSingleDetailQuantity">
+                        <span class="ShopItemModule__infoNumberInputMinus js-minus"></span>
+                        <?php
+                        // 表示されるinput typeがtextになってしまうため強引に number に書き換えている
+                        echo str_replace( 'type="text"', 'type="number" min="1"', usces_the_itemQuant( 'return' ) );
+                        ?>
+                        <span class="ShopItemModule__infoNumberInputPlus js-plus"></span>
+                      </div>
                     </div>
-                  </div>
-                  <!-- カートに追加 -->
-                  <div class="ShopItemModule__infoSendButton">
-                    <?php usces_the_itemSkuButton( __( 'カートに追加', 'usces' ), 0 ); ?>
+                    <!-- カートに追加 -->
+                    <div class="ShopItemModule__infoSendButton">
+                      <?php usces_the_itemSkuButton( __( 'カートに追加', 'usces' ), 0 ); ?>
+                    </div>
                   </div>
 
                   </div>
@@ -194,8 +196,8 @@ get_template_part('header-cart');
                   ?>
                   <p class="ShopRecommendModule__itemTitle"><?php usces_the_itemName(); ?></p>
                 </div>
-                 <div class="ShopRecommendModule__itemInfoSub">
-                   <p class="ShopRecommendModule__itemPrice"><?php usces_the_firstPriceCr(); ?></p>
+                <div class="ShopRecommendModule__itemInfoSub">
+                  <p class="ShopRecommendModule__itemPrice"><?php usces_the_firstPriceCr(); ?></p>
                   </div>
               </div>
             </a>
