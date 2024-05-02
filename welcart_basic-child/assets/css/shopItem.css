@@ -1,14 +1,429 @@
 .ShopItemPage {
   margin: 0 auto;
-  background-color: #fbfbf9;
+
+  @media screen and (min-width: 768px) {
+    background-color: #fbfbf9;
+  }
 }
 
 .ShopItemModule {
   position: relative;
-  padding: 41px 20px 76px;
+  padding: 41px 20px 80px;
 
   @media screen and (min-width: 768px) {
     width: 1083px;
     margin: 0 auto;
+  }
+
+  .ShopItemModule__title {
+    margin-bottom: 24px;
+    color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(62 * (100vw / var(--width-pc-origin)));
+    }
+
+    .ShopItemModule__titleText {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.3;
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .ShopItemModule__titleSubText {
+      margin-left: 8px;
+      font-size: 18px;
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .ShopItemModule__mainImageWrapper {
+    margin-bottom: 18px;
+  }
+
+  /* メイン画像 */
+  .ShopItemModule__mainImage {
+    .swiper-wrapper {
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: calc(100vw - 20px * 2);
+      height: auto;
+    }
+  }
+
+  /* 複数サブ画像 */
+  .ShopItemModule__subImage {
+    .swiper-wrapper {
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px 8px;
+    }
+
+    .swiper-slide {
+      width: 63px !important;
+      height: 63px !important;
+      margin: 0 !important;
+
+      img {
+        width: 63px;
+        height: 63px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  /* カテゴリ */
+  .ShopItemModule__itemCategory {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: auto;
+    min-height: 38px;
+    margin-bottom: 17px;
+    padding: 3px 20px 4px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      width: calc(180 * (100vw / var(--width-pc-origin)));
+      min-height: calc(31 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+      padding: calc(3 * (100vw / var(--width-pc-origin)))
+        calc(12 * (100vw / var(--width-pc-origin)));
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ShopItemModule__itemTitle {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--color-blk);
+    font-weight: bold;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    line-height: 1.3;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(15 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ShopItemModule__infoPrice {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--color-blk);
+    font-weight: bold;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(15 * (100vw / var(--width-pc-origin)));
+      font-size: calc(24 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ShopItemModule__infoPriceTax {
+    font-size: 14px;
+    color: #aeaeae;
+    font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ShopItemModule__infoNumber {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 40px;
+
+    .ShopItemModule__infoNumberTitle {
+      flex-grow: 0;
+      flex-shrink: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--color-blk);
+    }
+
+    .ShopItemModule__infoNumberInput {
+      position: relative;
+
+      input {
+        box-sizing: border-box;
+        width: 135px;
+        height: 48px;
+        background-color: var(--color-wht);
+        border: 1px solid #aeaeae;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        appearance: none;
+      }
+    }
+
+    .ShopItemModule__infoNumberInputMinus,
+    .ShopItemModule__infoNumberInputPlus {
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 13px;
+        height: 2px;
+        border-radius: 26px;
+      }
+    }
+
+    .ShopItemModule__infoNumberInputMinus::before {
+      background-color: #a8a8a8;
+    }
+
+    .ShopItemModule__infoNumberInputPlus {
+      right: 0;
+
+      &::before,
+      &::after {
+        background-color: var(--color-primary);
+      }
+    }
+
+    .ShopItemModule__infoNumberInputPlus::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) rotate(90deg);
+      width: 13px;
+      height: 2px;
+      border-radius: 26px;
+    }
+  }
+
+  /* カートに追加 */
+  .ShopItemModule__infoSendButton {
+    margin-bottom: 39px;
+
+    input {
+      width: 100%;
+      height: 52px;
+      border-radius: 60px;
+      margin-bottom: 0;
+      padding: 13px;
+      font-size: 20px;
+      color: var(--color-wht);
+      background-color: var(--color-pacific-orange-b);
+
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .ShopItemModule__infoDetailDivider {
+    display: block;
+    height: 1px;
+    margin: 26px 0;
+    background-color: var(--color-pacific-gray-a);
+
+    @media screen and (min-width: 768px) {
+      height: calc(1 * (100vw / var(--width-pc-origin)));
+      margin: calc(48 * (100vw / var(--width-pc-origin))) 0;
+    }
+  }
+
+  .ShopItemModule__infoSummaryTitle {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-blk);
+  }
+
+  .ShopItemModule__infoSummaryDescription {
+    font-size: 15px;
+    color: var(--color-blk);
+    line-height: 1.6;
+  }
+}
+
+/* 関連アイテム */
+.ShopRecommendModule {
+  background-color: #fbfbf9;
+
+  .ShopRecommendModule__inner {
+    position: relative;
+    padding: 55px 20px 100px;
+  }
+
+  .ShopRecommendModule__contents {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+  }
+
+  .ShopRecommendModule__title {
+    margin-bottom: 32px;
+    text-align: center;
+
+    .ShopRecommendModule__titleText {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1.3;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(42 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .ShopRecommendModule__titleSubText {
+      font-size: 18px;
+      color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  /* 商品一覧 */
+  .ShopRecommendModule__list {
+    display: flex;
+    gap: 22px;
+    overflow: scroll;
+    padding-bottom: 62px;
+  }
+
+  .ShopRecommendModule__item {
+    flex-shrink: 0;
+    width: 164px;
+
+    > a {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    .ShopRecommendModule__itemInfo {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .ShopRecommendModule__itemInfoMain {
+      flex: 1;
+    }
+
+    .ShopRecommendModule__itemInfoSub {
+      flex: 0;
+    }
+
+    .ShopRecommendModule__itemThumbnail {
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 194px;
+        object-fit: contain;
+      }
+    }
+
+    .ShopRecommendModule__itemCategory {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: auto;
+      min-height: 38px;
+      margin-bottom: 12px;
+      padding: 3px 20px 4px;
+      border: 1px solid var(--color-primary);
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        width: calc(180 * (100vw / var(--width-pc-origin)));
+        min-height: calc(31 * (100vw / var(--width-pc-origin)));
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        padding: calc(3 * (100vw / var(--width-pc-origin)))
+          calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .ShopRecommendModule__itemTitle {
+      margin-bottom: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--color-blk);
+    }
+
+    .ShopRecommendModule__itemPrice {
+      font-size: 16px;
+      color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(24 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  /* 商品一覧 */
+  .ShopRecommendModule__send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ShopRecommendModule__sendButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 68px;
+      border-radius: 50px;
+      margin-bottom: 0;
+      padding: 13px;
+      font-size: 20px;
+      color: var(--color-wht);
+      background-color: var(--color-pacific-orange-b);
+
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+      }
+    }
   }
 }
