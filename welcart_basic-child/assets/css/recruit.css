@@ -6,6 +6,13 @@
     padding: 0;
   }
 
+  &.Recruit--cart .Recruit__inner {
+    @media screen and (min-width: 768px) {
+      padding: calc(80 * (100vw / var(--width-pc-origin))) 0
+        calc(89 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .Recruit__inner {
     @media screen and (min-width: 768px) {
       width: calc(1020 * (100vw / var(--width-pc-origin)));

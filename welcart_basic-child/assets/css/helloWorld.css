@@ -21,6 +21,15 @@
     padding: 0;
   }
 
+  &.HelloWorld--cart .HelloWorld__inner {
+    @media screen and (min-width: 768px) {
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+      padding: calc(80 * (100vw / var(--width-pc-origin))) 0
+        calc(89 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .HelloWorld__inner {
     position: relative;
     z-index: 1;

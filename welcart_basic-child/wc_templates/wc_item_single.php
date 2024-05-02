@@ -254,7 +254,7 @@ get_template_part('header-cart');
   </script>
 
 <?php
-  get_template_part('helloWorld');
-  get_template_part('recruit');
+  get_template_part('helloWorld-cart');
+  get_template_part('recruit-cart');
   get_template_part('footer-cart');
 ?>
