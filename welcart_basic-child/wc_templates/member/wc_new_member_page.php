@@ -188,7 +188,7 @@ get_template_part('header-cart');
   </section>
 </div>
 
-<?php get_footer(); ?>
+<?php get_template_part('footer-cart'); ?>
 <script type='text/javascript' src='https://ajaxzip3.github.io/ajaxzip3.js?'></script>
 <script type="text/javascript">
 (function($) {

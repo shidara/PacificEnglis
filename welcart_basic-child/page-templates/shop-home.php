@@ -78,7 +78,7 @@ $imgUri = get_theme_file_uri() . "/assets/image/";
 
 </div>
 <?php
-  get_template_part('helloWorld');
-  get_template_part('recruit');
-  get_footer();
+  get_template_part('helloWorld-cart');
+  get_template_part('recruit-cart');
+  get_template_part('footer-cart');
 ?>

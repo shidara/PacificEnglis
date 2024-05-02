@@ -33,4 +33,4 @@ get_template_part('header-cart');
         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'usces' ); ?></p>
       <?php endif; ?>
   </section>
-<?php get_footer();?>
+<?php get_template_part('footer-cart');?>

@@ -176,4 +176,4 @@ usces_delivery_info_script();
   </section>
 </div>
 <?php
-get_footer();
+get_template_part('footer-cart');
