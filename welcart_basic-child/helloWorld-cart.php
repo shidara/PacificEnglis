@@ -7,7 +7,10 @@
  */
 
   $imgUri = get_theme_file_uri() . "/assets/images/footer/";
-
+  /**
+   * HelloWorld.phpと同じものクラス名のみ追加されているだけ
+   * → 横幅が異なる
+   */
 ?>
 
 <section class="HelloWorld HelloWorld--cart">

@@ -7,6 +7,10 @@
  */
 
   $imgUri = get_theme_file_uri() . "/assets/images/footer/";
+  /**
+   * footer.phpと同じものクラス名のみ追加されているだけ
+   * → 横幅が異なる
+   */
 ?>
 
   <!-- フッター -->
@@ -100,7 +104,7 @@
             <p class="Footer__schoolItemAddress">〒870-0009</p>
             <p class="Footer__schoolItemAddress">大分県大分市王子町４−４</p>
             <div class="Footer__schoolItemMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8659851151506!2d131.58871101278748!3d33.243814173361415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a1d020f48253%3A0xdf81074f3ce8b3f!2z44CSODcwLTAwMDkg5aSn5YiG55yM5aSn5YiG5biC546L5a2Q55S677yU4oiS77yU!5e0!3m2!1sja!2sjp!4v1713067349205!5m2!1sja!2sjp" width="375" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8659851151506!2d131.58871101278748!3d33.243814173361415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a1d020f48253%3A0xdf81074f3ce8b3f!2z44CSODcwLTAwMDkg5aSn5YiG55yM5aSn5YiG5biC546L5a2Q55S677yU4oiS77yU!5e0!3m2!1sja!2sjp!4v1713067349205!5m2!1sja!2sjp" width="100%" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </li>
 
@@ -109,7 +113,7 @@
             <p class="Footer__schoolItemAddress">〒870-0251</p>
             <p class="Footer__schoolItemAddress">大分県大分市大在中央１丁目８−８</p>
             <div class="Footer__schoolItemMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8016713162847!2d131.7158512127875!3d33.245498873360454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35442778349bc525%3A0x79195580825c837f!2z44CSODcwLTAyNTEg5aSn5YiG55yM5aSn5YiG5biC5aSn5Zyo5Lit5aSu77yR5LiB55uu77yY4oiS77yY!5e0!3m2!1sja!2sjp!4v1713067483603!5m2!1sja!2sjp" width="375" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8016713162847!2d131.7158512127875!3d33.245498873360454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35442778349bc525%3A0x79195580825c837f!2z44CSODcwLTAyNTEg5aSn5YiG55yM5aSn5YiG5biC5aSn5Zyo5Lit5aSu77yR5LiB55uu77yY4oiS77yY!5e0!3m2!1sja!2sjp!4v1713067483603!5m2!1sja!2sjp" width="100%" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </li>
         </ul>
