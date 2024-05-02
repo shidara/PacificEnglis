@@ -116,4 +116,4 @@ get_template_part('header-cart');
 
 </div>
 <?php
-get_footer();
+get_template_part('footer-cart');

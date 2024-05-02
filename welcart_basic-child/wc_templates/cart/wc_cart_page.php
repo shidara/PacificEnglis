@@ -90,4 +90,4 @@ get_template_part('header-cart');
   </section>
 </div>
 <?php
-get_footer();
+get_template_part('footer-cart');

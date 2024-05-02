@@ -80,5 +80,5 @@ $imgUri = get_theme_file_uri() . "/assets/image/";
 <?php
   get_template_part('helloWorld');
   get_template_part('recruit');
-  get_footer();
+  get_template_part('footer-cart');
 ?>

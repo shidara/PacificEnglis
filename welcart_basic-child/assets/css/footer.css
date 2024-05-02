@@ -1,5 +1,4 @@
 .Footer {
-  padding: 59px 22px 276px;
   background-color: var(--color-primary);
   background-image: url("../images/footer/606.webp");
   background-position: center 98%;
@@ -12,10 +11,26 @@
       calc(170 * (100vw / var(--width-pc-origin)));
   }
 
+  &.Footer--cart {
+    padding: 59px 22px 276px;
+
+    .Footer__inner {
+      padding: 0;
+
+      @media screen and (min-width: 768px) {
+        padding: 0;
+      }
+    }
+  }
+
   .Footer__inner {
+    padding: 59px 22px 276px;
+
     @media screen and (min-width: 768px) {
       width: calc(1020 * (100vw / var(--width-pc-origin)));
       margin: 0 auto;
+      padding: calc(59 * (100vw / var(--width-pc-origin))) 0 0
+        calc(78 * (100vw / var(--width-pc-origin)));
     }
   }
 
@@ -23,7 +38,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
-      gap: calc(140 * (100vw / var(--width-pc-origin)));
+      gap: calc(100 * (100vw / var(--width-pc-origin)));
       margin-bottom: calc(35 * (100vw / var(--width-pc-origin)));
     }
   }
@@ -86,7 +101,7 @@
 
     @media screen and (min-width: 768px) {
       justify-content: space-between;
-      gap: calc(20 * (100vw / var(--width-pc-origin)));
+      gap: calc(10 * (100vw / var(--width-pc-origin)));
       margin-bottom: 0;
     }
 
