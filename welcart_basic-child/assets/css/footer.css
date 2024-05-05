@@ -101,7 +101,7 @@
 
     @media screen and (min-width: 768px) {
       justify-content: flex-end;
-      gap: calc(20 * (100vw / var(--width-pc-origin)));
+      gap: calc(16 * (100vw / var(--width-pc-origin)));
       margin-bottom: 0;
     }
 
