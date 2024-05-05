@@ -22,7 +22,7 @@
           <p class="Footer__subTitle">スクールライフを<br />インスタグラムで投稿中!</p>
 
           <div class="Footer__officialAccount">
-            <a href="#" class="Footer__officialAccountLinks">
+            <a href="https://www.instagram.com/pacific_english_oita/" target="_blank" rel="noreferrer" class="Footer__officialAccountLinks">
               <img src="<?php echo $imgUri;?>instagram-logo-bold.webp" width="26" height="26" loading="lazy" class="Footer__officialAccountImage" />
               <span>公式アカウントはこちら</span>
             </a>
@@ -31,28 +31,28 @@
 
         <div class="Footer__imageList">
           <div class="Footer__imageItem">
-            <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+            <img src="<?php echo $imgUri;?>ig_1.webp" alt="" />
           </div>
           <div class="Footer__imageItem">
-            <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+            <img src="<?php echo $imgUri;?>ig_2.webp" alt="" />
           </div>
           <div class="Footer__imageItem">
-            <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+            <img src="<?php echo $imgUri;?>ig_3.webp" alt="" />
           </div>
           <div class="Footer__imageItem">
-            <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+            <img src="<?php echo $imgUri;?>ig_4.webp" alt="" />
           </div>
           <div class="Footer__imageItem">
-            <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+            <img src="<?php echo $imgUri;?>ig_5.webp" alt="" />
           </div>
           <div class="Footer__imageItem">
-            <img src="https://dummyimage.com/160x160/f27d53/fff.png" alt="" />
+            <img src="<?php echo $imgUri;?>ig_6.webp" alt="" />
           </div>
         </div>
       </div>
 
       <div class="Footer__officialAccount">
-        <a href="#" class="Footer__officialAccountLinks">
+        <a href="https://www.instagram.com/pacific_english_oita/" target="_blank" rel="noreferrer" class="Footer__officialAccountLinks">
           <img src="<?php echo $imgUri;?>instagram-logo-bold.webp" width="26" height="26" loading="lazy" class="Footer__officialAccountImage" />
           <span>公式アカウントはこちら</span>
         </a>
@@ -122,24 +122,24 @@
       <!-- リンクス -->
       <div class="Footer__links">
         <ul>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
-          <li class="Footer__linksItem"><a href="#">サイトコンテンツ</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>international-school/">インターナショナルスクール</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/">英語の教室</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/">オンライン英会話</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>instructor-list/">講師紹介</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">ブログ</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>recruit/">採用情報</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>shop/">オンラインショップ</a></li>
+          <!-- <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">サイトコンテンツ</a></li> -->
+          <!-- <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">サイトコンテンツ</a></li> -->
+          <!-- <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">サイトコンテンツ</a></li> -->
         </ul>
       </div>
 
       <!-- instagram -->
       <div class="Footer__instagramWrapper">
         <div class="Footer__instagram">
-          <a href="#"><img src="<?php echo $imgUri;?>instagram-logo-bold-white.webp" height="36" loading="lazy"/></a>
+          <a href="https://www.instagram.com/pacific_english_oita/" target="_blank" rel="noreferrer"><img src="<?php echo $imgUri;?>instagram-logo-bold-white.webp" height="36" loading="lazy"/></a>
         </div>
 
         <small class="Footer__small">©Pacific English</small>
