@@ -19,7 +19,7 @@
 
     <section class="PrivacyPolicy">
       <div class="PrivacyPolicy__title">
-        <h3 class="PrivacyPolicy__titleText">PRIVACY POLICY</h3>
+        <h3 class="PrivacyPolicy__titleText">Privacy policy</h3>
         <p class="PrivacyPolicy__subTitle PrivacyPolicy__subTitle--beforeIcon">個人情報保護方針</p>
       </div>
 
