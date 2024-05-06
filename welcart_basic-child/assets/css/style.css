@@ -117,6 +117,9 @@ Base
 /* 英語教室 フッターリンク */
 @import url("./linksNavigation.css");
 
+/* 入園バナー */
+@import url("./enrollmentBanner.css");
+
 /*================================
 Reset CSS
 ================================*/
