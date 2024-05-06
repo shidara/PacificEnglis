@@ -7,6 +7,7 @@
  */
 
   $imgUri = get_theme_file_uri() . "/assets/images/english-class/";
+  $imgFooterUri = get_theme_file_uri() . "/assets/images/footer/";
 
 ?>
 <?php get_header();?>
@@ -81,32 +82,55 @@
 
     <!-- School -->
     <section class="SchoolMain">
-      <div class="SchoolMain__title">
-        <h3 class="SchoolMain__titleText">School</h3>
-        <p class="SchoolMain__subTitle">校舎紹介</p>
-      </div>
-      <p class="SchoolMain__summary">インターナショナルスクール・英会話教室</p>
+      <div class="SchoolMain__inner">
+        <div class="SchoolMain__title">
+          <h3 class="SchoolMain__titleText">School</h3>
+          <p class="SchoolMain__subTitle">校舎紹介</p>
+        </div>
+        <p class="SchoolMain__summary">インターナショナルスクール・英会話教室</p>
 
-      <div class="SchoolMain__contents">
-        <ul class="SchoolMain__list">
-          <li class="SchoolMain__item">
-            <h4 class="SchoolMain__itemTitle">王子校</h4>
-            <p class="SchoolMain__itemAddress">〒870-0009</p>
-            <p class="SchoolMain__itemAddress">大分県大分市王子町４−４</p>
-            <div class="SchoolMain__itemMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8659851151506!2d131.58871101278748!3d33.243814173361415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a1d020f48253%3A0xdf81074f3ce8b3f!2z44CSODcwLTAwMDkg5aSn5YiG55yM5aSn5YiG5biC546L5a2Q55S677yU4oiS77yU!5e0!3m2!1sja!2sjp!4v1713067349205!5m2!1sja!2sjp" width="375" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </li>
+        <div class="SchoolMain__contents">
+          <ul class="SchoolMain__list">
+            <li class="SchoolMain__item">
+              <h4 class="SchoolMain__itemTitle">王子校</h4>
+              <p class="SchoolMain__itemAddress">〒870-0009</p>
+              <p class="SchoolMain__itemAddress">大分県大分市王子町４−４</p>
+              <div class="SchoolMain__itemMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8659851151506!2d131.58871101278748!3d33.243814173361415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a1d020f48253%3A0xdf81074f3ce8b3f!2z44CSODcwLTAwMDkg5aSn5YiG55yM5aSn5YiG5biC546L5a2Q55S677yU4oiS77yU!5e0!3m2!1sja!2sjp!4v1713067349205!5m2!1sja!2sjp" width="100%" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </li>
 
-          <li class="SchoolMain__item">
-            <h4 class="SchoolMain__itemTitle">大在校</h4>
-            <p class="SchoolMain__itemAddress">〒870-0251</p>
-            <p class="SchoolMain__itemAddress">大分県大分市大在中央１丁目８−８</p>
-            <div class="SchoolMain__itemMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8016713162847!2d131.7158512127875!3d33.245498873360454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35442778349bc525%3A0x79195580825c837f!2z44CSODcwLTAyNTEg5aSn5YiG55yM5aSn5YiG5biC5aSn5Zyo5Lit5aSu77yR5LiB55uu77yY4oiS77yY!5e0!3m2!1sja!2sjp!4v1713067483603!5m2!1sja!2sjp" width="375" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </li>
-        </ul>
+            <li class="SchoolMain__item">
+              <h4 class="SchoolMain__itemTitle">大在校</h4>
+              <p class="SchoolMain__itemAddress">〒870-0251</p>
+              <p class="SchoolMain__itemAddress">大分県大分市大在中央１丁目８−８</p>
+              <div class="SchoolMain__itemMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.8016713162847!2d131.7158512127875!3d33.245498873360454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35442778349bc525%3A0x79195580825c837f!2z44CSODcwLTAyNTEg5aSn5YiG55yM5aSn5YiG5biC5aSn5Zyo5Lit5aSu77yR5LiB55uu77yY4oiS77yY!5e0!3m2!1sja!2sjp!4v1713067483603!5m2!1sja!2sjp" width="100%" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="SchoolMain__banner">
+          <div class="SchoolMain__bannerItem">
+            <p class="SchoolMain__bannerItemTitle">入園・費用について</p>
+            <p class="SchoolMain__bannerItemSummary">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）</p>
+          </div>
+
+          <div class="SchoolMain__bannerItem">
+            <a href="#">
+              <p class="SchoolMain__bannerExperienceTitle">最短翌日から可能！<br />
+                <span class="SchoolMain__bannerExperienceTitleLarge">4</span>
+                ステップで予約完了
+                <span class="SchoolMain__bannerPin"><img src="<?php echo $imgFooterUri;?>610.webp" height="38" alt="" loading="lazy" /></span>
+              </p>
+              <div class="SchoolMain__bannerLine">
+                <span class="SchoolMain__bannerLineIcon"><img src="<?php echo $imgFooterUri;?>line_logo.webp"  height="29" alt="" loading="lazy" /></span>
+                <span class="SchoolMain__bannerLineText">無料体験入学</span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
