@@ -60,9 +60,11 @@
 
     <!-- Message -->
     <section class="Message">
+      <div class="Message__space"></div>
       <div class="Message__inner">
         <div class="Message__stamp">
-          <img src="<?php echo get_theme_file_uri();?>/assets/images/footer/606.webp" />
+          <img src="<?php echo get_theme_file_uri();?>/assets/images/footer/606.webp" loading="lazy" alt="" />
+          <img src="<?php echo get_theme_file_uri();?>/assets/images/footer/606.webp" loading="lazy" alt="" />
         </div>
 
           <div class="Message__titleWrapper">

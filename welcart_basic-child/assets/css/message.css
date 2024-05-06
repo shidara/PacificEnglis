@@ -1,9 +1,10 @@
 .Message {
+  overflow: hidden;
   position: relative;
   padding-top: 91px;
 
   @media screen and (min-width: 768px) {
-    margin-top: calc(120 * (100vw / var(--width-pc-origin)));
+    margin-top: calc(40 * (100vw / var(--width-pc-origin)));
     padding-top: 0;
     background-color: var(--color-primary);
   }
@@ -15,7 +16,7 @@
     @media screen and (min-width: 768px) {
       width: calc(1020 * (100vw / var(--width-pc-origin)));
       margin: 0 auto;
-      padding: calc(80 * (100vw / var(--width-pc-origin)))
+      padding: calc(120 * (100vw / var(--width-pc-origin)))
         calc(70 * (100vw / var(--width-pc-origin)))
         calc(89 * (100vw / var(--width-pc-origin)))
         calc(78 * (100vw / var(--width-pc-origin)));
@@ -23,13 +24,22 @@
     }
   }
 
+  .Message__space {
+    padding-top: calc(80 * (100vw / var(--width-pc-origin)));
+    background-color: var(--color-wht);
+  }
+
   .Message__stamp {
     position: absolute;
     top: 20px;
     left: 0;
+    display: flex;
+    gap: 50px;
+    animation: infinity-scroll-left 80s infinite linear 0.5s both;
 
     @media screen and (min-width: 768px) {
-      top: calc(-60 * (100vw / var(--width-pc-origin)));
+      top: calc(20 * (100vw / var(--width-pc-origin)));
+      gap: calc(50 * (100vw / var(--width-pc-origin)));
     }
 
     img {
@@ -121,5 +131,14 @@
   .Message__thumbnailCaption {
     font-size: 13px;
     color: var(--color-wht);
+  }
+}
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
