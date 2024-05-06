@@ -114,6 +114,9 @@ Base
 /* ショップ詳細 */
 @import url("./shopItem.css");
 
+/* 英語教室 フッターリンク */
+@import url("./linksNavigation.css");
+
 /*================================
 Reset CSS
 ================================*/
