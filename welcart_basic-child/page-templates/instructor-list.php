@@ -10,12 +10,13 @@
 
 ?>
 <?php get_header();?>
+<?php get_template_part('FixedNavigation'); ?>
 
 <!-- コンテンツ -->
-  <main class="pageContents Instructor">
-
-    <!-- 講師紹介 -->
-    <section class="InstructorList">
+<main class="pageContents Instructor">
+  <!-- 講師紹介 -->
+  <section class="InstructorList">
+    <div class="InstructorList__inner">
       <div class="InstructorList__title">
         <h3 class="InstructorList__titleText">講師紹介</h3>
       </div>
@@ -175,14 +176,20 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- 入園バナー PCのみ -->
+  <?php get_template_part('enrollmentBanner'); ?>
 
-    <!-- Hello World -->
-    <?php get_template_part('helloWorld'); ?>
+  <!-- LinksNavigation PCのみ -->
+  <?php get_template_part('linksNavigation'); ?>
 
-    <!-- Recruit -->
-    <?php get_template_part('recruit'); ?>
-  </main>
+  <!-- Hello World -->
+  <?php get_template_part('helloWorld'); ?>
+
+  <!-- Recruit -->
+  <?php get_template_part('recruit'); ?>
+</main>
 
 <?php get_footer();?>
