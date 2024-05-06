@@ -5,8 +5,6 @@
     display: block;
     width: calc(1020 * (100vw / var(--width-pc-origin)));
     margin: 0 auto;
-    /* padding: 0 calc(70 * (100vw / var(--width-pc-origin))) 0
-      calc(70 * (100vw / var(--width-pc-origin))); */
   }
 
   ul {
