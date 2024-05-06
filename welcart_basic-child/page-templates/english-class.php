@@ -7,8 +7,6 @@
  */
 
   $imgUri = get_theme_file_uri() . "/assets/images/english-class/";
-  $imgFooterUri = get_theme_file_uri() . "/assets/images/footer/";
-
 ?>
 <?php get_header();?>
 
@@ -110,68 +108,14 @@
             </li>
           </ul>
         </div>
-
-        <div class="SchoolMain__banner">
-          <div class="SchoolMain__bannerItem">
-            <p class="SchoolMain__bannerItemTitle">入園・費用について</p>
-            <p class="SchoolMain__bannerItemSummary">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）</p>
-          </div>
-
-          <div class="SchoolMain__bannerItem">
-            <a href="#">
-              <p class="SchoolMain__bannerExperienceTitle">最短翌日から可能！<br />
-                <span class="SchoolMain__bannerExperienceTitleLarge">4</span>
-                ステップで予約完了
-                <span class="SchoolMain__bannerPin"><img src="<?php echo $imgFooterUri;?>610.webp" height="38" alt="" loading="lazy" /></span>
-              </p>
-              <div class="SchoolMain__bannerLine">
-                <span class="SchoolMain__bannerLineIcon"><img src="<?php echo $imgFooterUri;?>line_logo.webp"  height="29" alt="" loading="lazy" /></span>
-                <span class="SchoolMain__bannerLineText">無料体験入学</span>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- LinksNavigation PCのみ -->
-    <div class="LinksNavigation">
-      <ul>
-        <li class="LinksNavigation__item" style="background-image: url('<?php echo $imgUri;?>/23.webp');">
-          <a href="#">
-            <div>
-              <p class="LinksNavigation__itemTitle">Contact</p>
-              <p class="LinksNavigation__itemSubText">体験・予約する</p>
-            </div>
-            <div class="LinksNavigation__itemIcon">
-              <img src="<?php echo $imgUri;?>/arrow.webp" loading="lazy" />
-            </div>
-          </a>
-        </li>
-        <li class="LinksNavigation__item" style="background-image: url('<?php echo $imgUri;?>/23.webp');">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>instructor-list/">
-            <div>
-              <p class="LinksNavigation__itemTitle">Teachers</p>
-              <p class="LinksNavigation__itemSubText">講師を見る</p>
-            </div>
-            <div class="LinksNavigation__itemIcon">
-              <img src="<?php echo $imgUri;?>/arrow.webp" loading="lazy" />
-            </div>
-          </a>
-        </li>
-        <li class="LinksNavigation__item" style="background-image: url('<?php echo $imgUri;?>/23.webp');">
-          <a href="#">
-            <div>
-              <p class="LinksNavigation__itemTitle">Company</p>
-              <p class="LinksNavigation__itemSubText">会社を知る</p>
-            </div>
-            <div class="LinksNavigation__itemIcon">
-              <img src="<?php echo $imgUri;?>/arrow.webp" loading="lazy" />
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <?php get_template_part('enrollmentBanner'); ?>
+
+    <!-- LinksNavigation PCのみ -->
+    <?php get_template_part('linksNavigation'); ?>
 
     <!-- Hello World -->
     <?php get_template_part('helloWorld'); ?>

@@ -7,7 +7,7 @@
       width: calc(1020 * (100vw / var(--width-pc-origin)));
       margin: 0 auto;
       padding: 0 calc(70 * (100vw / var(--width-pc-origin)))
-        calc(120 * (100vw / var(--width-pc-origin)))
+        calc(100 * (100vw / var(--width-pc-origin)))
         calc(78 * (100vw / var(--width-pc-origin)));
     }
   }
@@ -37,12 +37,6 @@
         margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
         font-size: calc(28 * (100vw / var(--width-pc-origin)));
       }
-    }
-  }
-
-  .SchoolMain__contents {
-    @media screen and (min-width: 768px) {
-      margin-bottom: calc(100 * (100vw / var(--width-pc-origin)));
     }
   }
 
@@ -121,116 +115,6 @@
         @media screen and (min-width: 768px) {
           height: calc(260 * (100vw / var(--width-pc-origin)));
         }
-      }
-    }
-  }
-
-  .SchoolMain__banner {
-    display: none;
-    padding: calc(35 * (100vw / var(--width-pc-origin)))
-      calc(35 * (100vw / var(--width-pc-origin)))
-      calc(35 * (100vw / var(--width-pc-origin)))
-      calc(64 * (100vw / var(--width-pc-origin)));
-    border-radius: calc(16 * (100vw / var(--width-pc-origin)));
-    background-color: var(--color-primary);
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-      gap: calc(64 * (100vw / var(--width-pc-origin)));
-    }
-
-    .SchoolMain__bannerItem {
-      &:last-child {
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: calc(400 * (100vw / var(--width-pc-origin)));
-        border-radius: calc(16 * (100vw / var(--width-pc-origin)));
-        background-color: var(--color-wht);
-      }
-
-      > a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        padding: calc(46 * (100vw / var(--width-pc-origin)))
-          calc(46 * (100vw / var(--width-pc-origin)))
-          calc(42 * (100vw / var(--width-pc-origin)));
-      }
-    }
-
-    .SchoolMain__bannerItemTitle {
-      margin-bottom: calc(16 * (100vw / var(--width-pc-origin)));
-      font-size: calc(26 * (100vw / var(--width-pc-origin)));
-      font-weight: bold;
-      color: var(--color-wht);
-    }
-
-    .SchoolMain__bannerItemSummary {
-      font-size: calc(12 * (100vw / var(--width-pc-origin)));
-      color: var(--color-wht);
-      line-height: 1.8;
-    }
-  }
-
-  .SchoolMain__bannerExperienceTitle {
-    position: relative;
-    margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
-    font-size: calc(20 * (100vw / var(--width-pc-origin)));
-    font-weight: bold;
-    line-height: 0.8;
-    text-indent: calc(36 * (100vw / var(--width-pc-origin)));
-    color: var(--color-blk);
-    text-align: center;
-
-    .SchoolMain__bannerExperienceTitleLarge {
-      margin-right: calc(2 * (100vw / var(--width-pc-origin)));
-      font-size: calc(36 * (100vw / var(--width-pc-origin)));
-      color: var(--color-primary);
-    }
-
-    .SchoolMain__bannerPin {
-      position: absolute;
-      display: block;
-      top: calc(-28 * (100vw / var(--width-pc-origin)));
-      left: calc(-86 * (100vw / var(--width-pc-origin)));
-      width: calc(56 * (100vw / var(--width-pc-origin)));
-      height: calc(56 * (100vw / var(--width-pc-origin)));
-
-      img {
-        width: calc(56 * (100vw / var(--width-pc-origin)));
-        height: calc(56 * (100vw / var(--width-pc-origin)));
-      }
-    }
-  }
-
-  .SchoolMain__bannerLine {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: calc(80 * (100vw / var(--width-pc-origin)));
-    border-radius: 16px;
-    color: var(--color-wht);
-    font-weight: bold;
-    background-color: #06c755;
-
-    .SchoolMain__bannerLineText {
-      font-size: calc(24 * (100vw / var(--width-pc-origin)));
-    }
-
-    .SchoolMain__bannerLineIcon {
-      display: inline-block;
-
-      img {
-        vertical-align: sub;
-        height: calc(42 * (100vw / var(--width-pc-origin)));
       }
     }
   }
