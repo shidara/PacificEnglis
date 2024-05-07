@@ -120,6 +120,9 @@ Base
 /* 入園バナー */
 @import url("./enrollmentBanner.css");
 
+/* お問い合わせ */
+@import url("./contactForm.css");
+
 /*================================
 Reset CSS
 ================================*/
