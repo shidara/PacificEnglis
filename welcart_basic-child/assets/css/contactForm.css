@@ -15,6 +15,80 @@
       calc(143 * (100vw / var(--width-pc-origin)));
   }
 
+  /* お問い合わせ完了専用 */
+  .ContactFormComplete__inner {
+    text-align: center;
+  }
+
+  .ContactFormComplete__title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-blk);
+    letter-spacing: 0.8;
+    line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(40 * (100vw / var(--width-pc-origin)));
+      font-size: calc(27 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactFormComplete__text {
+    margin-bottom: 60px;
+    font-size: 12px;
+    color: var(--color-blk);
+    line-height: 1.8;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(60 * (100vw / var(--width-pc-origin)));
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactFormComplete__button {
+    display: flex;
+    justify-content: center;
+
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 60px;
+      border-radius: 60px;
+      margin-bottom: 0;
+      padding: 13px;
+      color: var(--color-wht);
+      font-size: 18px;
+      font-weight: bold;
+      background-color: var(--color-pacific-orange-b);
+
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        right: 19px;
+        height: 13px;
+        translate: 0 -50%;
+
+        @media screen and (min-width: 768px) {
+          right: calc(19 * (100vw / var(--width-pc-origin)));
+          height: calc(13 * (100vw / var(--width-pc-origin)));
+        }
+      }
+    }
+  }
+
+  /* お問い合わせ完了専用 */
+
   input,
   textarea,
   select {
