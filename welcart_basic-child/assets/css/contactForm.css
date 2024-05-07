@@ -1,0 +1,351 @@
+.ContactFormPage {
+  margin: 0 auto;
+  background-color: #fbfbf9;
+}
+
+.ContactForm {
+  position: relative;
+  padding: 41px 20px 143px;
+
+  @media screen and (min-width: 768px) {
+    width: 1083px;
+    margin: 0 auto;
+    padding: calc(41 * (100vw / var(--width-pc-origin)))
+      calc(20 * (100vw / var(--width-pc-origin)))
+      calc(143 * (100vw / var(--width-pc-origin)));
+  }
+
+  input,
+  textarea,
+  select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 10px 20px;
+    border: 1px solid var(--color-pacific-gray-a);
+    background-color: var(--color-wht);
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::placeholder {
+      color: var(--color-pacific-gray-a);
+    }
+
+    @media screen and (min-width: 768px) {
+      height: calc(50 * (100vw / var(--width-pc-origin)));
+      padding: calc(10 * (100vw / var(--width-pc-origin)))
+        calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__title {
+    margin-bottom: 65px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(65 * (100vw / var(--width-pc-origin)));
+    }
+
+    .ContactForm__titleText {
+      margin-bottom: 12px;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(64 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .ContactForm__subTitle {
+      margin-bottom: 24px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      }
+
+      &.ContactForm__subTitle--beforeIcon {
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 0;
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: var(--color-primary);
+        }
+
+        @media screen and (min-width: 768px) {
+          padding-left: calc(20 * (100vw / var(--width-pc-origin)));
+
+          &::before {
+            top: calc(7 * (100vw / var(--width-pc-origin)));
+            width: calc(10 * (100vw / var(--width-pc-origin)));
+            height: calc(10 * (100vw / var(--width-pc-origin)));
+          }
+        }
+      }
+    }
+  }
+
+  .ContactForm__contents {
+    padding-bottom: 33px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: calc(33 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__contentsTitle {
+    margin-bottom: 30px;
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(30 * (100vw / var(--width-pc-origin)));
+      font-size: calc(27 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__contentsSubTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    font-size: 14px;
+    color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(17 * (100vw / var(--width-pc-origin)));
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+
+    .ContactForm__contentsSubTitleSmallText {
+      margin-left: 25px;
+      font-size: 13px;
+
+      @media screen and (min-width: 768px) {
+        margin-left: calc(25 * (100vw / var(--width-pc-origin)));
+        font-size: calc(13 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .ContactForm__contentsTelIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+
+    @media screen and (min-width: 768px) {
+      width: calc(14 * (100vw / var(--width-pc-origin)));
+      height: calc(14 * (100vw / var(--width-pc-origin)));
+      margin-right: calc(4 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__divider {
+    height: 1px;
+    margin: 0 0 60px;
+    padding: 0;
+    background-image: linear-gradient(
+      to right,
+      var(--color-pacific-gray-a),
+      var(--color-pacific-gray-a) 6px,
+      transparent 6px,
+      transparent 9px
+    ); /* 幅2の線を作る */
+    background-size: 9px 1px; /* グラデーションの幅・高さを指定 */
+    background-position: left bottom; /* 背景の開始位置を指定 */
+    background-repeat: repeat-x; /* 横向きにのみ繰り返す */
+    background-color: transparent;
+  }
+
+  /* WordPress側 フォーム */
+  .ContactForm__item {
+    margin-bottom: 27px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(27 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__itemName {
+    margin-bottom: 12px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__requiredLabel {
+    margin-right: 10px;
+    padding: 3px 9px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-wht);
+    background-color: var(--color-primary);
+    line-height: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-right: calc(10 * (100vw / var(--width-pc-origin)));
+      padding: calc(3 * (100vw / var(--width-pc-origin)))
+        calc(9 * (100vw / var(--width-pc-origin)));
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__itemNameText {
+    font-size: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__itemInputWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__itemSelect {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      width: 0;
+      height: 0;
+      border-top: 9px solid var(--color-pacific-gray-a);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      translate: 0 -50%;
+      pointer-events: none;
+
+      @media screen and (min-width: 768px) {
+        right: calc(20 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .ContactForm__itemTextarea textarea {
+    height: 250px;
+
+    @media screen and (min-width: 768px) {
+      height: calc(250 * (100vw / var(--width-pc-origin)))
+        calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .ContactForm__itemCheckbox {
+    label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      @media screen and (min-width: 768px) {
+        gap: calc(10 * (100vw / var(--width-pc-origin)));
+      }
+
+      input[type="checkbox"] {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+          width: calc(30 * (100vw / var(--width-pc-origin)));
+          height: calc(30 * (100vw / var(--width-pc-origin)));
+        }
+
+        &:checked::after {
+          opacity: 1;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          transform: rotate(-45deg);
+          width: 10px;
+          height: 5px;
+          border-bottom: 3px solid var(--color-primary);
+          border-left: 3px solid var(--color-primary);
+          opacity: 0;
+
+          @media screen and (min-width: 768px) {
+            top: calc(8 * (100vw / var(--width-pc-origin)));
+            left: calc(8 * (100vw / var(--width-pc-origin)));
+            width: calc(10 * (100vw / var(--width-pc-origin)));
+            height: calc(5 * (100vw / var(--width-pc-origin)));
+            border-bottom: calc(3 * (100vw / var(--width-pc-origin)));
+            border-left: calc(3 * (100vw / var(--width-pc-origin)));
+          }
+        }
+      }
+
+      span {
+        font-size: 16px;
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(16 * (100vw / var(--width-pc-origin)));
+        }
+      }
+    }
+
+    a {
+      border-bottom: 1px solid var(--color-blk);
+      color: var(--color-blk);
+      text-decoration: none;
+    }
+  }
+
+  .ContactForm__submit {
+    text-align: center;
+
+    input {
+      width: 100%;
+      height: 52px;
+      border-radius: 60px;
+      margin-bottom: 0;
+      padding: 13px;
+      color: var(--color-wht);
+      font-size: 18px;
+      font-weight: bold;
+      background-color: var(--color-pacific-orange-b);
+
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(60 * (100vw / var(--width-pc-origin)));
+        padding: calc(13 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+}
