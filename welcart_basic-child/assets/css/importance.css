@@ -2,6 +2,20 @@
   position: relative;
   padding: 75px 20px 44px;
 
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+
+  .Importance__inner {
+    @media screen and (min-width: 768px) {
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+      padding: 0 calc(20 * (100vw / var(--width-pc-origin)))
+        calc(120 * (100vw / var(--width-pc-origin)))
+        calc(78 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .Importance__title {
     .Importance__titleText {
       margin-bottom: 12px;
@@ -9,6 +23,11 @@
       font-weight: 700;
       line-height: 1.4;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+        font-size: calc(64 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Importance__subTitle {
@@ -17,6 +36,11 @@
       font-weight: 700;
       line-height: 1;
       color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+        font-size: calc(36 * (100vw / var(--width-pc-origin)));
+      }
 
       .Importance__subTitleOrange {
         color: var(--color-primary);
@@ -29,11 +53,20 @@
     font-size: 18px;
     color: var(--color-blk);
     line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(48 * (100vw / var(--width-pc-origin)));
+      font-size: calc(18 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Importance__summary {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--color-blk);
     line-height: 1.8;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(15 * (100vw / var(--width-pc-origin)));
+    }
   }
 }
