@@ -29,13 +29,16 @@
       </div>
     </section>
 
+    <!-- Importance -->
     <section class="Importance">
-      <div class="Importance__title">
-        <h3 class="Importance__titleText">Importance</h3>
-        <p class="Importance__subTitle"><span class="Importance__subTitleOrange">幼少期</span>からの英語の重要性</p>
+      <div class="Importance__inner">
+        <div class="Importance__title">
+          <h3 class="Importance__titleText">Importance</h3>
+          <p class="Importance__subTitle"><span class="Importance__subTitleOrange">幼少期</span>からの英語の重要性</p>
+        </div>
+        <p class="Importance__subText">インターナショナルスクール・英会話教室</p>
+        <p class="Importance__summary">小学校入学前の貴重な時期を、英語の世界で輝かせましょう。当インターナショナルスクールは、2歳から5歳までのお子様が、日々の生活の中で英語を自然に身につけることを目指しています。このゴールデンエイジに、読み書きと会話の基礎を提供することで、大分にいながらにしてバイリンガルへの道を拓きます。独自のフォニックス教育により、語学の基礎をしっかりと学び、世界に向けて第一歩を踏み出す準備を整えます。</p>
       </div>
-      <p class="Importance__subText">インターナショナルスクール・英会話教室</p>
-      <p class="Importance__subSummary">小学校入学前の貴重な時期を、英語の世界で輝かせましょう。当インターナショナルスクールは、2歳から5歳までのお子様が、日々の生活の中で英語を自然に身につけることを目指しています。このゴールデンエイジに、読み書きと会話の基礎を提供することで、大分にいながらにしてバイリンガルへの道を拓きます。独自のフォニックス教育により、語学の基礎をしっかりと学び、世界に向けて第一歩を踏み出す準備を整えます。</p>
     </section>
 
     <!-- Lesson -->
