@@ -110,26 +110,28 @@
 
     <!-- STEAM -->
     <section class="Steam">
-      <div class="Steam__title">
-        <h3 class="Steam__titleText">STEAM</h3>
-        <p class="Steam__subTitle">21世紀型の学びの手法<span class="Steam__subTitleOrange">STEAM教育で</span>グローバルな人材教育</p>
-      </div>
-      <p class="Steam__summary">インターナショナルスクール・英会話教室</p>
+      <div class="Steam__inner">
+        <div class="Steam__title">
+          <h3 class="Steam__titleText">STEAM</h3>
+          <p class="Steam__subTitle">21世紀型の学びの手法<span class="Steam__subTitleOrange">STEAM教育で</span><br />グローバルな人材教育</p>
+        </div>
+        <p class="Steam__summary">インターナショナルスクール・英会話教室</p>
 
-      <div class="Steam__image">
-        <div class="Steam__imageFullWidthImage">
-          <span><img src="<?php echo $imgUri;?>/steam/science.webp" alt="" loading="lazy" /></span>
-          <span><img src="<?php echo $imgUri;?>/steam/technology.webp" alt="" loading="lazy" /></span>
-          <span><img src="<?php echo $imgUri;?>/steam/engineering.webp" alt="" loading="lazy" /></span>
-          <span><img src="<?php echo $imgUri;?>/steam/art.webp" alt="" loading="lazy" /></span>
-          <span><img src="<?php echo $imgUri;?>/steam/mathematic.webp" alt="" loading="lazy" /></span>
+        <div class="Steam__image">
+          <div class="Steam__imageFullWidthImage">
+            <span><img src="<?php echo $imgUri;?>/steam/science.webp" alt="" loading="lazy" /></span>
+            <span><img src="<?php echo $imgUri;?>/steam/technology.webp" alt="" loading="lazy" /></span>
+            <span><img src="<?php echo $imgUri;?>/steam/engineering.webp" alt="" loading="lazy" /></span>
+            <span><img src="<?php echo $imgUri;?>/steam/art.webp" alt="" loading="lazy" /></span>
+            <span><img src="<?php echo $imgUri;?>/steam/mathematic.webp" alt="" loading="lazy" /></span>
+          </div>
+          <div class="Steam__imageMedia">
+            <img src="<?php echo $imgUri;?>/steam01.webp" alt="" loading="lazy" />
+          </div>
         </div>
-        <div class="Steam__imageMedia">
-          <img src="<?php echo $imgUri;?>/steam01.webp" alt="" loading="lazy" />
-        </div>
+        <p class="Steam__Subject"><span>S:Science（科学）</span><span>T:Technology（技術）</span><span>E:Engineering（工学）</span><span>A:Art（芸術・教養）</span><span>M:Mathematics（数学）</span></p>
+        <p class="Steam__summary">この5つの要素を重要視した教育である「STEAM教育」は科学的な知識だけでなく、教養や考え方、デザイン性など、子どもの自由な発想で創造性を膨らませ、問題解決を図る力を身に付けるための学びの領域として、IT社会とグローバル社会に適応した人材を多く生み出そうとする世界的にも注目されている21世紀型の学びの手法です。小学校の授業でもタブレットの導入やプログラミングの授業が必須となりました。テクノロジーを活用しながら自分で学び、自分で理解し、自発性や創造性、判断力、問題解決力といった能力を高めるため、さまざまなカリキュラムを準備しています。当スクールでのたくさんの学びを通じて、独自の創造性（クリエイティビティ）につなげていきます。</p>
       </div>
-      <p class="Steam__Subject"><span>S:Science（科学）</span><span>T:Technology（技術）</span><span>E:Engineering（工学）</span><span>A:Art（芸術・教養）</span><span>M:Mathematics（数学）</span></p>
-      <p class="Steam__summary">この5つの要素を重要視した教育である「STEAM教育」は科学的な知識だけでなく、教養や考え方、デザイン性など、子どもの自由な発想で創造性を膨らませ、問題解決を図る力を身に付けるための学びの領域として、IT社会とグローバル社会に適応した人材を多く生み出そうとする世界的にも注目されている21世紀型の学びの手法です。小学校の授業でもタブレットの導入やプログラミングの授業が必須となりました。テクノロジーを活用しながら自分で学び、自分で理解し、自発性や創造性、判断力、問題解決力といった能力を高めるため、さまざまなカリキュラムを準備しています。当スクールでのたくさんの学びを通じて、独自の創造性（クリエイティビティ）につなげていきます。</p>
     </section>
 
     <!-- Programming Curriculum -->
