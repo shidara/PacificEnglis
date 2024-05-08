@@ -34,6 +34,47 @@
 
   .Steam__image {
     margin: 0 -20px 12px;
+
+    .Steam__imageMedia {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    .Steam__imageFullWidthImage {
+      display: flex;
+      width: 100vw;
+      height: 120px;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+
+      > span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5) {
+          background-color: var(--color-primary);
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+          background-color: var(--color-pacific-orange-b);
+        }
+
+        img {
+          height: 86px;
+        }
+      }
+    }
   }
 
   .Steam__Subject {
