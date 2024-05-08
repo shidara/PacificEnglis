@@ -1,0 +1,39 @@
+.Importance {
+  position: relative;
+  padding: 75px 20px 44px;
+
+  .Importance__title {
+    .Importance__titleText {
+      margin-bottom: 12px;
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-primary);
+    }
+
+    .Importance__subTitle {
+      margin-bottom: 12px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-blk);
+
+      .Importance__subTitleOrange {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .Importance__subText {
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: var(--color-blk);
+    line-height: 1.6;
+  }
+
+  .Importance__summary {
+    font-size: 16px;
+    color: var(--color-blk);
+    line-height: 1.8;
+  }
+}

@@ -22,6 +22,22 @@
       <p class="PageTitleSection__summary PageTitleSection__summary--black">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
     </section>
 
+    <!-- バナー -->
+    <section class="Banner">
+      <div class="Banner__inner">
+        <img src="<?php echo $imgUri;?>/banner001.webp" alt="" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="Importance">
+      <div class="Importance__title">
+        <h3 class="Importance__titleText">Importance</h3>
+        <p class="Importance__subTitle"><span class="Importance__subTitleOrange">幼少期</span>からの英語の重要性</p>
+      </div>
+      <p class="Importance__subText">インターナショナルスクール・英会話教室</p>
+      <p class="Importance__subSummary">小学校入学前の貴重な時期を、英語の世界で輝かせましょう。当インターナショナルスクールは、2歳から5歳までのお子様が、日々の生活の中で英語を自然に身につけることを目指しています。このゴールデンエイジに、読み書きと会話の基礎を提供することで、大分にいながらにしてバイリンガルへの道を拓きます。独自のフォニックス教育により、語学の基礎をしっかりと学び、世界に向けて第一歩を踏み出す準備を整えます。</p>
+    </section>
+
     <!-- Lesson -->
     <section class="Lesson">
       <div class="Lesson__title">
