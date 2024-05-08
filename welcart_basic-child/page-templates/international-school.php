@@ -43,63 +43,66 @@
 
     <!-- Lesson -->
     <section class="Lesson">
-      <div class="Lesson__title">
-        <h3 class="Lesson__titleText">Lesson</h3>
-        <p class="Lesson__subTitle"><span class="Lesson__subTitleOrange">年齢別</span>・おもなレッスン内容</p>
-      </div>
-      <p class="Lesson__summary">インターナショナルスクール・英会話教室</p>
-
-      <div class="Lesson__contents">
-        <div class="Lesson__item">
-          <div class="Lesson__itemColumn">
-            <div class="Lesson__itemColumnItem">
-              <span class="Lesson__itemAge">2</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
-            </div>
-            <div class="Lesson__itemColumnItem">
-              <p class="Lesson__itemOverview"><span class="Lesson__itemOverviewOrange">アルファベットの発音が聞き取れ、</span>リピートできるようになる</p>
-            </div>
-          </div>
-          <p class="Lesson__itemSummary">日常生活で先生との会話を理解し、行動できるボキャブラリーを身に付けたり、筆圧を養うための色塗りに取り組んだり、Nクラスの準備を整えます。</p>
+      <div class="Lesson__inner">
+        <div class="Lesson__title">
+          <h3 class="Lesson__titleText">Lesson</h3>
+          <p class="Lesson__subTitle"><span class="Lesson__subTitleOrange">年齢別</span>・おもなレッスン内容</p>
         </div>
+        <p class="Lesson__summary">インターナショナルスクール・英会話教室</p>
 
-        <div class="Lesson__item">
-          <div class="Lesson__itemColumn">
-            <div class="Lesson__itemColumnItem">
-              <span class="Lesson__itemAge">3</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
+        <div class="Lesson__contents">
+          <div class="Lesson__item">
+            <div class="Lesson__itemColumn">
+              <div class="Lesson__itemColumnItem">
+                <span class="Lesson__itemAge">2</span>
+                <span class="Lesson__itemClass">歳児クラス</span>
+              </div>
+              <div class="Lesson__itemColumnItem">
+                <p class="Lesson__itemOverview"><span class="Lesson__itemOverviewOrange">アルファベットの発音が聞き取れ、</span>リピートできるようになる</p>
+              </div>
             </div>
-            <div class="Lesson__itemColumnItem">
-              <p class="Lesson__itemOverview">アルファベットの<span class="Lesson__itemOverviewOrange">大文字・小文字を書けるようになる</span></p>
-            </div>
+            <p class="Lesson__itemSummary">日常生活で先生との会話を理解し、行動できるボキャブラリーを身に付けたり、筆圧を養うための色塗りに取り組んだり、Nクラスの準備を整えます。</p>
           </div>
-          <p class="Lesson__itemSummary">年度の終わりでは、３文字ほどの短い単語がかける力も身に付いていきます。</p>
-        </div>
 
-        <div class="Lesson__item">
-          <div class="Lesson__itemColumn">
-            <div class="Lesson__itemColumnItem">
-              <span class="Lesson__itemAge">4</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
+          <div class="Lesson__item">
+            <div class="Lesson__itemColumn">
+              <div class="Lesson__itemColumnItem">
+                <span class="Lesson__itemAge">3</span>
+                <span class="Lesson__itemClass">歳児クラス</span>
+              </div>
+              <div class="Lesson__itemColumnItem">
+                <p class="Lesson__itemOverview">アルファベットの<span class="Lesson__itemOverviewOrange">大文字・小文字を書けるようになる</span></p>
+              </div>
             </div>
-            <div class="Lesson__itemColumnItem">
-              <p class="Lesson__itemOverview">１年を通して単語を書く練習をし、<span class="Lesson__itemOverviewOrange">フォニックスの応用をマスターする</span></p>
-            </div>
+            <p class="Lesson__itemSummary">年度の終わりでは、３文字ほどの短い単語がかける力も身に付いていきます。</p>
           </div>
-          <p class="Lesson__itemSummary">先生が話す英語を耳で聞き、書けるようになってきます。また、少しずつ長い文章を書く練習も始まります。</p>
-        </div>
 
-        <div class="Lesson__item">
-          <div class="Lesson__itemColumn">
-            <div class="Lesson__itemColumnItem">
-              <span class="Lesson__itemAge">5</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
+          <div class="Lesson__item">
+            <div class="Lesson__itemColumn">
+              <div class="Lesson__itemColumnItem">
+                <span class="Lesson__itemAge">4</span>
+                <span class="Lesson__itemClass">歳児クラス</span>
+              </div>
+              <div class="Lesson__itemColumnItem">
+                <p class="Lesson__itemOverview">１年を通して単語を書く練習をし、<span class="Lesson__itemOverviewOrange">フォニックスの応用をマスターする</span></p>
+              </div>
             </div>
-            <div class="Lesson__itemColumnItem">
-              <p class="Lesson__itemOverview">毎日の出来事を自分で考え、<span class="Lesson__itemOverviewOrange">英語で日記を書けるようになる</span></p>
-            </div>
+            <p class="Lesson__itemSummary">先生が話す英語を耳で聞き、書けるようになってきます。また、少しずつ長い文章を書く練習も始まります。</p>
           </div>
-          <p class="Lesson__itemSummary">プレゼンテーションの作り方や意見発表の方法を学ぶことができ、協調性を持ちながら自分の意見を発言できるようになります。</p>
+
+          <div class="Lesson__item">
+            <div class="Lesson__itemColumn">
+              <div class="Lesson__itemColumnItem">
+                <span class="Lesson__itemAge">5</span>
+                <span class="Lesson__itemClass">歳児クラス</span>
+              </div>
+              <div class="Lesson__itemColumnItem">
+                <p class="Lesson__itemOverview">毎日の出来事を自分で考え、<span class="Lesson__itemOverviewOrange">英語で日記を書けるようになる</span></p>
+              </div>
+            </div>
+            <p class="Lesson__itemSummary">プレゼンテーションの作り方や意見発表の方法を学ぶことができ、協調性を持ちながら自分の意見を発言できるようになります。</p>
+          </div>
+
         </div>
 
       </div>
