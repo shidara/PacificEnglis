@@ -1,0 +1,11 @@
+.Banner {
+  margin-top: -36px;
+  padding: 0 20px;
+
+  .Banner__inner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

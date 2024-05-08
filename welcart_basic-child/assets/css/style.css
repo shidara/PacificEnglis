@@ -123,6 +123,12 @@ Base
 /* お問い合わせ */
 @import url("./contactForm.css");
 
+/* バナーセクション */
+@import url("./banner.css");
+
+/* Importance */
+@import url("./importance.css");
+
 /*================================
 Reset CSS
 ================================*/
