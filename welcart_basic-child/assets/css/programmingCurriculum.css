@@ -19,7 +19,7 @@
 
   .Sports__inner {
     @media screen and (min-width: 768px) {
-      padding-bottom: calc(120 * (100vw / var(--width-pc-origin)));
+      padding-bottom: calc(100 * (100vw / var(--width-pc-origin)));
     }
   }
 
@@ -47,6 +47,12 @@
       }
     }
 
+    .Sports__titleText {
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
     .Sports__subTitle {
       margin-bottom: 24px;
       font-size: 24px;
@@ -55,8 +61,8 @@
       color: var(--color-blk);
 
       @media screen and (min-width: 768px) {
-        margin-bottom: calc(17 * (100vw / var(--width-pc-origin)));
-        font-size: calc(14 * (100vw / var(--width-pc-origin)));
+        margin-bottom: calc(26 * (100vw / var(--width-pc-origin)));
+        font-size: calc(22 * (100vw / var(--width-pc-origin)));
       }
     }
   }
@@ -67,6 +73,11 @@
     font-weight: 500;
     line-height: 1.8;
     color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      font-size: calc(18 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .ProgrammingCurriculum__labelWrapper,
@@ -95,11 +106,18 @@
     }
   }
 
-  .ProgrammingCurriculum__contents {
+  .ProgrammingCurriculum__contents,
+  .Sports__contents {
     @media screen and (min-width: 768px) {
       display: flex;
       gap: calc(61 * (100vw / var(--width-pc-origin)));
       margin-bottom: calc(64 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Sports__contents {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
     }
   }
 
@@ -202,15 +220,35 @@
     }
   }
 
-  .ProgrammingCurriculum__thumbnail,
+  .Sports__titleWrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      gap: calc(78 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(52 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
   .Sports__thumbnail {
     overflow: hidden;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
 
     img {
       width: 100%;
       height: 232px;
       border-radius: 6px;
       object-fit: cover;
+
+      @media screen and (min-width: 768px) {
+        width: calc(542 * (100vw / var(--width-pc-origin)));
+        height: auto;
+        border-radius: calc(16 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 }

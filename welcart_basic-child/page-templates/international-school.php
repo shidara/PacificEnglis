@@ -161,22 +161,25 @@
           <p class="ProgrammingCurriculum__itemNote">※スクラッチJr…マサチューセッツ工科大学（MIT）メディアラボのライフロングキンダーガーデングループにより開発されたアプリケーション</p>
         </div>
       </div>
-
-      <div class="ProgrammingCurriculum__thumbnail">
-        <img src="<?php echo $imgUri;?>/2.webp" alt="" loading="lazy" />
-      </div>
     </div>
   </section>
 
   <!-- Sports -->
   <section class="Sports">
     <div class="Sports__inner">
-      <div class="Sports__title">
-        <h3 class="Sports__titleText">Sports</h3>
-        <p class="Sports__subTitle">体育 / 昔の遊び</p>
+      <div class="Sports__titleWrapper">
+        <div class="Sports__thumbnail">
+          <img src="<?php echo $imgUri;?>/2.webp" alt="" loading="lazy" />
+        </div>
+        <div>
+          <div class="Sports__title">
+            <h3 class="Sports__titleText">Sports</h3>
+            <p class="Sports__subTitle">体育 / 昔の遊び</p>
+          </div>
+          <p class="Sports__summary">子供の運動神経が著しく発達する時期をゴールデンエイジといいます。この時期のすごし方が、子供の運動神経、能力に大きな影響を与えます。</p>
+        </div>
       </div>
 
-      <p class="Sports__summary">子供の運動神経が著しく発達する時期をゴールデンエイジといいます。この時期のすごし方が、子供の運動神経、能力に大きな影響を与えます。</p>
 
       <div class="Sports__contents">
         <div class="Sports__item">
@@ -195,22 +198,27 @@
           <p class="Sports__itemSummary">「おにごっこ」や「はないちもんめ」、「だるまさんがころんだ」など、昔ながらの遊びは今の子どもたちも夢中に楽しめる要素が多く含まれています。真剣に遊ぶことで、無意識のうちに子どもの運動量を増やし、丈夫な体づくりや運動神経の発達も促し、基礎体力を培うことができます。</p>
         </div>
       </div>
-
-      <div class="Sports__thumbnail">
-        <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
-      </div>
     </div>
   </section>
 
   <!-- Life Skills -->
   <section class="LifeSkills">
-    <div class="LifeSkills__title">
-      <h3 class="LifeSkills__titleText">Life Skills</h3>
-      <p class="LifeSkills__subTitle">生活スキル</p>
-    </div>
-    <p class="LifeSkills__summary">自分のことは自分で。英語だけではない、生きる力を磨く</p>
+    <div class="LifeSkills__inner">
+      <div class="LifeSkills__titleWrapper">
+        <div class="LifeSkills__thumbnail">
+          <img src="<?php echo $imgUri;?>/1.webp" alt="" loading="lazy" />
+        </div>
+        <div>
+          <div class="LifeSkills__title">
+            <h3 class="LifeSkills__titleText">Life Skills</h3>
+            <p class="LifeSkills__subTitle">生活スキル</p>
+          </div>
+          <p class="LifeSkills__summary">自分のことは自分で。英語だけではない、生きる力を磨く</p>
+        </div>
+      </div>
 
-    <p class="LifeSkills__summary LifeSkills__summary--black">生活スキルは、日々の積み重ねで身に付いていくものです。子どもの気分によってできる日もあれば、なかなかうまくいかない日もあります。そんなときに家庭と一緒に当スクールの大人たちが寄り添ってサポートしていきたいと考えています。<br />朝の登園後、まず自分の荷物を整理整頓し、ボランティアの時間では教室や近くの公園の清掃をします。外から帰ったあとや食事の前には必ず手洗いをし、食後に歯を磨きます。Ｎクラスからは宿題を毎日こつこつと取り組む習慣を身に付け、小学校入学後も自主的に取り組むことができるようになります。<br />このように、当スクールでの集団行動の中で、お友だちと一緒にやるということに楽しみを見いだすことができ、毎日の生活を当たり前に過ごすことで生活習慣が自然と身に付いていきます。<br />脳の発達の仕組みにより、６歳までの生活習慣で人間の基礎能力が固まると言われています。当スクールでは、その大切な時期の生活スキルをサポートをし、子どもたちの小学校までの準備のお手伝いをしていきます。</p>
+      <p class="LifeSkills__summary LifeSkills__summary--black">生活スキルは、日々の積み重ねで身に付いていくものです。子どもの気分によってできる日もあれば、なかなかうまくいかない日もあります。そんなときに家庭と一緒に当スクールの大人たちが寄り添ってサポートしていきたいと考えています。<br />朝の登園後、まず自分の荷物を整理整頓し、ボランティアの時間では教室や近くの公園の清掃をします。外から帰ったあとや食事の前には必ず手洗いをし、食後に歯を磨きます。Ｎクラスからは宿題を毎日こつこつと取り組む習慣を身に付け、小学校入学後も自主的に取り組むことができるようになります。<br />このように、当スクールでの集団行動の中で、お友だちと一緒にやるということに楽しみを見いだすことができ、毎日の生活を当たり前に過ごすことで生活習慣が自然と身に付いていきます。<br />脳の発達の仕組みにより、６歳までの生活習慣で人間の基礎能力が固まると言われています。当スクールでは、その大切な時期の生活スキルをサポートをし、子どもたちの小学校までの準備のお手伝いをしていきます。</p>
+    </div>
   </section>
 
   <!-- Weekly Schedule -->
