@@ -422,7 +422,7 @@
             </div>
 
             <div class="WeeklySchedule__scheduleDownLoadButton">
-              <a href="#" class="WeeklySchedule__scheduleDownLoadButtonLink"><img src="<?php echo $imgUri;?>/pdf.webp" alt="" loading="lazy" />ダウンロードする</a>
+              <a href="#" download class="WeeklySchedule__scheduleDownLoadButtonLink"><img src="<?php echo $imgUri;?>/pdf.webp" alt="" loading="lazy" />ダウンロードする</a>
             </div>
           </div>
 
@@ -573,7 +573,7 @@
             </div>
 
             <div class="WeeklySchedule__scheduleDownLoadButton">
-              <a href="#" class="WeeklySchedule__scheduleDownLoadButtonLink"><img src="<?php echo $imgUri;?>/pdf.webp" alt="" loading="lazy" />ダウンロードする</a>
+              <a href="#" download class="WeeklySchedule__scheduleDownLoadButtonLink"><img src="<?php echo $imgUri;?>/pdf.webp" alt="" loading="lazy" />ダウンロードする</a>
             </div>
           </div>
         </div>
