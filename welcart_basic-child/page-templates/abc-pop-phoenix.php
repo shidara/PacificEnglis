@@ -40,6 +40,65 @@
       </div>
     </div>
   </section>
+
+  <!-- メリット -->
+  <section class="Merit">
+    <div class="Merit__inner">
+      <div class="Merit__title">
+        <h3 class="Merit__titleText">Merit</h3>
+        <p class="Merit__subTitle">フォニックスを学習するメリット</p>
+      </div>
+      <p class="Merit__subText">インターナショナルスクール・英会話教室</p>
+
+      <div class="Merit__contents">
+        <div class="Merit__item">
+          <div class="Merit__itemTitle">
+            <p class="Merit__itemSubTitle">Merit01</p>
+            <h4 class="Merit__itemTitleText">読み方を習得することができます</h4>
+          </div>
+          <p class="Merit__itemSummary">フォニックスは子供たちが発音と文字の関係を理解するのに役立ちます。</p>
+        </div>
+
+        <div class="Merit__item">
+          <div class="Merit__itemTitle">
+            <p class="Merit__itemSubTitle">Merit02</p>
+            <h4 class="Merit__itemTitleText">スピードと正確さの向上</h4>
+          </div>
+          <p class="Merit__itemSummary">フォニックスは子供たちが発音と文字の関係を理解するのに役立ちます</p>
+        </div>
+
+        <div class="Merit__item">
+          <div class="Merit__itemTitle">
+            <p class="Merit__itemSubTitle">Merit03</p>
+            <h4 class="Merit__itemTitleText">語彙力の向上</h4>
+          </div>
+          <p class="Merit__itemSummary">フォニックスによって新しい単語が簡単に覚えられます。</p>
+        </div>
+
+        <div class="Merit__item">
+          <div class="Merit__itemTitle">
+            <p class="Merit__itemSubTitle">Merit04</p>
+            <h4 class="Merit__itemTitleText">自信の向上</h4>
+          </div>
+          <p class="Merit__itemSummary">読み方が分かることで、子供たちの読書の自信が高まります。</p>
+        </div>
+
+        <div class="Merit__item">
+          <div class="Merit__itemTitle">
+            <p class="Merit__itemSubTitle">Merit05</p>
+            <h4 class="Merit__itemTitleText">教育への有効なアプローチ</h4>
+          </div>
+          <p class="Merit__itemSummary">フォニックスは、子供たちがよりスムーズに読書を学ぶことができるという効果的なアプローチです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 入園バナー PCのみ -->
+  <?php get_template_part('enrollmentBanner'); ?>
+
+  <!-- LinksNavigation PCのみ -->
+  <?php get_template_part('linksNavigation'); ?>
 </main>
 
 <?php get_footer();?>
