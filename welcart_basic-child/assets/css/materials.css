@@ -1,0 +1,179 @@
+.Materials {
+  .Materials__inner {
+    position: relative;
+    padding: 56px 20px 100px;
+
+    @media screen and (min-width: 768px) {
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+      padding: calc(120 * (100vw / var(--width-pc-origin))) 0
+        calc(115 * (100vw / var(--width-pc-origin)))
+        calc(78 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Materials__title {
+    .Materials__titleText {
+      margin-bottom: 12px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+        font-size: calc(64 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .Materials__subTitle {
+      margin-bottom: 36px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+        font-size: calc(48 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .Materials__subText {
+    margin-bottom: 36px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+      font-size: calc(24 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Materials__summary {
+    margin-bottom: 37px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(64 * (100vw / var(--width-pc-origin)));
+      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Materials__contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: calc(42 * (100vw / var(--width-pc-origin)))
+        calc(48 * (100vw / var(--width-pc-origin)));
+    }
+
+    &.Materials__contents--grid {
+      flex-direction: row;
+
+      @media screen and (min-width: 768px) {
+        gap: calc(12 * (100vw / var(--width-pc-origin)));
+      }
+
+      .Materials__item {
+        overflow: hidden;
+        flex-direction: column;
+        width: calc(50% - 10px);
+
+        @media screen and (min-width: 768px) {
+          width: calc(25% - calc(6 * (100vw / var(--width-pc-origin))));
+        }
+      }
+
+      .Materials__thumbnail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      .Materials__itemInfo {
+        text-align: center;
+      }
+    }
+  }
+
+  .Materials__item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      gap: calc(12 * (100vw / var(--width-pc-origin)));
+      width: calc(50% - calc(24 * (100vw / var(--width-pc-origin))));
+    }
+  }
+
+  .Materials__thumbnail {
+    flex-shrink: 1;
+
+    img {
+      height: 184px;
+      width: auto;
+
+      @media screen and (min-width: 768px) {
+        height: calc(240 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .Materials__itemInfoLabel {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 2px 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+      padding: calc(2 * (100vw / var(--width-pc-origin)))
+        calc(20 * (100vw / var(--width-pc-origin)));
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Materials__itemInfoTitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-primary);
+    line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+      font-size: calc(18 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Materials__itemInfoText {
+    font-size: 14px;
+    color: var(--color-blk);
+    line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+  }
+}
