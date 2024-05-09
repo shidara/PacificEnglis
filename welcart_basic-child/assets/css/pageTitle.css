@@ -52,6 +52,7 @@
   .PageTitleSection__summary {
     font-size: 16px;
     font-weight: 700;
+    font-family: "Zen Kaku Gothic New", sans-serif;
     line-height: 1.8;
     color: var(--color-primary);
 
@@ -61,6 +62,12 @@
 
     &.PageTitleSection__summary--black {
       color: var(--color-blk);
+    }
+
+    &.PageTitleSection__summary--small {
+      @media screen and (min-width: 768px) {
+        font-size: calc(15 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
