@@ -1,0 +1,138 @@
+.Merit {
+  padding: 75px 20px 32px;
+  background-color: #f9f9f9;
+
+  @media screen and (min-width: 768px) {
+    padding: calc(80 * (100vw / var(--width-pc-origin))) 0
+      calc(120 * (100vw / var(--width-pc-origin))) 0;
+  }
+
+  .Merit__inner {
+    @media screen and (min-width: 768px) {
+      width: calc(1020 * (100vw / var(--width-pc-origin)));
+      margin: 0 auto;
+      padding: 0 0 0 calc(78 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Merit__title {
+    .Merit__titleText {
+      margin-bottom: 24px;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+        font-size: calc(64 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .Merit__subTitle {
+      margin-bottom: 6px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+        font-size: calc(28 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .Merit__subText {
+    margin-bottom: 23px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(64 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Merit__contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 28px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: calc(57 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Merit__item {
+    @media screen and (min-width: 768px) {
+      width: calc(50% - calc(30 * (100vw / var(--width-pc-origin))));
+    }
+  }
+
+  .Merit__itemTitle {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(14 * (100vw / var(--width-pc-origin)));
+      padding-left: calc(16 * (100vw / var(--width-pc-origin)));
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 4px;
+      height: 100%;
+      border-radius: 100px;
+      background-color: var(--color-primary);
+    }
+
+    @media screen and (min-width: 768px) {
+      &::before {
+        width: calc(4 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .Merit__itemSubTitle {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(8 * (100vw / var(--width-pc-origin)));
+      font-size: calc(20 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Merit__itemTitleText {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(24 * (100vw / var(--width-pc-origin)));
+    }
+  }
+
+  .Merit__itemSummary {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-blk);
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(14 * (100vw / var(--width-pc-origin)));
+    }
+  }
+}
