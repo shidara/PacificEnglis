@@ -104,39 +104,26 @@
       <p class="Materials__subText">アルファベットマスター</p>
       <p class="Materials__summary">アルファベットの読み書き発音を「サブスクリプション動画」と共に学べるテキストブックです。年齢に合わせて３種類ご用意しております。</p>
 
+       <?php
+        $jsonMaterialsUrl = get_theme_file_uri() . '/assets/json/materials.json';
+        $jsonMaterials = file_get_contents($jsonMaterialsUrl);
+        $arrMaterials = json_decode($jsonMaterials,true);
+      ?>
       <div class="Materials__contents">
-        <a href="" class="Materials__item">
-          <div class="Materials__thumbnail">
-            <img src="<?php echo $imgUri;?>/alphabetmaster1.webp" alt="" loading="lazy" />
-          </div>
-          <div class="Materials__itemInfo">
-            <div class="Materials__itemInfoLabel">対象年齢：3歳</div>
-            <p class="Materials__itemInfoTitle">レインボートレーシング筆圧練習用塗り絵</p>
-            <p class="Materials__itemInfoText">アルファベットの大文字と小文字の形と音をぬりえ感覚で学べます</p>
-          </div>
-        </a>
-
-        <a href="" class="Materials__item">
-          <div class="Materials__thumbnail">
-            <img src="<?php echo $imgUri;?>/alphabetmaster2.webp" alt="" loading="lazy" />
-          </div>
-          <div class="Materials__itemInfo">
-            <div class="Materials__itemInfoLabel">対象年齢：4歳</div>
-            <p class="Materials__itemInfoTitle">カラーリングブック線をなぞって形を覚える</p>
-            <p class="Materials__itemInfoText">アルファベットの大文字と小文字の形と音をぬりえ感覚で学べます。</p>
-          </div>
-        </a>
-
-        <a href="" class="Materials__item">
-          <div class="Materials__thumbnail">
-            <img src="<?php echo $imgUri;?>/alphabetmaster3.webp" alt="" loading="lazy" />
-          </div>
-          <div class="Materials__itemInfo">
-            <div class="Materials__itemInfoLabel">対象年齢：5歳</div>
-            <p class="Materials__itemInfoTitle">アルファベット＆フォニックス</p>
-            <p class="Materials__itemInfoText">アルファベットの大文字と小文字の形と音をぬりえ感覚で学べます</p>
-          </div>
-        </a>
+        <?php
+          if(is_array($arrMaterials)) {
+            foreach($arrMaterials as $d){
+              echo '<div class="Materials__item">
+                      <div class="Materials__thumbnail">
+                        <img src="'. $imgUri . $d['imgUrl'] . '" alt="" loading="lazy" />
+                      </div>';
+              echo '<div class="Materials__itemInfo"><div class="Materials__itemInfoLabel">対象年齢：' . $d['age'] . '歳</div>';
+              echo '<p class="Materials__itemInfoTitle">' . $d['name'] . '</p>';
+              echo '<p class="Materials__itemInfoText">' . $d['summary'] . '</p>';
+              echo '</div></div>';
+            }
+          }
+        ?>
       </div>
     </div>
 
@@ -149,39 +136,24 @@
       <p class="Materials__summary">キャラクターの名前でフォニックスのルールを楽しく覚えられるスタイルはそのままで、サイトワードの練習、ショートストーリーもあり、これから読み書きを本格的に始める子ども達に最適です。</p>
 
       <?php
-        $paged = get_query_var('paged') ? get_query_var('paged') : 1; //pagedの設定
-        $args = array(
-          'post_type' => 'post',
-          'posts_per_page' => $posts_per_page,
-          'paged' => $paged,
-          'post_status' => 'publish',
-          'category_name' => 'item',
-        );
-        $the_query = new WP_Query($args);
-        if($the_query->have_posts()):
+        $jsonPhonicsUrl = get_theme_file_uri() . '/assets/json/phonics.json';
+        $json = file_get_contents($jsonPhonicsUrl);
+        $arr = json_decode($json,true);
       ?>
       <div class="Materials__contents Materials__contents--grid">
         <?php
-          while($the_query->have_posts()):
-          $the_query->the_post();
-          $image_id = get_post_thumbnail_id();
-          // メディアで設定したalt（代替テキスト）属性を取得
-          $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-
-          $categories = get_the_category();
-          if($categories[0]->name == 'ポップフォニックス'):
+          if(is_array($arr)) {
+            foreach($arr as $d){
+              echo '<div class="Materials__item">
+                      <div class="Materials__thumbnail">
+                        <img src="'. $imgUri . $d['imgUrl'] . '" alt="" loading="lazy" />
+                      </div>';
+              echo '<div class="Materials__itemInfo"><p class="Materials__itemInfoTitle ">' . $d['name'] . '</p></div>';
+              echo '</div>';
+            }
+          }
         ?>
-        <a href="<?php echo get_permalink(); ?>" class="Materials__item">
-          <div class="Materials__thumbnail">
-            <?php usces_the_itemImage(0, 120, 170); ?>
-          </div>
-          <div class="Materials__itemInfo">
-            <p class="Materials__itemInfoTitle"><?php usces_the_itemName(); ?></p>
-          </div>
-        </a>
-        <?php endif; endwhile; ?>
       </div>
-      <?php endif; wp_reset_postdata(); ?>
     </div>
 
     <!-- Game -->
@@ -192,42 +164,26 @@
       <p class="Materials__subText">ゲーム</p>
 
       <?php
-        $paged = get_query_var('paged') ? get_query_var('paged') : 1; //pagedの設定
-        $args = array(
-          'post_type' => 'post',
-          'posts_per_page' => $posts_per_page,
-          'paged' => $paged,
-          'post_status' => 'publish',
-          'category_name' => 'item',
-        );
-        $the_query = new WP_Query($args);
-        if($the_query->have_posts()):
+        $jsonGameUrl = get_theme_file_uri() . '/assets/json/game.json';
+        $jsonGame = file_get_contents($jsonGameUrl);
+        $arrGame = json_decode($jsonGame,true);
       ?>
       <div class="Materials__contents">
         <?php
-          while($the_query->have_posts()):
-          $the_query->the_post();
-          $image_id = get_post_thumbnail_id();
-          // メディアで設定したalt（代替テキスト）属性を取得
-          $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-
-          $categories = get_the_category();
-          if($categories[0]->name == 'ゲーム'):
-
+          if(is_array($arrGame)) {
+            foreach($arrGame as $d){
+              echo '<div class="Materials__item">
+                      <div class="Materials__thumbnail">
+                        <img src="'. $imgUri . $d['imgUrl'] . '" alt="" loading="lazy" />
+                      </div>';
+              echo '<div class="Materials__itemInfo"><div class="Materials__itemInfoLabel">対象年齢：' . $d['age'] . '</div>';
+              echo '<p class="Materials__itemInfoTitle">' . $d['name'] . '</p>';
+              echo '<p class="Materials__itemInfoText">' .$d["summary"] . '</p>';
+              echo '</div></div>';
+            }
+          }
         ?>
-        <a href="<?php echo get_permalink(); ?>" class="Materials__item">
-          <div class="Materials__thumbnail">
-            <?php usces_the_itemImage(0, 149, 184); ?>
-          </div>
-          <div class="Materials__itemInfo">
-            <div class="Materials__itemInfoLabel">対象年齢：4歳〜</div>
-            <p class="Materials__itemInfoTitle"><?php usces_the_itemName(); ?></p>
-            <p class="Materials__itemInfoText"> <?php the_content(); ?></p>
-          </div>
-        </a>
-        <?php endif; endwhile; ?>
       </div>
-      <?php endif; wp_reset_postdata(); ?>
     </div>
   </section>
 
