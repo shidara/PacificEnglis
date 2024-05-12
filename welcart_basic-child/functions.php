@@ -13,8 +13,9 @@ function create_post_type_blog() {
     'blog', // URL
     array(
       'labels' => array(
-        'name' => 'Blog'
+        'name' => 'Blog' // カスタム投稿名
       ),
+      'hierarchical' => true,
       'public' => true,
       'has_archive' => true,
       'supports' => array('title','editor','thumbnail','author'),

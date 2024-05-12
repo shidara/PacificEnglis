@@ -138,6 +138,9 @@ Base
 /* Materials */
 @import url("./materials.css");
 
+/* BlogList */
+@import url("./blogList.css");
+
 /*================================
 Reset CSS
 ================================*/
