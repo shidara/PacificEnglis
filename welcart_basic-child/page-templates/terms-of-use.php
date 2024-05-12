@@ -5,6 +5,10 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
+
+$jsonOriginUrl = get_theme_file_uri() . '/assets/json/terms-of-use.json';
+$json = file_get_contents($jsonOriginUrl);
+$arr = json_decode($json,true);
 ?>
 
 <?php get_header();?>
@@ -26,12 +30,38 @@
       <p class="Terms__summary">この利用規約（以下、「本規約」といいます。）は、株式会社 パシフィック・イングリッシュ（以下、「当社」といいます。）がこのECサイト上で提供するサービス（以下、「本サービス」といいます。）の利用条件を定めるものです。登録会員の皆さま（以下、「会員さま」といいます。）には、本規約に従って、本サービスをご利用いただきます。</p>
 
       <div class="Terms__contents">
-        <div class="Terms__item">
-          <h4 class="Terms__itemTitle">第1条（適用）</h4>
-          <div class="Terms__itemInner">
-            <p>本規約は、会員さまと当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。</p>
-          </div>
-        </div>
+        <?php
+          if(is_array($arr)){
+            foreach($arr as $d) {
+              echo '<div class="Terms__item">
+                    <h4 class="Terms__itemTitle">' . $d['title'] . '</h4>
+                    <div class="Terms__itemInner">';
+
+              if(isset($d['text'])){
+                echo '<p>' . $d['text'] . '</p>';
+              }
+
+              if(isset($d['orderList'])){
+                $i = 1 ;
+                echo '<ol class="Terms__orderList">';
+                if(is_array($arr)){
+                  foreach ($d['orderList'] as $olValue) {
+                      echo '<li class="Terms__orderListItem">
+                            <span class="Terms__orderListNumber">(' . $i . ')</span>' . $olValue . '</li>';
+                      $i ++;
+                    }
+                  }
+                echo '</ol>';
+              }
+
+              if(isset($d['afterText'])){
+                echo '<p class="Terms__afterText">' . $d['afterText'] . '</p>';
+              }
+
+              echo '</div></div>';
+            }
+          }
+        ?>
       </div>
     </section>
   </main>

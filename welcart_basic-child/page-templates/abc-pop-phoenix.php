@@ -104,7 +104,7 @@
       <p class="Materials__subText">アルファベットマスター</p>
       <p class="Materials__summary">アルファベットの読み書き発音を「サブスクリプション動画」と共に学べるテキストブックです。年齢に合わせて３種類ご用意しております。</p>
 
-       <?php
+      <?php
         $jsonMaterialsUrl = get_theme_file_uri() . '/assets/json/materials.json';
         $jsonMaterials = file_get_contents($jsonMaterialsUrl);
         $arrMaterials = json_decode($jsonMaterials,true);

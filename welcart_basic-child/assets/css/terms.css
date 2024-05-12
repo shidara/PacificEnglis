@@ -133,4 +133,40 @@
       font-size: calc(16 * (100vw / var(--width-pc-origin)));
     }
   }
+
+  .Terms__orderList {
+    padding-top: 10px;
+    padding-left: 8px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: calc(10 * (100vw / var(--width-pc-origin)));
+      padding-left: calc(8 * (100vw / var(--width-pc-origin)));
+    }
+
+    .Terms__orderListItem {
+      &:not(:first-child) {
+        margin-top: 4px;
+
+        @media screen and (min-width: 768px) {
+          margin-top: calc(4 * (100vw / var(--width-pc-origin)));
+        }
+      }
+    }
+
+    .Terms__orderListNumber {
+      margin-right: 12px;
+
+      @media screen and (min-width: 768px) {
+        margin-right: calc(12 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
+
+  .Terms__afterText {
+    padding-top: 10px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: calc(10 * (100vw / var(--width-pc-origin)));
+    }
+  }
 }
