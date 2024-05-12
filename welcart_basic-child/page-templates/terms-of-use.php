@@ -38,7 +38,9 @@ $arr = json_decode($json,true);
                     <div class="Terms__itemInner">';
 
               if(isset($d['text'])){
-                echo '<p>' . $d['text'] . '</p>';
+                // \nを改行コードに変換
+                $afterText = str_replace("\n", "<br />", $d['text']);
+                echo '<p>' . $afterText . '</p>';
               }
 
               if(isset($d['orderList'])){
@@ -46,9 +48,11 @@ $arr = json_decode($json,true);
                 echo '<ol class="Terms__orderList">';
                 if(is_array($arr)){
                   foreach ($d['orderList'] as $olValue) {
-                      echo '<li class="Terms__orderListItem">
-                            <span class="Terms__orderListNumber">(' . $i . ')</span>' . $olValue . '</li>';
-                      $i ++;
+                    $afterValue = str_replace("\n", "<br />", $olValue);
+
+                    echo '<li class="Terms__orderListItem">
+                          <span class="Terms__orderListNumber">(' . $i . ')</span>' . $afterValue . '</li>';
+                    $i ++;
                     }
                   }
                 echo '</ol>';
