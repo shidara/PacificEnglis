@@ -5,6 +5,10 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
+
+$jsonOriginUrl = get_theme_file_uri() . '/assets/json/privacy-policy.json';
+$json = file_get_contents($jsonOriginUrl);
+$arr = json_decode($json, true);
 ?>
 
 <?php get_header();?>
@@ -26,6 +30,49 @@
       <p class="PrivacyPolicy__summary">株式会社 パシフィック・イングリッシュ（以下、「当社」といいます。）は、本ウェブサイト上で提供するサービス（以下、「本サービス」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。</p>
 
       <div class="PrivacyPolicy__contents">
+        <?php
+          if(is_array($arr)){
+            foreach($arr as $d) {
+              echo '<div class="PrivacyPolicy__item">
+                <h4 class="PrivacyPolicy__itemTitle">' . $d['title'] .'</h4>
+                <div class="PrivacyPolicy__itemInner">';
+
+              if(isset($d['text'])){
+                // \nを改行コードに変換
+                $afterText = str_replace("\n", "<br />", $d['text']);
+                echo '<p>' . $afterText . '</p>';
+              }
+
+              if(isset($d['orderList'])){
+                echo '<ul class="PrivacyPolicy__orderList">';
+                if(is_array($arr)){
+                  foreach ($d['orderList'] as $olValue) {
+                    $afterValue = str_replace("\n", "<br />", $olValue);
+                    echo '<li class="PrivacyPolicy__orderListItem">・' . $afterValue . '</li>';
+                    }
+                  }
+                echo '</ul>';
+              }
+
+              if(isset($d['keyValue'])){
+                if(is_array($arr)){
+                  foreach ($d['keyValue'] as $kv) {
+                    echo '<div class="PrivacyPolicy__keyvalue">
+                            <strong>' . $kv["title"] .'</strong>
+                            <span>' . $kv["text"] . '</span>
+                          </div>';
+                    }
+                  }
+              }
+
+              if(isset($d['afterText'])){
+                echo '<p class="PrivacyPolicy__afterText">' . $d['afterText'] . '</p>';
+              }
+
+              echo '</div></div>';
+            }
+          }
+        ?>
         <div class="PrivacyPolicy__item">
           <h4 class="PrivacyPolicy__itemTitle">第1条（個人情報）</h4>
           <div class="PrivacyPolicy__itemInner">

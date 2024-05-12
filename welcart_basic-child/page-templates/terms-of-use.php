@@ -8,7 +8,7 @@
 
 $jsonOriginUrl = get_theme_file_uri() . '/assets/json/terms-of-use.json';
 $json = file_get_contents($jsonOriginUrl);
-$arr = json_decode($json,true);
+$arr = json_decode($json, true);
 ?>
 
 <?php get_header();?>
