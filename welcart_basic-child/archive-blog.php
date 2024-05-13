@@ -105,11 +105,34 @@
 
           <!-- 過去のアーカイブ -->
           <?php
-            $cat_slug = 'blog'; // 取得したいカテゴリー
+          // $paged = (int) get_query_var('paged');
+          // $year = get_query_var('year');
+          // $monthnum = get_query_var('monthnum');
+          // $args = array(
+          //   'year' => $year,
+          //   'monthnum' => $monthnum,
+          //   'posts_per_page' => 12,
+          //   'paged' => $paged,
+          //   'orderby' => 'post_date',
+          //   'order' => 'DESC',
+          //   'post_type' => 'news',
+          //   'post_status' => 'publish',
+          //   );
+          // $the_query = new WP_Query( $args );
+
+          // if(isset($the_query)) {
+          //   print_r($the_query);
+          //   foreach($the_query as $a){
+          //     echo $a->name;
+          //   }
+          // }
+  ?>
+          <?php
             $args = array(
-              'category_name' => $cat_slug,
+              'category_name' => $custom_post, // 取得したいカテゴリー
               'posts_per_page' => -1 // カテゴリーの記事を全部出力
             );
+
             $archive_query = new WP_Query( $args ); // 上記アーカイブクエリを実行
 
             if(isset($archive_query)){
@@ -119,16 +142,16 @@
                 $archive_list[ get_the_time( 'Y/n', $post->ID ) ][] = $post->post_title;
               }
             }
-            wp_reset_postdata();
 
-          ?>
+            wp_reset_postdata();
+            ?>
           <?php if( isset($archive_list) ) : ?>
             <ul>
               <?php foreach( $archive_list as $year_month => $archive ) :
                 $year_month_arr = explode( '/', $year_month );
               ?>
               <li>
-                <a href="<?php echo esc_url( home_url( $year_month.'/?cat_slug='.$cat_slug ) ); ?>">
+                <a href="<?php echo esc_url( home_url( $year_month.'/?cat_slug='. $custom_post ) ); ?>">
                   <?php echo $year_month_arr[0].'年'.$year_month_arr[1].'月'; ?> [<?php echo count( $archive ); ?>]</a></li>
               <?php endforeach; ?>
             </ul>
