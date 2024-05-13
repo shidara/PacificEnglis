@@ -7,7 +7,7 @@
   $search_word = array();
   if ( ! empty( $_GET['f'] ) ) {
     $search_word = $_GET['f'];
-    $search_word = str_replace( ' ', ' ', $search_word ); //全角スペースを半角スペースに置き換える（複数単語対応のため）
+    $search_word = str_replace( '　', ' ', $search_word ); // 全角スペースを半角スペースに置き換える（複数単語対応のため）
   }
 
   // タグ
@@ -41,12 +41,13 @@
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $the_query = new WP_Query( array(
                 'post_status'    => 'publish',
-                'post_type'      => 'blog', // ページの種類（例、page、post、カスタム投稿タイプ）
+                'post_type'      => $custom_post, // ページの種類（例、page、post、カスタム投稿タイプ）
                 'paged'          => $paged,
                 'posts_per_page' => 12, // 表示件数
                 'orderby'        => 'date',
-                'order'          => 'DESC'
-            ) );
+                'order'          => 'DESC',
+                's'              => $search_word, //検索欄に入力した単語
+            ));
             if ($the_query->have_posts()) :
                 while ($the_query->have_posts()) : $the_query->the_post();
                 ?>
@@ -161,29 +162,11 @@
 
       <!-- タグの一覧 -->
       <?php if(isset($tags)) :?>
-        <div class="BlogList__tagFooter">
-          <h2 class="BlogList__tagFooterTitle"><img src="<?php echo $imgUri;?>/tag.webp" alt="" loading="lazy" /><span>タグ一覧</span></h2>
-          <div class="BlogList__tagWrapper">
-            <?php
-              foreach($tags as $value): ?>
-                <div class="BlogList__tag">
-                  <a href="<?php echo get_term_link($value, 'blog');?>" class="BlogList__item"><?php echo $value->name; ?></a>
-                </div>
-            <?php endforeach;?>
-          </div>
-        </div>
+        <?php get_template_part('blogList-tagFooter'); ?>
       <?php endif; ?>
 
       <!-- キーワードから記事を探す -->
-      <div class="BlogList__keyWordSearch">
-        <h2 class="BlogList__keyWordSearchTitle"><img src="<?php echo $imgUri;?>/search_orange.webp" alt="" loading="lazy" /><span>キーワードから記事を探す</span></h2>
-        <form method="get" action="<?php echo esc_url( home_url("/") ); ?><?php echo esc_attr( $custom_post ); ?>">
-          <div class="BlogList__keyWordSearchInputWrap">
-            <input type="search" placeholder="キーワードを入力" value="<?php echo $search_word ? $search_word : ''; ?>" name="f" >
-            <button type="submit" value="" class="BlogList__keyWordSearchButton"><img src="<?php echo $imgUri;?>/search_black.webp" alt="" loading="lazy" /></button>
-          </div>
-        </form>
-      </div>
+      <?php get_template_part('blogList-keyWordSearch'); ?>
     </div>
 
   </section>
