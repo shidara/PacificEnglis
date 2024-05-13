@@ -1,0 +1,72 @@
+.Pagination {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: calc(31 * (100vw / var(--width-pc-origin)));
+  }
+
+  .wp-pagenavi {
+    text-align: center;
+
+    .pages {
+      padding: 11px 24px;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    span,
+    a {
+      /*数字部分の共通CSS 大きさなど*/
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 46px;
+      min-height: 42px;
+      margin: 0 3px;
+      padding: 10px 12px;
+      line-height: 1;
+      font-size: 20px;
+      border: 1px solid var(--color-primary);
+      border-radius: 4px;
+      color: var(--color-blk);
+      text-decoration: none;
+      background-color: var(--color-wht);
+
+      @media screen and (min-width: 768px) {
+        min-width: calc(60 * (100vw / var(--width-pc-origin)));
+        min-height: calc(60 * (100vw / var(--width-pc-origin)));
+        margin: 0 calc(3 * (100vw / var(--width-pc-origin)));
+        border-radius: calc(4 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
+
+      &.current,
+      &:hover {
+        /*現在のページ*/
+        color: var(--color-wht);
+        background-color: var(--color-primary);
+      }
+    }
+    /*その他、必要があれば以下のクラスにcssを指定する*/
+    .previouspostslink {
+      @media screen and (min-width: 768px) {
+        min-width: calc(110 * (100vw / var(--width-pc-origin)));
+      }
+    }
+    .nextpostslink {
+      @media screen and (min-width: 768px) {
+        min-width: calc(110 * (100vw / var(--width-pc-origin)));
+      }
+    }
+    .first {
+    }
+    .last {
+    }
+    .smaller {
+    }
+    .larger {
+    }
+  }
+}
