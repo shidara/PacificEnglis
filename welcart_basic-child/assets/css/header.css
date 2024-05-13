@@ -27,6 +27,7 @@
     font-weight: 700;
     color: var(--color-wht);
     background-color: var(--color-primary);
+    cursor: pointer;
   }
 
   button {
