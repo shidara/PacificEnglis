@@ -190,8 +190,6 @@
   <!-- 入園バナー PCのみ -->
   <?php get_template_part('enrollmentBanner'); ?>
 
-  <!-- LinksNavigation PCのみ -->
-  <?php get_template_part('linksNavigation'); ?>
 </main>
 
 <?php get_footer();?>
