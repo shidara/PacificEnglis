@@ -182,5 +182,97 @@
         }
       }
     }
+
+    /* heading */
+    h2 {
+      margin-bottom: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--color-primary);
+      font-size: 26px;
+      font-weight: bold;
+      color: var(--color-blk);
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--color-primary);
+      line-height: 1.2;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      border-left: 2px solid var(--color-primary);
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--color-blk);
+      line-height: 1.2;
+    }
+
+    /* image */
+    figure.wp-block-image img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 12px;
+      border-radius: 16px;
+    }
+
+    /* list */
+    ul {
+      li {
+        position: relative;
+        margin-bottom: 8px;
+        padding-left: 13px;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color-blk);
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 9px;
+          left: 0;
+          width: 6px;
+          height: 2px;
+          background-color: var(--color-primary);
+          border-radius: 5px;
+        }
+      }
+    }
+
+    ol {
+      li {
+        position: relative;
+        margin-bottom: 12px;
+        padding-left: 18px;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color-blk);
+        list-style-type: none;
+        counter-increment: cnt;
+
+        &::before {
+          content: counter(cnt) ".";
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-width: 16px;
+          font-size: 18px;
+          font-weight: normal;
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    /* Link */
+    a {
+      font-size: 18px;
+      font-family: "Zen Kaku Gothic New", sans-serif;
+      color: #286fc3;
+      text-decoration: underline;
+    }
   }
 }
