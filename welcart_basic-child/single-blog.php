@@ -35,38 +35,121 @@
       </div>
 
       <div class="BlogList__container">
-          <div class="BlogList__mainContents">
-            <h1 class="BlogItem__title"><?php echo get_the_title(); ?></h1>
-            <!-- tagがあれば表示 -->
-            <?php
-              $terms = get_the_terms($post->ID, $tax_type01);
-              $i = 0;
-              if($terms): ?>
-              <p class="BlogItem__titleTagWrapper">
-                <img src="<?php echo $imgUri;?>/tag_gray.webp" alt="" loading="lazy" />
-                <?php
-                  foreach( $terms as $term ) {
-                    echo '<a href="' . get_category_link( $terms[$i]->term_id ) . '" class="BlogItem__titleTag">' . $terms[$i]->name . '</a>';
-                    $i++;
-                  }
-                ?>
-              </p>
-            <?php endif; ?>
+        <div class="BlogList__mainContents">
+          <h1 class="BlogItem__title"><?php echo get_the_title(); ?></h1>
+          <!-- tagがあれば表示 -->
+          <?php
+            $terms = get_the_terms($post->ID, $tax_type01);
+            $i = 0;
+            if($terms): ?>
+            <p class="BlogItem__titleTagWrapper">
+              <img src="<?php echo $imgUri;?>/tag_gray.webp" alt="" loading="lazy" />
+              <?php
+                foreach( $terms as $term ) {
+                  echo '<a href="' . get_category_link( $terms[$i]->term_id ) . '" class="BlogItem__titleTag">' . $terms[$i]->name . '</a>';
+                  $i++;
+                }
+              ?>
+            </p>
+          <?php endif; ?>
 
-            <!-- サムネイル -->
-            <?php if (has_post_thumbnail()) : ?>
-              <div class="BlogItem__thumbnail">
-                <?php the_post_thumbnail(); ?>
-              </div>
-            <?php endif; ?>
-
-            <!-- 投稿コンテンツ -->
-            <div class="BlogItem__contents">
-              <?php the_content(); ?>
+          <!-- サムネイル -->
+          <?php if (has_post_thumbnail()) : ?>
+            <div class="BlogItem__thumbnail">
+              <?php the_post_thumbnail(); ?>
             </div>
+          <?php endif; ?>
+
+          <!-- 投稿コンテンツ -->
+          <div class="BlogItem__contents">
+            <?php the_content(); ?>
           </div>
 
-          <div class="BlogList__subContents">
+          <!-- 同じタグの記事 -->
+          <div class="BlogItem__footerSearchTag">
+            <h2 class="BlogItem__footerSearchTagTitle">同じタグの記事を探す</h2>
+            <p class="BlogItem__footerSearchTagSubTitle"><img src="<?php echo $imgUri;?>/tag.webp" alt="" loading="lazy" /><span>タグ</span></p>
+            <div class="BlogItem__footerSearchTagWrapper">
+              <?php
+                foreach($tags as $value): ?>
+                  <div class="BlogList__tag">
+                    <a href="<?php echo get_term_link($value, 'blog');?>" class="BlogList__item"><?php echo $value->name; ?></a>
+                  </div>
+              <?php endforeach;?>
+            </div>
+              <?php
+                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+                $args = array(
+                  'post_status'    => 'publish',
+                  'post_type'      => $custom_post, // 自分のカスタム投稿スラッグを入れる
+                  'paged'          => $paged,
+                  'posts_per_page' => 3, // 固定3件
+                  'orderby'        => 'date',
+                  'order'          => 'DESC',
+                  's'              => $search_word, //検索欄に入力した単語
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => $tax_type01,
+                      'field'    => 'slug',
+                      'terms'    => $terms[0]->name,
+                    ),
+                  ),
+                ); ?>
+            <?php $my_query = new WP_Query($args); ?>
+            <?php if ($my_query->have_posts()) : ?>
+              <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                <a href="<?php the_permalink(); ?>" class="BlogList__item">
+                  <!-- 画像 -->
+                  <?php
+                    if (has_post_thumbnail()) {
+                      echo '<div class="BlogList__thumbnail">';
+                      the_post_thumbnail();
+                      echo '</div>';
+                    }
+                  ?>
+                  <!-- 日付 -->
+                  <time datetime="<?php the_time('Y-m-d'); ?>" class="BlogList__date"><?php the_time('Y/m/d'); ?></time>
+                  <p class="BlogList__itemTitle"><?php echo get_the_title(); ?></p>
+                </a>
+              <?php endwhile; ?>
+            <?php endif; ?>
+          </div>
+
+          <!-- 関連記事 -->
+          <div class="BlogItem__footerSearchTag">
+            <h2 class="BlogItem__footerSearchTagTitle">関連記事</h2>
+            <?php
+              $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+              $args = array(
+                'post_status'    => 'publish',
+                'post_type'      => $custom_post, // 自分のカスタム投稿スラッグを入れる
+                'paged'          => $paged,
+                'posts_per_page' => 3, // 固定3件
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+              ); ?>
+            <?php $my_query = new WP_Query($args); ?>
+            <?php if ($my_query->have_posts()) : ?>
+              <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                <a href="<?php the_permalink(); ?>" class="BlogList__item">
+                  <!-- 画像 -->
+                  <?php
+                    if (has_post_thumbnail()) {
+                      echo '<div class="BlogList__thumbnail">';
+                      the_post_thumbnail();
+                      echo '</div>';
+                    }
+                  ?>
+                  <!-- 日付 -->
+                  <time datetime="<?php the_time('Y-m-d'); ?>" class="BlogList__date"><?php the_time('Y/m/d'); ?></time>
+                  <p class="BlogList__itemTitle"><?php echo get_the_title(); ?></p>
+                </a>
+              <?php endwhile; ?>
+            <?php endif; ?>
+          </div>
+        </div>
+
+        <div class="BlogList__subContents">
           <!-- ブログの検索 -->
           <div class="BlogList__sideBarItem">
             <h2 class="BlogList__sideBarItemTitle"><img src="<?php echo $imgUri;?>/search_orange.webp" alt="" loading="lazy" /><span>ブログ検索</span></h2>

@@ -32,7 +32,7 @@
       <div class="BlogList__title">
         <h3 class="BlogList__titleText">Blog</h3>
         <p class="BlogList__subTitle">ブログ</p>
-        <p class="BlogList__titleTagWord">[タグ] - <?php echo $current_term_slug; ?></p>
+        <p class="BlogList__titleTagWord">[タグ] - <?php echo urldecode($current_term_slug); ?></p>
       </div>
 
       <div class="BlogList__container">
@@ -44,7 +44,7 @@
               'post_status'    => 'publish',
               'post_type'      => $custom_post, // 自分のカスタム投稿スラッグを入れる
               'paged'          => $paged,
-              'posts_per_page' => 12, // 固定12件s
+              'posts_per_page' => 12, // 固定12件
               'orderby'        => 'date',
               'order'          => 'DESC',
               's'              => $search_word, //検索欄に入力した単語

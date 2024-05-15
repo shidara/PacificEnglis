@@ -87,6 +87,8 @@
 
   /* 投稿コンテンツ */
   .BlogItem__contents {
+    padding-bottom: 59px;
+
     p {
       margin-bottom: 13px;
       font-size: 16px;
@@ -273,6 +275,89 @@
       font-family: "Zen Kaku Gothic New", sans-serif;
       color: #286fc3;
       text-decoration: underline;
+    }
+
+    /* 引用 */
+    .wp-block-quote {
+      position: relative;
+      margin-bottom: 30px;
+      padding: 17px 25px;
+      border-radius: 4px;
+      background-color: var(--color-pacific-gray-b);
+
+      &::before,
+      &::after {
+        position: absolute;
+        color: var(--color-pacific-gray-a);
+        font-size: 80px;
+        font-family: "Poppins", sans-serif;
+        line-height: 1;
+      }
+
+      &::before {
+        content: "“";
+        top: -22px;
+        left: 10px;
+      }
+
+      &::after {
+        content: "“";
+        top: auto;
+        bottom: -57px;
+        right: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  /* フッター同じタグの記事 */
+  .BlogItem__footerSearchTag {
+    padding-bottom: 32px;
+
+    .BlogItem__footerSearchTagTitle {
+      position: relative;
+      margin-bottom: 15px;
+      padding-left: 29px;
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--color-blk);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+      }
+    }
+
+    .BlogItem__footerSearchTagSubTitle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--color-blk);
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+    }
+
+    .BlogItem__footerSearchTagWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
     }
   }
 }
