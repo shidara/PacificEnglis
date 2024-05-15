@@ -141,6 +141,9 @@ Base
 /* BlogList */
 @import url("./blogList.css");
 
+/* BlogItem */
+@import url("./blogItem.css");
+
 /* page navi */
 @import url("./pagenavi.css");
 

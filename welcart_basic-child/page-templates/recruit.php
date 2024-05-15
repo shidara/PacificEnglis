@@ -272,9 +272,6 @@
   <!-- 入園バナー PCのみ -->
   <?php get_template_part('enrollmentBanner'); ?>
 
-  <!-- LinksNavigation PCのみ -->
-  <?php get_template_part('linksNavigation'); ?>
-
   <!-- Hello World -->
   <?php get_template_part('helloWorld'); ?>
 
