@@ -125,6 +125,10 @@
           }
         ?>
       </div>
+      <!-- オンラインショップ導線 -->
+      <div class="Materials__more">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/">オンラインショップを見る</a>
+      </div>
     </div>
 
     <!-- Phonics -->
@@ -153,6 +157,10 @@
             }
           }
         ?>
+      </div>
+      <!-- オンラインショップ導線 -->
+      <div class="Materials__more">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/">オンラインショップを見る</a>
       </div>
     </div>
 
@@ -183,6 +191,10 @@
             }
           }
         ?>
+      </div>
+      <!-- オンラインショップ導線 -->
+      <div class="Materials__more">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/">オンラインショップを見る</a>
       </div>
     </div>
   </section>

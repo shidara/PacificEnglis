@@ -17,13 +17,19 @@
   }
 
   .Navigation__closeWrapper {
-    height: 49px;
-    border-bottom: 1px solid #fff;
-    text-align: right;
+    height: 90px;
+
+    @media screen and (min-width: 768px) {
+      height: calc(90 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Navigation__menu {
     margin-bottom: 19px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Navigation__item {
@@ -31,6 +37,12 @@
     height: 96px;
     padding: 0 24px 0 28px;
     border-bottom: 1px solid #fff;
+
+    @media screen and (min-width: 768px) {
+      height: calc(120 * (100vw / var(--width-pc-origin)));
+      padding: 0 calc(24 * (100vw / var(--width-pc-origin))) 0
+        calc(28 * (100vw / var(--width-pc-origin)));
+    }
 
     .Navigation__itemInner {
       display: flex;
@@ -49,24 +61,41 @@
     font-size: 18px;
     font-weight: 700;
     color: var(--color-wht);
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(24 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Navigation__menuSubText {
     font-size: 12px;
     font-weight: 500;
     color: var(--color-wht);
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(15 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .Navigation__itemThumbnail {
     width: 124px;
     height: 52px;
     margin-left: 20px;
+
+    @media screen and (min-width: 768px) {
+      height: calc(65 * (100vw / var(--width-pc-origin)));
+      width: auto;
+    }
   }
 
   .Navigation__footerThumbnail {
-    margin-bottom: 25px;
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: calc(32 * (100vw / var(--width-pc-origin)));
+    }
 
     & a {
       box-sizing: border-box;
@@ -79,12 +108,23 @@
       padding: 16px;
       border-radius: 8px;
       background-color: var(--color-wht);
+      text-decoration: none;
+
+      @media screen and (min-width: 768px) {
+        width: calc(300 * (100vw / var(--width-pc-origin)));
+        height: calc(183 * (100vw / var(--width-pc-origin)));
+        padding: calc(16 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     img {
       width: 100%;
       height: 76px;
       object-fit: contain;
+
+      @media screen and (min-width: 768px) {
+        height: calc(76 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Navigation__footerThumbnailTitle {
@@ -92,6 +132,11 @@
       font-size: 18px;
       font-weight: bold;
       color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(4 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .Navigation__footerThumbnailButton {
@@ -106,6 +151,13 @@
       font-weight: bold;
       color: var(--color-wht);
       background-color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        width: calc(220 * (100vw / var(--width-pc-origin)));
+        height: calc(54 * (100vw / var(--width-pc-origin)));
+        border-radius: calc(8 * (100vw / var(--width-pc-origin)));
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
@@ -118,12 +170,20 @@
     .Navigation__footerLinksItem {
       &:not(:last-child) {
         margin-right: 16px;
+
+        @media screen and (min-width: 768px) {
+          margin-right: calc(16 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       a {
         position: relative;
         padding-left: 16px;
         color: var(--color-wht);
+
+        @media screen and (min-width: 768px) {
+          padding-left: calc(16 * (100vw / var(--width-pc-origin)));
+        }
 
         &:before {
           content: "";
@@ -136,6 +196,17 @@
           border: 1px solid #fff;
           border-width: 2px 2px 0 0;
           rotate: 45deg;
+        }
+
+        @media screen and (min-width: 768px) {
+          &:before {
+            top: calc(6 * (100vw / var(--width-pc-origin)));
+            left: calc(-2 * (100vw / var(--width-pc-origin)));
+            width: calc(6 * (100vw / var(--width-pc-origin)));
+            height: calc(6 * (100vw / var(--width-pc-origin)));
+            border-width: calc(2 * (100vw / var(--width-pc-origin)))
+              calc(2 * (100vw / var(--width-pc-origin))) 0 0;
+          }
         }
       }
     }

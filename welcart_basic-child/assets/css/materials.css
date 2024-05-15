@@ -176,4 +176,55 @@
       font-size: calc(14 * (100vw / var(--width-pc-origin)));
     }
   }
+
+  .Materials__more {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 63px;
+    margin-top: 26px;
+    border-radius: 16px;
+    background-color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      width: calc(420 * (100vw / var(--width-pc-origin)));
+      height: calc(72 * (100vw / var(--width-pc-origin)));
+      margin: calc(69 * (100vw / var(--width-pc-origin))) auto 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 32px;
+      top: 50%;
+      width: 9px;
+      height: 9px;
+      border: 1px solid var(--color-wht);
+      border-width: 2px 2px 0 0;
+      rotate: 45deg;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (min-width: 768px) {
+      &::before {
+        right: calc(32 * (100vw / var(--width-pc-origin)));
+        width: calc(9 * (100vw / var(--width-pc-origin)));
+        height: calc(9 * (100vw / var(--width-pc-origin)));
+        border-width: calc(2 * (100vw / var(--width-pc-origin)))
+          calc(2 * (100vw / var(--width-pc-origin))) 0 0;
+      }
+    }
+
+    a {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--color-wht);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(16 * (100vw / var(--width-pc-origin)));
+      }
+    }
+  }
 }
