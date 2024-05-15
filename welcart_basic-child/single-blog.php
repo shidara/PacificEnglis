@@ -68,33 +68,35 @@
           <!-- 同じタグの記事 -->
           <div class="BlogItem__footerSearchTag">
             <h2 class="BlogItem__footerSearchTagTitle">同じタグの記事を探す</h2>
-            <p class="BlogItem__footerSearchTagSubTitle"><img src="<?php echo $imgUri;?>/tag.webp" alt="" loading="lazy" /><span>タグ</span></p>
-            <div class="BlogItem__footerSearchTagWrapper">
-              <?php
-                foreach($tags as $value): ?>
-                  <div class="BlogList__tag">
-                    <a href="<?php echo get_term_link($value, 'blog');?>" class="BlogList__item"><?php echo $value->name; ?></a>
-                  </div>
-              <?php endforeach;?>
+            <div class="BlogItem__footerSearchTagLinks">
+              <p class="BlogItem__footerSearchTagSubTitle"><img src="<?php echo $imgUri;?>/tag.webp" alt="" loading="lazy" /><span>タグ</span></p>
+              <div class="BlogItem__footerSearchTagWrapper">
+                <?php
+                  foreach($tags as $value): ?>
+                    <div class="BlogList__tag">
+                      <a href="<?php echo get_term_link($value, 'blog');?>" class="BlogList__item"><?php echo $value->name; ?></a>
+                    </div>
+                <?php endforeach;?>
+              </div>
             </div>
-              <?php
-                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-                $args = array(
-                  'post_status'    => 'publish',
-                  'post_type'      => $custom_post, // 自分のカスタム投稿スラッグを入れる
-                  'paged'          => $paged,
-                  'posts_per_page' => 3, // 固定3件
-                  'orderby'        => 'date',
-                  'order'          => 'DESC',
-                  's'              => $search_word, //検索欄に入力した単語
-                  'tax_query' => array(
-                    array(
-                      'taxonomy' => $tax_type01,
-                      'field'    => 'slug',
-                      'terms'    => $terms[0]->name,
-                    ),
+            <?php
+              $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+              $args = array(
+                'post_status'    => 'publish',
+                'post_type'      => $custom_post, // 自分のカスタム投稿スラッグを入れる
+                'paged'          => $paged,
+                'posts_per_page' => 3, // 固定3件
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+                's'              => $search_word, //検索欄に入力した単語
+                'tax_query' => array(
+                  array(
+                    'taxonomy' => $tax_type01,
+                    'field'    => 'slug',
+                    'terms'    => $terms[0]->name,
                   ),
-                ); ?>
+                ),
+              ); ?>
             <?php $my_query = new WP_Query($args); ?>
             <?php if ($my_query->have_posts()) : ?>
               <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
@@ -108,8 +110,10 @@
                     }
                   ?>
                   <!-- 日付 -->
-                  <time datetime="<?php the_time('Y-m-d'); ?>" class="BlogList__date"><?php the_time('Y/m/d'); ?></time>
-                  <p class="BlogList__itemTitle"><?php echo get_the_title(); ?></p>
+                  <div>
+                    <time datetime="<?php the_time('Y-m-d'); ?>" class="BlogList__date"><?php the_time('Y/m/d'); ?></time>
+                    <p class="BlogList__itemTitle"><?php echo get_the_title(); ?></p>
+                  </div>
                 </a>
               <?php endwhile; ?>
             <?php endif; ?>
@@ -141,8 +145,10 @@
                     }
                   ?>
                   <!-- 日付 -->
-                  <time datetime="<?php the_time('Y-m-d'); ?>" class="BlogList__date"><?php the_time('Y/m/d'); ?></time>
-                  <p class="BlogList__itemTitle"><?php echo get_the_title(); ?></p>
+                  <div>
+                    <time datetime="<?php the_time('Y-m-d'); ?>" class="BlogList__date"><?php the_time('Y/m/d'); ?></time>
+                    <p class="BlogList__itemTitle"><?php echo get_the_title(); ?></p>
+                  </div>
                 </a>
               <?php endwhile; ?>
             <?php endif; ?>

@@ -39,7 +39,7 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: calc(18 * (100vw / var(--width-pc-origin)));
-      font-size: calc(48 * (100vw / var(--width-pc-origin)));
+      font-size: calc(40 * (100vw / var(--width-pc-origin)));
     }
   }
 
@@ -89,10 +89,20 @@
   .BlogItem__contents {
     padding-bottom: 59px;
 
+    @media screen and (min-width: 768px) {
+      padding-bottom: calc(95 * (100vw / var(--width-pc-origin)));
+    }
+
     p {
       margin-bottom: 13px;
       font-size: 16px;
       line-height: 1.6;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(18 * (100vw / var(--width-pc-origin)));
+        font-size: calc(16 * (100vw / var(--width-pc-origin)));
+        line-height: 1.8;
+      }
     }
 
     /* 目次 */
@@ -104,6 +114,19 @@
       border: 0;
       border-radius: 4px;
       background-color: var(--color-pacific-gray-b);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(42 * (100vw / var(--width-pc-origin)));
+        padding: calc(101 * (100vw / var(--width-pc-origin)))
+          calc(36 * (100vw / var(--width-pc-origin)))
+          calc(47 * (100vw / var(--width-pc-origin)));
+
+        &::before {
+          top: calc(34 * (100vw / var(--width-pc-origin)));
+          left: calc(37 * (100vw / var(--width-pc-origin)));
+          font-size: calc(32 * (100vw / var(--width-pc-origin)));
+        }
+      }
 
       &::before {
         content: "目次";
@@ -122,14 +145,27 @@
         padding-left: 27px;
         border-top: 1px solid #d9d9d9;
 
+        @media screen and (min-width: 768px) {
+          padding-top: calc(24 * (100vw / var(--width-pc-origin)));
+          padding-left: calc(34 * (100vw / var(--width-pc-origin)));
+        }
+
         > li {
           &:not(:last-child) {
             margin-bottom: 9px;
+
+            @media screen and (min-width: 768px) {
+              margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
+            }
           }
 
           > a {
             font-size: 20px;
             font-weight: bold;
+
+            @media screen and (min-width: 768px) {
+              font-size: calc(24 * (100vw / var(--width-pc-origin)));
+            }
 
             &:first-child {
               position: relative;
@@ -148,6 +184,16 @@
                 background-size: 24px;
                 background-position: center;
               }
+
+              @media screen and (min-width: 768px) {
+                &::before {
+                  top: calc(5 * (100vw / var(--width-pc-origin)));
+                  left: calc(-29 * (100vw / var(--width-pc-origin)));
+                  width: calc(24 * (100vw / var(--width-pc-origin)));
+                  height: calc(24 * (100vw / var(--width-pc-origin)));
+                  background-size: calc(24 * (100vw / var(--width-pc-origin)));
+                }
+              }
             }
           }
 
@@ -155,12 +201,24 @@
             margin-top: 14px;
             margin-left: 0;
 
+            @media screen and (min-width: 768px) {
+              margin-top: calc(22 * (100vw / var(--width-pc-origin)));
+            }
+
             > li {
               position: relative;
               padding-left: 20px;
 
+              @media screen and (min-width: 768px) {
+                padding-left: calc(20 * (100vw / var(--width-pc-origin)));
+              }
+
               &:not(:last-child) {
                 margin-bottom: 5px;
+
+                @media screen and (min-width: 768px) {
+                  margin-bottom: calc(5 * (100vw / var(--width-pc-origin)));
+                }
               }
 
               &::before {
@@ -175,9 +233,21 @@
                 background-color: var(--color-primary);
               }
 
+              @media screen and (min-width: 768px) {
+                &::before {
+                  top: calc(6 * (100vw / var(--width-pc-origin)));
+                  width: calc(8 * (100vw / var(--width-pc-origin)));
+                  height: calc(8 * (100vw / var(--width-pc-origin)));
+                }
+              }
+
               a {
                 font-size: 15px;
                 color: var(--color-blk);
+
+                @media screen and (min-width: 768px) {
+                  font-size: calc(16 * (100vw / var(--width-pc-origin)));
+                }
               }
             }
           }
@@ -194,6 +264,12 @@
       font-weight: bold;
       color: var(--color-blk);
       line-height: 1.2;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(32 * (100vw / var(--width-pc-origin)));
+        padding-bottom: calc(24 * (100vw / var(--width-pc-origin)));
+        font-size: calc(26 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     h3 {
@@ -202,6 +278,11 @@
       font-weight: bold;
       color: var(--color-primary);
       line-height: 1.2;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+        font-size: calc(22 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     h4 {
@@ -212,6 +293,12 @@
       font-weight: bold;
       color: var(--color-blk);
       line-height: 1.2;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+        padding-left: calc(20 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     /* image */
@@ -220,10 +307,14 @@
       height: auto;
       margin-bottom: 12px;
       border-radius: 16px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     /* list */
-    ul {
+    ul:not(.toc_list) {
       li {
         position: relative;
         margin-bottom: 8px;
@@ -231,6 +322,12 @@
         font-size: 16px;
         font-weight: bold;
         color: var(--color-blk);
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: calc(8 * (100vw / var(--width-pc-origin)));
+          padding-left: calc(13 * (100vw / var(--width-pc-origin)));
+          font-size: calc(16 * (100vw / var(--width-pc-origin)));
+        }
 
         &::before {
           content: "";
@@ -241,6 +338,15 @@
           height: 2px;
           background-color: var(--color-primary);
           border-radius: 5px;
+        }
+
+        @media screen and (min-width: 768px) {
+          &::before {
+            top: calc(9 * (100vw / var(--width-pc-origin)));
+            width: calc(6 * (100vw / var(--width-pc-origin)));
+            height: calc(2 * (100vw / var(--width-pc-origin)));
+            border-radius: calc(5 * (100vw / var(--width-pc-origin)));
+          }
         }
       }
     }
@@ -256,6 +362,12 @@
         list-style-type: none;
         counter-increment: cnt;
 
+        @media screen and (min-width: 768px) {
+          margin-bottom: calc(12 * (100vw / var(--width-pc-origin)));
+          padding-left: calc(18 * (100vw / var(--width-pc-origin)));
+          font-size: calc(16 * (100vw / var(--width-pc-origin)));
+        }
+
         &::before {
           content: counter(cnt) ".";
           position: absolute;
@@ -266,6 +378,13 @@
           font-weight: normal;
           color: var(--color-primary);
         }
+
+        @media screen and (min-width: 768px) {
+          &::before {
+            min-width: calc(16 * (100vw / var(--width-pc-origin)));
+            font-size: calc(18 * (100vw / var(--width-pc-origin)));
+          }
+        }
       }
     }
 
@@ -275,6 +394,10 @@
       font-family: "Zen Kaku Gothic New", sans-serif;
       color: #286fc3;
       text-decoration: underline;
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(18 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     /* 引用 */
@@ -284,6 +407,11 @@
       padding: 17px 25px;
       border-radius: 4px;
       background-color: var(--color-pacific-gray-b);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(37 * (100vw / var(--width-pc-origin)));
+        padding: calc(32 * (100vw / var(--width-pc-origin)));
+      }
 
       &::before,
       &::after {
@@ -307,9 +435,31 @@
         right: 10px;
       }
 
+      @media screen and (min-width: 768px) {
+        &::before,
+        &::after {
+          font-size: calc(80 * (100vw / var(--width-pc-origin)));
+        }
+
+        &::before {
+          content: "“";
+          top: calc(-22 * (100vw / var(--width-pc-origin)));
+          left: calc(10 * (100vw / var(--width-pc-origin)));
+        }
+
+        &::after {
+          bottom: calc(-57 * (100vw / var(--width-pc-origin)));
+          right: calc(10 * (100vw / var(--width-pc-origin)));
+        }
+      }
+
       p {
         font-size: 16px;
         line-height: 1.8;
+
+        @media screen and (min-width: 768px) {
+          font-size: calc(16 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
   }
@@ -318,6 +468,10 @@
   .BlogItem__footerSearchTag {
     padding-bottom: 32px;
 
+    @media screen and (min-width: 768px) {
+      padding-bottom: calc(47 * (100vw / var(--width-pc-origin)));
+    }
+
     .BlogItem__footerSearchTagTitle {
       position: relative;
       margin-bottom: 15px;
@@ -325,6 +479,12 @@
       font-size: 22px;
       font-weight: bold;
       color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+        padding-left: calc(29 * (100vw / var(--width-pc-origin)));
+        font-size: calc(32 * (100vw / var(--width-pc-origin)));
+      }
 
       &::before {
         content: "";
@@ -336,6 +496,23 @@
         border-radius: 50%;
         background-color: var(--color-primary);
       }
+
+      @media screen and (min-width: 768px) {
+        &::before {
+          top: calc(4 * (100vw / var(--width-pc-origin)));
+          width: calc(13 * (100vw / var(--width-pc-origin)));
+          height: calc(13 * (100vw / var(--width-pc-origin)));
+        }
+      }
+    }
+
+    .BlogItem__footerSearchTagLinks {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: flex-start;
+        gap: calc(27 * (100vw / var(--width-pc-origin)));
+        margin-bottom: calc(36 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     .BlogItem__footerSearchTagSubTitle {
@@ -346,10 +523,53 @@
       font-weight: bold;
       color: var(--color-blk);
 
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        padding-top: calc(8 * (100vw / var(--width-pc-origin)));
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
+
       img {
         width: 24px;
         height: 24px;
         margin-right: 5px;
+
+        @media screen and (min-width: 768px) {
+          width: calc(24 * (100vw / var(--width-pc-origin)));
+          height: calc(24 * (100vw / var(--width-pc-origin)));
+        }
+      }
+    }
+
+    .BlogList__item {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: calc(24 * (100vw / var(--width-pc-origin)));
+        width: 100%;
+        margin-bottom: calc(32 * (100vw / var(--width-pc-origin)));
+      }
+
+      .BlogList__thumbnail img {
+        @media screen and (min-width: 768px) {
+          height: calc(188 * (100vw / var(--width-pc-origin)));
+          width: auto;
+        }
+      }
+
+      .BlogList__date {
+        @media screen and (min-width: 768px) {
+          display: inline-block;
+          margin-bottom: calc(9 * (100vw / var(--width-pc-origin)));
+          font-size: calc(13 * (100vw / var(--width-pc-origin)));
+        }
+      }
+
+      .BlogList__itemTitle {
+        @media screen and (min-width: 768px) {
+          margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
+          font-size: calc(18 * (100vw / var(--width-pc-origin)));
+        }
       }
     }
 
