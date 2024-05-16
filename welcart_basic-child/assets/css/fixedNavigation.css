@@ -26,6 +26,10 @@
       height: calc(161 * (100vw / var(--width-pc-origin)));
     }
 
+    &.FixedNavigation__item--active {
+      background-color: var(--color-pacific-orange-c);
+    }
+
     a {
       display: flex;
       flex-direction: column;
