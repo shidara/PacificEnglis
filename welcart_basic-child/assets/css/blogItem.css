@@ -63,6 +63,12 @@
       font-size: 14px;
       color: #8d8d8d;
 
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
+
       @media screen and (min-width: 768px) {
         margin-right: calc(8 * (100vw / var(--width-pc-origin)));
         font-size: calc(14 * (100vw / var(--width-pc-origin)));
@@ -578,6 +584,12 @@
       flex-wrap: wrap;
       gap: 12px;
       margin-bottom: 24px;
+
+      .BlogList__tag a {
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
