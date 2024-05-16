@@ -75,6 +75,12 @@
       border-radius: 6px;
       color: var(--color-wht);
       background-color: var(--color-pacific-orange-b);
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -331,6 +337,12 @@
           color: var(--color-pacific-orange-b);
           font-size: 12px;
           cursor: pointer;
+
+          &:hover,
+          &:focus-visible {
+            opacity: 0.6;
+            text-decoration: none;
+          }
         }
       }
 
@@ -450,6 +462,12 @@
       margin-bottom: 0;
       padding: 13px;
 
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
+
       @media screen and (min-width: 768px) {
         width: calc(300 * (100vw / var(--width-pc-origin)));
         height: calc(60 * (100vw / var(--width-pc-origin)));
@@ -464,6 +482,12 @@
     .to_confirm_button {
       color: var(--color-wht);
       background-color: var(--color-pacific-orange-b) !important;
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
     }
   }
 }

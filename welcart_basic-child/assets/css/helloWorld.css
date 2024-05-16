@@ -114,6 +114,12 @@
       justify-content: center;
       width: 100%;
       height: 100%;
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
     }
 
     .HelloWorld__tellTitle,

@@ -9,6 +9,7 @@
 <?php get_header();?>
 
 <?php get_template_part('mainImage'); ?>
+<?php get_template_part('FixedNavigation'); ?>
 
 <!-- コンテンツ -->
 <main class="pageContents RecruitPage">
