@@ -71,6 +71,12 @@
       border-radius: 16px;
       color: var(--color-primary);
 
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
+
       @media screen and (min-width: 768px) {
         height: calc(80 * (100vw / var(--width-pc-origin)));
         margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
@@ -275,6 +281,12 @@
       font-weight: 700;
       color: var(--color-wht);
       background-color: var(--color-primary);
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
 
       @media screen and (min-width: 768px) {
         height: calc(72 * (100vw / var(--width-pc-origin)));

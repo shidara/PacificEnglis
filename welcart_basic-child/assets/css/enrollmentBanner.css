@@ -44,6 +44,12 @@
       padding: calc(46 * (100vw / var(--width-pc-origin)))
         calc(46 * (100vw / var(--width-pc-origin)))
         calc(42 * (100vw / var(--width-pc-origin)));
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
     }
   }
 

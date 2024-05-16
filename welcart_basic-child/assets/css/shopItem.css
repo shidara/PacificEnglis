@@ -252,6 +252,7 @@
       transform: translateY(-50%);
       width: 42px;
       height: 42px;
+      cursor: pointer;
 
       @media screen and (min-width: 768px) {
         width: calc(42 * (100vw / var(--width-pc-origin)));
@@ -328,6 +329,12 @@
       font-size: 20px;
       color: var(--color-wht);
       background-color: var(--color-pacific-orange-b);
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
 
       @media screen and (min-width: 768px) {
         width: calc(283 * (100vw / var(--width-pc-origin)));
@@ -458,6 +465,16 @@
       flex-direction: column;
       width: 100%;
       height: 100%;
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
+    }
+
+    img:hover {
+      opacity: 1;
     }
 
     .ShopRecommendModule__itemInfo {
@@ -559,6 +576,12 @@
       font-size: 20px;
       color: var(--color-wht);
       background-color: var(--color-pacific-orange-b);
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
 
       @media screen and (min-width: 768px) {
         width: calc(372 * (100vw / var(--width-pc-origin)));

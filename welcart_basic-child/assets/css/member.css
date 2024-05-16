@@ -132,6 +132,12 @@
       font-size: 18px;
       font-weight: bold;
 
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
+
       @media screen and (min-width: 768px) {
         height: calc(52 * (100vw / var(--width-pc-origin)));
         padding: calc(13 * (100vw / var(--width-pc-origin)));

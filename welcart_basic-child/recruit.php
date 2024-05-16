@@ -26,7 +26,7 @@
     <div class="Recruit__links">
       <ul>
         <li class="Recruit__linksItem">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>usces-member/#RecruitMain_nav_1">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>recruit/#RecruitMain_nav_1">
             <div class="Recruit__linksItemThumbnail"><img src="<?php echo $imgUri;?>204.webp" loadding="lazy" /></div>
             <div class="Recruit__linksItemInfoWrapper">
               <div class="Recruit__linksItemInfo">
@@ -38,7 +38,7 @@
         </li>
 
           <li class="Recruit__linksItem">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>usces-member/#RecruitMain_nav_2">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>recruit/#RecruitMain_nav_2">
             <div class="Recruit__linksItemThumbnail"><img src="<?php echo $imgUri;?>205.webp" loadding="lazy" /></div>
             <div class="Recruit__linksItemInfoWrapper">
               <div class="Recruit__linksItemInfo">
@@ -50,7 +50,7 @@
         </li>
 
           <li class="Recruit__linksItem">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>usces-member/#RecruitMain_nav_1">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>recruit/#RecruitMain_nav_1">
             <div class="Recruit__linksItemThumbnail"><img src="<?php echo $imgUri;?>201.webp" loadding="lazy" /></div>
             <div class="Recruit__linksItemInfoWrapper">
               <div class="Recruit__linksItemInfo">

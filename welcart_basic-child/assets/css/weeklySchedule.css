@@ -403,6 +403,12 @@
       font-weight: 700;
       color: var(--color-primary);
 
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+        text-decoration: none;
+      }
+
       @media screen and (min-width: 768px) {
         width: calc(294 * (100vw / var(--width-pc-origin)));
         font-size: calc(16 * (100vw / var(--width-pc-origin)));
