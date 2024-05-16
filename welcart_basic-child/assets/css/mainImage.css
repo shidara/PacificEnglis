@@ -12,9 +12,14 @@
   }
 
   .MainImage__inner {
-    overflow: hidden;
+    position: relative;
     border: 6px solid var(--color-primary);
     border-radius: 15px;
+  }
+
+  .MainImageSlider {
+    overflow: hidden;
+    border-radius: 9px 9px 0 0;
   }
 
   .swiper {
@@ -39,5 +44,67 @@
   .MainImage__infoTitle {
     font-size: 18px;
     font-weight: 700;
+  }
+
+  /* インジケーター */
+  .MainImage__progress {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      right: -26px;
+      bottom: -6px;
+    }
+  }
+
+  .progress {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 6px;
+    height: 210px;
+
+    span {
+      position: relative;
+      width: 6px;
+      height: 48px;
+      border-radius: 12px;
+      background-color: var(--color-pacific-orange-c);
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-radius: 12px;
+        background: var(--color-primary);
+      }
+
+      &.active {
+        &:after {
+          animation: expandIndicatorAnim 3000ms forwards linear;
+        }
+      }
+
+      &.completed {
+        &:after {
+          animation: none;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes expandIndicatorAnim {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
   }
 }
