@@ -370,30 +370,14 @@
     }
 
     .Footer__linksItem {
-      position: relative;
-      padding-left: 16px;
       width: calc(50% - 10px);
       font-size: 16px;
       font-weight: 500;
       line-height: 1.8;
       color: var(--color-wht);
 
-      &:before {
-        content: "";
-        position: absolute;
-        top: 8px;
-        left: -2px;
-        display: block;
-        width: 6px;
-        height: 6px;
-        border: 1px solid #fff;
-        border-width: 2px 2px 0 0;
-        rotate: 45deg;
-      }
-
       @media screen and (min-width: 768px) {
         width: auto;
-        padding-left: calc(16 * (100vw / var(--width-pc-origin)));
         font-size: calc(16 * (100vw / var(--width-pc-origin)));
 
         &::before {
@@ -403,6 +387,45 @@
           height: calc(6 * (100vw / var(--width-pc-origin)));
           border-width: calc(2 * (100vw / var(--width-pc-origin)))
             calc(2 * (100vw / var(--width-pc-origin))) 0 0;
+        }
+      }
+
+      a {
+        position: relative;
+        width: 100%;
+        padding-left: 16px;
+
+        &:hover,
+        &:focus-visible {
+          opacity: 0.6;
+          text-decoration: none;
+          color: #fff;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 8px;
+          left: -2px;
+          display: block;
+          width: 6px;
+          height: 6px;
+          border: 1px solid #fff;
+          border-width: 2px 2px 0 0;
+          rotate: 45deg;
+        }
+
+        @media screen and (min-width: 768px) {
+          padding-left: calc(16 * (100vw / var(--width-pc-origin)));
+
+          &::before {
+            top: calc(8 * (100vw / var(--width-pc-origin)));
+            left: calc(-2 * (100vw / var(--width-pc-origin)));
+            width: calc(6 * (100vw / var(--width-pc-origin)));
+            height: calc(6 * (100vw / var(--width-pc-origin)));
+            border-width: calc(2 * (100vw / var(--width-pc-origin)))
+              calc(2 * (100vw / var(--width-pc-origin))) 0 0;
+          }
         }
       }
     }
