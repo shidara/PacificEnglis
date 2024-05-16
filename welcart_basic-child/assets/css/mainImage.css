@@ -19,7 +19,11 @@
 
   .MainImageSlider {
     overflow: hidden;
-    border-radius: 9px 9px 0 0;
+    border-radius: 9px 9px 0 9px;
+
+    @media screen and (min-width: 768px) {
+      position: relative;
+    }
   }
 
   .swiper {
@@ -27,6 +31,10 @@
       width: 100%;
       height: 446px;
       object-fit: cover;
+
+      @media screen and (min-width: 768px) {
+        height: calc(446 * (100vw / var(--width-pc-origin)));
+      }
     }
   }
 
@@ -39,11 +47,25 @@
     padding: 0 23px 0 28px;
     color: var(--color-wht);
     background-color: var(--color-primary);
+
+    @media screen and (min-width: 768px) {
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: calc(420 * (100vw / var(--width-pc-origin)));
+      height: calc(72 * (100vw / var(--width-pc-origin)));
+      border-radius: calc(16 * (100vw / var(--width-pc-origin))) 0 0 0;
+    }
   }
 
   .MainImage__infoTitle {
     font-size: 18px;
     font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(18 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   /* インジケーター */
@@ -53,8 +75,8 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      right: -26px;
-      bottom: -6px;
+      right: calc(-26 * (100vw / var(--width-pc-origin)));
+      bottom: calc(-6 * (100vw / var(--width-pc-origin)));
     }
   }
 
@@ -65,11 +87,17 @@
     width: 6px;
     height: 210px;
 
+    @media screen and (min-width: 768px) {
+      gap: calc(6 * (100vw / var(--width-pc-origin)));
+      width: calc(6 * (100vw / var(--width-pc-origin)));
+      height: calc(210 * (100vw / var(--width-pc-origin)));
+    }
+
     span {
       position: relative;
-      width: 6px;
-      height: 48px;
-      border-radius: 12px;
+      width: calc(6 * (100vw / var(--width-pc-origin)));
+      height: calc(48 * (100vw / var(--width-pc-origin)));
+      border-radius: calc(12 * (100vw / var(--width-pc-origin)));
       background-color: var(--color-pacific-orange-c);
 
       &:after {
@@ -79,7 +107,7 @@
         left: 0;
         width: 100%;
         height: 0;
-        border-radius: 12px;
+        border-radius: calc(12 * (100vw / var(--width-pc-origin)));
         background: var(--color-primary);
       }
 
