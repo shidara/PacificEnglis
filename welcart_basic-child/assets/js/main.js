@@ -15,18 +15,56 @@ headerNavButton.addEventListener("click", () => {
 });
 
 //メインビジュアルスライダー
-const mainVisualProgress = document.querySelector(".js-progress span");
-console.log("swiper", mainVisualProgress);
+const mainVisualProgress = document.querySelectorAll(".js-progress span");
+var speed = 3000;
+
+const _addActive = (index) => {
+  mainVisualProgress[index].classList.remove("active");
+  mainVisualProgress[index].classList.remove("completed");
+  void mainVisualProgress[index].offsetHeight;
+  mainVisualProgress[index].classList.add("active");
+};
+
+const handleInitSlide = (index) => {
+  mainVisualProgress[index].classList.add("active");
+};
+
+const handleNextSlideChange = (index) => {
+  mainVisualProgress[index].classList.add("active");
+  _addActive(index);
+  mainVisualProgress[index - 1].classList.add("completed");
+};
+
+const handlePrevSlideChange = (index) => {
+  [...mainVisualProgress].map((el, idx) => {
+    if (idx > index) {
+      el.classList.remove("active");
+      el.classList.remove("completed");
+    }
+  });
+  _addActive(index);
+};
+
 var swiper = new Swiper(".js-homeMainVisualSlider", {
   slidesPerView: "auto",
   effect: "fade",
   autoplay: {
-    delay: 4000,
+    delay: speed,
     disableOnInteraction: false,
   },
   on: {
-    autoplayTimeLeft(s, time, progress) {
-      mainVisualProgress.style.setProperty("--progress", 1 - progress);
+    init: (s) => {
+      mainVisualProgress[s.activeIndex].classList.add("active");
+    },
+    slideChange: (s) => {
+      handleInitSlide(s.activeIndex);
+    },
+    slideNextTransitionStart: (s) => {
+      handleNextSlideChange(s.activeIndex);
+    },
+    slidePrevTransitionStart: (s) => {
+      // 2週目
+      handlePrevSlideChange(s.activeIndex);
     },
   },
 });
