@@ -17,7 +17,7 @@ $imgUri = get_theme_file_uri() . "/assets/images/footer/";
     </div>
 
     <div class="EnrollmentBannerItem">
-      <a href="#">
+      <a href="https://s.lmes.jp/landing-qr/2003697225-ljRgV8Vk?uLand=KrlXg5">
         <p class="EnrollmentBannerExperienceTitle">最短翌日から可能！<br />
           <span class="EnrollmentBannerExperienceTitleLarge">4</span>
           ステップで予約完了
