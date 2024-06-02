@@ -24,7 +24,7 @@ get_template_part('header-cart');
         <p>自動送信メールにて、注文完了メールを送信しております。<br/>万が一メールが届かない場合は、大変お手数をおかけいたしますが、<br />0565-41-7825までお電話にてお問い合わせください。</p>
 
         <div class="CompletionPage__nextWrapper">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="CompletionPage__next">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>shop/" class="CompletionPage__next">
             <span>他の商品を見る</span>
           </a>
         </div>
