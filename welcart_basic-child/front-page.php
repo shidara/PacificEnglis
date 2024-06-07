@@ -267,7 +267,7 @@
 
         <div class="Blog__more">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">
-            過去のブログはこちら
+            ブログをもっと見る
             <img src="<?php echo $imgUri;?>/blog1.webp" width="12" height="12" alt="" loading="lazy" />
           </a>
         </div>
