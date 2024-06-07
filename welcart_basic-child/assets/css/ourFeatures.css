@@ -106,7 +106,7 @@
 
           &:first-child {
             @media screen and (min-width: 768px) {
-              font-size: calc(56 * (100vw / var(--width-pc-origin)));
+              font-size: calc(52 * (100vw / var(--width-pc-origin)));
               line-height: 0.8;
               margin-right: 0;
             }
@@ -114,7 +114,7 @@
 
           &:last-child {
             @media screen and (min-width: 768px) {
-              font-size: calc(12 * (100vw / var(--width-pc-origin)));
+              font-size: calc(11 * (100vw / var(--width-pc-origin)));
               color: var(--color-blk);
               text-shadow: none;
               letter-spacing: 0;
@@ -183,7 +183,7 @@
 
       .OurFeatures__itemTitle {
         @media screen and (min-width: 768px) {
-          font-size: calc(24 * (100vw / var(--width-pc-origin)));
+          font-size: calc(28 * (100vw / var(--width-pc-origin)));
         }
       }
 
@@ -243,6 +243,10 @@
           text-shadow: 2px 2px 0 var(--color-primary),
             -2px -2px 0 var(--color-primary), 2px -2px 0 var(--color-primary),
             -2px 2px 0 var(--color-primary);
+        }
+
+        &:last-child {
+          font-family: "Zen Kaku Gothic New", sans-serif;
         }
       }
 
