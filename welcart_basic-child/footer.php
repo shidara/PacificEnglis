@@ -126,9 +126,9 @@
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">ブログ</a></li>
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>recruit/">採用情報</a></li>
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>shop/">オンラインショップ</a></li>
-          <!-- <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">サイトコンテンツ</a></li> -->
-          <!-- <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">サイトコンテンツ</a></li> -->
-          <!-- <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">サイトコンテンツ</a></li> -->
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>terms/">利用規約</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>privacy-policy/">個人情報保護方針</a></li>
+          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>notation/">特定商取引法に基づく表記</a></li>
         </ul>
       </div>
 
