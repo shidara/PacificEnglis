@@ -158,7 +158,7 @@
           <nav class="Class__navigationList">
             <ul>
               <li class="Class__navigationItem">
-                <a href="#Class-2">
+                <a href="#Class-1">
                   <p class="Class__navigationItemTitle">英語の保育園</p>
                   <p class="Class__navigationItemSubText">International School</p>
                   <span class="Class__navigationItemIcon"><img src="<?php echo $imgUri;?>/arrow-wht-solo.webp" width="24" height="24" alt="" loading="lazy" /></span>
@@ -166,7 +166,7 @@
               </li>
 
               <li class="Class__navigationItem">
-                <a href="#Class-1">
+                <a href="#Class-2">
                   <p class="Class__navigationItemTitle">英語教室</p>
                   <p class="Class__navigationItemSubText">After School</p>
                   <span class="Class__navigationItemIcon"><img src="<?php echo $imgUri;?>/arrow-wht-solo.webp" width="24" height="24" alt="" loading="lazy" /></span>
@@ -186,17 +186,6 @@
 
         <div class="Class__contents">
           <div id="Class-1" class="Class__item">
-            <img src="<?php echo $imgUri;?>/17.webp" height="234" alt="" loading="lazy" class="Class__itemImage" />
-            <div class="Class__itemInfo">
-              <p class="Class__itemTag">2歳児〜OK</p>
-              <h4 class="Class__itemTitle">英会話教室</h4>
-              <p class="Class__itemSubText">英語脳が身に付く！インターナショナスクール</p>
-              <p class="Class__itemSummary">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
-              <p class="Class__itemMore"><a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/"><span>くわしく見る</span><span class="Class__itemMoreIcon"><img src="<?php echo $imgUri;?>/arrow-wht-solo.webp" width="12" height="12" alt="" loading="lazy" /></span></a></p>
-            </div>
-          </div>
-
-          <div id="Class-2" class="Class__item">
             <img src="<?php echo $imgUri;?>/18.webp" height="234" alt="" loading="lazy" class="Class__itemImage" />
             <div class="Class__itemInfo">
               <p class="Class__itemTag">2歳児〜OK</p>
@@ -204,6 +193,17 @@
               <p class="Class__itemSubText">受験・試験対策にも！アフタースクール</p>
               <p class="Class__itemSummary">パシフィックイングリッシュで、読み・書き・発音の各スキルを効果的に身につけることが可能なフォニックスを基盤に英語力を飛躍的に伸ばしましょう。</p>
               <p class="Class__itemMore"><a href="<?php echo esc_url( home_url( '/' ) ); ?>international-school/"><span>くわしく見る</span><span class="Class__itemMoreIcon"><img src="<?php echo $imgUri;?>/arrow-wht-solo.webp" width="12" height="12" alt="" loading="lazy" /></span></a></p>
+            </div>
+          </div>
+
+          <div id="Class-2" class="Class__item">
+            <img src="<?php echo $imgUri;?>/17.webp" height="234" alt="" loading="lazy" class="Class__itemImage" />
+            <div class="Class__itemInfo">
+              <p class="Class__itemTag">2歳児〜OK</p>
+              <h4 class="Class__itemTitle">英会話教室</h4>
+              <p class="Class__itemSubText">英語脳が身に付く！インターナショナスクール</p>
+              <p class="Class__itemSummary">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
+              <p class="Class__itemMore"><a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/"><span>くわしく見る</span><span class="Class__itemMoreIcon"><img src="<?php echo $imgUri;?>/arrow-wht-solo.webp" width="12" height="12" alt="" loading="lazy" /></span></a></p>
             </div>
           </div>
 

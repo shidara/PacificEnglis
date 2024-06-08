@@ -96,20 +96,6 @@ get_template_part('header-cart');
                     <?php usces_the_itemPriceCr(); ?><span class="ShopItemModule__infoPriceTax">（税込）</span>
                   </p>
 
-                  <?php do_action( 'usces_theme_item_single_before_options' ); ?>
-                  <?php if ( usces_is_options() ) : ?>
-                    <div class="p_shopSingleDetailOption-wrap _flex">
-                      <?php while ( usces_have_options() ) : ?>
-                      <div class="p_shopSingleDetailOption _flex">
-                        <p class="p_shopSingleDetailOption_title"><?php usces_the_itemOptName(); ?></p>
-                        <div class="p_shopSingleDetailOption_select">
-                          <?php usces_the_itemOption( usces_getItemOptName(), '' ); ?>
-                        </div>
-                      </div>
-                      <?php endwhile; ?>
-                    </div>
-                  <?php endif; ?>
-
                   <div class="ShopItemModule__infoSendForm">
                     <!-- 数量調整 -->
                     <div class="ShopItemModule__infoNumber">

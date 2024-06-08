@@ -11,11 +11,20 @@
   &.Footer--cart {
     padding: 59px 22px 276px;
 
+    @media screen and (min-width: 768px) {
+      padding: calc(59 * (100vw / var(--width-pc-origin)))
+        calc(22 * (100vw / var(--width-pc-origin)))
+        calc(34 * (100vw / var(--width-pc-origin)));
+    }
+
     .Footer__inner {
       padding: 0;
 
       @media screen and (min-width: 768px) {
-        padding: 0;
+        padding: calc(59 * (100vw / var(--width-pc-origin))) 0
+        calc(181 * (100vw / var(--width-pc-origin)))
+        0;
+    }
       }
     }
   }
