@@ -25,7 +25,7 @@ $imgTopUri = get_theme_file_uri() . "/assets/images/top/";
   <section class="PageTitleSection">
     <p class="PageTitleSection__subText">ネイティブだから学べる英会話</p>
     <h2 class="PageTitleSection__title PageTitleSection__title--small">ご自宅で本格オンライン英語学習</h2>
-    <p class="PageTitleSection__summary PageTitleSection__summary--black PageTitleSection__summary--small">ABCポップフォニックスは、パシフィックイングリッシュのオリジナル英語教材ブランドABC Pop Phonicsは３歳から８歳のお子様が楽しみながら英語の読み書き発音が身につく教材となっております。スクールでの英語導入期のお子様のレッスンではもちろん、ご家庭でも楽しめるYou Tubeアニメーションや玩具をオンラインショップでご納入していただきご家庭でも英語を日常的に取り入れるサポートをさせていただいております。</p>
+    <p class="PageTitleSection__summary PageTitleSection__summary--black">ABCポップフォニックスは、パシフィックイングリッシュのオリジナル英語教材ブランドABC Pop Phonicsは３歳から８歳のお子様が楽しみながら英語の読み書き発音が身につく教材となっております。スクールでの英語導入期のお子様のレッスンではもちろん、ご家庭でも楽しめるYou Tubeアニメーションや玩具をオンラインショップでご納入していただきご家庭でも英語を日常的に取り入れるサポートをさせていただいております。</p>
   </section>
 
   <section class="AbcPopPhoenixArticle">
