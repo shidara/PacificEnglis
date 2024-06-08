@@ -1,6 +1,14 @@
 .FixedNavigation {
   z-index: 1000;
   display: none;
+  overflow-y: scroll;
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     position: fixed;
