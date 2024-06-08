@@ -144,6 +144,11 @@
 
         <small class="Footer__small">©Pacific English</small>
       </div>
+
+      <div class="Footer__stamp">
+        <img src="<?php echo get_theme_file_uri();?>/assets/images/footer/606.webp" loading="lazy" alt="" />
+        <img src="<?php echo get_theme_file_uri();?>/assets/images/footer/606.webp" loading="lazy" alt="" />
+      </div>
     </div>
   </footer>
   <?php wp_footer(); ?>

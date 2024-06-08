@@ -60,7 +60,7 @@ Base
 /* Life Skills */
 @import url("./lifeSkills.css");
 
-/* Programing Curriculum */
+/* Programming Curriculum */
 @import url("./programmingCurriculum.css");
 
 /* Weekly Schedule */
@@ -146,6 +146,9 @@ Base
 
 /* page navi */
 @import url("./pagenavi.css");
+
+/* PageStaticImage */
+@import url("./pageStaticImage.css");
 
 /*================================
 Reset CSS

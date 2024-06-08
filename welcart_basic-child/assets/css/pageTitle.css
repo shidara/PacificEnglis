@@ -62,6 +62,10 @@
 
     &.PageTitleSection__summary--black {
       color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(20 * (100vw / var(--width-pc-origin)));
+      }
     }
 
     &.PageTitleSection__summary--small {
@@ -73,11 +77,12 @@
 
   .PageTitleSection__subText {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
+    color: var(--color-blk);
 
     @media screen and (min-width: 768px) {
-      font-size: calc(16 * (100vw / var(--width-pc-origin)));
+      font-size: calc(22 * (100vw / var(--width-pc-origin)));
       margin-bottom: calc(10 * (100vw / var(--width-pc-origin)));
     }
   }

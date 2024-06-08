@@ -1,0 +1,40 @@
+.PageStaticImage {
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px 20px 0;
+
+  @media screen and (min-width: 768px) {
+    width: calc(1020 * (100vw / var(--width-pc-origin)));
+    margin: 0 auto;
+    padding-left: calc(78 * (100vw / var(--width-pc-origin)));
+  }
+
+  .PageStaticImage__inner {
+    overflow: hidden;
+    position: relative;
+    border: 6px solid var(--color-primary);
+    border-radius: 15px;
+  }
+
+  .PageStaticImage__image {
+    width: 100%;
+    height: 518px;
+    object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+      height: calc(503 * (100vw / var(--width-pc-origin)));
+    }
+
+    &.PageStaticImage__image--center {
+      object-position: 70% 50%;
+    }
+
+    &.PageStaticImage__image--right {
+      object-position: 75% 50%;
+    }
+
+    &.PageStaticImage__image--left {
+      object-position: 15% 50%;
+    }
+  }
+}

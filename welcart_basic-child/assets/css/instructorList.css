@@ -87,7 +87,7 @@
       color: var(--color-primary);
 
       @media screen and (min-width: 768px) {
-        margin-bottom: calc(2 * (100vw / var(--width-pc-origin)));
+        margin-bottom: calc(6 * (100vw / var(--width-pc-origin)));
         font-size: calc(14 * (100vw / var(--width-pc-origin)));
       }
     }

@@ -7,14 +7,20 @@
  */
 
   $imgUri = get_theme_file_uri() . "/assets/images/english-class/";
+  $imgTopUri = get_theme_file_uri() . "/assets/images/top/";
 ?>
 <?php get_header();?>
 
-<?php get_template_part('mainImage'); ?>
 <?php get_template_part('FixedNavigation'); ?>
 
   <!-- コンテンツ -->
   <main class="pageContents EnglishClass">
+    <!-- メインイメージ -->
+    <section class="PageStaticImage">
+      <div class="PageStaticImage__inner">
+        <img src="<?php echo $imgTopUri;?>/03.webp" alt="" loading="lazy" class="PageStaticImage__image PageStaticImage__image--right" />
+      </div>
+    </section>
     <!-- ページタイトル -->
     <section class="PageTitleSection">
       <p class="PageTitleSection__subText">ネイティブだから学べる英会話</p>
