@@ -6,8 +6,6 @@
  * @subpackage Welcart_Basic
  */
   $imgUri = get_theme_file_uri() . "/assets/images/top/";
-  // メイン画像のリスト
-  // $imageList = ['01.webp','02.webp','03.webp','04.webp'];
   // 画像リスト
   $jsonMainImageLinks = get_theme_file_uri() . '/assets/json/mainImageLinks.json';
   $jsonMainImage = file_get_contents($jsonMainImageLinks);
