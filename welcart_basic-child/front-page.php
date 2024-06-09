@@ -133,7 +133,7 @@
           </div>
 
           <div class="OurFeatures__item">
-            <img src="<?php echo $imgUri;?>/15.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
+            <img src="<?php echo $imgUri;?>/47.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
             <div class="OurFeatures__itemTitleWrapper">
               <p class="OurFeatures__itemSubTitle"><span>05</span><span>選ばれてます</span></p>
               <h4 class="OurFeatures__itemTitle">総生徒数1万人越え</h4>
@@ -199,7 +199,7 @@
           <div id="Class-2" class="Class__item">
             <img src="<?php echo $imgUri;?>/17.webp" height="234" alt="" loading="lazy" class="Class__itemImage" />
             <div class="Class__itemInfo">
-              <p class="Class__itemTag">2歳児〜OK</p>
+              <p class="Class__itemTag">3歳児〜OK</p>
               <h4 class="Class__itemTitle">英会話教室</h4>
               <p class="Class__itemSubText">英語脳が身に付く！インターナショナスクール</p>
               <p class="Class__itemSummary">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
