@@ -87,6 +87,7 @@
 
         <div class="Navigation__footerLinks">
           <ul class="Navigation__footerLinksList">
+            <!-- On the job遷移先未定 -->
             <li class="Navigation__footerLinksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>recruit/">On the job</a></li>
             <li class="Navigation__footerLinksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>instructor-list/">講師紹介</a></li>
             <li class="Navigation__footerLinksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/blog/">ブログ</a></li>
