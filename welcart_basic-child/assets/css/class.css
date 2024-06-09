@@ -276,8 +276,13 @@
         rotate: -90deg;
 
         img {
-          width: calc(19 * (100vw / var(--width-pc-origin)));
-          height: calc(19 * (100vw / var(--width-pc-origin)));
+          width: auto;
+          height: 23px;
+
+          @media screen and (min-width: 768px) {
+            width: calc(19 * (100vw / var(--width-pc-origin)));
+            height: calc(19 * (100vw / var(--width-pc-origin)));
+          }
         }
       }
     }

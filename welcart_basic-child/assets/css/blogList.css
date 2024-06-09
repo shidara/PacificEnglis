@@ -13,7 +13,7 @@
 .BlogList {
   .BlogList__inner {
     position: relative;
-    padding: 41px 20px 76px;
+    padding: 0 20px 76px;
 
     @media screen and (min-width: 768px) {
       width: calc(1020 * (100vw / var(--width-pc-origin)));

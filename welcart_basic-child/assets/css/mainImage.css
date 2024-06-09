@@ -70,11 +70,12 @@
 
   /* インジケーター */
   .MainImage__progress {
-    display: none;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
 
     @media screen and (min-width: 768px) {
-      display: block;
-      position: absolute;
+      left: auto;
       right: calc(-26 * (100vw / var(--width-pc-origin)));
       bottom: calc(-6 * (100vw / var(--width-pc-origin)));
     }
@@ -82,12 +83,12 @@
 
   .progress {
     display: flex;
-    flex-direction: column;
     gap: 6px;
-    width: 6px;
-    height: 210px;
+    width: 210px;
+    height: 6px;
 
     @media screen and (min-width: 768px) {
+      flex-direction: column;
       gap: calc(6 * (100vw / var(--width-pc-origin)));
       width: calc(6 * (100vw / var(--width-pc-origin)));
       height: calc(210 * (100vw / var(--width-pc-origin)));
@@ -95,9 +96,9 @@
 
     span {
       position: relative;
-      width: calc(6 * (100vw / var(--width-pc-origin)));
-      height: calc(48 * (100vw / var(--width-pc-origin)));
-      border-radius: calc(12 * (100vw / var(--width-pc-origin)));
+      width: 48px;
+      height: 6px;
+      border-radius: 12px;
       background-color: var(--color-pacific-orange-c);
 
       &:after {
@@ -105,25 +106,60 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 0;
-        border-radius: calc(12 * (100vw / var(--width-pc-origin)));
+        width: 0;
+        height: 100%;
+        border-radius: 12px;
         background: var(--color-primary);
+      }
+
+      @media screen and (min-width: 768px) {
+        width: calc(6 * (100vw / var(--width-pc-origin)));
+        height: calc(48 * (100vw / var(--width-pc-origin)));
+        border-radius: calc(12 * (100vw / var(--width-pc-origin)));
+
+        &:after {
+          width: 100%;
+          height: 0;
+          border-radius: calc(12 * (100vw / var(--width-pc-origin)));
+        }
       }
 
       &.active {
         &:after {
-          animation: expandIndicatorAnim 3000ms forwards linear;
+          animation: expandIndicatorAnimSMP 3000ms forwards linear;
+        }
+
+        @media screen and (min-width: 768px) {
+          &:after {
+            animation: expandIndicatorAnim 3000ms forwards linear;
+          }
         }
       }
 
       &.completed {
         &:after {
           animation: none;
-          height: 100%;
+          width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+          &:after {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
+  }
+}
+
+@keyframes expandIndicatorAnimSMP {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
   }
 }
 
