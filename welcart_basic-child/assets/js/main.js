@@ -16,6 +16,7 @@ headerNavButton.addEventListener("click", () => {
 
 //メインビジュアルスライダー
 const mainVisualProgress = document.querySelectorAll(".js-progress span");
+const mainVisualInfoLinks = document.querySelectorAll(".js-MainImage__info a");
 var speed = 3000;
 
 const _addActive = (index) => {
@@ -26,11 +27,17 @@ const _addActive = (index) => {
 };
 
 const handleInitSlide = (index) => {
+  if (index >= 1) {
+    mainVisualInfoLinks[index - 1].classList.remove("active");
+  }
   mainVisualProgress[index].classList.add("active");
+  mainVisualInfoLinks[index].classList.add("active");
 };
 
 const handleNextSlideChange = (index) => {
+  mainVisualInfoLinks[index - 1].classList.remove("active");
   mainVisualProgress[index].classList.add("active");
+  mainVisualInfoLinks[index].classList.add("active");
   _addActive(index);
   mainVisualProgress[index - 1].classList.add("completed");
 };
@@ -40,6 +47,11 @@ const handlePrevSlideChange = (index) => {
     if (idx > index) {
       el.classList.remove("active");
       el.classList.remove("completed");
+    }
+  });
+  [...mainVisualInfoLinks].map((el, idx) => {
+    if (idx > index) {
+      el.classList.remove("active");
     }
   });
   _addActive(index);
@@ -55,6 +67,7 @@ var swiper = new Swiper(".js-homeMainVisualSlider", {
   on: {
     init: (s) => {
       mainVisualProgress[s.activeIndex].classList.add("active");
+      mainVisualInfoLinks[s.activeIndex].classList.add("active");
     },
     slideChange: (s) => {
       handleInitSlide(s.activeIndex);

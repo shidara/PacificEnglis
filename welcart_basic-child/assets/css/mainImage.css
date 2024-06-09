@@ -40,9 +40,6 @@
 
   .MainImage__info {
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 67px;
     padding: 0 23px 0 28px;
     color: var(--color-wht);
@@ -56,6 +53,20 @@
       width: calc(420 * (100vw / var(--width-pc-origin)));
       height: calc(72 * (100vw / var(--width-pc-origin)));
       border-radius: calc(16 * (100vw / var(--width-pc-origin))) 0 0 0;
+    }
+
+    a {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      width: 0;
+      height: 100%;
+      color: var(--color-wht);
+
+      &.active {
+        display: flex;
+        width: 100%;
+      }
     }
   }
 

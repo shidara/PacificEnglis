@@ -18,7 +18,7 @@
     <!-- ページタイトル -->
     <section class="PageTitleSection">
       <h2 class="PageTitleSection__title"><span class="PageTitleSection__titlePC">英語で世界が広がる</span><span class="PageTitleSection__titleSMP">世界が広がる</span><span class="PageTitleSection__titlePC">楽しい英語学習の第一歩</span><span class="PageTitleSection__titleSMP">英語で話そう!</span></h2>
-      <p class="PageTitleSection__summary">創業40年の歴史で1万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
+      <p class="PageTitleSection__summary">創業40年の歴史で3万人以上の卒業生を輩出！<br/>大分県大分市で通える英語脳が身に付くインターナショナルスクールと英語教室</p>
     </section>
 
     <!-- News -->
@@ -77,7 +77,7 @@
             </div>
           </div>
 
-        <p class="Message__summary">大分市内で英語教室・インターナショナルスクール（英語の保育園）を運営している当校は、ネイティブの先生主体の授業でプロフェッショナルな言動で国際人育成に愛と情熱を注ごうがモットーです。<br/>英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。こどもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。また、GSE(Global Scale of English)も導入しており、レベルを10から90のスケールで細分化し、学習指標(CAN-DO リスト) と紐づけ標準化した、グローバルで通用する英語習熟度指標です。<br/>英検や、TOEIC、TOEFL、各学校の中学・高校・大学受験などにも対応しております。だからこそ、1984年から大分市内で40年以上英語教室として、地域の皆様に愛され続けています。</p>
+        <p class="Message__summary">大分市内で英語教室・インターナショナルスクール（英語の保育園）を運営している当校は、世界中から集まった講師陣がプロフェッショナルな言動で国際人育成に愛と情熱を注ごうがモットーに日々のレッスンを構築しています。<br/>英語が喋れたり、読み書きの内容を理解できるだけでは本当の意味でのグローバル教育とはいえません。こどもの頃から外国人と日常的に触れ合うことで肌の色や文化の違いを当たり前の事として感じれる感覚こそが本当のグローバル感覚を養う事につながるのです。また、GSE(Global Scale of English)も導入しており、レベルを10から90のスケールで細分化し、学習指標(CAN-DO リスト) と紐づけ標準化した、グローバルで通用する英語習熟度指標です。<br/>英検や、TOEIC、TOEFL、各学校の中学・高校・大学受験などにも対応しております。だからこそ、1984年から大分市内で40年以上英語教室として、地域の皆様に愛され続けています。</p>
         <div class="Message__thumbnail Message__thumbnail--smp">
           <img src="<?php echo $imgUri;?>/1.webp" width="340" height="249" loading="lazy" />
           <p class="Message__thumbnailCaption">開校当時のこどもたちと、創業者 原パトリシア</p>
