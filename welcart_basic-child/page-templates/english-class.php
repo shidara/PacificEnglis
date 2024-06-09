@@ -48,7 +48,7 @@
               <span class="LessonMain__itemLabel">1番人気!!</span>
               <div class="LessonMain__itemTitle">
                 <h4 class="LessonMain__itemTitleText"><span>ジェネラル</span>コース</h4>
-                <p class="LessonMain__itemTitleAge"><span>対象年齢：</span>2歳児〜15歳</p>
+                <p class="LessonMain__itemTitleAge"><span>対象年齢：</span>3歳児〜</p>
               </div>
               <p class="LessonMain__itemSummary">週に1回のレッスンで読書き会話の4技能を学べるコースです。小学校・中学校の英語対策に効果的で外国人との英語でのコミュニケーションスキルも身につけられます。</p>
               <p class="LessonMain__itemNote">※英語をアウトプットする時間を増やされたい場合は英語の学童・育成クラブとの併用が効果的です。​</p>
@@ -75,7 +75,7 @@
               <span class="LessonMain__itemLabel">経験者におすすめ</span>
               <div class="LessonMain__itemTitle">
                 <h4 class="LessonMain__itemTitleText"><span>インテンシブ</span>コース</h4>
-                <p class="LessonMain__itemTitleAge"><span>対象年齢：</span>2歳児〜15歳</p>
+                <p class="LessonMain__itemTitleAge"><span>対象年齢：</span>3歳児〜</p>
               </div>
               <p class="LessonMain__itemSummary">1回2時間のレッスンを週に1回又は2回受講していただけるコースです。授業内容はSTEAM教育や英語でのプレゼンテーション発表のスキルを学ぶために、英語を母語とする国の小学生が授業で学ぶ内容をバランスよく学び、その内容についての自分の考えを英語でまとめて友達や先生に発表する事ができます。</p>
             </div>
