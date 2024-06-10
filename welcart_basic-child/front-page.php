@@ -136,9 +136,9 @@
             <img src="<?php echo $imgUri;?>/47.webp" height="234" alt="" loading="lazy" class="OurFeatures__itemImage" />
             <div class="OurFeatures__itemTitleWrapper">
               <p class="OurFeatures__itemSubTitle"><span>05</span><span>選ばれてます</span></p>
-              <h4 class="OurFeatures__itemTitle">総生徒数1万人越え</h4>
+              <h4 class="OurFeatures__itemTitle">小・中学校での英語の授業では学べないフォニックス学習</h4>
             </div>
-            <p class="OurFeatures__itemSummary">お受験英語ではなく、実際に外国に行った際に活用できる、リアルイングリッシュを学習していただき、諸外国でご活躍いただける、グローバル人材になっていただきます。</p>
+            <p class="OurFeatures__itemSummary">フォニックスの習得は、読み、書き、発音のスキルにおいて圧倒的な差を生み出します。日本の英語教育でしばしば見落とされがちなこの重要な領域に焦点を当て、子どもたちが英語の基礎からしっかりと力をつけられるようサポートします。</p>
           </div>
         </div>
       </div>

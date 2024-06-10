@@ -22,8 +22,8 @@
       </div>
 
       <div class="Recruit__info">
-        <p>お気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せください</p>
-        <p>Childminder / ENGChildminder / ENGChildminder / ENGChildminder / ENGChildminder / ENGChildminder / ENGChildminder / ENGChildminder / ENG</p>
+        <p>パシフィックイングリッシュでは、10代から70代まで、世界10カ国以上の国々から集まったスタッフが働いています。このダイバーシティに富んだ環境で、本当の意味でのグローバルな経験を積みたい方、ぜひお気軽にご連絡ください。随時面接を行っております。</p>
+        <p>At Pacific English, we have a diverse team with staff ranging in age from their teens to their seventies, representing over 10 different countries. If you are interested in gaining truly global experience in this diverse environment, please feel free to contact us. We are always conducting interviews.</p>
       </div>
     </div>
 
@@ -46,19 +46,7 @@
             <div class="Recruit__linksItemThumbnail"><img src="<?php echo $imgUri;?>205.webp" loadding="lazy" /></div>
             <div class="Recruit__linksItemInfoWrapper">
               <div class="Recruit__linksItemInfo">
-                <p class="Recruit__linksItemInfoTitle Recruit__linksItemInfoTitleMedium">Childminder/ENG</p>
-              </div>
-              <div class="Recruit__linksItemArrow"><img src="<?php echo $imgUri;?>98.webp" height="22" /></div>
-            </div>
-          </a>
-        </li>
-
-          <li class="Recruit__linksItem">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>usces-member/#RecruitMain_nav_1">
-            <div class="Recruit__linksItemThumbnail"><img src="<?php echo $imgUri;?>201.webp" loadding="lazy" /></div>
-            <div class="Recruit__linksItemInfoWrapper">
-              <div class="Recruit__linksItemInfo">
-                <p class="Recruit__linksItemInfoTitle">運転手&nbsp;<span class="Recruit__linksItemInfoTitleSmall">普通免許ok</span></p>
+                <p class="Recruit__linksItemInfoTitle Recruit__linksItemInfoTitleMedium">Careers<br/>Working at Pacific English</p>
               </div>
               <div class="Recruit__linksItemArrow"><img src="<?php echo $imgUri;?>98.webp" height="22" /></div>
             </div>

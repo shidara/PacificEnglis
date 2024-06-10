@@ -77,9 +77,10 @@
 
     p {
       color: var(--color-wht);
+      line-height: 1.6;
 
       &:not(:last-child) {
-        margin-bottom: calc(9 * (100vw / var(--width-pc-origin)));
+        margin-bottom: calc(20 * (100vw / var(--width-pc-origin)));
       }
     }
   }
@@ -149,10 +150,18 @@
       }
 
       &.Recruit__linksItemInfoTitleMedium {
-        font-size: 14px;
+        font-size: 12px;
+
+        br {
+          display: none;
+
+          @media screen and (min-width: 768px) {
+            display: block;
+          }
+        }
 
         @media screen and (min-width: 768px) {
-          font-size: calc(18 * (100vw / var(--width-pc-origin)));
+          font-size: calc(14 * (100vw / var(--width-pc-origin)));
         }
       }
 

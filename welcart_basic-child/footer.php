@@ -61,8 +61,7 @@
           <li class="Footer__navigationItem">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>international-school/" class="Footer__navigationLink">
               <div class="Footer__navigationInfo">
-                <p class="Footer__navigationInfoTitle">インターナショナル</p>
-                <p class="Footer__navigationInfoText">スクール</p>
+                <p class="Footer__navigationInfoTitle">英語の保育園</p>
               </div>
               <div class="Footer__navigationArrow"><img src="<?php echo $imgUri;?>98.webp" height="32" /></div>
             </a>
@@ -71,8 +70,7 @@
           <li class="Footer__navigationItem">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/" class="Footer__navigationLink">
               <div class="Footer__navigationInfo">
-                <p class="Footer__navigationInfoTitle">放課後</p>
-                <p class="Footer__navigationInfoText">スクール</p>
+                <p class="Footer__navigationInfoTitle">子ども英語教室</p>
               </div>
               <div class="Footer__navigationArrow"><img src="<?php echo $imgUri;?>98.webp" height="32" /></div>
             </a>
@@ -81,8 +79,7 @@
           <li class="Footer__navigationItem">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/" class="Footer__navigationLink">
               <div class="Footer__navigationInfo">
-                <p class="Footer__navigationInfoTitle">オンライン</p>
-                <p class="Footer__navigationInfoText">スクール</p>
+                <p class="Footer__navigationInfoTitle">オンラインレッスン</p>
               </div>
               <div class="Footer__navigationArrow"><img src="<?php echo $imgUri;?>98.webp" height="32" /></div>
             </a>
