@@ -7,7 +7,6 @@
  */
 
   $imgUri = get_theme_file_uri() . "/assets/images/international-school/";
-  $imgTopUri = get_theme_file_uri() . "/assets/images/top/";
 ?>
 <?php get_header();?>
 <?php get_template_part('FixedNavigation'); ?>
@@ -17,14 +16,14 @@
   <!-- メインイメージ -->
   <section class="PageStaticImage">
     <div class="PageStaticImage__inner">
-      <img src="<?php echo $imgTopUri;?>/15.webp" alt="" loading="lazy" class="PageStaticImage__image PageStaticImage__image--left" />
+      <img src="<?php echo $imgUri;?>/15.webp" alt="" loading="lazy" class="PageStaticImage__image PageStaticImage__image--left" />
     </div>
   </section>
   <!-- ページタイトル -->
   <section class="PageTitleSection">
     <p class="PageTitleSection__subText">本物の英語が学べる</p>
     <h2 class="PageTitleSection__title PageTitleSection__title--small">インターナショナルスクール</h2>
-    <p class="PageTitleSection__summary PageTitleSection__summary--black">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
+    <p class="PageTitleSection__summary PageTitleSection__summary--black PageTitleSection__summary--smal">バス送迎・給食制度・お預かり・保育の無償化制度など、親御さんも通わせやすいスクールです。また、大分市より指監第１０６８号（王子校）子企第３２４号（大在校）として認可外保育施設指導監査基準を満たしている施設としてお子様をお預かりして営業できる証明を頂いております。</p>
   </section>
 
   <!-- バナー -->
@@ -60,7 +59,7 @@
           <div class="Lesson__itemColumn">
             <div class="Lesson__itemColumnItem">
               <span class="Lesson__itemAge">2</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
+              <span class="Lesson__itemClass"><span class="Lesson__itemClassOrange">歳児</span>クラス</span>
             </div>
             <div class="Lesson__itemColumnItem">
               <p class="Lesson__itemOverview"><span class="Lesson__itemOverviewOrange">アルファベットの発音が聞き取れ、</span>リピートできるようになる</p>
@@ -73,7 +72,7 @@
           <div class="Lesson__itemColumn">
             <div class="Lesson__itemColumnItem">
               <span class="Lesson__itemAge">3</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
+              <span class="Lesson__itemClass"><span class="Lesson__itemClassOrange">歳児</span>クラス</span>
             </div>
             <div class="Lesson__itemColumnItem">
               <p class="Lesson__itemOverview">アルファベットの<span class="Lesson__itemOverviewOrange">大文字・小文字を書けるようになる</span></p>
@@ -86,7 +85,7 @@
           <div class="Lesson__itemColumn">
             <div class="Lesson__itemColumnItem">
               <span class="Lesson__itemAge">4</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
+              <span class="Lesson__itemClass"><span class="Lesson__itemClassOrange">歳児</span>クラス</span>
             </div>
             <div class="Lesson__itemColumnItem">
               <p class="Lesson__itemOverview">１年を通して単語を書く練習をし、<span class="Lesson__itemOverviewOrange">フォニックスの応用をマスターする</span></p>
@@ -99,7 +98,7 @@
           <div class="Lesson__itemColumn">
             <div class="Lesson__itemColumnItem">
               <span class="Lesson__itemAge">5</span>
-              <span class="Lesson__itemClass">歳児クラス</span>
+              <span class="Lesson__itemClass"><span class="Lesson__itemClassOrange">歳児</span>クラス</span>
             </div>
             <div class="Lesson__itemColumnItem">
               <p class="Lesson__itemOverview">毎日の出来事を自分で考え、<span class="Lesson__itemOverviewOrange">英語で日記を書けるようになる</span></p>
@@ -139,6 +138,35 @@
     </div>
   </section>
 
+  <!-- Math Curriculum -->
+  <section class="ProgrammingCurriculum">
+    <div class="ProgrammingCurriculum__inner">
+      <div class="ProgrammingCurriculum__title">
+        <h3 class="ProgrammingCurriculum__titleText">Math <span class="ProgrammingCurriculum__titleTextBlack">Curriculum</span></h3>
+      </div>
+
+      <p class="ProgrammingCurriculum__labelWrapper"><span class="ProgrammingCurriculum__label">算数カリキュラム</span></p>
+
+      <div class="ProgrammingCurriculum__contents">
+        <div class="ProgrammingCurriculum__item">
+          <div class="ProgrammingCurriculum__itemTitle">
+            <h4 class="ProgrammingCurriculum__itemTitleText">Math Shelf / マスシェルフ</h4>
+            <p class="ProgrammingCurriculum__itemSubTitle">3歳・4歳児クラス</p>
+          </div>
+          <p class="ProgrammingCurriculum__itemSummary">幼稚園向けの初期の算数タブレットプログラムとして、子どもが楽しみながら算数を感覚的に学べるように1,000以上のアクティビティを用意。50を超える数字のスキルを学ぶことができます。</p>
+        </div>
+
+        <div class="ProgrammingCurriculum__item">
+          <div class="ProgrammingCurriculum__itemTitle">
+            <h4 class="ProgrammingCurriculum__itemTitleText">そろばん</h4>
+            <p class="ProgrammingCurriculum__itemSubTitle">５歳児クラス</p>
+          </div>
+          <p class="ProgrammingCurriculum__itemSummary">そろばんは、左脳を主に使う算数と違い、右脳を使って計算をするため、「イメージ力」「人間的な思考」「創造力」「ひらめき」につながる力を磨きます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Programming Curriculum -->
   <section class="ProgrammingCurriculum">
     <div class="ProgrammingCurriculum__inner">
@@ -146,7 +174,7 @@
         <h3 class="ProgrammingCurriculum__titleText">Programming <span class="ProgrammingCurriculum__titleTextBlack">Curriculum</span></h3>
       </div>
 
-      <p class="ProgrammingCurriculum__labelWrapper"><span class="ProgrammingCurriculum__label">算数カリキュラム</span></p>
+      <p class="ProgrammingCurriculum__labelWrapper"><span class="ProgrammingCurriculum__label">プログラミングカリキュラム</span></p>
 
       <div class="ProgrammingCurriculum__contents">
         <div class="ProgrammingCurriculum__item">
@@ -470,17 +498,18 @@
                 </tr>
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>10:10</span></th>
-                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi" colspan="5">
+                  <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi WeeklySchedule__scheduleTableData--left" colspan="5">
                     <div>
-                        <p class="WeeklySchedule__scheduleTableDataTitle">【プレイタイム】</p>
-                        <p class="WeeklySchedule__scheduleTableDataText">指先を使った遊びを中心に集中力を養っていきます。</p>
+                      <p class="WeeklySchedule__scheduleTableDataTitle">【プレイタイム】</p>
+                      <p class="WeeklySchedule__scheduleTableDataText">指先を使った遊びを中心に集中力を養っていきます。</p>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <th class="WeeklySchedule__scheduleFixed"><span>11:00</span></th>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
-
+                    <p class="WeeklySchedule__scheduleTableDataTitle">【レッスン1】</p>
+                    <p class="WeeklySchedule__scheduleTableDataText">英語</p>
                   </td>
                   <td class="WeeklySchedule__scheduleTableData WeeklySchedule__scheduleTableData--multi">
                     <div>
