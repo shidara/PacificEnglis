@@ -16,10 +16,10 @@
 <section class="HelloWorld HelloWorld--cart">
   <div class="HelloWorld__inner">
     <div class="HelloWorld__title">
-      <h3 class="HelloWorld__titleText">HelloWorld</h3>
+      <h3 class="HelloWorld__titleText">Have fun in English!!</h3>
       <p class="HelloWorld__subTitle">一生モノの英語脳を身につけて、<br />広い世界を体験しよう。</p>
     </div>
-    <p class="HelloWorld__summary">お気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せくださいお気軽にお問合せください</p>
+    <p class="HelloWorld__summary">パシフィックは英語力とグローバルスキルが学べるスクールです。ご質問は電話又はLINEで、お気軽にお問い合わせください。</p>
 
     <div class="HelloWorld__info">
       <div class="HelloWorld__tell">
@@ -42,7 +42,7 @@
           </p>
           <div class="HelloWorld__experienceLine">
             <span class="HelloWorld__experienceLineIcon"><img src="<?php echo $imgUri;?>line_logo.webp"  height="29" alt="" /></span>
-            <span class="HelloWorld__experienceLineText">無料体験入学</span>
+            <span class="HelloWorld__experienceLineText">学校見学・無料体験レッスンの<br />ご予約はこちらから</span>
           </div>
 
         </a>

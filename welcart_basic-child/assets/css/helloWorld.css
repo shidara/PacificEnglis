@@ -27,7 +27,7 @@
       width: calc(1020 * (100vw / var(--width-pc-origin)));
       margin: 0 auto;
       padding: calc(80 * (100vw / var(--width-pc-origin)))
-        calc(70 * (100vw / var(--width-pc-origin)))
+        calc(50 * (100vw / var(--width-pc-origin)))
         calc(89 * (100vw / var(--width-pc-origin)))
         calc(78 * (100vw / var(--width-pc-origin)));
     }
@@ -222,7 +222,7 @@
       background-color: #06c755;
 
       @media screen and (min-width: 768px) {
-        width: calc(100% - calc(76 * (100vw / var(--width-pc-origin))) * 2);
+        width: calc(100% - calc(56 * (100vw / var(--width-pc-origin))) * 2);
         height: calc(80 * (100vw / var(--width-pc-origin)));
         border-radius: 16px;
       }
@@ -242,7 +242,7 @@
 
     .HelloWorld__experienceLineText {
       @media screen and (min-width: 768px) {
-        font-size: calc(24 * (100vw / var(--width-pc-origin)));
+        font-size: calc(16 * (100vw / var(--width-pc-origin)));
       }
     }
 
