@@ -328,6 +328,12 @@
           border-right: 0;
         }
       }
+
+      &.WeeklySchedule__scheduleTableData--left {
+        @media screen and (min-width: 768px) {
+          text-align: left;
+        }
+      }
     }
 
     .WeeklySchedule__scheduleTableDataInner {
@@ -355,7 +361,7 @@
     }
 
     .WeeklySchedule__scheduleTableDataTitle {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       color: var(--color-blk);
       line-height: 1.6;
