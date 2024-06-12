@@ -73,7 +73,7 @@
     </li>
 
     <li class="<?php echo $onlineEnglish;?>">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/">
+      <a href="https://online.pacificenglish.jp/">
         <img src="<?php echo $imgUri;?>/nav-01.webp" alt="" width="170" height="72" class="FixedNavigation__itemThumbnail" />
         <div class="FixedNavigation__itemTitle">
           <p class="FixedNavigation__itemSubTitle">おうちで学習</p>

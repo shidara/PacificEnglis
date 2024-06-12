@@ -64,7 +64,7 @@
               </a>
             </li>
             <li class="Navigation__item">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/" class="Navigation__itemInner">
+              <a href="https://online.pacificenglish.jp/" class="Navigation__itemInner">
                 <div>
                   <p class="Navigation__menuTitle">Online  School</p>
                   <p class="Navigation__menuSubText">オンライン英会話</p>
