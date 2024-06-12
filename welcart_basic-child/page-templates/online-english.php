@@ -168,45 +168,6 @@ $imgTopUri = get_theme_file_uri() . "/assets/images/top/";
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/">オンラインショップを見る</a>
       </div>
     </div>
-
-    <!-- Game -->
-    <div class="Materials__inner">
-      <div class="Materials__title">
-        <h3 class="Materials__titleText">Game</h3>
-      </div>
-      <p class="Materials__subText">ゲーム</p>
-
-      <?php
-        $jsonGameUrl = get_theme_file_uri() . '/assets/json/game.json';
-        $jsonGame = file_get_contents($jsonGameUrl);
-        $arrGame = json_decode($jsonGame,true);
-      ?>
-      <div class="Materials__contents">
-        <?php
-          if(is_array($arrGame)) {
-            foreach($arrGame as $d){
-              echo '<div class="Materials__item">
-                      <div class="Materials__thumbnail">
-                        <img src="'. $imgUri . $d['imgUrl'] . '" alt="" loading="lazy" />
-                      </div>';
-              echo '<div class="Materials__itemInfo"><div class="Materials__itemInfoLabel">対象年齢：' . $d['age'] . '</div>';
-              echo '<p class="Materials__itemInfoTitle">' . $d['name'] . '</p>';
-              echo '<p class="Materials__itemInfoText">' .$d["summary"] . '</p>';
-              echo '</div></div>';
-            }
-          }
-        ?>
-      </div>
-      <!-- オンラインショップ導線 -->
-      <div class="Materials__more">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/">オンラインショップを見る</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 入園バナー PCのみ -->
-  <?php get_template_part('enrollmentBanner'); ?>
-
 </main>
 
 <?php get_footer();?>
