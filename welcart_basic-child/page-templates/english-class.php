@@ -8,6 +8,8 @@
 
   $imgUri = get_theme_file_uri() . "/assets/images/english-class/";
   $imgTopUri = get_theme_file_uri() . "/assets/images/top/";
+  $imgFooterUri = get_theme_file_uri() . "/assets/images/footer/";
+
 ?>
 <?php get_header();?>
 
@@ -118,7 +120,23 @@
     </section>
 
     <!-- 入園バナー PCのみ -->
-    <?php get_template_part('enrollmentBanner'); ?>
+  <section class="EnrollmentBanner">
+    <div class="EnrollmentBanner__inner EnrollmentBanner__inner--large">
+      <div class="EnrollmentBannerItem EnrollmentBannerItem--row">
+        <a href="https://s.lmes.jp/landing-qr/2003697225-ljRgV8Vk?uLand=KrlXg5">
+          <p class="EnrollmentBannerExperienceTitle">最短翌日から可能！<br />
+            <span class="EnrollmentBannerExperienceTitleLarge">4</span>
+            ステップで予約完了
+            <span class="EnrollmentBannerPin"><img src="<?php echo $imgFooterUri;?>610.webp" height="38" alt="" loading="lazy" /></span>
+          </p>
+          <div class="EnrollmentBannerLine">
+            <span class="EnrollmentBannerLineIcon"><img src="<?php echo $imgFooterUri;?>line_logo.webp"  height="29" alt="" loading="lazy" /></span>
+            <span class="EnrollmentBannerLineText">無料体験入学</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
     <!-- Hello World -->
     <?php get_template_part('helloWorld'); ?>

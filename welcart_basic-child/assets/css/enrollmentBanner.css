@@ -20,6 +20,10 @@
       calc(64 * (100vw / var(--width-pc-origin)));
     border-radius: calc(16 * (100vw / var(--width-pc-origin)));
     background-color: var(--color-primary);
+
+    &.EnrollmentBanner__inner--large {
+      padding-left: calc(44 * (100vw / var(--width-pc-origin)));
+    }
   }
 
   .EnrollmentBannerItem {
@@ -49,6 +53,21 @@
       &:focus-visible {
         opacity: 0.6;
         text-decoration: none;
+      }
+    }
+
+    &.EnrollmentBannerItem--row {
+      width: 100%;
+
+      a {
+        flex-direction: row;
+        gap: calc(40 * (100vw / var(--width-pc-origin)));
+        padding-left: calc(66 * (100vw / var(--width-pc-origin)));
+      }
+
+      .EnrollmentBannerLine {
+        width: calc(400 * (100vw / var(--width-pc-origin)));
+        height: calc(106 * (100vw / var(--width-pc-origin)));
       }
     }
   }
