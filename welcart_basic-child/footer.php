@@ -77,7 +77,7 @@
           </li>
 
           <li class="Footer__navigationItem">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/" class="Footer__navigationLink">
+            <a href="https://online.pacificenglish.jp/" class="Footer__navigationLink">
               <div class="Footer__navigationInfo">
                 <p class="Footer__navigationInfoTitle">オンラインレッスン</p>
               </div>
@@ -118,7 +118,7 @@
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a></li>
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>international-school/">インターナショナルスクール</a></li>
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>english-class/">英語の教室</a></li>
-          <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>online-english/">オンライン英会話</a></li>
+          <li class="Footer__linksItem"><a href="https://online.pacificenglish.jp/">オンライン英会話</a></li>
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>instructor-list/">講師紹介</a></li>
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">ブログ</a></li>
           <li class="Footer__linksItem"><a href="<?php echo esc_url( home_url( '/' ) ); ?>recruit/">採用情報</a></li>
