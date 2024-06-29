@@ -193,40 +193,101 @@
         font-size: calc(14 * (100vw / var(--width-pc-origin)));
       }
     }
+  }
 
-    .LessonMain__itemCombined {
-      padding: 20px 13px 23px;
-      border-radius: 6px;
-      background-color: var(--color-pacific-gray-b);
+  .LessonMain__combined {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(60 * (100vw / var(--width-pc-origin)));
+      margin-bottom: calc(145 * (100vw / var(--width-pc-origin)));
+    }
+
+    .LessonMain__combinedItem {
+      margin-bottom: 36px;
+      font-family: "Zen Kaku Gothic New", sans-serif;
 
       @media screen and (min-width: 768px) {
-        padding: calc(20 * (100vw / var(--width-pc-origin)));
-        font-size: calc(8 * (100vw / var(--width-pc-origin)));
-        border-radius: calc(8 * (100vw / var(--width-pc-origin)));
+        width: calc(50% - calc(30 * (100vw / var(--width-pc-origin))));
+        margin-bottom: 0;
       }
 
-      .LessonMain__itemCombinedTitle {
-        margin-bottom: 6px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.8;
-        color: var(--color-blk);
+      &:last-child {
+        margin-bottom: 56px;
 
         @media screen and (min-width: 768px) {
-          margin-bottom: calc(7 * (100vw / var(--width-pc-origin)));
-          font-size: calc(14 * (100vw / var(--width-pc-origin)));
+          margin-bottom: 0;
         }
       }
+    }
 
-      li {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.8;
-        color: var(--color-blk);
+    .LessonMain__combinedItemTitle {
+      position: relative;
+      margin-bottom: 16px;
+      padding-left: 16px;
 
-        @media screen and (min-width: 768px) {
-          font-size: calc(14 * (100vw / var(--width-pc-origin)));
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(17 * (100vw / var(--width-pc-origin)));
+        padding-left: calc(16 * (100vw / var(--width-pc-origin)));
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 4px;
+        height: 100%;
+        border-radius: 100px;
+        background-color: var(--color-primary);
+      }
+
+      @media screen and (min-width: 768px) {
+        &::before {
+          width: calc(4 * (100vw / var(--width-pc-origin)));
         }
+      }
+    }
+
+    .LessonMain__combinedItemTitleText {
+      margin-bottom: 4px;
+      font-size: 29px;
+      font-weight: bold;
+      line-height: 1.2;
+      color: var(--color-primary);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: calc(4 * (100vw / var(--width-pc-origin)));
+        font-size: calc(26 * (100vw / var(--width-pc-origin)));
+      }
+    }
+
+    .LessonMain__combinedItemSubTitle {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.8;
+      color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(15 * (100vw / var(--width-pc-origin)));
+      }
+
+      br {
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    .LessonMain__combinedItemSummary {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.8;
+      color: var(--color-blk);
+
+      @media screen and (min-width: 768px) {
+        font-size: calc(14 * (100vw / var(--width-pc-origin)));
       }
     }
   }
