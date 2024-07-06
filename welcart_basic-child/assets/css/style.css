@@ -27,6 +27,9 @@ Base
 /* News */
 @import url("./news.css");
 
+/* News */
+@import url("./newsItem.css");
+
 /* Recruit */
 @import url("./recruit.css");
 

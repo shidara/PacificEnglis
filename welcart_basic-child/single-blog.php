@@ -6,7 +6,6 @@
   //キーワード検索欄に入力した単語を取得
   $search_word = array();
   if ( ! empty( $_GET['f'] ) ) {
-    print_r('あああああ');
     $search_word = $_GET['f'];
     $search_word = str_replace( '　', ' ', $search_word ); //全角スペースを半角スペースに置き換える（複数単語対応のため）
   }
