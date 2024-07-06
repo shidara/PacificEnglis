@@ -10,6 +10,15 @@
   $imgTopUri = get_theme_file_uri() . "/assets/images/top/";
   $imgFooterUri = get_theme_file_uri() . "/assets/images/footer/";
 
+  // lesson general
+  $jsonLessonGeneral = get_theme_file_uri() . '/assets/json/lesson-general.json';
+  $jsonLessonGeneralContents = file_get_contents($jsonLessonGeneral);
+  $arrLessonGeneral = json_decode($jsonLessonGeneralContents,true);
+
+  // lesson Intensive
+  $jsonLessonIntensive = get_theme_file_uri() . '/assets/json/lesson-Intensive.json';
+  $jsonLessonIntensiveContents = file_get_contents($jsonLessonIntensive);
+  $arrLessonIntensive = json_decode($jsonLessonIntensiveContents,true);
 ?>
 <?php get_header();?>
 
@@ -54,17 +63,31 @@
               </div>
               <p class="LessonMain__itemSummary">週に1回のレッスンで読書き会話の4技能を学べるコースです。小学校・中学校の英語対策に効果的で外国人との英語でのコミュニケーションスキルも身につけられます。</p>
               <p class="LessonMain__itemNote">※英語をアウトプットする時間を増やされたい場合は英語の学童・育成クラブとの併用が効果的です。​</p>
-
-              <div class="LessonMain__itemCombined">
-                <p class="LessonMain__itemCombinedTitle">併用できる学童・クラブ</p>
-                <ul>
-                  <li>・ABC Pop Phonics Class（ABCポップフォニックスクラス）</li>
-                  <li>・Complete Phonics Class（コンプリートフォニックスクラス）</li>
-                  <li>・Everybody Up Class（エブリバディーアップクラス）</li>
-                  <li>・All Up Class（オールアップクラス）</li>
-                </ul>
-              </div>
             </div>
+          </div>
+
+          <div class="LessonMain__combined">
+            <?php
+              if($arrLessonGeneral){
+                foreach($arrLessonGeneral as $v){
+                  if($v['subText']) {
+                    // \nを改行コードに変換
+                    $afterSubTitle = str_replace("\n", "<br />", $v['subText']);
+                  }
+                  if($v['text']) {
+                    // \nを改行コードに変換
+                    $afterText = str_replace("\n", "<br />", $v['text']);
+                  }
+                  echo '<div class="LessonMain__combinedItem">
+                          <div class="LessonMain__combinedItemTitle">
+                            <h4 class="LessonMain__combinedItemTitleText">' . $v['title'] . '</h4>
+                            <p class="LessonMain__combinedItemSubTitle">' . $afterSubTitle . '</p>
+                          </div>
+                          <p class="LessonMain__combinedItemSummary">' . $afterText. '</p>
+                        </div>';
+                }
+              }
+            ?>
           </div>
 
           <div class="LessonMain__item LessonMain__item--reverse">
@@ -81,6 +104,30 @@
               </div>
               <p class="LessonMain__itemSummary">1回2時間のレッスンを週に1回又は2回受講していただけるコースです。授業内容はSTEAM教育や英語でのプレゼンテーション発表のスキルを学ぶために、英語を母語とする国の小学生が授業で学ぶ内容をバランスよく学び、その内容についての自分の考えを英語でまとめて友達や先生に発表する事ができます。</p>
             </div>
+          </div>
+
+          <div class="LessonMain__combined">
+            <?php
+              if($arrLessonIntensive){
+                foreach($arrLessonIntensive as $v){
+                  if($v['subText']) {
+                    // \nを改行コードに変換
+                    $afterSubTitle = str_replace("\n", "<br />", $v['subText']);
+                  }
+                  if($v['text']) {
+                    // \nを改行コードに変換
+                    $afterText = str_replace("\n", "<br />", $v['text']);
+                  }
+                  echo '<div class="LessonMain__combinedItem">
+                          <div class="LessonMain__combinedItemTitle">
+                            <h4 class="LessonMain__combinedItemTitleText">' . $v['title'] . '</h4>
+                            <p class="LessonMain__combinedItemSubTitle">' . $afterSubTitle . '</p>
+                          </div>
+                          <p class="LessonMain__combinedItemSummary">' . $afterText. '</p>
+                        </div>';
+                }
+              }
+            ?>
           </div>
         </div>
       </div>
